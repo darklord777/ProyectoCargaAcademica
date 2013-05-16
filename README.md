@@ -1,4 +1,0 @@
-ProyectoCargaAcademica
-======================
-
-Primer Proyecto PDM
