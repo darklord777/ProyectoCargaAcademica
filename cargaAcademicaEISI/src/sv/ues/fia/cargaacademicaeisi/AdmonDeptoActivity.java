@@ -1,6 +1,6 @@
 package sv.ues.fia.cargaacademicaeisi;
 
-import com.example.cargaacademicaeisi.R;
+import sv.ues.fia.cargaacademicaeisi.R;
 
 import android.os.Bundle;
 import android.app.Activity;

@@ -1,5 +1,6 @@
 package sv.ues.fia.cargaacademicaeisi;
 
+import sv.ues.fia.cargaacademicaeisi.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -7,7 +8,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.cargaacademicaeisi.R;
 
 public class NuevoDeptoActivity extends Activity {
 	private ControlDB helper;
