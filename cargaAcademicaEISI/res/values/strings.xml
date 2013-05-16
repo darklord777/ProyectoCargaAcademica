@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">cargaAcademicaEISI</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_menu_principal">MenuPrincipalActivity</string>
+    <!-- sistema -->
+    <string name="btnEntrarSistema">Entrar al sistema</string>
+    <string name="btnAdmonCat">Administracion de Catalogos</string>
+    <string name="title_activity_admon_depto">AdmonDeptoActivity</string>
+    <string name="btnNuevoDepto">Nuevo Departamento</string>
+    <string name="title_activity_nuevo_depto">NuevoDeptoActivity</string>
+    <!-- Mario -->
+	<string name="msgidDepto">Digite codigo del departamento</string>
+	<string name="tituloDepto">Nuevo Departamento</string>
+	<string name="msgNomDepto">Digite nombre del departamento</string>
+	<string name="btnGuardarDepto">Guardar Departamento</string>
+	<string name="btnLimpiaDepto">Limpiar entradas</string>
+</resources>
