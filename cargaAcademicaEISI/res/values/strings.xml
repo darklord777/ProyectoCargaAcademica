@@ -12,9 +12,11 @@
     <string name="btnNuevoDepto">Nuevo Departamento</string>
     <string name="title_activity_nuevo_depto">NuevoDeptoActivity</string>
     <!-- Mario -->
-	<string name="msgidDepto">Digite codigo del departamento</string>
-	<string name="tituloDepto">Nuevo Departamento</string>
-	<string name="msgNomDepto">Digite nombre del departamento</string>
-	<string name="btnGuardarDepto">Guardar Departamento</string>
-	<string name="btnLimpiaDepto">Limpiar entradas</string>
+    <string name="msgidDepto">Digite codigo del departamento</string>
+    <string name="tituloDepto">Nuevo Departamento</string>
+    <string name="msgNomDepto">Digite nombre del departamento</string>
+    <string name="btnGuardarDepto">Guardar Departamento</string>
+    <string name="btnLimpiaDepto">Limpiar entradas</string>
+    <string name="title_activity_admin_catalogos">AdminCatalogosActivity</string>
+
 </resources>

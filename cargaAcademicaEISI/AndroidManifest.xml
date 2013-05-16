@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.cargaacademicaeisi"
+    package="sv.ues.fia.cargaacademicaeisi"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -33,6 +33,10 @@
         <activity
             android:name="sv.ues.fia.cargaacademicaeisi.NuevoDeptoActivity"
             android:label="@string/title_activity_nuevo_depto" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.AdminCatalogosActivity"
+            android:label="@string/title_activity_admin_catalogos" >
         </activity>
     </application>
 
