@@ -104,7 +104,7 @@ public class ControlDB {
 	
 	
 	/**METODOS AGUSTIN */
-/*	public String insertar(Locales local) {
+	public String insertar(Locales local) {
 		String regInsertados = "Registro insertado en la fila No.=";
 		long contador = 0;
 		ContentValues loc = new ContentValues();
@@ -117,7 +117,7 @@ public class ControlDB {
 			regInsertados += contador;
 		}
 		return regInsertados;
-	}*/
+	}
 	
 	
 	/**METODOS SERGIO */
