@@ -44,13 +44,15 @@
         android:layout_marginTop="36dp"
         android:text="Button" />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button4"
-        android:layout_below="@+id/button4"
-        android:layout_marginTop="37dp"
-        android:text="Button" />
+  <Button
+      android:id="@+id/btn5A_CargaAcademica"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/button4"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="34dp"
+      android:background="@drawable/button_custom"
+      android:text="@string/btn5A_CargaAcademica"
+      android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

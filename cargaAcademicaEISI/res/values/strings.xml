@@ -18,5 +18,12 @@
     <string name="btnGuardarDepto">Guardar Departamento</string>
     <string name="btnLimpiaDepto">Limpiar entradas</string>
     <string name="title_activity_admin_catalogos">AdminCatalogosActivity</string>
+    <string name="title_activity_gestion_carga_acad">GestionCargaAcadActivity</string>
+    
+    <string name="btn1TablaCiclo">Tabla Ciclo</string>
+    <string name="btn2TablaCargaAcademica">Tabla Carga Academica</string>
+    <string name="btn3DetCargaMateria">Tabla Carga Materia</string>
+    <string name="btn4DetCargaActAcademica">Tabla Carga Act Academica</string>
+    <string name="btn5A_CargaAcademica">Gestion Carga Academica</string>
 
 </resources>

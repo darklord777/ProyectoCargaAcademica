@@ -38,6 +38,10 @@
             android:name="sv.ues.fia.cargaacademicaeisi.AdminCatalogosActivity"
             android:label="@string/title_activity_admin_catalogos" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.GestionCargaAcadActivity"
+            android:label="@string/title_activity_gestion_carga_acad" >
+        </activity>
     </application>
 
 </manifest>
