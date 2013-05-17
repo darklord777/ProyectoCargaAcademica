@@ -9,25 +9,45 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".ConsultarDeptoActivity" >
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="@string/tvConsultarDepto"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spnListaDeptos"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp" />
+
     <EditText
-        android:id="@+id/nomDepto"
+        android:id="@+id/edtNomDepto"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/spnListaDeptos"
-        android:layout_below="@+id/spnListaDeptos"
-        android:layout_marginTop="26dp"
+        android:layout_centerVertical="true"
         android:ems="10"
         android:hint="@string/msgNomDepto" >
 
         <requestFocus />
     </EditText>
 
-    <Spinner
-        android:id="@+id/spnListaDeptos"
+    <Button
+        android:id="@+id/btnSaveConsultDepto"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/edtNomDepto"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp" />
+        android:layout_marginTop="32dp"
+        android:drawableRight="@drawable/save"
+        android:text="@string/btnGuardarDepto"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

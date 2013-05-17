@@ -1,5 +1,8 @@
 package sv.ues.fia.cargaacademicaeisi;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -9,10 +12,9 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class ControlDB {
 	/* Mario */
-	private static final String[]camposDepto = new String [] {"IDDEPARTAMENTO","NOM_DEPTO"};
-	
-	
-	
+	private static final String[] camposDepto = new String[] {
+			"IDDEPARTAMENTO", "NOM_DEPTO" };
+
 	private final Context context;
 	private DatabaseHelper DBHelper;
 	private SQLiteDatabase db;
@@ -115,6 +117,21 @@ public class ControlDB {
 		} else {
 			return null;
 		}
+	}
+
+	public List<String> getAllIdDeptos() {
+		List<String> idDeptos = new ArrayList<String>();
+		Cursor cursor = db
+				.rawQuery(
+						"select IDDEPARTAMENTO from DEPARTAMENTO order by IDDEPARTAMENTO;",
+						null);
+		if (cursor.moveToFirst()) {
+			do {
+				idDeptos.add(cursor.getString(0));
+			} while (cursor.moveToNext());
+		}
+		cursor.close();
+		return idDeptos;
 	}
 
 	/** METODOS EMERSON */
