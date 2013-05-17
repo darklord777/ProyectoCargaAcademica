@@ -104,7 +104,20 @@ public class ControlDB {
 	
 	
 	/**METODOS AGUSTIN */
-	
+	public String insertar(Locales local) {
+		String regInsertados = "Registro insertado en la fila No.=";
+		long contador = 0;
+		ContentValues loc = new ContentValues();
+		loc.put("IDLOCAL", local.getIdlocal());
+		loc.put("CAPACIDAD", local.getCapacidad());
+		contador = db.insert("DEPARTAMENTO", null, loc);
+		if (contador == -1 || contador == 0) {
+			regInsertados = "Error. Verificar Insercion";
+		} else {
+			regInsertados += contador;
+		}
+		return regInsertados;
+	}
 	
 	
 	/**METODOS SERGIO */
