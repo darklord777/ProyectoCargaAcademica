@@ -36,7 +36,7 @@ public class MenuPrincipalActivity extends Activity implements OnClickListener {
 		switch (v.getId()) {
 		case R.id.btnAdmonCat:
 			startActivity(new Intent(getApplicationContext(),
-					AdmonDeptoActivity.class));
+					AdminCatalogosActivity.class));
 			break;
 		case R.id.btn5A_CargaAcademica:
 			startActivity(new Intent(getApplicationContext(),

@@ -44,6 +44,7 @@
     <string name="msgCapLocal">Digite capacidad del Local</string>
     <string name="btnGuardarLocal">Guardar Local</string>
     <string name="nLocal">Nuevo Local</string> 
-    <string name="btn_limpiarLocal">Limpiar Entradas</string>
+    <string name="btn_limpiarLocal">Limpiar Entradas</string> 
+    <string name="btnAdmonDepto">Administracion de Dapartamento</string>
 
 </resources>

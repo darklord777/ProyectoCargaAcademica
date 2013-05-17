@@ -44,6 +44,7 @@ public final class R {
         public static final int btn4DetCargaActAcademica=0x7f0a0017;
         public static final int btn5A_CargaAcademica=0x7f0a001d;
         public static final int btnAdmonCat=0x7f0a001c;
+        public static final int btnAdmonDepto=0x7f0a0000;
         public static final int btnEntrarSistema=0x7f0a0005;
         public static final int btnGLocal=0x7f0a001b;
         public static final int btnNuevoDepto=0x7f0a0001;
@@ -64,7 +65,6 @@ public final class R {
         public static final int idLocal=0x7f0a0018;
         public static final int limpiarLocal=0x7f0a001a;
         public static final int nomDepto=0x7f0a0020;
-        public static final int otro=0x7f0a0000;
         public static final int spinner_anio_ciclo=0x7f0a0009;
         public static final int spinner_ciclo=0x7f0a000c;
         public static final int textView1=0x7f0a001f;
@@ -106,6 +106,7 @@ public final class R {
         public static final int btn4DetCargaActAcademica=0x7f070013;
         public static final int btn5A_CargaAcademica=0x7f070014;
         public static final int btnAdmonCat=0x7f070005;
+        public static final int btnAdmonDepto=0x7f070028;
         /**  sistema 
          */
         public static final int btnEntrarSistema=0x7f070004;
