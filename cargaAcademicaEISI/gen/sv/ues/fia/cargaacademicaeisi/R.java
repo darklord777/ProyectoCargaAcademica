@@ -40,42 +40,43 @@ public final class R {
         public static final int update=0x7f020009;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0023;
-        public static final int btn1TablaCiclo=0x7f0a0016;
-        public static final int btn2TablaCargaAcademica=0x7f0a0015;
-        public static final int btn3DetCargaMateria=0x7f0a0014;
-        public static final int btn4DetCargaActAcademica=0x7f0a0017;
-        public static final int btn5A_CargaAcademica=0x7f0a001d;
-        public static final int btnAdmonCat=0x7f0a001c;
+        public static final int action_settings=0x7f0a0024;
+        public static final int btn1TablaCiclo=0x7f0a0017;
+        public static final int btn2TablaCargaAcademica=0x7f0a0016;
+        public static final int btn3DetCargaMateria=0x7f0a0015;
+        public static final int btn4DetCargaActAcademica=0x7f0a0018;
+        public static final int btn5A_CargaAcademica=0x7f0a001e;
+        public static final int btnAdmonCat=0x7f0a001d;
         public static final int btnAdmonDepto=0x7f0a0000;
-        public static final int btnEntrarSistema=0x7f0a0005;
-        public static final int btnGLocal=0x7f0a001b;
-        public static final int btnGuardarDepto=0x7f0a0021;
-        public static final int btnLimpiaDepto=0x7f0a0022;
+        public static final int btnConsultarDepto=0x7f0a0004;
+        public static final int btnEntrarSistema=0x7f0a0006;
+        public static final int btnGLocal=0x7f0a001c;
+        public static final int btnGuardarDepto=0x7f0a0022;
+        public static final int btnLimpiaDepto=0x7f0a0023;
         public static final int btnNuevoDepto=0x7f0a0001;
-        public static final int button1_MenuCiclo_insertar=0x7f0a0012;
-        public static final int button1_insertar_ciclo=0x7f0a0007;
-        public static final int button2=0x7f0a0003;
-        public static final int button2_MenuCiclo_eliminar=0x7f0a0011;
-        public static final int button2_limpiartexto_ciclo=0x7f0a0006;
-        public static final int button3=0x7f0a0002;
-        public static final int button3_MenuCiclo_concultar=0x7f0a0010;
-        public static final int button4=0x7f0a0004;
-        public static final int button4_MenuCiclo_actualizar=0x7f0a0013;
-        public static final int capLocal=0x7f0a0019;
-        public static final int editText1_fechainicio=0x7f0a000e;
-        public static final int editText2_fechafin=0x7f0a0008;
-        public static final int idDepto=0x7f0a001e;
-        public static final int idLocal=0x7f0a0018;
-        public static final int limpiarLocal=0x7f0a001a;
-        public static final int nomDepto=0x7f0a0020;
-        public static final int spinner_anio_ciclo=0x7f0a0009;
-        public static final int spinner_ciclo=0x7f0a000c;
-        public static final int textView1=0x7f0a001f;
-        public static final int textView3=0x7f0a000d;
-        public static final int textView4=0x7f0a000f;
-        public static final int textview_selecione_ciclo=0x7f0a000b;
-        public static final int textview_selecioneanio_ciclo=0x7f0a000a;
+        public static final int button1_MenuCiclo_insertar=0x7f0a0013;
+        public static final int button1_insertar_ciclo=0x7f0a0008;
+        public static final int button2=0x7f0a0005;
+        public static final int button2_MenuCiclo_eliminar=0x7f0a0012;
+        public static final int button2_limpiartexto_ciclo=0x7f0a0007;
+        public static final int button3=0x7f0a0003;
+        public static final int button3_MenuCiclo_concultar=0x7f0a0011;
+        public static final int button4=0x7f0a0002;
+        public static final int button4_MenuCiclo_actualizar=0x7f0a0014;
+        public static final int capLocal=0x7f0a001a;
+        public static final int editText1_fechainicio=0x7f0a000f;
+        public static final int editText2_fechafin=0x7f0a0009;
+        public static final int idDepto=0x7f0a001f;
+        public static final int idLocal=0x7f0a0019;
+        public static final int limpiarLocal=0x7f0a001b;
+        public static final int nomDepto=0x7f0a0021;
+        public static final int spinner_anio_ciclo=0x7f0a000a;
+        public static final int spinner_ciclo=0x7f0a000d;
+        public static final int textView1=0x7f0a0020;
+        public static final int textView3=0x7f0a000e;
+        public static final int textView4=0x7f0a0010;
+        public static final int textview_selecione_ciclo=0x7f0a000c;
+        public static final int textview_selecioneanio_ciclo=0x7f0a000b;
     }
     public static final class layout {
         public static final int activity_admin_catalogos=0x7f030000;
@@ -113,6 +114,7 @@ public final class R {
         public static final int btn5A_CargaAcademica=0x7f070014;
         public static final int btnAdmonCat=0x7f070005;
         public static final int btnAdmonDepto=0x7f070028;
+        public static final int btnConsultarDepto=0x7f07002a;
         /**  sistema 
          */
         public static final int btnEntrarSistema=0x7f070004;

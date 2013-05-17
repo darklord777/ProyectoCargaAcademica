@@ -2,11 +2,17 @@ package sv.ues.fia.cargaacademicaeisi;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class ControlDB {
+	/* Mario */
+	private static final String[]camposDepto = new String [] {"IDDEPARTAMENTO","NOM_DEPTO"};
+	
+	
+	
 	private final Context context;
 	private DatabaseHelper DBHelper;
 	private SQLiteDatabase db;
@@ -31,16 +37,16 @@ public class ControlDB {
 				// Mario
 				db.execSQL("CREATE TABLE DEPARTAMENTO ( IDDEPARTAMENTO  VARCHAR(6)  NOT NULL PRIMARY KEY, NOM_DEPTO VARCHAR(20));");
 				// Mario
-				
-				/**Alexis */
+
+				/** Alexis */
 				db.execSQL("CREATE TABLE CICLO ( ANIO VARCHAR(4) NOT NULL, NUMERO VARCHAR(2) NOT NULL, FECHAINI DATE DEFAULT CURRENT_DATE NULL, FECHAFIN DATE NULL, PRIMARY KEY (ANIO,NUMERO) );");
-				/**Alexis */
-				//Michael
+				/** Alexis */
+				// Michael
 				db.execSQL("CREATE TABLE ACTIVIDAD_ACADEMICA (IDACTACAD VARCHAR(6)  NOT NULL PRIMARY KEY, IDMODALIDAD   VARCHAR(6), NOM_ACT_ACAD  VARCHAR(30), CARGO VARCHAR(20),");
 				db.execSQL("CREATE TABLE [LOCALES] ([IDLOCAL] VARCHAR(6)  PRIMARY KEY NOT NULL, [CAPACIDAD] INTEGER  NULL);");
 				db.execSQL("CREATE TABLE [MODALIDAD_ACT_ACAD] ([IDMODALIDAD] VARCHAR(6)  PRIMARY KEY NOT NULL,[NOM_MODALIDAD] VARCHAR(25)  NULL,[DESCUENTO_HORAS] INTEGER  NULL);");
 				db.execSQL("CREATE TABLE MODALIDAD_CURSO (IDMODALIDAD VARCHAR(6)  NOT NULL PRIMARY KEY, NOM_MODALIDAD VARCHAR(20), DESCUENTO_HORAS  INTEGER);");
-				//Michael
+				// Michael
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
@@ -60,7 +66,7 @@ public class ControlDB {
 	public void cerrar() {
 		DBHelper.close();
 	}
-	
+
 	/** TODO EL CODIGO DE CONTROL DE DCONTROLD DE BD ASIGNACION alexis */
 	public String insertarCiclo(Ciclo ciclo) {
 		String regInsertados = "Registro Insertado Nº= ";
@@ -70,7 +76,7 @@ public class ControlDB {
 		ciclo1.put("NUMERO", ciclo.getNumero());
 		ciclo1.put("FECHAINI", ciclo.getFechaini());
 		ciclo1.put("FECHAFIN", ciclo.getFechafin());
-		
+
 		contador = db.insert("CICLO", null, ciclo1);
 
 		if (contador == -1 || contador == 0) {
@@ -80,9 +86,8 @@ public class ControlDB {
 		}
 		return regInsertados;
 	}
-	
-	
-	/**METODOS MARIO */
+
+	/** METODOS MARIO */
 	public String insertar(Departamento departamento) {
 		String regInsertados = "Registro insertado en la fila No.=";
 		long contador = 0;
@@ -97,13 +102,24 @@ public class ControlDB {
 		}
 		return regInsertados;
 	}
-	
-	
-	/**METODOS EMERSON */
-	
-	
-	
-	/**METODOS AGUSTIN */
+
+	public Departamento consultarDepto(String idepto) {
+		String[] id = { idepto };
+		Cursor cursor = db.query("DEPARTAMENTO", camposDepto,
+				"IDDEPARTAMENTO = ?", id, null, null, null);
+		if (cursor.moveToFirst()) {
+			Departamento departamento = new Departamento();
+			departamento.setIddepartamento(cursor.getString(0));
+			departamento.setNom_depto(cursor.getString(1));
+			return departamento;
+		} else {
+			return null;
+		}
+	}
+
+	/** METODOS EMERSON */
+
+	/** METODOS AGUSTIN */
 	public String insertar(Locales local) {
 		String regInsertados = "Registro insertado en la fila No.=";
 		long contador = 0;
@@ -118,8 +134,7 @@ public class ControlDB {
 		}
 		return regInsertados;
 	}
-	
-	
-	/**METODOS SERGIO */
-	
+
+	/** METODOS SERGIO */
+
 }

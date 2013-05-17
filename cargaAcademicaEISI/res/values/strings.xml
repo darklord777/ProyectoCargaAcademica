@@ -46,5 +46,6 @@
     <string name="btn_limpiarLocal">Limpiar Entradas</string>
     <string name="btnAdmonDepto">Administracion de Dapartamento</string>
     <string name="title_activity_consultar_depto">ConsultarDeptoActivity</string>
+    <string name="btnConsultarDepto">Consultar Departamento</string>
 
 </resources>

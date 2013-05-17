@@ -12,6 +12,7 @@ import android.widget.Button;
 
 public class AdmonDeptoActivity extends Activity implements OnClickListener {
 	private Button btnNuevoDepto;
+	private Button btnConsultarDepto;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,8 @@ public class AdmonDeptoActivity extends Activity implements OnClickListener {
 		setContentView(R.layout.activity_admon_depto);
 		btnNuevoDepto = (Button) findViewById(R.id.btnNuevoDepto);
 		btnNuevoDepto.setOnClickListener(this);
+		btnConsultarDepto = (Button) findViewById(R.id.btnConsultarDepto);
+		btnConsultarDepto.setOnClickListener(this);
 	}
 
 	@Override
@@ -34,7 +37,10 @@ public class AdmonDeptoActivity extends Activity implements OnClickListener {
 			startActivity(new Intent(getApplicationContext(),
 					NuevoDeptoActivity.class));
 			break;
-
+		case R.id.btnConsultarDepto:
+			startActivity(new Intent(getApplicationContext(),
+					ConsultarDeptoActivity.class));
+			break;
 		default:
 			break;
 		}

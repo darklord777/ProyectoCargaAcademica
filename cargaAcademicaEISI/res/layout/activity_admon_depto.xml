@@ -19,15 +19,6 @@
         android:text="@string/btnNuevoDepto" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_below="@+id/button2"
-        android:layout_marginTop="47dp"
-        android:text="Button" />
-
-    <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,12 +28,21 @@
         android:text="Button" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnConsultarDepto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnNuevoDepto"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="56dp"
+        android:text="@string/btnConsultarDepto" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
         android:text="Button" />
 
 </RelativeLayout>
