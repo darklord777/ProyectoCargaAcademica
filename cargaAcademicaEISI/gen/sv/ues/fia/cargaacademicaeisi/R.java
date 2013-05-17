@@ -84,10 +84,11 @@ public final class R {
         public static final int activity_ciclo_consultar=0x7f030003;
         public static final int activity_ciclo_insertar=0x7f030004;
         public static final int activity_ciclo_menu=0x7f030005;
-        public static final int activity_gestion_carga_acad=0x7f030006;
-        public static final int activity_insertar_locales=0x7f030007;
-        public static final int activity_menu_principal=0x7f030008;
-        public static final int activity_nuevo_depto=0x7f030009;
+        public static final int activity_consultar_depto=0x7f030006;
+        public static final int activity_gestion_carga_acad=0x7f030007;
+        public static final int activity_insertar_locales=0x7f030008;
+        public static final int activity_menu_principal=0x7f030009;
+        public static final int activity_nuevo_depto=0x7f03000a;
     }
     public static final class menu {
         public static final int admin_catalogos=0x7f090000;
@@ -96,10 +97,11 @@ public final class R {
         public static final int ciclo_consultar=0x7f090003;
         public static final int ciclo_insertar=0x7f090004;
         public static final int ciclo_menu=0x7f090005;
-        public static final int gestion_carga_acad=0x7f090006;
-        public static final int insertar_locales=0x7f090007;
-        public static final int menu_principal=0x7f090008;
-        public static final int nuevo_depto=0x7f090009;
+        public static final int consultar_depto=0x7f090006;
+        public static final int gestion_carga_acad=0x7f090007;
+        public static final int insertar_locales=0x7f090008;
+        public static final int menu_principal=0x7f090009;
+        public static final int nuevo_depto=0x7f09000a;
     }
     public static final class string {
         public static final int action_settings=0x7f070001;
@@ -144,6 +146,7 @@ public final class R {
         public static final int title_activity_ciclo_consultar=0x7f070020;
         public static final int title_activity_ciclo_insertar=0x7f070015;
         public static final int title_activity_ciclo_menu=0x7f070021;
+        public static final int title_activity_consultar_depto=0x7f070029;
         public static final int title_activity_gestion_carga_acad=0x7f07000f;
         public static final int title_activity_insertar_locales=0x7f070022;
         public static final int title_activity_menu_principal=0x7f070003;

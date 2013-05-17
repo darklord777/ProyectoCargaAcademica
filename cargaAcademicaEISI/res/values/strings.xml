@@ -38,13 +38,13 @@
     <string name="msj_fechafin_hint">Digite Fecha Fin Ciclo</string>
     <string name="title_activity_ciclo_consultar">Consultar de Ciclos Ingresados</string>
     <string name="title_activity_ciclo_menu">Menu de Tabla Ciclo</string>
-    
     <string name="title_activity_insertar_locales">InsertarLocalesActivity</string>
     <string name="msgidLocal">Digite codigo del Local</string>
     <string name="msgCapLocal">Digite capacidad del Local</string>
     <string name="btnGuardarLocal">Guardar Local</string>
-    <string name="nLocal">Nuevo Local</string> 
-    <string name="btn_limpiarLocal">Limpiar Entradas</string> 
+    <string name="nLocal">Nuevo Local</string>
+    <string name="btn_limpiarLocal">Limpiar Entradas</string>
     <string name="btnAdmonDepto">Administracion de Dapartamento</string>
+    <string name="title_activity_consultar_depto">ConsultarDeptoActivity</string>
 
 </resources>

@@ -1,6 +1,5 @@
 package sv.ues.fia.cargaacademicaeisi;
 
-import sv.ues.fia.cargaacademicaeisi.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;

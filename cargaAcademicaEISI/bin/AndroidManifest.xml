@@ -58,6 +58,10 @@
             android:name="sv.ues.fia.cargaacademicaeisi.InsertarLocalesActivity"
             android:label="@string/title_activity_insertar_locales" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.ConsultarDeptoActivity"
+            android:label="@string/title_activity_consultar_depto" >
+        </activity>
     </application>
 
 </manifest>
