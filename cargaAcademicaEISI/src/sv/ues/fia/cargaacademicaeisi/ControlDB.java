@@ -57,8 +57,10 @@ public class ControlDB {
 	public void cerrar() {
 		DBHelper.close();
 	}
-
-	// Mario
+	/**METODOS ALEXIS */
+	
+	
+	/**METODOS MARIO */
 	public String insertar(Departamento departamento) {
 		String regInsertados = "Registro insertado en la fila No.=";
 		long contador = 0;
@@ -73,5 +75,16 @@ public class ControlDB {
 		}
 		return regInsertados;
 	}
-	// Mario
+	
+	
+	/**METODOS EMERSON */
+	
+	
+	
+	/**METODOS AGUSTIN */
+	
+	
+	
+	/**METODOS SERGIO */
+	
 }
