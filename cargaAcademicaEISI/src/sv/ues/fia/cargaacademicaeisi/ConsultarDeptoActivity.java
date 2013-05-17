@@ -21,6 +21,9 @@ public class ConsultarDeptoActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_consultar_depto);
 		helper = new ControlDB(this);
+		edtNomDepto=(EditText)findViewById(R.id.edtNomDepto);
+		spnListaDeptos=(Spinner)findViewById(R.id.spnListaDeptos);
+				
 		helper.abrir();
 		idDeptos = helper.getAllIdDeptos();
 		helper.cerrar();
