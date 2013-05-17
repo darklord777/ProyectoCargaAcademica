@@ -47,7 +47,7 @@
     </EditText>
 
     <Button
-        android:id="@+id/button1_insertar_ciclo"
+        android:id="@+id/button1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/nomDepto"
@@ -62,7 +62,7 @@
         android:id="@+id/button2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button1_insertar_ciclo"
+        android:layout_below="@+id/button1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="19dp"
         android:drawableRight="@drawable/clear"

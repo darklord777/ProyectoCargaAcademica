@@ -42,6 +42,10 @@
             android:name="sv.ues.fia.cargaacademicaeisi.GestionCargaAcadActivity"
             android:label="@string/title_activity_gestion_carga_acad" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.CicloInsertarActivity"
+            android:label="@string/title_activity_ciclo_insertar" >
+        </activity>
     </application>
 
 </manifest>

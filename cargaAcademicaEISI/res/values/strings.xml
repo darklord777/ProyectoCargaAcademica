@@ -19,11 +19,20 @@
     <string name="btnLimpiaDepto">Limpiar entradas</string>
     <string name="title_activity_admin_catalogos">AdminCatalogosActivity</string>
     <string name="title_activity_gestion_carga_acad">GestionCargaAcadActivity</string>
-    
     <string name="btn1TablaCiclo">Tabla Ciclo</string>
     <string name="btn2TablaCargaAcademica">Tabla Carga Academica</string>
     <string name="btn3DetCargaMateria">Tabla Carga Materia</string>
     <string name="btn4DetCargaActAcademica">Tabla Carga Act Academica</string>
     <string name="btn5A_CargaAcademica">Gestion Carga Academica</string>
+    <string name="title_activity_ciclo_insertar">CicloInsertarActivity</string>
+   
+    <string name="textview_fechaini">Fecha Inicio de Ciclo</string>
+    <string name="textview_fechafin">Fecha Fin de Ciclo</string>
+    <string name="textview_selecioneanio_ciclo">Selecione el año</string>
+    <string name="spinner_anio_ciclo">Selecione Año del Ciclo</string>
+    <string name="textview_selecione_ciclo">Selecione el Ciclo</string>
+    <string name="spinner_ciclo">Selecione el Ciclo</string>
+    <string name="button1_insertar_ciclo">Guardar Ciclo</string>
+    <string name="button2_limpiartexto_ciclo">Limpiar Entradas</string>
 
 </resources>

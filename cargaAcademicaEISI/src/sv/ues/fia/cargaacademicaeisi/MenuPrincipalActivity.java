@@ -12,6 +12,7 @@ import android.widget.Button;
 
 public class MenuPrincipalActivity extends Activity implements OnClickListener {
 	private Button btnAdmonCat;
+	private Button btnA_CargaAcademica;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,9 @@ public class MenuPrincipalActivity extends Activity implements OnClickListener {
 		setContentView(R.layout.activity_menu_principal);
 		btnAdmonCat = (Button) findViewById(R.id.btnAdmonCat);
 		btnAdmonCat.setOnClickListener(this);
+		btnA_CargaAcademica = (Button) findViewById(R.id.btn5A_CargaAcademica);
+		btnA_CargaAcademica.setOnClickListener(this);
+		
 	}
 
 	@Override
@@ -34,7 +38,10 @@ public class MenuPrincipalActivity extends Activity implements OnClickListener {
 			startActivity(new Intent(getApplicationContext(),
 					AdmonDeptoActivity.class));
 			break;
-
+		case R.id.btn5A_CargaAcademica:
+			startActivity(new Intent(getApplicationContext(),
+					GestionCargaAcadActivity.class));
+			break;
 		default:
 			break;
 		}
