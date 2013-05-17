@@ -9,4 +9,25 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".ConsultarDeptoActivity" >
 
+    <EditText
+        android:id="@+id/nomDepto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spnListaDeptos"
+        android:layout_below="@+id/spnListaDeptos"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="@string/msgNomDepto" >
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/spnListaDeptos"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
 </RelativeLayout>
