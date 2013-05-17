@@ -37,17 +37,16 @@ public final class R {
         public static final int save=0x7f020006;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0022;
+        public static final int action_settings=0x7f0a001e;
         public static final int btn1TablaCiclo=0x7f0a0016;
         public static final int btn2TablaCargaAcademica=0x7f0a0015;
         public static final int btn3DetCargaMateria=0x7f0a0014;
         public static final int btn4DetCargaActAcademica=0x7f0a0017;
-        public static final int btn5A_CargaAcademica=0x7f0a001d;
-        public static final int btnAdmonCat=0x7f0a001c;
+        public static final int btn5A_CargaAcademica=0x7f0a0019;
+        public static final int btnAdmonCat=0x7f0a0018;
         public static final int btnEntrarSistema=0x7f0a0005;
-        public static final int btnGLocal=0x7f0a001b;
         public static final int btnNuevoDepto=0x7f0a0001;
-        public static final int button1=0x7f0a0021;
+        public static final int button1=0x7f0a001d;
         public static final int button1_MenuCiclo_insertar=0x7f0a0012;
         public static final int button1_insertar_ciclo=0x7f0a0007;
         public static final int button2=0x7f0a0003;
@@ -57,17 +56,14 @@ public final class R {
         public static final int button3_MenuCiclo_concultar=0x7f0a0010;
         public static final int button4=0x7f0a0004;
         public static final int button4_MenuCiclo_actualizar=0x7f0a0013;
-        public static final int capLocal=0x7f0a0019;
         public static final int editText1_fechainicio=0x7f0a000e;
         public static final int editText2_fechafin=0x7f0a0008;
-        public static final int idDepto=0x7f0a001e;
-        public static final int idLocal=0x7f0a0018;
-        public static final int limpiarLocal=0x7f0a001a;
-        public static final int nomDepto=0x7f0a0020;
+        public static final int idDepto=0x7f0a001a;
+        public static final int nomDepto=0x7f0a001c;
         public static final int otro=0x7f0a0000;
         public static final int spinner_anio_ciclo=0x7f0a0009;
         public static final int spinner_ciclo=0x7f0a000c;
-        public static final int textView1=0x7f0a001f;
+        public static final int textView1=0x7f0a001b;
         public static final int textView3=0x7f0a000d;
         public static final int textView4=0x7f0a000f;
         public static final int textview_selecione_ciclo=0x7f0a000b;
@@ -81,9 +77,8 @@ public final class R {
         public static final int activity_ciclo_insertar=0x7f030004;
         public static final int activity_ciclo_menu=0x7f030005;
         public static final int activity_gestion_carga_acad=0x7f030006;
-        public static final int activity_insertar_locales=0x7f030007;
-        public static final int activity_menu_principal=0x7f030008;
-        public static final int activity_nuevo_depto=0x7f030009;
+        public static final int activity_menu_principal=0x7f030007;
+        public static final int activity_nuevo_depto=0x7f030008;
     }
     public static final class menu {
         public static final int admin_catalogos=0x7f090000;
@@ -93,9 +88,8 @@ public final class R {
         public static final int ciclo_insertar=0x7f090004;
         public static final int ciclo_menu=0x7f090005;
         public static final int gestion_carga_acad=0x7f090006;
-        public static final int insertar_locales=0x7f090007;
-        public static final int menu_principal=0x7f090008;
-        public static final int nuevo_depto=0x7f090009;
+        public static final int menu_principal=0x7f090007;
+        public static final int nuevo_depto=0x7f090008;
     }
     public static final class string {
         public static final int action_settings=0x7f070001;
