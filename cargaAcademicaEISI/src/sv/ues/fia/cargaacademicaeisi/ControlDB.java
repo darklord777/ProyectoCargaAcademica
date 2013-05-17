@@ -110,7 +110,7 @@ public class ControlDB {
 		ContentValues loc = new ContentValues();
 		loc.put("IDLOCAL", local.getIdlocal());
 		loc.put("CAPACIDAD", local.getCapacidad());
-		contador = db.insert("DEPARTAMENTO", null, loc);
+		contador = db.insert("LOCALES", null, loc);
 		if (contador == -1 || contador == 0) {
 			regInsertados = "Error. Verificar Insercion";
 		} else {
