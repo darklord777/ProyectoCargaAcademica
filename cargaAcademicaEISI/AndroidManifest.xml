@@ -46,6 +46,14 @@
             android:name="sv.ues.fia.cargaacademicaeisi.CicloInsertarActivity"
             android:label="@string/title_activity_ciclo_insertar" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.CicloConsultarActivity"
+            android:label="@string/title_activity_ciclo_consultar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.CicloMenuActivity"
+            android:label="@string/title_activity_ciclo_menu" >
+        </activity>
     </application>
 
 </manifest>

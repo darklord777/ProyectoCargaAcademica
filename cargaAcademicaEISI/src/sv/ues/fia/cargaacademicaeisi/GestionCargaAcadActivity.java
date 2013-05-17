@@ -34,7 +34,7 @@ public class GestionCargaAcadActivity extends Activity implements
 		switch (v.getId()) {
 		case R.id.btn1TablaCiclo:
 			 startActivity(new Intent(getApplicationContext(),
-			 CicloInsertarActivity.class));
+			 CicloMenuActivity.class));
 			break;
 		case R.id.btn2TablaCargaAcademica:
 			// startActivity(new Intent(getApplicationContext(),

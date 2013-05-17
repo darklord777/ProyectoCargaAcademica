@@ -25,7 +25,7 @@
     <string name="btn4DetCargaActAcademica">Tabla Carga Act Academica</string>
     <string name="btn5A_CargaAcademica">Gestion Carga Academica</string>
     <string name="title_activity_ciclo_insertar">Ingresar Nuevos Ciclos</string>
-   <!-- Alexis -->
+    <!-- Alexis -->
     <string name="textview_fechaini">Fecha Inicio de Ciclo</string>
     <string name="textview_fechafin">Fecha Fin de Ciclo</string>
     <string name="textview_selecioneanio_ciclo">Selecione el año</string>
@@ -36,5 +36,7 @@
     <string name="button2_limpiartexto_ciclo">Limpiar Entradas</string>
     <string name="msj_fechainicio_hint">Digite Fecha Inicio Ciclo</string>
     <string name="msj_fechafin_hint">Digite Fecha Fin Ciclo</string>
+    <string name="title_activity_ciclo_consultar">Consultar de Ciclos Ingresados</string>
+    <string name="title_activity_ciclo_menu">Menu de Tabla Ciclo</string>
 
 </resources>
