@@ -32,6 +32,9 @@ public class ControlDB {
 				db.execSQL("CREATE TABLE DEPARTAMENTO ( IDDEPARTAMENTO  VARCHAR(6)  NOT NULL PRIMARY KEY, NOM_DEPTO VARCHAR(20));");
 				// Mario
 				
+				/**Alexis */
+				db.execSQL("CREATE TABLE CICLO ( ANIO VARCHAR(4) NOT NULL, NUMERO VARCHAR(2) NOT NULL, FECHAINI DATE DEFAULT CURRENT_DATE NULL, FECHAFIN DATE NULL, PRIMARY KEY (ANIO,NUMERO) );");
+				/**Alexis */
 				//Michael
 				db.execSQL("CREATE TABLE ACTIVIDAD_ACADEMICA (IDACTACAD VARCHAR(6)  NOT NULL PRIMARY KEY, IDMODALIDAD   VARCHAR(6), NOM_ACT_ACAD  VARCHAR(30), CARGO VARCHAR(20),");
 				db.execSQL("CREATE TABLE [LOCALES] ([IDLOCAL] VARCHAR(6)  PRIMARY KEY NOT NULL, [CAPACIDAD] INTEGER  NULL);");
@@ -57,7 +60,26 @@ public class ControlDB {
 	public void cerrar() {
 		DBHelper.close();
 	}
-	/**METODOS ALEXIS */
+	
+	/** TODO EL CODIGO DE CONTROL DE DCONTROLD DE BD ASIGNACION alexis */
+	public String insertarCiclo(Ciclo ciclo) {
+		String regInsertados = "Registro Insertado Nº= ";
+		long contador = 0;
+		ContentValues ciclo1 = new ContentValues();
+		ciclo1.put("ANIO", ciclo.getAnio());
+		ciclo1.put("NUMERO", ciclo.getNumero());
+		ciclo1.put("FECHAINI", ciclo.getFechaini());
+		ciclo1.put("FECHAFIN", ciclo.getFechafin());
+		
+		contador = db.insert("CICLO", null, ciclo1);
+
+		if (contador == -1 || contador == 0) {
+			regInsertados = "Error al Insertar el registro, Registro Duplicado. Verificar inserción";
+		} else {
+			regInsertados = regInsertados + contador;
+		}
+		return regInsertados;
+	}
 	
 	
 	/**METODOS MARIO */

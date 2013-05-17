@@ -47,23 +47,23 @@ public final class R {
         public static final int btnEntrarSistema=0x7f0a0005;
         public static final int btnNuevoDepto=0x7f0a0001;
         public static final int button1=0x7f0a0019;
-        public static final int button1_insertar_ciclo=0x7f0a000e;
+        public static final int button1_insertar_ciclo=0x7f0a0007;
         public static final int button2=0x7f0a0003;
-        public static final int button2_limpiartexto_ciclo=0x7f0a000d;
+        public static final int button2_limpiartexto_ciclo=0x7f0a0006;
         public static final int button3=0x7f0a0002;
         public static final int button4=0x7f0a0004;
-        public static final int editText1_fechainicio=0x7f0a0006;
-        public static final int editText2_fechafin=0x7f0a000b;
+        public static final int editText1_fechainicio=0x7f0a000e;
+        public static final int editText2_fechafin=0x7f0a0008;
         public static final int idDepto=0x7f0a0016;
         public static final int nomDepto=0x7f0a0018;
         public static final int otro=0x7f0a0000;
-        public static final int spinner_anio_ciclo=0x7f0a000c;
-        public static final int spinner_ciclo=0x7f0a000a;
+        public static final int spinner_anio_ciclo=0x7f0a0009;
+        public static final int spinner_ciclo=0x7f0a000c;
         public static final int textView1=0x7f0a0017;
-        public static final int textView3=0x7f0a0009;
-        public static final int textView4=0x7f0a0007;
-        public static final int textview_selecione_ciclo=0x7f0a0008;
-        public static final int textview_selecioneanio_ciclo=0x7f0a000f;
+        public static final int textView3=0x7f0a000d;
+        public static final int textView4=0x7f0a000f;
+        public static final int textview_selecione_ciclo=0x7f0a000b;
+        public static final int textview_selecioneanio_ciclo=0x7f0a000a;
     }
     public static final class layout {
         public static final int activity_admin_catalogos=0x7f030000;
@@ -105,9 +105,13 @@ public final class R {
         /**  Mario 
          */
         public static final int msgidDepto=0x7f070009;
+        public static final int msj_fechafin_hint=0x7f07001f;
+        public static final int msj_fechainicio_hint=0x7f07001e;
         public static final int spinner_anio_ciclo=0x7f070019;
         public static final int spinner_ciclo=0x7f07001b;
         public static final int textview_fechafin=0x7f070017;
+        /**  Alexis 
+         */
         public static final int textview_fechaini=0x7f070016;
         public static final int textview_selecione_ciclo=0x7f07001a;
         public static final int textview_selecioneanio_ciclo=0x7f070018;
