@@ -33,6 +33,11 @@ public class NuevoDeptoActivity extends Activity {
 		helper.cerrar();
 		Toast.makeText(this, regInsertados, Toast.LENGTH_LONG).show();
 	}
+	
+	public void limpiarDepto(View v) {
+		idDepto.setText("");
+		nomDepto.setText("");
+	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

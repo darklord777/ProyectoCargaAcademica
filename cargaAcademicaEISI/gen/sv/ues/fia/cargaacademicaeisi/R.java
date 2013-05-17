@@ -37,7 +37,7 @@ public final class R {
         public static final int save=0x7f020006;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0022;
+        public static final int action_settings=0x7f0a0023;
         public static final int btn1TablaCiclo=0x7f0a0016;
         public static final int btn2TablaCargaAcademica=0x7f0a0015;
         public static final int btn3DetCargaMateria=0x7f0a0014;
@@ -47,8 +47,9 @@ public final class R {
         public static final int btnAdmonDepto=0x7f0a0000;
         public static final int btnEntrarSistema=0x7f0a0005;
         public static final int btnGLocal=0x7f0a001b;
+        public static final int btnGuardarDepto=0x7f0a0021;
+        public static final int btnLimpiaDepto=0x7f0a0022;
         public static final int btnNuevoDepto=0x7f0a0001;
-        public static final int button1=0x7f0a0021;
         public static final int button1_MenuCiclo_insertar=0x7f0a0012;
         public static final int button1_insertar_ciclo=0x7f0a0007;
         public static final int button2=0x7f0a0003;

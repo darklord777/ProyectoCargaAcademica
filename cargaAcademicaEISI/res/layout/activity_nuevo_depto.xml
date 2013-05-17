@@ -28,8 +28,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
         android:text="@string/tituloDepto"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/gris1" />
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
         android:id="@+id/nomDepto"
@@ -47,25 +46,26 @@
     </EditText>
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btnGuardarDepto"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/nomDepto"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
         android:drawableRight="@drawable/save"
+        android:onClick="insertarDepto"
         android:text="@string/btnGuardarDepto"
-        android:textAppearance="?android:attr/textAppearanceMedium" 
-        android:onClick="insertarDepto"/>
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnLimpiaDepto"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="19dp"
+        android:layout_alignLeft="@+id/btnGuardarDepto"
+        android:layout_below="@+id/btnGuardarDepto"
+        android:layout_marginTop="20dp"
         android:drawableRight="@drawable/clear"
+        android:onClick="limpiarDepto"
         android:text="@string/btnLimpiaDepto" />
 
-</RelativeLayout>
+</RelativeLayout>
