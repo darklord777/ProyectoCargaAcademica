@@ -82,6 +82,10 @@
             android:name="sv.ues.fia.cargaacademicaeisi.LocalesMenuActivity"
             android:label="@string/title_activity_locales_menu" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.EliminarDeptoActivity"
+            android:label="@string/title_activity_eliminar_depto" >
+        </activity>
     </application>
 
 </manifest>

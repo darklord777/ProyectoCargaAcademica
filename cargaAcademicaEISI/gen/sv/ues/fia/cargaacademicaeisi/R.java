@@ -120,12 +120,13 @@ public final class R {
         public static final int activity_ciclo_insertar=0x7f030007;
         public static final int activity_ciclo_menu=0x7f030008;
         public static final int activity_consultar_depto=0x7f030009;
-        public static final int activity_gestion_carga_acad=0x7f03000a;
-        public static final int activity_gestion_mod_acad=0x7f03000b;
-        public static final int activity_insertar_locales=0x7f03000c;
-        public static final int activity_locales_menu=0x7f03000d;
-        public static final int activity_menu_principal=0x7f03000e;
-        public static final int activity_nuevo_depto=0x7f03000f;
+        public static final int activity_eliminar_depto=0x7f03000a;
+        public static final int activity_gestion_carga_acad=0x7f03000b;
+        public static final int activity_gestion_mod_acad=0x7f03000c;
+        public static final int activity_insertar_locales=0x7f03000d;
+        public static final int activity_locales_menu=0x7f03000e;
+        public static final int activity_menu_principal=0x7f03000f;
+        public static final int activity_nuevo_depto=0x7f030010;
     }
     public static final class menu {
         public static final int actualizar_depto=0x7f090000;
@@ -138,12 +139,13 @@ public final class R {
         public static final int ciclo_insertar=0x7f090007;
         public static final int ciclo_menu=0x7f090008;
         public static final int consultar_depto=0x7f090009;
-        public static final int gestion_carga_acad=0x7f09000a;
-        public static final int gestion_mod_acad=0x7f09000b;
-        public static final int insertar_locales=0x7f09000c;
-        public static final int locales_menu=0x7f09000d;
-        public static final int menu_principal=0x7f09000e;
-        public static final int nuevo_depto=0x7f09000f;
+        public static final int eliminar_depto=0x7f09000a;
+        public static final int gestion_carga_acad=0x7f09000b;
+        public static final int gestion_mod_acad=0x7f09000c;
+        public static final int insertar_locales=0x7f09000d;
+        public static final int locales_menu=0x7f09000e;
+        public static final int menu_principal=0x7f09000f;
+        public static final int nuevo_depto=0x7f090010;
     }
     public static final class string {
         public static final int TextViewLocales=0x7f070047;
@@ -218,6 +220,9 @@ public final class R {
         public static final int title_activity_ciclo_insertar=0x7f070015;
         public static final int title_activity_ciclo_menu=0x7f070027;
         public static final int title_activity_consultar_depto=0x7f07002d;
+        /**  Michael 
+         */
+        public static final int title_activity_eliminar_depto=0x7f070048;
         public static final int title_activity_gestion_carga_acad=0x7f07000f;
         public static final int title_activity_gestion_mod_acad=0x7f07003c;
         /**  Michael 

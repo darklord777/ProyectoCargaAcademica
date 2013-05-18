@@ -72,7 +72,7 @@
     <string name="btnActAcad">Actividad Academica</string>
     <string name="btnLocales">Locales</string>
     <string name="btnModCurso">Modalidad Curso</string>
-    <string name="btnModalAcad">Modalidades Academicas</string>    
+    <string name="btnModalAcad">Modalidades Academicas</string>
     <string name="title_activity_locales_menu">LocalesMenuActivity</string>
     <string name="btn1_insertar_local">Insertar Local</string>
     <string name="btn2_consultar_local">Consultar Local</string>
@@ -80,5 +80,7 @@
     <string name="btn4_actualizar_local">Actualizar Local</string>
     <string name="TextViewLocales">Menu Locales</string>
     <!-- Michael -->
+
+    <string name="title_activity_eliminar_depto">EliminarDeptoActivity</string>
 
 </resources>
