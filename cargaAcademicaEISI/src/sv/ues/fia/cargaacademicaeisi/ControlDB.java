@@ -273,6 +273,8 @@ public class ControlDB {
 	}
 
 	/** METODOS SERGIO */
+	
+	
 
 	/* Verificacion de integridad */
 	private boolean verificarIntegridad(Object tabla, int relacion) {
