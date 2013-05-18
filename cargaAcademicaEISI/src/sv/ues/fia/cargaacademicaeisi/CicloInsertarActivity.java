@@ -78,21 +78,6 @@ public class CicloInsertarActivity extends Activity {
 
 		String fecha_inicio = fecha_ini.getText().toString();
 		String fecha_final = fecha_fin.getText().toString();
-		// String fecha_inicio = "2013/02/25";
-		// String fecha_final = "2013/05/25";
-		// String a1 = "2015";
-		// String a2 = "1";
-
-		/*
-		 * int i; for(i=0;i<fecha_inicio.length();i++){ if(año.charAt(i) =="/")
-		 * 
-		 * }
-		 */
-		// Toast.makeText(this, año, Toast.LENGTH_SHORT).show();
-		// Toast.makeText(this, ciclo1, Toast.LENGTH_SHORT).show();
-		// Toast.makeText(this, fecha_inicio, Toast.LENGTH_SHORT).show();
-		// Toast.makeText(this, fecha_final, Toast.LENGTH_SHORT).show();
-
 		String regInsertados;
 		Ciclo ciclo = new Ciclo();
 		ciclo.setAnio(año);

@@ -44,6 +44,9 @@
     <string name="msj_fechafin_hint">Digite Fecha Fin Ciclo</string>
     <string name="title_activity_ciclo_consultar">Consultar de Ciclos Ingresados</string>
     <string name="title_activity_ciclo_menu">Menu de Tabla Ciclo</string>
+     <string name="consult_fechainicio_hint">Fecha Inicio Ciclo</string>
+    <string name="consult_fechafin_hint">Fecha Fin Ciclo</string>
+     <string name="button2a_concultar_Ci">Consultar</string>
     <!-- Alexis              -->
     <string name="title_activity_insertar_locales">InsertarLocalesActivity</string>
     <string name="msgidLocal">Digite codigo del Local</string>

@@ -10,7 +10,7 @@
     tools:context=".ActualizarDeptoActivity" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/textView1_consult_inicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -23,7 +23,7 @@
         android:id="@+id/spnActIdDepto"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
+        android:layout_below="@+id/textView1_consult_inicio"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp" />
 

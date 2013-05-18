@@ -16,7 +16,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:drawableRight="@drawable/save"
+        android:drawableRight="@drawable/save2"
         android:onClick="insertarCiclo"
         android:text="@string/button2_insertar_ciclo"
         android:textAppearance="?android:attr/textAppearanceMedium" />

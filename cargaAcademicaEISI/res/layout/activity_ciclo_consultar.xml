@@ -11,8 +11,8 @@
 
      <Spinner
          android:id="@+id/spinner_anio_consultar"
-         android:layout_width="fill_parent"
-         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_height="40dp"
          android:layout_alignParentLeft="true"
          android:layout_below="@+id/textview_selecion_ciclo"
          android:prompt="@string/spinner_anio_ciclo" />
@@ -25,7 +25,8 @@
          android:layout_alignParentBottom="true"
          android:layout_marginBottom="34dp"
          android:drawableRight="@drawable/clear"
-         android:text="@string/button2_limpiartexto_ciclo" />
+         android:text="@string/button2_limpiartexto_ciclo"
+         android:onClick="limpiarTexto" />
 
      <Button
          android:id="@+id/button1_consultarciclo"
@@ -34,9 +35,10 @@
          android:layout_above="@+id/button2_limpiartexto_ciclo"
          android:layout_alignLeft="@+id/spinner_ciclo_consultr"
          android:layout_marginBottom="20dp"
-         android:drawableRight="@drawable/save"
-         android:text="@string/button1a_insertarciclo"
-         android:textAppearance="?android:attr/textAppearanceMedium" />
+         android:drawableRight="@drawable/save2"
+         android:text="@string/button2a_concultar_Ci"
+         android:textAppearance="?android:attr/textAppearanceMedium" 
+         android:onClick="consultarCiclo"/>
      
      
     <TextView
@@ -57,10 +59,49 @@
 
     <Spinner
         android:id="@+id/spinner_ciclo_consultr"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
         android:layout_alignLeft="@+id/spinner_anio_consultar"
         android:layout_below="@+id/textview_consultselecione_anio"
         android:prompt="@string/spinner_ciclo" />
+
+    <TextView
+        android:id="@+id/textView1_consult_inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textview_consultselecione_anio"
+        android:layout_below="@+id/spinner_ciclo_consultr"
+        android:text="@string/textview_fechaini"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText1_consult_inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1_consult_inicio"
+        android:layout_below="@+id/textView1_consult_inicio"
+        android:ems="10"
+        android:hint="@string/consult_fechainicio_hint" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2_consult_fin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1_consult_inicio"
+        android:layout_below="@+id/editText1_consult_inicio"
+        android:text="@string/textview_fechafin"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText2_consult_fin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView2_consult_fin"
+        android:layout_below="@+id/textView2_consult_fin"
+        android:ems="10"
+        android:hint="@string/consult_fechafin_hint" />
     
 </RelativeLayout>

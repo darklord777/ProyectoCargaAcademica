@@ -14,6 +14,8 @@ public class ControlDB {
 	/* Mario */
 	private static final String[] camposDepto = new String[] {
 			"IDDEPARTAMENTO", "NOM_DEPTO" };
+	private static final String[] camposCiclo = new String[] {"ANIO", "NUMERO","FECHAINI","FECHAFIN"};
+	
 
 	private final Context context;
 	private DatabaseHelper DBHelper;
@@ -98,7 +100,7 @@ public class ControlDB {
 	}
 
 	public String insertarCiclo(Ciclo ciclo) {
-		String regInsertados = "Registro Insertado Nº= ";
+		String regInsertados = "Registro de Ciclo Insertado Nº= ";
 		long contador = 0;
 		ContentValues ciclo1 = new ContentValues();
 		ciclo1.put("ANIO", ciclo.getAnio());
@@ -109,13 +111,28 @@ public class ControlDB {
 		contador = db.insert("CICLO", null, ciclo1);
 
 		if (contador == -1 || contador == 0) {
-			regInsertados = "Error al Insertar el registro, Registro Duplicado. Verificar inserción";
+			regInsertados = "Error al Insertar el registro Ciclo, Ciclo Duplicado. Verificar Inserción";
 		} else {
 			regInsertados = regInsertados + contador;
 		}
 		return regInsertados;
 	}
-
+	
+	public Ciclo consultarCiclo(String anio, String numciclo) {
+		String[] id = {anio, numciclo};
+		Cursor cursor = db.query("CICLO", camposCiclo,"ANIO = ? AND NUMERO = ?", id, null, null, null);
+		if (cursor.moveToFirst()) {
+			Ciclo ciclo = new Ciclo();
+			ciclo.setAnio(cursor.getString(0));
+			ciclo.setNumero(cursor.getString(1));
+			ciclo.setFechaini(cursor.getString(2));
+			ciclo.setFechafin(cursor.getString(3));
+			return ciclo;
+		} else {
+			return null;
+		}
+	}
+		
 	/** METODOS MARIO */
 	public String insertar(Departamento departamento) {
 		String regInsertados = "Registro insertado en la fila No.=";
