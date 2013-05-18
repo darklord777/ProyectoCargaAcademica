@@ -74,6 +74,10 @@
             android:name="sv.ues.fia.cargaacademicaeisi.CicloActualizarActivity"
             android:label="@string/title_activity_ciclo_actualizar" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.GestionModAcadActivity"
+            android:label="@string/title_activity_gestion_mod_acad" >
+        </activity>
     </application>
 
 </manifest>

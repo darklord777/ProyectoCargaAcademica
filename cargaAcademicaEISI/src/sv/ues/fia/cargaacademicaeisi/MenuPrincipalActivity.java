@@ -13,6 +13,7 @@ import android.widget.Button;
 public class MenuPrincipalActivity extends Activity implements OnClickListener {
 	private Button btnAdmonCat;
 	private Button btnA_CargaAcademica;
+	private Button btnModAcad;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,8 @@ public class MenuPrincipalActivity extends Activity implements OnClickListener {
 		btnAdmonCat.setOnClickListener(this);
 		btnA_CargaAcademica = (Button) findViewById(R.id.btn5A_CargaAcademica);
 		btnA_CargaAcademica.setOnClickListener(this);
+		btnModAcad = (Button) findViewById(R.id.btnModAcad);
+		btnModAcad.setOnClickListener(this);
 		
 	}
 
@@ -38,6 +41,12 @@ public class MenuPrincipalActivity extends Activity implements OnClickListener {
 			startActivity(new Intent(getApplicationContext(),
 					AdminCatalogosActivity.class));
 			break;
+			
+		case R.id.btnModAcad:
+			startActivity(new Intent(getApplicationContext(),
+					GestionModAcadActivity.class));
+			break;
+			
 		case R.id.btn5A_CargaAcademica:
 			startActivity(new Intent(getApplicationContext(),
 					GestionCargaAcadActivity.class));

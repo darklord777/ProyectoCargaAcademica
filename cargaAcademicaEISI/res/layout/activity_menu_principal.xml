@@ -20,21 +20,13 @@
         android:text="@string/btnAdmonCat" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnModAcad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnAdmonCat"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="43dp"
-        android:text="Button" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_centerVertical="true"
-        android:text="Button" />
+        android:text="@string/btnModalAcad" />
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
@@ -54,5 +46,13 @@
       android:background="@drawable/button_custom"
       android:text="@string/btn5A_CargaAcademica"
       android:textAppearance="?android:attr/textAppearanceLarge" />
+
+  <Button
+      android:id="@+id/button3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      android:text="Button" />
 
 </RelativeLayout>
