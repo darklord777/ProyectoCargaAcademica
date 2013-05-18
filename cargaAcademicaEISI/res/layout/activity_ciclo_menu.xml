@@ -10,49 +10,48 @@
     tools:context=".CicloMenuActivity" >
 
     <Button
-        android:id="@+id/button3_MenuCiclo_concultar"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button2_MenuCiclo_eliminar"
-        android:layout_below="@+id/button2_MenuCiclo_eliminar"
-        android:layout_marginTop="68dp"
-        android:drawableRight="@drawable/save"
-        android:onClick="insertarCiclo"
-        android:text="@string/button1_insertar_ciclo"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <Button
-        android:id="@+id/button1_MenuCiclo_insertar"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button4_MenuCiclo_actualizar"
-        android:layout_below="@+id/button4_MenuCiclo_actualizar"
-        android:drawableRight="@drawable/save"
-        android:onClick="insertarCiclo"
-        android:text="@string/button1_insertar_ciclo"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <Button
-        android:id="@+id/button4_MenuCiclo_actualizar"
+        android:id="@+id/button4_MenuCiclo_D"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="100dp"
         android:drawableRight="@drawable/save"
         android:onClick="insertarCiclo"
-        android:text="@string/button1_insertar_ciclo"
+        android:text="@string/button2_insertar_ciclo"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
-        android:id="@+id/button2_MenuCiclo_eliminar"
+        android:id="@+id/button1_MenuCiclo_A"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1_MenuCiclo_insertar"
-        android:layout_centerVertical="true"
-        android:drawableRight="@drawable/save"
+        android:layout_below="@+id/button4_MenuCiclo_D"
+        android:layout_centerHorizontal="true"
+        android:drawableRight="@drawable/clear"
         android:onClick="insertarCiclo"
-        android:text="@string/button1_insertar_ciclo"
+        android:text="@string/button1_eliminar_ciclo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button2_MenuCiclo_B"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1_MenuCiclo_A"
+        android:layout_centerHorizontal="true"
+        android:drawableRight="@drawable/search"
+        android:onClick="insertarCiclo"
+        android:text="@string/button3_consultar_ciclo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button3_MenuCiclo_C"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2_MenuCiclo_B"
+        android:layout_centerHorizontal="true"
+        android:drawableRight="@drawable/update"
+        android:onClick="insertarCiclo"
+        android:text="@string/button4_actualizar_ciclo"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

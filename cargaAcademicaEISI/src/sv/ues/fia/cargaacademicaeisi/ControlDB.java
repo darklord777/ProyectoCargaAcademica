@@ -69,7 +69,34 @@ public class ControlDB {
 		DBHelper.close();
 	}
 
-	/** TODO EL CODIGO DE CONTROL DE DCONTROLD DE BD ASIGNACION alexis */
+	/** TODO EL CODIGO DE CONTROL DE DCONTROLD DE BD ASIGNACION Alexis */
+	/**
+	 * Conseguir todas las etiquetas lista retornos de etiquetas!! IMPORTANTE
+	 * */
+	public List<String> getAllLabels(String selectQuery, int posicion) {
+		List<String> labels = new ArrayList<String>();
+
+		// Select All Query
+		// String selectQuery = "SELECT  * FROM PAIS order by nom_pais" ;
+
+		db = DBHelper.getReadableDatabase();
+		Cursor cursor = db.rawQuery(selectQuery, null);
+
+		// looping through all rows and adding to list
+		if (cursor.moveToFirst()) {
+			do {
+				labels.add(cursor.getString(posicion));
+			} while (cursor.moveToNext());
+		}
+
+		// closing connection
+		cursor.close();
+		db.close();
+
+		// returning lables
+		return labels;
+	}
+
 	public String insertarCiclo(Ciclo ciclo) {
 		String regInsertados = "Registro Insertado Nº= ";
 		long contador = 0;

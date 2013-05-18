@@ -26,6 +26,12 @@
     <string name="btn5A_CargaAcademica">Gestion Carga Academica</string>
     <string name="title_activity_ciclo_insertar">Ingresar Nuevos Ciclos</string>
     <!-- Alexis -->
+    <string name="button2_insertar_ciclo">Ingresar Registro</string>
+    <string name="button1_eliminar_ciclo">Eliminar Registro</string>
+    <string name="button3_consultar_ciclo">Consultar Ciclo</string>
+    <string name="button4_actualizar_ciclo">Actualizar Ciclo</string>
+    <string name="button1_insertar_ciclo1">Guardar Registro</string>
+    <string name="button1a_insertarciclo">Ingresar Registro</string>
     <string name="textview_fechaini">Fecha Inicio de Ciclo</string>
     <string name="textview_fechafin">Fecha Fin de Ciclo</string>
     <string name="textview_selecioneanio_ciclo">Selecione el año</string>
@@ -38,6 +44,7 @@
     <string name="msj_fechafin_hint">Digite Fecha Fin Ciclo</string>
     <string name="title_activity_ciclo_consultar">Consultar de Ciclos Ingresados</string>
     <string name="title_activity_ciclo_menu">Menu de Tabla Ciclo</string>
+    <!-- Alexis              -->
     <string name="title_activity_insertar_locales">InsertarLocalesActivity</string>
     <string name="msgidLocal">Digite codigo del Local</string>
     <string name="msgCapLocal">Digite capacidad del Local</string>

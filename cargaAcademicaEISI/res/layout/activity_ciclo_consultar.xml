@@ -2,10 +2,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".CicloConsultarActivity" >
 
+     <Spinner
+         android:id="@+id/spinner_anio_consultar"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/textview_selecion_ciclo"
+         android:prompt="@string/spinner_anio_ciclo" />
+
+     <Button
+         android:id="@+id/button2_limpiartexto_ciclo"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/button1_consultarciclo"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="34dp"
+         android:drawableRight="@drawable/clear"
+         android:text="@string/button2_limpiartexto_ciclo" />
+
+     <Button
+         android:id="@+id/button1_consultarciclo"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/button2_limpiartexto_ciclo"
+         android:layout_alignLeft="@+id/spinner_ciclo_consultr"
+         android:layout_marginBottom="20dp"
+         android:drawableRight="@drawable/save"
+         android:text="@string/button1a_insertarciclo"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+     
+    <TextView
+        android:id="@+id/textview_selecion_ciclo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_selecione_ciclo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textview_consultselecione_anio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textview_selecion_ciclo"
+        android:layout_below="@+id/spinner_anio_consultar"
+        android:text="@string/textview_selecioneanio_ciclo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/spinner_ciclo_consultr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner_anio_consultar"
+        android:layout_below="@+id/textview_consultselecione_anio"
+        android:prompt="@string/spinner_ciclo" />
+    
 </RelativeLayout>
