@@ -9,4 +9,46 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".EliminarDeptoActivity" >
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:text="@string/msgElimDepto"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spnElimDepto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/btnEliminarDepto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spnElimDepto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:drawableRight="@drawable/clear"
+        android:text="@string/btnEliminarDepto"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:onClick="eliminarDepto" />
+
+    <EditText
+        android:id="@+id/edtNomDepto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="@string/msgNomDepto" >
+
+        <requestFocus />
+    </EditText>
+
 </RelativeLayout>

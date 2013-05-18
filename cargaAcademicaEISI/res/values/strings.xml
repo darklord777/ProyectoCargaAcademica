@@ -25,6 +25,7 @@
     <string name="btn4DetCargaActAcademica">Tabla Carga Act Academica</string>
     <string name="btn5A_CargaAcademica">Gestion Carga Academica</string>
     <string name="title_activity_ciclo_insertar">Ingresar Ciclo Academico</string>
+    <string name="msgElimDepto">Eliminar Departamento</string>
     <!-- Alexis -->
     <string name="button2_insertar_ciclo">Ingresar Registro</string>
     <string name="button1_eliminar_ciclo">Eliminar Registro</string>
