@@ -15,8 +15,8 @@ public class CicloInsertarActivity extends Activity {
 	ControlDB helper;
 	Spinner anio;
 	Spinner ciclo;
-	EditText fecha_ini;
-	EditText fecha_fin;
+	EditText fecha_ini=null;
+	EditText fecha_fin=null;
 	private String año;
 	private String ciclo1;
 
@@ -75,9 +75,14 @@ public class CicloInsertarActivity extends Activity {
 	}// fin metod oncreate
 
 	public void insertarCiclo(View v) {
-
 		String fecha_inicio = fecha_ini.getText().toString();
 		String fecha_final = fecha_fin.getText().toString();
+		
+		if (fecha_inicio.equalsIgnoreCase("") || fecha_final.equalsIgnoreCase("")){
+			String msj = "Importante: Todos los campos son obligatorios!";
+			Toast.makeText(this, msj, Toast.LENGTH_SHORT).show();
+		}
+		else{
 		String regInsertados;
 		Ciclo ciclo = new Ciclo();
 		ciclo.setAnio(año);
@@ -88,6 +93,7 @@ public class CicloInsertarActivity extends Activity {
 		regInsertados = helper.insertarCiclo(ciclo);
 		helper.cerrar();
 		Toast.makeText(this, regInsertados, Toast.LENGTH_SHORT).show();
+		}
 	}
 
 	public void limpiarTexto(View v) {

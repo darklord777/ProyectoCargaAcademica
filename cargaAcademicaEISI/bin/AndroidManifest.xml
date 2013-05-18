@@ -66,6 +66,14 @@
             android:name="sv.ues.fia.cargaacademicaeisi.ActualizarDeptoActivity"
             android:label="@string/title_activity_actualizar_depto" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.CicloEliminarActivity"
+            android:label="@string/title_activity_ciclo_eliminar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.CicloActualizarActivity"
+            android:label="@string/title_activity_ciclo_actualizar" >
+        </activity>
     </application>
 
 </manifest>

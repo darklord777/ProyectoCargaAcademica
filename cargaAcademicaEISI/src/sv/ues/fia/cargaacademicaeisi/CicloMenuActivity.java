@@ -35,16 +35,16 @@ public class CicloMenuActivity extends Activity implements OnClickListener {
 			 CicloInsertarActivity.class));
 			break;
 		case R.id.button1_MenuCiclo_A:
-			// startActivity(new Intent(getApplicationContext(),
-			// GestionCargaAcadActivity.class));
+			 startActivity(new Intent(getApplicationContext(),
+			 CicloEliminarActivity.class));
 			break;
 		case R.id.button2_MenuCiclo_B:
 			startActivity(new Intent(getApplicationContext(),
 			CicloConsultarActivity.class));
 			break;
 		case R.id.button3_MenuCiclo_C:
-			// startActivity(new Intent(getApplicationContext(),
-			// GestionCargaAcadActivity.class));
+			 startActivity(new Intent(getApplicationContext(),
+			 CicloActualizarActivity.class));
 			break;
 		default:
 			break;

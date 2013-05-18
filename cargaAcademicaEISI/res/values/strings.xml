@@ -24,7 +24,7 @@
     <string name="btn3DetCargaMateria">Tabla Carga Materia</string>
     <string name="btn4DetCargaActAcademica">Tabla Carga Act Academica</string>
     <string name="btn5A_CargaAcademica">Gestion Carga Academica</string>
-    <string name="title_activity_ciclo_insertar">Ingresar Nuevos Ciclos</string>
+    <string name="title_activity_ciclo_insertar">Ingresar Ciclo Academico</string>
     <!-- Alexis -->
     <string name="button2_insertar_ciclo">Ingresar Registro</string>
     <string name="button1_eliminar_ciclo">Eliminar Registro</string>
@@ -42,12 +42,13 @@
     <string name="button2_limpiartexto_ciclo">Limpiar Entradas</string>
     <string name="msj_fechainicio_hint">Digite Fecha Inicio Ciclo</string>
     <string name="msj_fechafin_hint">Digite Fecha Fin Ciclo</string>
-    <string name="title_activity_ciclo_consultar">Consultar de Ciclos Ingresados</string>
-    <string name="title_activity_ciclo_menu">Menu de Tabla Ciclo</string>
-     <string name="consult_fechainicio_hint">Fecha Inicio Ciclo</string>
+    <string name="title_activity_ciclo_consultar">Consultar Ciclo Academico</string>
+    <string name="title_activity_ciclo_menu">Menu de Ciclo Academico</string>
+    <string name="consult_fechainicio_hint">Fecha Inicio Ciclo</string>
     <string name="consult_fechafin_hint">Fecha Fin Ciclo</string>
-     <string name="button2a_concultar_Ci">Consultar</string>
-    <!-- Alexis              -->
+    <string name="button2a_concultar_Ci">Consultar</string>
+    <string name="button3a_eliminar_Ciclo">Eliminar Ciclo</string>
+    <!-- Alexis -->
     <string name="title_activity_insertar_locales">InsertarLocalesActivity</string>
     <string name="msgidLocal">Digite codigo del Local</string>
     <string name="msgCapLocal">Digite capacidad del Local</string>
@@ -62,5 +63,7 @@
     <string name="btnEliminarDepto">Eliminar Departamento</string>
     <string name="title_activity_actualizar_depto">ActualizarDeptoActivity</string>
     <string name="msgActualizarDepto">Actualizar Departamento</string>
+    <string name="title_activity_ciclo_eliminar">Eliminar Ciclo Academico</string>
+    <string name="title_activity_ciclo_actualizar">Actualizar Ciclo Academico</string>
 
 </resources>
