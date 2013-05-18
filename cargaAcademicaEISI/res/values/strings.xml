@@ -96,5 +96,6 @@
     <string name="edtNomMateria">Nombre de Materia</string>
     <string name="edtCodMateria">Codigo de Materia</string>
     <string name="btnGuardarMateria">Guardar Materia</string>
+    <string name="msgActualizarMateria">Actualizar Materia</string>
 
 </resources>

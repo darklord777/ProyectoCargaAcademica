@@ -228,12 +228,12 @@ public class ControlDB {
 	public String eliminar(Departamento departamento) {
 		String regAfectados = "";
 		int contador = 0;
-		if (verificarIntegridad(departamento, 1)
-				|| verificarIntegridad(departamento, 2)) {
+		if (verificarIntegridad(departamento, 7)
+				|| verificarIntegridad(departamento, 8)) {
 			regAfectados += "No se puede borrar,";
-			if (verificarIntegridad(departamento, 1))
+			if (verificarIntegridad(departamento, 7))
 				regAfectados += " DOCENTE_DPTO tiene registros.";
-			if (verificarIntegridad(departamento, 2))
+			if (verificarIntegridad(departamento, 8))
 				regAfectados += " AREA_MATERIA tiene registros.";
 			return regAfectados;
 		}
@@ -273,15 +273,58 @@ public class ControlDB {
 	}
 
 	/** METODOS SERGIO */
-	
-	
 
 	/* Verificacion de integridad */
-	private boolean verificarIntegridad(Object tabla, int relacion) {
+	// FUNCION DE VERIFICACION DE INTEGRIDAD
+	// 1 AL 6 aLEXIS
+	// 7 AL 12 MARIO
+	// 13 AÑ 18 EMERSON
+	// 19 AL 24 AGUSTIN
+	// 25 AL 31 SERGIO
+	private boolean verificarIntegridad(Object dato, int relacion)
+			throws SQLException {
+
 		switch (relacion) {
-		/* Mario */
+
 		case 1: {
-			Departamento departamento = (Departamento) tabla;
+			Ciclo ciclo = (Ciclo) dato;
+			Cursor c = db.query(
+					true,
+					"CICLO",
+					new String[] { "carnet," },
+					"carnet ='" + ciclo.getAnio() + "' AND numero ='"
+							+ ciclo.getNumero() + "'", null, null, null, null,
+					null);
+			if (c.moveToFirst())
+				return true;
+			else
+				return false;
+		}
+
+		case 2: {
+
+			return true;
+		}
+
+		case 3: {
+
+			return true;
+
+		}
+
+		case 4: {
+			return true;
+		}
+
+		case 5: {
+			return true;
+		}
+
+		case 6: {
+			return true;
+		}
+		case 7: {
+			Departamento departamento = (Departamento) dato;
 			Cursor cursor = db.query(true, "DOCENTE_DPTO",
 					new String[] { "IDDEPARTAMENTO" }, "IDDEPARTAMENTO='"
 							+ departamento.getIddepartamento() + "'", null,
@@ -291,8 +334,8 @@ public class ControlDB {
 			else
 				return false;
 		}
-		case 2: {
-			Departamento departamento = (Departamento) tabla;
+		case 8: {
+			Departamento departamento = (Departamento) dato;
 			Cursor cursor = db.query(true, "AREA_MATERIA",
 					new String[] { "IDDEPARTAMENTO" }, "IDDEPARTAMENTO='"
 							+ departamento.getIddepartamento() + "'", null,
@@ -302,10 +345,32 @@ public class ControlDB {
 			else
 				return false;
 		}
-		default:
-			break;
+		case 9: {
+			return true;
 		}
-		return false;
+		case 10: {
+			return true;
+		}
+		case 11: {
+			return true;
+		}
+		case 12: {
+			return true;
+		}
+		case 13: {
+			return true;
+		}
+
+		default:
+			return false;
+
+		}
+
+	}
+
+	public String llenarBDCarnet() {
+
+		return "Guardo Correctamente";
 	}
 
 }

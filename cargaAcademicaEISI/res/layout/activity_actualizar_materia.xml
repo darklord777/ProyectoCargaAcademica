@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -9,8 +10,45 @@
     tools:context=".ActualizarMateriaActivity" >
 
     <TextView
+        android:id="@+id/msgActualizarMateria"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:hint="@string/msgActualizarMateria"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/edtNomMateria"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spnActMateria"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="@string/edtNomMateria" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnGuardarMateria"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtNomMateria"
+        android:layout_below="@+id/edtNomMateria"
+        android:layout_marginTop="23dp"
+        android:drawableRight="@drawable/save2"
+        android:onClick="guardarMateria"
+        android:text="@string/btnGuardarMateria" />
+
+    <Spinner
+        android:id="@+id/spnActMateria"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtNomMateria"
+        android:layout_below="@+id/msgActualizarMateria"
+        android:layout_marginTop="26dp" />
 
 </RelativeLayout>
