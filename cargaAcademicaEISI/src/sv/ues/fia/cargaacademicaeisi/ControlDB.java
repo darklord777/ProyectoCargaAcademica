@@ -218,6 +218,35 @@ public class ControlDB {
 		db.update("DEPARTAMENTO", values, "IDDEPARTAMENTO = ?", id);
 		return "Registro actualizado correctamente";
 	}
+	
+	public String eliminar(Departamento departamento) {
+		String regAfectados = "";
+		int contador = 0;
+		if (verificarIntegridad(departamento, 1)
+				|| verificarIntegridad(departamento, 2)) {
+			regAfectados += "No se puede borrar,";
+			if (verificarIntegridad(departamento, 1))
+				regAfectados += " DOCENTE_DPTO tiene registros.";
+			if (verificarIntegridad(departamento, 2))
+				regAfectados += " AREA_MATERIA tiene registros.";
+			return regAfectados;
+		}
+
+		regAfectados = "Filas afectadas=";
+		contador += db.delete("DOCENTE_DPTO",
+				"IDDEPARTAMENTO='" + departamento.getIddepartamento() + "'",
+				null);
+
+		contador += db.delete("AREA_MATERIA",
+				"IDDEPARTAMENTO='" + departamento.getIddepartamento() + "'",
+				null);
+
+		contador += db.delete("DEPARTAMENTO",
+				"IDDEPARTAMENTO='" + departamento.getIddepartamento() + "'",
+				null);
+		regAfectados += contador;
+		return regAfectados;
+	}
 
 	/** METODOS EMERSON */
 
@@ -238,5 +267,38 @@ public class ControlDB {
 	}
 
 	/** METODOS SERGIO */
+	
+	
+	/* Verificacion de integridad*/
+	private boolean verificarIntegridad(Object tabla, int relacion) {
+		switch (relacion) {
+		/* Mario */
+		case 1: {
+			Departamento departamento = (Departamento) tabla;
+			Cursor cursor = db.query(true, "DOCENTE_DPTO",
+					new String[] { "IDDEPARTAMENTO" }, "IDDEPARTAMENTO='"
+							+ departamento.getIddepartamento() + "'", null,
+					null, null, null, null);
+			if (cursor.moveToFirst())
+				return true;
+			else
+				return false;
+		}
+		case 2: {
+			Departamento departamento = (Departamento) tabla;
+			Cursor cursor = db.query(true, "AREA_MATERIA",
+					new String[] { "IDDEPARTAMENTO" }, "IDDEPARTAMENTO='"
+							+ departamento.getIddepartamento() + "'", null,
+					null, null, null, null);
+			if (cursor.moveToFirst())
+				return true;
+			else
+				return false;
+		}
+		default:
+			break;
+		}
+		return false;
+	}
 
 }
