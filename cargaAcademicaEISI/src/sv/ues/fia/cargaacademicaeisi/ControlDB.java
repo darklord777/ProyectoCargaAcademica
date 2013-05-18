@@ -14,8 +14,8 @@ public class ControlDB {
 	/* Mario */
 	private static final String[] camposDepto = new String[] {
 			"IDDEPARTAMENTO", "NOM_DEPTO" };
-	private static final String[] camposCiclo = new String[] {"ANIO", "NUMERO","FECHAINI","FECHAFIN"};
-	
+	private static final String[] camposCiclo = new String[] { "ANIO",
+			"NUMERO", "FECHAINI", "FECHAFIN" };
 
 	private final Context context;
 	private DatabaseHelper DBHelper;
@@ -40,29 +40,33 @@ public class ControlDB {
 			try {
 				// Mario
 				db.execSQL("CREATE TABLE DEPARTAMENTO ( IDDEPARTAMENTO  VARCHAR(6)  NOT NULL PRIMARY KEY, NOM_DEPTO VARCHAR(20));");
+				db.execSQL("CREATE TABLE AREA_MATERIA ( IDAREAMAT VARCHAR(6) NOT NULL PRIMARY KEY, IDDEPARTAMENTO VARCHAR(6), CODIGOMATERIA VARCHAR(6));");
 				// Mario
-
+				db.execSQL("CREATE TABLE DOCENTE_DPTO ( IDDEPARTAMENTO  VARCHAR(6) NOT NULL, IDDOCENTE VARCHAR(8) NOT NULL, PRIMARY KEY (IDDEPARTAMENTO, IDDOCENTE));");
 				/** Alexis */
 				db.execSQL("CREATE TABLE CICLO ( ANIO VARCHAR(4) NOT NULL, NUMERO VARCHAR(2) NOT NULL, FECHAINI DATE DEFAULT CURRENT_DATE NULL, FECHAFIN DATE NULL, PRIMARY KEY (ANIO,NUMERO) );");
-				db.execSQL(" CREATE TABLE CARGA_ACADEMICA ( IDDOCENTE VARCHAR(8) NOT NULL, ANIO VARCHAR(4) NOT NULL, NUMERO VARCHAR(2) NOT NULL, PRIMARY KEY (IDDOCENTE,ANIO,NUMERO)); ");
+				db.execSQL("CREATE TABLE CARGA_ACADEMICA ( IDDOCENTE VARCHAR(8) NOT NULL, ANIO VARCHAR(4) NOT NULL, NUMERO VARCHAR(2) NOT NULL, PRIMARY KEY (IDDOCENTE,ANIO,NUMERO)); ");
 				db.execSQL("CREATE TABLE DETALLE_CARGA_ACT_ACAD ( IDDOCENTE VARCHAR(8) NULL, ANIO VARCHAR(4) NULL, NUMERO VARCHAR(2) NULL,IDACTACAD VARCHAR(6) NULL );");
 				db.execSQL("CREATE TABLE DETALLE_CARGA_MAT ( IDDOCENTE VARCHAR(8) NULL, ANIO VARCHAR(4) NULL, NUMERO VARCHAR(2) NULL, IDDETALLECURSO VARCHAR(6) NULL );");
 				/** Alexis */
 				// Michael
-				db.execSQL("CREATE TABLE ACTIVIDAD_ACADEMICA (IDACTACAD VARCHAR(6)  NOT NULL PRIMARY KEY, IDMODALIDAD   VARCHAR(6), NOM_ACT_ACAD  VARCHAR(30), CARGO VARCHAR(20),");
+				db.execSQL("CREATE TABLE ACTIVIDAD_ACADEMICA (IDACTACAD VARCHAR(6)  NOT NULL PRIMARY KEY, IDMODALIDAD   VARCHAR(6), NOM_ACT_ACAD  VARCHAR(30), CARGO VARCHAR(20));");
 				db.execSQL("CREATE TABLE [LOCALES] ([IDLOCAL] VARCHAR(6)  PRIMARY KEY NOT NULL, [CAPACIDAD] INTEGER  NULL);");
 				db.execSQL("CREATE TABLE [MODALIDAD_ACT_ACAD] ([IDMODALIDAD] VARCHAR(6)  PRIMARY KEY NOT NULL,[NOM_MODALIDAD] VARCHAR(25)  NULL,[DESCUENTO_HORAS] INTEGER  NULL);");
 				db.execSQL("CREATE TABLE MODALIDAD_CURSO (IDMODALIDAD VARCHAR(6)  NOT NULL PRIMARY KEY, NOM_MODALIDAD VARCHAR(20), DESCUENTO_HORAS  INTEGER);");
 				// Michael
-				
-				//emersson
-				
-				//emersson
-				//sergio
-				
-				//sergio
-				
-				/* DE AQUI EN ADELANTE COLOCAR TRIGUERS DE INTEGRIDAD QUE  APARECEN EN LA BD QUE MANDO Jr */
+
+				// emersson
+
+				// emersson
+				// sergio
+
+				// sergio
+
+				/*
+				 * DE AQUI EN ADELANTE COLOCAR TRIGUERS DE INTEGRIDAD QUE
+				 * APARECEN EN LA BD QUE MANDO Jr
+				 */
 				/** TRIGGER alexis */
 				db.execSQL("CREATE TRIGGER fk_carga_ciclo BEFORE INSERT ON CARGA_ACADEMICA FOR EACH ROW BEGIN SELECT CASE WHEN ((SELECT anio FROM CICLO WHERE (anio = NEW.anio AND numero = NEW.numero)) IS NULL) THEN RAISE(ABORT, 'No existe el Ciclo') END; END;");
 				db.execSQL("CREATE TRIGGER fk_carga_docente BEFORE INSERT ON CARGA_ACADEMICA FOR EACH ROW BEGIN SELECT CASE WHEN ((SELECT IDDOCENTE FROM DOCENTE WHERE IDDOCENTE = NEW.IDDOCENTE) IS NULL) THEN RAISE(ABORT, 'No existe el Docente') END; END;");
@@ -71,19 +75,20 @@ public class ControlDB {
 				db.execSQL("CREATE TRIGGER fk_detalle_carga_acad BEFORE INSERT ON DETALLE_CARGA_ACT_ACAD FOR EACH ROW BEGIN SELECT CASE WHEN ((SELECT IDDOCENTE FROM CARGA_ACADEMICA WHERE IDDOCENTE = NEW.IDDOCENTE AND ANIO = NEW.ANIO AND NUMERO = NEW.NUMERO) IS NULL) THEN RAISE(ABORT, 'No existe esta informacion de Carga Academica') END; END;");
 				db.execSQL("CREATE TRIGGER fk_detalle_actividad BEFORE INSERT ON DETALLE_CARGA_ACT_ACAD FOR EACH ROW BEGIN SELECT CASE WHEN ((SELECT IDACTACAD FROM ACTIVIDAD_ACADEMICA WHERE IDACTACAD = NEW.IDACTACAD) IS NULL) THEN RAISE(ABORT, 'No existe esta Actividad Academica') END; END;");
 				/** FIN TRIGGER alexis */
-				
+
 				// Mario
+				db.execSQL("CREATE TRIGGER fk_area_materia BEFORE INSERT ON AREA_MATERIA FOR EACH ROW BEGIN SELECT CASE WHEN ((SELECT CODIGOMATERIA FROM MATERIA WHERE CODIGOMATERIA = NEW.CODIGOMATERIA) IS NULL) THEN RAISE(ABORT, 'No existe la Materia') END; END;");
+				db.execSQL("CREATE TRIGGER [fk_docente_departamento] BEFORE INSERT ON [DOCENTE_DPTO] FOR EACH ROW BEGIN SELECT CASE WHEN ((SELECT IDDEPARTAMENTO FROM DEPARTAMENTO WHERE IDDEPARTAMENTO = NEW.IDDEPARTAMENTO) IS NULL) THEN RAISE(ABORT, 'No existe este Departamento') END; END;");
 				// Mario
 				// Michael
 				// Michael
-				//emersson
-				//emersson
-				//sergio
-				//sergio
-				
-				/*AQUI TERMINAN LOS TRIGUERS DE INTEGRIDAD*/
-				
-				
+				// emersson
+				// emersson
+				// sergio
+				// sergio
+
+				/* AQUI TERMINAN LOS TRIGUERS DE INTEGRIDAD */
+
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
@@ -150,10 +155,11 @@ public class ControlDB {
 		}
 		return regInsertados;
 	}
-	
+
 	public Ciclo consultarCiclo(String anio, String numciclo) {
-		String[] id = {anio, numciclo};
-		Cursor cursor = db.query("CICLO", camposCiclo,"ANIO = ? AND NUMERO = ?", id, null, null, null);
+		String[] id = { anio, numciclo };
+		Cursor cursor = db.query("CICLO", camposCiclo,
+				"ANIO = ? AND NUMERO = ?", id, null, null, null);
 		if (cursor.moveToFirst()) {
 			Ciclo ciclo = new Ciclo();
 			ciclo.setAnio(cursor.getString(0));
@@ -165,7 +171,7 @@ public class ControlDB {
 			return null;
 		}
 	}
-		
+
 	/** METODOS MARIO */
 	public String insertar(Departamento departamento) {
 		String regInsertados = "Registro insertado en la fila No.=";
@@ -218,7 +224,7 @@ public class ControlDB {
 		db.update("DEPARTAMENTO", values, "IDDEPARTAMENTO = ?", id);
 		return "Registro actualizado correctamente";
 	}
-	
+
 	public String eliminar(Departamento departamento) {
 		String regAfectados = "";
 		int contador = 0;
@@ -267,9 +273,8 @@ public class ControlDB {
 	}
 
 	/** METODOS SERGIO */
-	
-	
-	/* Verificacion de integridad*/
+
+	/* Verificacion de integridad */
 	private boolean verificarIntegridad(Object tabla, int relacion) {
 		switch (relacion) {
 		/* Mario */
