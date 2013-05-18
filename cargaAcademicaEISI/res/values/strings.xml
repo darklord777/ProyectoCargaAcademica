@@ -48,7 +48,7 @@
     <string name="consult_fechafin_hint">Fecha Fin Ciclo</string>
     <string name="button2a_concultar_Ci">Consultar</string>
     <string name="button3a_eliminar_Ciclo">Eliminar Ciclo</string>
-    <!-- Alexis -->    
+    <!-- Alexis -->
     <string name="btnAdmonDepto">Administracion de Dapartamento</string>
     <string name="title_activity_consultar_depto">ConsultarDeptoActivity</string>
     <string name="btnConsultarDepto">Consultar Departamento</string>
@@ -59,7 +59,7 @@
     <string name="msgActualizarDepto">Actualizar Departamento</string>
     <string name="title_activity_ciclo_eliminar">Eliminar Ciclo Academico</string>
     <string name="title_activity_ciclo_actualizar">Actualizar Ciclo Academico</string>
-    
+
     <!-- Michael -->
     <string name="title_activity_insertar_locales">InsertarLocalesActivity</string>
     <string name="msgidLocal">Digite codigo del Local</string>
@@ -69,10 +69,16 @@
     <string name="btn_limpiarLocal">Limpiar Entradas</string>
     <string name="title_activity_gestion_mod_acad">GestionModAcadActivity</string>
     <string name="btnModAcad">Modalidad Actividad Academica</string>
-	<string name="btnActAcad">Actividad Academica</string>
-	<string name="btnLocales">Locales</string>
-	<string name="btnModCurso">Modalidad Curso</string>
-	<string name="btnModalAcad">Modalidades Academicas</string>
-	<!-- Michael -->
+    <string name="btnActAcad">Actividad Academica</string>
+    <string name="btnLocales">Locales</string>
+    <string name="btnModCurso">Modalidad Curso</string>
+    <string name="btnModalAcad">Modalidades Academicas</string>    
+    <string name="title_activity_locales_menu">LocalesMenuActivity</string>
+    <string name="btn1_insertar_local">Insertar Local</string>
+    <string name="btn2_consultar_local">Consultar Local</string>
+    <string name="btn3_eliminar_local">Eliminar Local</string>
+    <string name="btn4_actualizar_local">Actualizar Local</string>
+    <string name="TextViewLocales">Menu Locales</string>
+    <!-- Michael -->
 
 </resources>

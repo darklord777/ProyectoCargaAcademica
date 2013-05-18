@@ -78,6 +78,10 @@
             android:name="sv.ues.fia.cargaacademicaeisi.GestionModAcadActivity"
             android:label="@string/title_activity_gestion_mod_acad" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.LocalesMenuActivity"
+            android:label="@string/title_activity_locales_menu" >
+        </activity>
     </application>
 
 </manifest>
