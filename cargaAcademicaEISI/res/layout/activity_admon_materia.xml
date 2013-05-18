@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AdmonMateriaActivity" >
+
+    <Button
+        android:id="@+id/btnEliminarMateria"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnConsultarMateria"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="69dp"
+        android:text="@string/btnEliminarMateria"
+        android:drawableRight="@drawable/clear" />
+
+    <Button
+        android:id="@+id/btnActMateria"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnConsultarMateria"
+        android:layout_below="@+id/btnConsultarMateria"
+        android:layout_marginTop="40dp"
+        android:text="@string/btnActMateria"
+        android:drawableRight="@drawable/update" />
+
+    <Button
+        android:id="@+id/btnNuevaMateria"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:drawableRight="@drawable/save2"
+        android:text="@string/btnNuevaMateria" />
+
+    <Button
+        android:id="@+id/btnConsultarMateria"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnNuevaMateria"
+        android:layout_below="@+id/btnNuevaMateria"
+        android:layout_marginTop="42dp"
+        android:drawableRight="@drawable/search"
+        android:text="@string/btnConsultarMateria" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="@string/msgAdmonMateria"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

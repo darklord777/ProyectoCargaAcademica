@@ -83,5 +83,18 @@
     <!-- Michael -->
 
     <string name="title_activity_eliminar_depto">EliminarDeptoActivity</string>
+    <string name="title_activity_admon_materia">AdmonMateriaActivity</string>
+    <string name="btnNuevaMateria">Nueva Materia</string>
+    <string name="btnConsultarMateria">Consultar Materia</string>
+    <string name="btnActMateria">Actualizar Materia</string>
+    <string name="btnEliminarMateria">Eliminar Materia</string>
+    <string name="msgAdmonMateria">Administracion de Materias</string>
+    <string name="title_activity_nueva_materia">NuevaMateriaActivity</string>
+    <string name="title_activity_actualizar_materia">ActualizarMateriaActivity</string>
+    <string name="title_activity_consultar_materia">ConsultarMateriaActivity</string>
+    <string name="title_activity_eliminar_materia">EliminarMateriaActivity</string>
+    <string name="edtNomMateria">Nombre de Materia</string>
+    <string name="edtCodMateria">Codigo de Materia</string>
+    <string name="btnGuardarMateria">Guardar Materia</string>
 
 </resources>

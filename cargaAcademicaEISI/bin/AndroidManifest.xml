@@ -86,6 +86,26 @@
             android:name="sv.ues.fia.cargaacademicaeisi.EliminarDeptoActivity"
             android:label="@string/title_activity_eliminar_depto" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.AdmonMateriaActivity"
+            android:label="@string/title_activity_admon_materia" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.NuevaMateriaActivity"
+            android:label="@string/title_activity_nueva_materia" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.ActualizarMateriaActivity"
+            android:label="@string/title_activity_actualizar_materia" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.ConsultarMateriaActivity"
+            android:label="@string/title_activity_consultar_materia" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.EliminarMateriaActivity"
+            android:label="@string/title_activity_eliminar_materia" >
+        </activity>
     </application>
 
 </manifest>

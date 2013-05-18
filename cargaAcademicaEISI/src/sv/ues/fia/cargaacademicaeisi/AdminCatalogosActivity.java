@@ -10,6 +10,7 @@ import android.widget.Button;
 public class AdminCatalogosActivity extends Activity implements
 		android.view.View.OnClickListener {
 	private Button btnAdmonDepto;
+	private Button btnAdmonMateria;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +18,8 @@ public class AdminCatalogosActivity extends Activity implements
 		setContentView(R.layout.activity_admin_catalogos);
 		btnAdmonDepto = (Button) findViewById(R.id.btnAdmonDepto);
 		btnAdmonDepto.setOnClickListener(this);
+		btnAdmonMateria = (Button) findViewById(R.id.btnAdmonMateria);
+		btnAdmonMateria.setOnClickListener(this);
 	}
 
 	@Override
@@ -32,7 +35,9 @@ public class AdminCatalogosActivity extends Activity implements
 			startActivity(new Intent(getApplicationContext(),
 					AdmonDeptoActivity.class));
 			break;
-
+		case R.id.btnAdmonMateria:
+			startActivity(new Intent(getApplicationContext(),
+					AdmonMateriaActivity.class));
 		default:
 			break;
 		}

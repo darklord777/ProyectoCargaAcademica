@@ -17,6 +17,19 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="44dp"
         android:background="@drawable/button_custom"
-        android:text="@string/btnAdmonDepto" />
+        android:text="@string/btnAdmonDepto"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btnAdmonMateria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnAdmonDepto"
+        android:layout_alignRight="@+id/btnAdmonDepto"
+        android:layout_below="@+id/btnAdmonDepto"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_custom"
+        android:text="@string/msgAdmonMateria"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>
