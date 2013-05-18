@@ -11,38 +11,42 @@
 
     <Button
         android:id="@+id/btnNuevoDepto"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
+        android:drawableRight="@drawable/save2"
         android:text="@string/btnNuevoDepto" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnActualizarDepto"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_below="@+id/button3"
-        android:layout_marginTop="47dp"
-        android:text="Button" />
+        android:layout_below="@+id/btnConsultarDepto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:drawableRight="@drawable/update"
+        android:text="@string/btnActualizarDepto" />
 
     <Button
         android:id="@+id/btnConsultarDepto"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnNuevoDepto"
         android:layout_below="@+id/btnNuevoDepto"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="42dp"
+        android:drawableRight="@drawable/search"
         android:text="@string/btnConsultarDepto" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnEliminarDepto"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button2"
+        android:layout_below="@+id/btnActualizarDepto"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="46dp"
-        android:text="Button" />
+        android:layout_marginTop="48dp"
+        android:drawableRight="@drawable/clear"
+        android:text="@string/btnEliminarDepto" />
 
 </RelativeLayout>

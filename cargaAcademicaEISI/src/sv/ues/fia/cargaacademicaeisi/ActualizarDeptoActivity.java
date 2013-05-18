@@ -13,21 +13,21 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class ConsultarDeptoActivity extends Activity implements
+public class ActualizarDeptoActivity extends Activity implements
 		OnItemSelectedListener {
 	private ControlDB helper;
-	private EditText edtNomDepto;
-	private Spinner spnListaDeptos;
+	private Spinner spnActIdDepto;
+	private EditText edtActNomDepto;
 	private List<String> idDeptos;
 	private ArrayAdapter<String> adapter;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_consultar_depto);
+		setContentView(R.layout.activity_actualizar_depto);
 		helper = new ControlDB(this);
-		edtNomDepto = (EditText) findViewById(R.id.edtNomDepto);
-		spnListaDeptos = (Spinner) findViewById(R.id.spnListaDeptos);
+		spnActIdDepto = (Spinner) findViewById(R.id.spnActIdDepto);
+		edtActNomDepto = (EditText) findViewById(R.id.edtActNomDepto);
 
 		helper.abrir();
 		idDeptos = helper.getAllIdDeptos();
@@ -35,20 +35,21 @@ public class ConsultarDeptoActivity extends Activity implements
 		adapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_spinner_item, idDeptos);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		spnListaDeptos.setAdapter(adapter);
-		spnListaDeptos.setOnItemSelectedListener(this);
+		spnActIdDepto.setAdapter(adapter);
+		spnActIdDepto.setOnItemSelectedListener(this);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.consultar_depto, menu);
+		getMenuInflater().inflate(R.menu.actualizar_depto, menu);
 		return true;
 	}
 
 	@Override
-	public void onItemSelected(AdapterView<?> parent, View v, int pos, long id) {
-		String idDepto = parent.getItemAtPosition(pos).toString();
-		helper.abrir();		
+	public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2,
+			long arg3) {
+		String idDepto = arg0.getItemAtPosition(arg2).toString();
+		helper.abrir();
 		Departamento departamento = helper.consultarDepto(idDepto);
 		helper.cerrar();
 		if (departamento == null) {
@@ -57,14 +58,23 @@ public class ConsultarDeptoActivity extends Activity implements
 					"Identificador de departemento: " + idDepto
 							+ ". No existe.", Toast.LENGTH_LONG).show();
 		} else {
-			edtNomDepto.setText(departamento.getNom_depto());
-			Toast.makeText(this, "Valor de item=" + idDepto, Toast.LENGTH_LONG)
-					.show();
+			edtActNomDepto.setText(departamento.getNom_depto());
 		}
 	}
 
+	public void actualizarDepto(View v) {
+		Departamento departamento = new Departamento();
+		departamento.setIddepartamento(spnActIdDepto.getSelectedItem()
+				.toString());
+		departamento.setNom_depto(edtActNomDepto.getText().toString());
+		helper.abrir();
+		String estado = helper.actualizar(departamento);
+		helper.cerrar();
+		Toast.makeText(this, estado, Toast.LENGTH_LONG).show();
+	}
+
 	@Override
-	public void onNothingSelected(AdapterView<?> parent) {
+	public void onNothingSelected(AdapterView<?> arg0) {
 
 	}
 

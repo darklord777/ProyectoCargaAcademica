@@ -1,7 +1,5 @@
 package sv.ues.fia.cargaacademicaeisi;
 
-import sv.ues.fia.cargaacademicaeisi.R;
-
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -13,6 +11,7 @@ import android.widget.Button;
 public class AdmonDeptoActivity extends Activity implements OnClickListener {
 	private Button btnNuevoDepto;
 	private Button btnConsultarDepto;
+	private Button btnActualizarDepto;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +21,8 @@ public class AdmonDeptoActivity extends Activity implements OnClickListener {
 		btnNuevoDepto.setOnClickListener(this);
 		btnConsultarDepto = (Button) findViewById(R.id.btnConsultarDepto);
 		btnConsultarDepto.setOnClickListener(this);
+		btnActualizarDepto = (Button) findViewById(R.id.btnActualizarDepto);
+		btnActualizarDepto.setOnClickListener(this);
 	}
 
 	@Override
@@ -40,6 +41,10 @@ public class AdmonDeptoActivity extends Activity implements OnClickListener {
 		case R.id.btnConsultarDepto:
 			startActivity(new Intent(getApplicationContext(),
 					ConsultarDeptoActivity.class));
+			break;
+		case R.id.btnActualizarDepto:
+			startActivity(new Intent(getApplicationContext(),
+					ActualizarDeptoActivity.class));
 			break;
 		default:
 			break;

@@ -62,6 +62,10 @@
             android:name="sv.ues.fia.cargaacademicaeisi.ConsultarDeptoActivity"
             android:label="@string/title_activity_consultar_depto" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.ActualizarDeptoActivity"
+            android:label="@string/title_activity_actualizar_depto" >
+        </activity>
     </application>
 
 </manifest>

@@ -48,5 +48,9 @@
     <string name="title_activity_consultar_depto">ConsultarDeptoActivity</string>
     <string name="btnConsultarDepto">Consultar Departamento</string>
     <string name="tvConsultarDepto">Consultar Departamento</string>
+    <string name="btnActualizarDepto">Actualizar Departamento</string>
+    <string name="btnEliminarDepto">Eliminar Departamento</string>
+    <string name="title_activity_actualizar_depto">ActualizarDeptoActivity</string>
+    <string name="msgActualizarDepto">Actualizar Departamento</string>
 
 </resources>

@@ -134,6 +134,14 @@ public class ControlDB {
 		return idDeptos;
 	}
 
+	public String actualizar(Departamento departamento) {
+		String[] id = { departamento.getIddepartamento() };
+		ContentValues values = new ContentValues();
+		values.put("NOM_DEPTO", departamento.getNom_depto());
+		db.update("DEPARTAMENTO", values, "IDDEPARTAMENTO = ?", id);
+		return "Registro actualizado correctamente";
+	}
+
 	/** METODOS EMERSON */
 
 	/** METODOS AGUSTIN */
