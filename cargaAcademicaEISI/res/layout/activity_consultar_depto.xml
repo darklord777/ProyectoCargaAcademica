@@ -39,15 +39,4 @@
         <requestFocus />
     </EditText>
 
-    <Button
-        android:id="@+id/btnSaveConsultDepto"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/edtNomDepto"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
-        android:drawableRight="@drawable/save"
-        android:text="@string/btnGuardarDepto"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
 </RelativeLayout>
