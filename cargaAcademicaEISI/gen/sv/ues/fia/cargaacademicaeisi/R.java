@@ -43,37 +43,38 @@ public final class R {
         public static final int BtnActAcad=0x7f0a0030;
         public static final int BtnLocal=0x7f0a002f;
         public static final int BtnModCurso=0x7f0a002e;
-        public static final int action_settings=0x7f0a0042;
+        public static final int action_settings=0x7f0a0043;
         public static final int btn1TablaCiclo=0x7f0a002b;
         public static final int btn2TablaCargaAcademica=0x7f0a002a;
         public static final int btn3DetCargaMateria=0x7f0a0029;
         public static final int btn4DetCargaActAcademica=0x7f0a002c;
-        public static final int btn5A_CargaAcademica=0x7f0a003d;
+        public static final int btn5A_CargaAcademica=0x7f0a003e;
         public static final int btnActGuardarDepto=0x7f0a0003;
         public static final int btnActualizarDepto=0x7f0a0006;
-        public static final int btnAdmonCat=0x7f0a0039;
+        public static final int btnAdmonCat=0x7f0a003a;
         public static final int btnAdmonDepto=0x7f0a0004;
         public static final int btnConsultarDepto=0x7f0a0007;
         public static final int btnEliminarDepto=0x7f0a0008;
         public static final int btnEntrarSistema=0x7f0a0009;
         public static final int btnGLocal=0x7f0a0034;
-        public static final int btnGuardarDepto=0x7f0a0040;
-        public static final int btnLimpiaDepto=0x7f0a0041;
-        public static final int btnModAcad=0x7f0a003a;
+        public static final int btnGuardarDepto=0x7f0a0041;
+        public static final int btnLimpiaDepto=0x7f0a0042;
+        public static final int btnModAcad=0x7f0a003b;
         public static final int btnModActAcad=0x7f0a002d;
         public static final int btnNuevoDepto=0x7f0a0005;
-        public static final int btn_MenuLocal_Cons=0x7f0a0036;
-        public static final int btn_MenuLocal_Elim=0x7f0a0035;
-        public static final int btn_MenuLocal_Ins=0x7f0a0037;
+        public static final int btn_MenuLocal_Act=0x7f0a0038;
+        public static final int btn_MenuLocal_Cons=0x7f0a0037;
+        public static final int btn_MenuLocal_Elim=0x7f0a0036;
+        public static final int btn_MenuLocal_Ins=0x7f0a0039;
         public static final int button1=0x7f0a0012;
         public static final int button1_MenuCiclo_A=0x7f0a0024;
         public static final int button1_consultarciclo=0x7f0a0016;
         public static final int button1_insertar_ciclo=0x7f0a001c;
         public static final int button2_MenuCiclo_B=0x7f0a0025;
         public static final int button2_limpiartexto_ciclo=0x7f0a0015;
-        public static final int button3=0x7f0a003c;
+        public static final int button3=0x7f0a003d;
         public static final int button3_MenuCiclo_C=0x7f0a0026;
-        public static final int button4=0x7f0a003b;
+        public static final int button4=0x7f0a003c;
         public static final int button4_MenuCiclo_D=0x7f0a0023;
         public static final int capLocal=0x7f0a0032;
         public static final int editText1=0x7f0a000f;
@@ -84,10 +85,10 @@ public final class R {
         public static final int editText2_fechafin=0x7f0a001d;
         public static final int edtActNomDepto=0x7f0a0002;
         public static final int edtNomDepto=0x7f0a0028;
-        public static final int idDepto=0x7f0a003e;
+        public static final int idDepto=0x7f0a003f;
         public static final int idLocal=0x7f0a0031;
         public static final int limpiarLocal=0x7f0a0033;
-        public static final int nomDepto=0x7f0a003f;
+        public static final int nomDepto=0x7f0a0040;
         public static final int spinner1=0x7f0a000a;
         public static final int spinner2=0x7f0a000c;
         public static final int spinner_anio_ciclo=0x7f0a001e;
@@ -96,7 +97,7 @@ public final class R {
         public static final int spinner_ciclo_consultr=0x7f0a0017;
         public static final int spnActIdDepto=0x7f0a0001;
         public static final int spnListaDeptos=0x7f0a0027;
-        public static final int textLocales=0x7f0a0038;
+        public static final int textLocales=0x7f0a0035;
         public static final int textView1=0x7f0a000b;
         public static final int textView1_consult_inicio=0x7f0a0000;
         public static final int textView2=0x7f0a000d;
@@ -222,8 +223,6 @@ public final class R {
         /**  Michael 
          */
         public static final int title_activity_insertar_locales=0x7f070036;
-        /**  Michael 
-         */
         public static final int title_activity_locales_menu=0x7f070042;
         public static final int title_activity_menu_principal=0x7f070003;
         public static final int title_activity_nuevo_depto=0x7f070008;

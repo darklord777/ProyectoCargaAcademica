@@ -39,6 +39,8 @@ public class GestionModAcadActivity extends Activity implements OnClickListener{
 			break;
 			
 		case R.id.BtnLocal:
+			startActivity(new Intent(getApplicationContext(),
+					 LocalesMenuActivity.class));
 			break;
 		
 		case R.id.BtnModCurso:
