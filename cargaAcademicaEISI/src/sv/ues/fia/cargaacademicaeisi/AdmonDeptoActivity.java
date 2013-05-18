@@ -12,6 +12,7 @@ public class AdmonDeptoActivity extends Activity implements OnClickListener {
 	private Button btnNuevoDepto;
 	private Button btnConsultarDepto;
 	private Button btnActualizarDepto;
+	private Button btnEliminarDepto;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,8 @@ public class AdmonDeptoActivity extends Activity implements OnClickListener {
 		btnConsultarDepto.setOnClickListener(this);
 		btnActualizarDepto = (Button) findViewById(R.id.btnActualizarDepto);
 		btnActualizarDepto.setOnClickListener(this);
+		btnEliminarDepto = (Button) findViewById(R.id.btnEliminarDepto);
+		btnEliminarDepto.setOnClickListener(this);
 	}
 
 	@Override
@@ -45,6 +48,10 @@ public class AdmonDeptoActivity extends Activity implements OnClickListener {
 		case R.id.btnActualizarDepto:
 			startActivity(new Intent(getApplicationContext(),
 					ActualizarDeptoActivity.class));
+			break;
+		case R.id.btnEliminarDepto:
+			startActivity(new Intent(getApplicationContext(),
+					EliminarDeptoActivity.class));
 			break;
 		default:
 			break;
