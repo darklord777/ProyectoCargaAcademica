@@ -38,6 +38,7 @@ public class AreMateriaNuevaActivity extends Activity implements
 		idDeptos = helper.getAllIdDeptos();
 		idMaterias = helper.getAllIdMaterias();
 		helper.cerrar();
+
 		adapterDepto = new ArrayAdapter<String>(this,
 				android.R.layout.simple_spinner_item, idDeptos);
 		adapterDepto
