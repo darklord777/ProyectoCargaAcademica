@@ -80,6 +80,9 @@
     <string name="btn3_eliminar_local">Eliminar Local</string>
     <string name="btn4_actualizar_local">Actualizar Local</string>
     <string name="TextViewLocales">Menu Locales</string>
+    <string name="msgNombreModAA">Digite nombre modalidad</string>
+    <string name="msgidModalidadAA">Digite codigo de modalidad</string>
+    <string name="msgDescHorasModAA">Digite Horas de Descuento</string>
     <!-- Michael -->
 
     <string name="title_activity_eliminar_depto">EliminarDeptoActivity</string>
@@ -97,5 +100,6 @@
     <string name="edtCodMateria">Codigo de Materia</string>
     <string name="btnGuardarMateria">Guardar Materia</string>
     <string name="msgActualizarMateria">Actualizar Materia</string>
+    <string name="title_activity_insertar_modalidad_act_acad">InsertarModalidadActAcadActivity</string>
 
 </resources>

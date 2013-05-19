@@ -18,6 +18,7 @@ public class ControlDB {
 	private static final String[] camposCiclo = new String[] { "ANIO","NUMERO", "FECHAINI", "FECHAFIN" };
 	
 	private static final String[] camposLocal = new String[] {"IDLOCAL", "CAPACIDAD"};
+	private static final String[] camposModalidadAA = new String[] {"IDMODALIDAD","NOM_MODALIDAD","DESCUENTO_HORAS"};
 
 	private final Context context;
 	private DatabaseHelper DBHelper;
@@ -57,7 +58,7 @@ public class ControlDB {
 				db.execSQL("CREATE TABLE ACTIVIDAD_ACADEMICA (IDACTACAD VARCHAR(6)  NOT NULL PRIMARY KEY, IDMODALIDAD   VARCHAR(6), NOM_ACT_ACAD  VARCHAR(30), CARGO VARCHAR(20));");
 				db.execSQL("CREATE TABLE [LOCALES] ([IDLOCAL] VARCHAR(6)  PRIMARY KEY NOT NULL, [CAPACIDAD] INTEGER  NULL);");
 				db.execSQL("CREATE TABLE [MODALIDAD_ACT_ACAD] ([IDMODALIDAD] VARCHAR(6)  PRIMARY KEY NOT NULL,[NOM_MODALIDAD] VARCHAR(25)  NULL,[DESCUENTO_HORAS] INTEGER  NULL);");
-				db.execSQL("CREATE TABLE MODALIDAD_CURSO (IDMODALIDAD VARCHAR(6)  NOT NULL PRIMARY KEY, NOM_MODALIDAD VARCHAR(20), DESCUENTO_HORAS  INTEGER);");
+				db.execSQL("CREATE TABLE MODALIDAD_CURSO ([IDMODALIDAD] VARCHAR(6)  NOT NULL PRIMARY KEY, NOM_MODALIDAD VARCHAR(20), DESCUENTO_HORAS  INTEGER);");
 				// Michael
 
 				// emersson
@@ -304,7 +305,23 @@ public class ControlDB {
 		}
 		return regInsertados;		
 	}
-
+	/*
+	
+	public String insertar(Modalidades modalidad) {
+		String regInsertados = "Registro insertado en la fila No.=";
+		long contador = 0;
+		ContentValues loc = new ContentValues();
+		loc.put("IDLOCAL", local.getIdlocal());
+		loc.put("CAPACIDAD", local.getCapacidad());
+		contador = db.insert("LOCALES", null, loc);
+		if (contador == -1 || contador == 0) {
+			regInsertados = "Error. Verificar Insercion";
+		} else {
+			regInsertados += contador;
+		}
+		return regInsertados;		
+	}
+*/
 	/** METODOS SERGIO */
 
 	/* Verificacion de integridad */

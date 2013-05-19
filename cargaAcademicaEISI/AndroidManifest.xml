@@ -106,6 +106,10 @@
             android:name="sv.ues.fia.cargaacademicaeisi.EliminarMateriaActivity"
             android:label="@string/title_activity_eliminar_materia" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.InsertarModalidadActAcadActivity"
+            android:label="@string/title_activity_insertar_modalidad_act_acad" >
+        </activity>
     </application>
 
 </manifest>
