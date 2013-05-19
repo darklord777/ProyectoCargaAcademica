@@ -26,6 +26,7 @@
         android:layout_below="@+id/btnAdmonCat"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="43dp"
+        android:background="@drawable/button_custom"
         android:text="@string/btnModalAcad" />
     <Button
         android:id="@+id/button4"

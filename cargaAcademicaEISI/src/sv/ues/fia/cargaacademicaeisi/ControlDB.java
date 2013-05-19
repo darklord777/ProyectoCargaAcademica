@@ -314,7 +314,7 @@ public class ControlDB {
 		modalidad.put("IDMODALIDAD", modalidadAA.getIdmodalidad());
 		modalidad.put("NOM_MODALIDAD", modalidadAA.getNom_modalidad());
 		modalidad.put("DESCUENTO_HORAS", modalidadAA.getDescuento_horas());
-		contador = db.insert("LOCALES", null, modalidad);
+		contador = db.insert("MODALIDAD_ACT_ACAD", null, modalidad);
 		if (contador == -1 || contador == 0) {
 			regInsertados = "Error. Verificar Insercion";
 		} else {

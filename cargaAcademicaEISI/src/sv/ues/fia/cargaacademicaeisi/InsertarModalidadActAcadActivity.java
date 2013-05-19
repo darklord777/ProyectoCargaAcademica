@@ -34,7 +34,7 @@ public class InsertarModalidadActAcadActivity extends Activity {
 		Toast.makeText(this, regInsertados, Toast.LENGTH_LONG).show();
 	}
 	
-	public void limpiarModAA(View v) {
+	public void limpiarModalidadAA(View v) {
 		idModalidadAA.setText("");
 		nombreModalidad.setText("");
 		descHoras.setText("");
