@@ -27,7 +27,6 @@
         android:layout_below="@+id/btn_MenuLocal_Cons"
         android:layout_marginTop="18dp"
         android:drawableRight="@drawable/clear"
-        android:onClick="insertarCiclo"
         android:text="@string/btn3_eliminar_local"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -39,7 +38,6 @@
         android:layout_below="@+id/btn_MenuLocal_Elim"
         android:layout_marginTop="18dp"
         android:drawableRight="@drawable/update"
-        android:onClick="insertarCiclo"
         android:text="@string/btn4_actualizar_local"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -51,7 +49,6 @@
         android:layout_below="@+id/textLocales"
         android:layout_marginTop="39dp"
         android:drawableRight="@drawable/save2"
-        android:onClick="insertarCiclo"
         android:text="@string/btn1_insertar_local"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 

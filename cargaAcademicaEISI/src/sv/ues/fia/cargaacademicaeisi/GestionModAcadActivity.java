@@ -33,9 +33,13 @@ public class GestionModAcadActivity extends Activity implements OnClickListener{
 		switch (v.getId()) {
 		
 		case R.id.btnModActAcad:
+			startActivity(new Intent(getApplicationContext(),
+					 ModalidadAAMenuActivity.class));
 			break;
 			
 		case R.id.BtnActAcad:
+			startActivity(new Intent(getApplicationContext(),
+					 ActividadAcademicaMenuActivity.class));
 			break;
 			
 		case R.id.BtnLocal:
@@ -44,6 +48,8 @@ public class GestionModAcadActivity extends Activity implements OnClickListener{
 			break;
 		
 		case R.id.BtnModCurso:
+			startActivity(new Intent(getApplicationContext(),
+					 ModalidadCursoMenuActivity.class));
 			break;
 		}
 	}

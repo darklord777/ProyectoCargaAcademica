@@ -84,6 +84,26 @@
     <string name="msgidModalidadAA">Digite codigo de modalidad</string>
     <string name="msgDescHorasModAA">Digite horas de descuento</string>
     <string name="TextViewModAA">Insertar Modalidad Actividad Academica</string>
+    <string name="title_activity_insertar_modalidad_act_acad">InsertarModalidadActAcadActivity</string>
+    <string name="title_activity_modalidad_aamenu">ModalidadAAMenuActivity</string>
+    <string name="TextViewModalidad">Menu Modalidad Act Academica</string>
+    <string name="btn1_insertar_Modalidad">Insertar Modalidad Act Acad</string>
+    <string name="btn2_consultar_Modalidad">Consultar Modalidad Act Acad</string>
+    <string name="btn3_eliminar_Modalidad">Eliminar Modalidad Act Acad</string>
+    <string name="btn4_actualizar_Modalidad">Actualizar Modalidad AA</string>
+    <string name="title_activity_modalidad_curso_menu">ModalidadCursoMenuActivity</string>
+    <string name="TextViewModalidadCurso">Menu Modalidad Curso</string>
+    <string name="btn1_insertar_ModalidadCurso">Insertar Modalidad Curso</string>
+    <string name="btn2_consultar_ModalidadCurso">Consultar Modalidad Curso</string>
+    <string name="btn3_eliminar_ModalidadCurso">Eliminar Modalidad Curso</string>
+    <string name="btn4_actualizar_ModalidadCurso">Actualizar Modalidad Curso</string>    
+    <string name="title_activity_actividad_academica_menu">ActividadAcademicaMenuActivity</string>
+    <string name="TextViewActividadAcad">Menu Actividad Academica</string>
+    <string name="btn1_insertar_ActividadAcad">Insertar Actividad Academica</string>
+    <string name="btn2_consultar_ActividadAcad">Consultar Actividad Academica</string>
+    <string name="btn3_eliminar_ActividadAcad">Eliminar Actividad Academica</string>
+    <string name="btn4_actualizar_ActividadAcad">Actualizar Actividad Academica</string>
+    
     <!-- Michael -->
 
     <string name="title_activity_eliminar_depto">EliminarDeptoActivity</string>
@@ -101,6 +121,5 @@
     <string name="edtCodMateria">Codigo de Materia</string>
     <string name="btnGuardarMateria">Guardar Materia</string>
     <string name="msgActualizarMateria">Actualizar Materia</string>
-    <string name="title_activity_insertar_modalidad_act_acad">InsertarModalidadActAcadActivity</string>
 
 </resources>

@@ -110,6 +110,18 @@
             android:name="sv.ues.fia.cargaacademicaeisi.InsertarModalidadActAcadActivity"
             android:label="@string/title_activity_insertar_modalidad_act_acad" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.ModalidadAAMenuActivity"
+            android:label="@string/title_activity_modalidad_aamenu" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.ModalidadCursoMenuActivity"
+            android:label="@string/title_activity_modalidad_curso_menu" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.ActividadAcademicaMenuActivity"
+            android:label="@string/title_activity_actividad_academica_menu" >
+        </activity>
     </application>
 
 </manifest>
