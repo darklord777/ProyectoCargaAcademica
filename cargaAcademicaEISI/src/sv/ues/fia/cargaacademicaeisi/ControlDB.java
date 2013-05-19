@@ -12,13 +12,18 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class ControlDB {
 	/* Mario */
-	private static final String[] camposDepto = new String[] {"IDDEPARTAMENTO", "NOM_DEPTO" };
-	private static final String[] camposMat = new String[] { "CODIGOMATERIA","NOM_MATERIA" };
+	private static final String[] camposDepto = new String[] {
+			"IDDEPARTAMENTO", "NOM_DEPTO" };
+	private static final String[] camposMat = new String[] { "CODIGOMATERIA",
+			"NOM_MATERIA" };
 
-	private static final String[] camposCiclo = new String[] { "ANIO","NUMERO", "FECHAINI", "FECHAFIN" };
-	
-	private static final String[] camposLocal = new String[] {"IDLOCAL", "CAPACIDAD"};
-	private static final String[] camposModalidadAA = new String[] {"IDMODALIDAD","NOM_MODALIDAD","DESCUENTO_HORAS"};
+	private static final String[] camposCiclo = new String[] { "ANIO",
+			"NUMERO", "FECHAINI", "FECHAFIN" };
+
+	private static final String[] camposLocal = new String[] { "IDLOCAL",
+			"CAPACIDAD" };
+	private static final String[] camposModalidadAA = new String[] {
+			"IDMODALIDAD", "NOM_MODALIDAD", "DESCUENTO_HORAS" };
 
 	private final Context context;
 	private DatabaseHelper DBHelper;
@@ -42,8 +47,8 @@ public class ControlDB {
 		public void onCreate(SQLiteDatabase db) {
 			try {
 				// Mario
-				db.execSQL("CREATE TABLE DEPARTAMENTO ( IDDEPARTAMENTO  VARCHAR(6)  NOT NULL PRIMARY KEY, NOM_DEPTO VARCHAR(20));");
 				db.execSQL("CREATE TABLE [MATERIA] ( [CODIGOMATERIA] VARCHAR(6)  PRIMARY KEY NOT NULL, [NOM_MATERIA] VARCHAR(20) NULL );");
+				db.execSQL("CREATE TABLE DEPARTAMENTO ( IDDEPARTAMENTO  VARCHAR(6)  NOT NULL PRIMARY KEY, NOM_DEPTO VARCHAR(20));");				
 				db.execSQL("CREATE TABLE AREA_MATERIA ( IDAREAMAT VARCHAR(6) NOT NULL PRIMARY KEY, IDDEPARTAMENTO VARCHAR(6), CODIGOMATERIA VARCHAR(6));");
 
 				// Mario
@@ -303,10 +308,9 @@ public class ControlDB {
 		} else {
 			regInsertados += contador;
 		}
-		return regInsertados;		
+		return regInsertados;
 	}
-	
-	
+
 	public String insertar(Modalidad_Act_Acad modalidadAA) {
 		String regInsertados = "Registro insertado en la fila No.=";
 		long contador = 0;
@@ -320,7 +324,7 @@ public class ControlDB {
 		} else {
 			regInsertados += contador;
 		}
-		return regInsertados;		
+		return regInsertados;
 	}
 
 	/** METODOS SERGIO */
