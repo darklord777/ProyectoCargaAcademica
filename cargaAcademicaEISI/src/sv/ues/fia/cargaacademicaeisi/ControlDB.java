@@ -9,13 +9,14 @@ import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
 
 public class ControlDB {
 	/* Mario */
 	private static final String[] camposDepto = new String[] {
 			"IDDEPARTAMENTO", "NOM_DEPTO" };
-	private static final String[] camposMat = new String[] { "CODIGOMATERIA",
-			"NOM_MATERIA" };
+	private static final String[] camposMat = new String[] { "codigomateria",
+			"nommateria" };
 
 	private static final String[] camposCiclo = new String[] { "ANIO",
 			"NUMERO", "FECHAINI", "FECHAFIN" };
@@ -46,14 +47,13 @@ public class ControlDB {
 		@Override
 		public void onCreate(SQLiteDatabase db) {
 			try {
-				// Mario
-				db.execSQL("CREATE TABLE [MATERIA] ( [CODIGOMATERIA] VARCHAR(6)  PRIMARY KEY NOT NULL, [NOM_MATERIA] VARCHAR(20) NULL );");
-				db.execSQL("CREATE TABLE DEPARTAMENTO ( IDDEPARTAMENTO  VARCHAR(6)  NOT NULL PRIMARY KEY, NOM_DEPTO VARCHAR(20));");				
+				db.execSQL("create table materia(codigomateria varchar(6) not null prymary key,nommateria varchar(20));");
+				db.execSQL("CREATE TABLE DEPARTAMENTO ( IDDEPARTAMENTO  VARCHAR(6)  NOT NULL PRIMARY KEY, NOM_DEPTO VARCHAR(20));");
 				db.execSQL("CREATE TABLE AREA_MATERIA ( IDAREAMAT VARCHAR(6) NOT NULL PRIMARY KEY, IDDEPARTAMENTO VARCHAR(6), CODIGOMATERIA VARCHAR(6));");
 
 				// Mario
 				db.execSQL("CREATE TABLE DOCENTE_DPTO ( IDDEPARTAMENTO  VARCHAR(6) NOT NULL, IDDOCENTE VARCHAR(8) NOT NULL, PRIMARY KEY (IDDEPARTAMENTO, IDDOCENTE));");
-				/** Alexis */
+				/* Alexis */
 				db.execSQL("CREATE TABLE CICLO ( ANIO VARCHAR(4) NOT NULL, NUMERO VARCHAR(2) NOT NULL, FECHAINI DATE DEFAULT CURRENT_DATE NULL, FECHAFIN DATE NULL, PRIMARY KEY (ANIO,NUMERO) );");
 				db.execSQL("CREATE TABLE CARGA_ACADEMICA ( IDDOCENTE VARCHAR(8) NOT NULL, ANIO VARCHAR(4) NOT NULL, NUMERO VARCHAR(2) NOT NULL, PRIMARY KEY (IDDOCENTE,ANIO,NUMERO)); ");
 				db.execSQL("CREATE TABLE DETALLE_CARGA_ACT_ACAD ( IDDOCENTE VARCHAR(8) NULL, ANIO VARCHAR(4) NULL, NUMERO VARCHAR(2) NULL,IDACTACAD VARCHAR(6) NULL );");
@@ -202,9 +202,9 @@ public class ControlDB {
 		String regInsertados = "Registro insertado en la fila No.=";
 		long contador = 0;
 		ContentValues mat = new ContentValues();
-		mat.put("CODIGOMATERIA", materia.getCodigomateria());
-		mat.put("NOM_MATERIA", materia.getNom_materia());
-		contador = db.insert("MATERIA", null, mat);
+		mat.put("codigomateria", materia.getCodigomateria());
+		mat.put("nommateria", materia.getNom_materia());
+		contador = db.insert("materia", null, mat);
 		if (contador == -1 || contador == 0) {
 			regInsertados = "Error, registro duplicado. Verificar Insercion";
 		} else {
@@ -227,6 +227,19 @@ public class ControlDB {
 		}
 	}
 
+	public String consultarTablas() {
+		String tablas = "Tablas:";
+		String[] id = { "table" };
+		Cursor cursor = db.query("sqlite_master", new String[] { "name" },
+				"type = ?", id, null, null, null);
+		if (cursor.moveToFirst()) {
+			tablas += "\n" + cursor.getString(0);
+		} else {
+			tablas = "No hay tablas";
+		}
+		return tablas;
+	}
+
 	public List<String> getAllIdDeptos() {
 		List<String> idDeptos = new ArrayList<String>();
 		Cursor cursor = db
@@ -240,6 +253,21 @@ public class ControlDB {
 		}
 		cursor.close();
 		return idDeptos;
+	}
+	
+	public List<String> getAllIdMaterias() {
+		List<String> idMaterias = new ArrayList<String>();
+		Cursor cursor = db
+				.rawQuery(
+						"select codigomateria from materia order by codigomateria;",
+						null);
+		if (cursor.moveToFirst()) {
+			do {
+				idMaterias.add(cursor.getString(0));
+			} while (cursor.moveToNext());
+		}
+		cursor.close();
+		return idMaterias;
 	}
 
 	public String actualizar(Departamento departamento) {
@@ -281,7 +309,7 @@ public class ControlDB {
 
 	public Materia consultarMateria(String codmat) {
 		String[] id = { codmat };
-		Cursor cursor = db.query("MATERIA", camposMat, "CODIGOMATERIA = ?", id,
+		Cursor cursor = db.query("materia", camposMat, "codigomateria = ?", id,
 				null, null, null);
 		if (cursor.moveToFirst()) {
 			Materia materia = new Materia();

@@ -22,7 +22,7 @@ public class NuevaMateriaActivity extends Activity {
 	}
 
 	public void guardarMateria(View v) {
-		String regInsertados = "Registro insertado en la fila=";
+		String regInsertados = "";
 		Materia materia = new Materia();
 		materia.setCodigomateria(edtCodMateria.getText().toString());
 		materia.setNom_materia(edtNomMateria.getText().toString());
@@ -35,7 +35,7 @@ public class NuevaMateriaActivity extends Activity {
 						+ materia.getNom_materia(), Toast.LENGTH_LONG).show();
 	}
 
-	public void btnLimpiaDepto(View v) {
+	public void limpiarEntradas(View v) {
 		edtCodMateria.setText("");
 		edtNomMateria.setText("");
 	}
