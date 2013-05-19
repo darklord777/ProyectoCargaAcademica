@@ -269,7 +269,7 @@ public class ControlDB {
 		db.update("DEPARTAMENTO", values, "IDDEPARTAMENTO = ?", id);
 		return "Registro actualizado correctamente";
 	}
-	
+
 	public String actualizar(Materia materia) {
 		String[] id = { materia.getCodigomateria() };
 		ContentValues values = new ContentValues();
@@ -283,7 +283,7 @@ public class ControlDB {
 		int contador = 0;
 		if (verificarIntegridad(departamento, 7)
 				|| verificarIntegridad(departamento, 8)) {
-			regAfectados += "No se puede borrar,";
+			regAfectados += "Tiene registros hijos\nNo se puede borrar,";
 			if (verificarIntegridad(departamento, 7))
 				regAfectados += " DOCENTE_DPTO tiene registros.";
 			if (verificarIntegridad(departamento, 8))
@@ -291,18 +291,35 @@ public class ControlDB {
 			return regAfectados;
 		}
 
-		regAfectados = "Filas afectadas=";
-		contador += db.delete("DOCENTE_DPTO",
-				"IDDEPARTAMENTO='" + departamento.getIddepartamento() + "'",
-				null);
-
-		contador += db.delete("AREA_MATERIA",
-				"IDDEPARTAMENTO='" + departamento.getIddepartamento() + "'",
-				null);
-
+		regAfectados = "No tiene registros hijos\nFilas afectadas=";
+		/*
+		 * contador += db.delete("DOCENTE_DPTO", "IDDEPARTAMENTO='" +
+		 * departamento.getIddepartamento() + "'", null);
+		 * 
+		 * contador += db.delete("AREA_MATERIA", "IDDEPARTAMENTO='" +
+		 * departamento.getIddepartamento() + "'", null);
+		 */
 		contador += db.delete("DEPARTAMENTO",
 				"IDDEPARTAMENTO='" + departamento.getIddepartamento() + "'",
 				null);
+		regAfectados += contador;
+		return regAfectados;
+	}
+
+	public String eliminar(Materia materia) {
+		String regAfectados = "";
+		int contador = 0;
+		if (verificarIntegridad(materia, 9) || verificarIntegridad(materia, 10)) {
+			regAfectados += "Tiene registros hijos\nNo se puede borrar,";
+			if (verificarIntegridad(materia, 9))
+				regAfectados += " DETALLE_GRUPO_ASIGNADO tiene registros.";
+			if (verificarIntegridad(materia, 10))
+				regAfectados += " AREA_MATERIA tiene registros.";
+			return regAfectados;
+		}
+		regAfectados = "No tiene registros hijos\nFilas afectadas=";
+		contador += db.delete("MATERIA",
+				"CODIGOMATERIA='" + materia.getCodigomateria() + "'", null);
 		regAfectados += contador;
 		return regAfectados;
 	}
@@ -429,10 +446,26 @@ public class ControlDB {
 				return false;
 		}
 		case 9: {
-			return true;
+			Materia materia = (Materia) dato;
+			Cursor cursor = db.query(true, "DETALLE_GRUPO_ASIGNADO",
+					new String[] { "CODIGOMATERIA" }, "CODIGOMATERIA='"
+							+ materia.getCodigomateria() + "'", null, null,
+					null, null, null);
+			if (cursor.moveToFirst())
+				return true;
+			else
+				return false;
 		}
 		case 10: {
-			return true;
+			Materia materia = (Materia) dato;
+			Cursor cursor = db.query(true, "AREA_MATERIA",
+					new String[] { "CODIGOMATERIA" }, "CODIGOMATERIA='"
+							+ materia.getCodigomateria() + "'", null, null,
+					null, null, null);
+			if (cursor.moveToFirst())
+				return true;
+			else
+				return false;
 		}
 		case 11: {
 			return true;

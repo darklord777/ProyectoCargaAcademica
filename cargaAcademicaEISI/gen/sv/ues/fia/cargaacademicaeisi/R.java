@@ -109,7 +109,6 @@ public final class R {
         public static final int edtCodMateria=0x7f0a005f;
         public static final int edtNomDepto=0x7f0a0036;
         public static final int edtNomMateria=0x7f0a000a;
-        public static final int epnElimMateria=0x7f0a0039;
         public static final int idDepto=0x7f0a0061;
         public static final int idLocal=0x7f0a0042;
         public static final int idModalidadAA=0x7f0a0049;
@@ -127,6 +126,7 @@ public final class R {
         public static final int spnActMateria=0x7f0a000b;
         public static final int spnConsultarMateria=0x7f0a0037;
         public static final int spnElimDepto=0x7f0a0038;
+        public static final int spnElimMateria=0x7f0a0039;
         public static final int spnListaDeptos=0x7f0a0035;
         public static final int textLocales=0x7f0a004c;
         public static final int textMenuModalidad=0x7f0a005a;

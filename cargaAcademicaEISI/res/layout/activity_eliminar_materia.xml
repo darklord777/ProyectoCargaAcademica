@@ -20,7 +20,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Spinner
-        android:id="@+id/epnElimMateria"
+        android:id="@+id/spnElimMateria"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
@@ -31,14 +31,11 @@
         android:id="@+id/edtNomMateria"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/epnElimMateria"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
+        android:layout_alignLeft="@+id/spnElimMateria"
+        android:layout_below="@+id/spnElimMateria"
+        android:layout_marginTop="25dp"
         android:ems="10"
-        android:hint="@string/edtNomMateria" >
-
-        <requestFocus />
-    </EditText>
+        android:hint="@string/edtNomMateria" />
 
     <Button
         android:id="@+id/btnEliminarMateria"
