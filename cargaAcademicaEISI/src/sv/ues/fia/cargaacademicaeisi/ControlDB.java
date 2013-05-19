@@ -12,13 +12,12 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class ControlDB {
 	/* Mario */
-	private static final String[] camposDepto = new String[] {
-			"IDDEPARTAMENTO", "NOM_DEPTO" };
-	private static final String[] camposMat = new String[] { "CODIGOMATERIA",
-			"NOM_MATERIA" };
+	private static final String[] camposDepto = new String[] {"IDDEPARTAMENTO", "NOM_DEPTO" };
+	private static final String[] camposMat = new String[] { "CODIGOMATERIA","NOM_MATERIA" };
 
-	private static final String[] camposCiclo = new String[] { "ANIO",
-			"NUMERO", "FECHAINI", "FECHAFIN" };
+	private static final String[] camposCiclo = new String[] { "ANIO","NUMERO", "FECHAINI", "FECHAFIN" };
+	
+	private static final String[] camposLocal = new String[] {"IDLOCAL", "CAPACIDAD"};
 
 	private final Context context;
 	private DatabaseHelper DBHelper;
@@ -303,7 +302,7 @@ public class ControlDB {
 		} else {
 			regInsertados += contador;
 		}
-		return regInsertados;
+		return regInsertados;		
 	}
 
 	/** METODOS SERGIO */

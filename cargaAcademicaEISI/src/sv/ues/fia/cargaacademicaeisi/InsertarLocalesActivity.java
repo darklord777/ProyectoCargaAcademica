@@ -7,11 +7,11 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 public class InsertarLocalesActivity extends Activity {
 	private ControlDB helper;
 	private EditText idLocal;
-	private EditText capLocal;
-	
+	private EditText capLocal;	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,11 @@ public class InsertarLocalesActivity extends Activity {
 		regInsertados = helper.insertar(local);
 		helper.cerrar();
 		Toast.makeText(this, regInsertados, Toast.LENGTH_LONG).show();
+	}
+	
+	public void limpiarLocal(View v) {
+		idLocal.setText("");
+		capLocal.setText("");
 	}
 
 	@Override

@@ -34,6 +34,7 @@
     </EditText>
 
     <Button
+        android:onClick="limpiarLocal"
         android:id="@+id/limpiarLocal"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -50,7 +51,7 @@
         android:layout_alignLeft="@+id/capLocal"
         android:layout_centerVertical="true"
         android:drawableRight="@drawable/save"
-        android:onClick="insertarDepto"
+        android:onClick="insertarLocal"
         android:text="@string/btnGuardarLocal"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
