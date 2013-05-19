@@ -20,7 +20,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/edtIdAreaMat"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
@@ -32,21 +32,6 @@
         <requestFocus />
     </EditText>
 
-    <Spinner
-        android:id="@+id/spnIdDeptoNuevaAreaMat"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_below="@+id/editText1"
-        android:layout_marginTop="14dp" />
-
-    <Spinner
-        android:id="@+id/spnCodMateNuevaAreMat"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/spnIdDeptoNuevaAreaMat"
-        android:layout_below="@+id/spnIdDeptoNuevaAreaMat" />
-
     <Button
         android:id="@+id/btnGuarfarAreaMat"
         android:layout_width="fill_parent"
@@ -57,5 +42,21 @@
         android:drawableRight="@drawable/save2"
         android:onClick="guardarAreaMateria"
         android:text="@string/btnGuarfarAreaMat" />
+
+    <Spinner
+        android:id="@+id/spnIdDeptoNuevaAreaMat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spnCodMateNuevaAreMat"
+        android:layout_below="@+id/edtIdAreaMat"
+        android:layout_marginTop="18dp" />
+
+    <Spinner
+        android:id="@+id/spnCodMateNuevaAreMat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtIdAreaMat"
+        android:layout_below="@+id/spnIdDeptoNuevaAreaMat"
+        android:layout_marginTop="15dp" />
 
 </RelativeLayout>

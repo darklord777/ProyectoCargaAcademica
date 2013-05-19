@@ -17,6 +17,8 @@ public class ControlDB {
 			"IDDEPARTAMENTO", "NOM_DEPTO" };
 	private static final String[] camposMat = new String[] { "CODIGOMATERIA",
 			"NOM_MATERIA" };
+	private static final String[] camposAreaMat = new String[] { "IDAREAMAT",
+			"IDDEPARTAMENTO", "CODIGOMATERIA" };
 
 	private static final String[] camposCiclo = new String[] { "ANIO",
 			"NUMERO", "FECHAINI", "FECHAFIN" };
@@ -198,6 +200,22 @@ public class ControlDB {
 		mat.put("CODIGOMATERIA", materia.getCodigomateria());
 		mat.put("NOM_MATERIA", materia.getNom_materia());
 		contador = db.insert("MATERIA", null, mat);
+		if (contador == -1 || contador == 0) {
+			regInsertados = "Error, registro duplicado. Verificar Insercion";
+		} else {
+			regInsertados += contador;
+		}
+		return regInsertados;
+	}
+
+	public String insertar(AreaMateria areaMateria) {
+		String regInsertados = "Registro insertado en la fila No.=";
+		long contador = 0;
+		ContentValues areamat = new ContentValues();
+		areamat.put("IDAREAMAT", areaMateria.getIdareamat());
+		areamat.put("IDDEPARTAMENTO", areaMateria.getIddepartamento());
+		areamat.put("CODIGOMATERIA", areaMateria.getCodigomateria());
+		contador = db.insert("AREA_MATERIA", null, areamat);
 		if (contador == -1 || contador == 0) {
 			regInsertados = "Error, registro duplicado. Verificar Insercion";
 		} else {

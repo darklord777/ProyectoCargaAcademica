@@ -40,7 +40,6 @@ public class ConsultarMateriaActivity extends Activity implements
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.consultar_materia, menu);
 		return true;
 	}
@@ -48,17 +47,10 @@ public class ConsultarMateriaActivity extends Activity implements
 	@Override
 	public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2,
 			long arg3) {
-		String idMateria = arg0.getItemAtPosition(arg2).toString();
-		Materia materia = new Materia();
-		helper.abrir();
-		materia = helper.consultarMateria(idMateria);
-		helper.cerrar();
-		edtNomMateria.setText(materia.getNom_materia());
 	}
 
 	@Override
 	public void onNothingSelected(AdapterView<?> arg0) {
-		// TODO Auto-generated method stub
 
 	}
 

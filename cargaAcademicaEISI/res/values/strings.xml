@@ -134,5 +134,7 @@
     <string name="tvConsultDeptoAreMat">Codigo Departamento</string>
     <string name="tvCodMatAreaMat">Codigo Materia</string>
     <string name="btnEliminarAreaMat">Eliminar area Materia</string>
+    <string name="btnAdmonAreaMateria">Administrar Area Materia</string>
+    <string name="title_activity_admon_area_mat">AdmonAreaMatActivity</string>
 
 </resources>

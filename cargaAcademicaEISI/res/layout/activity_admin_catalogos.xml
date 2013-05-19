@@ -41,4 +41,14 @@
         android:layout_marginBottom="44dp"
         android:text="ver tablas" />
 
+    <Button
+        android:id="@+id/btnAdmonAreaMateria"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button_custom"
+        android:text="@string/btnAdmonAreaMateria"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
 </RelativeLayout>

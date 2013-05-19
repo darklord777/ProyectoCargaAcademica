@@ -138,6 +138,10 @@
             android:name="sv.ues.fia.cargaacademicaeisi.AreMateriaActualizarActivity"
             android:label="@string/title_activity_are_materia_actualizar" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.AdmonAreaMatActivity"
+            android:label="@string/title_activity_admon_area_mat" >
+        </activity>
     </application>
 
 </manifest>

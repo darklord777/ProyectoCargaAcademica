@@ -14,6 +14,7 @@ public class AdminCatalogosActivity extends Activity implements
 	private Button btnAdmonDepto;
 	private Button btnAdmonMateria;
 	private Button btnMostrarTablas;
+	private Button btnAdmonAreaMateria;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,8 @@ public class AdminCatalogosActivity extends Activity implements
 		btnAdmonMateria.setOnClickListener(this);
 		btnMostrarTablas = (Button) findViewById(R.id.btnMostrarTablas);
 		btnMostrarTablas.setOnClickListener(this);
+		btnAdmonAreaMateria = (Button) findViewById(R.id.btnAdmonAreaMateria);
+		btnAdmonAreaMateria.setOnClickListener(this);
 	}
 
 	@Override
@@ -44,6 +47,10 @@ public class AdminCatalogosActivity extends Activity implements
 		case R.id.btnAdmonMateria:
 			startActivity(new Intent(getApplicationContext(),
 					AdmonMateriaActivity.class));
+			break;
+		case R.id.btnAdmonAreaMateria:
+			startActivity(new Intent(getApplicationContext(),
+					AdmonAreaMatActivity.class));
 			break;
 		case R.id.btnMostrarTablas:
 			helper.abrir();
