@@ -60,9 +60,7 @@
         android:layout_marginBottom="16dp"
         android:ems="10"
         android:hint="@string/msgNombreModAA"
-        android:maxLength="6" >
-        <requestFocus />
-    </EditText>
+        android:maxLength="20" />   
 
     <EditText
         android:id="@+id/idModalidadAA"
