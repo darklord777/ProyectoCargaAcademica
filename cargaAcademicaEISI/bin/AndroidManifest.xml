@@ -122,6 +122,22 @@
             android:name="sv.ues.fia.cargaacademicaeisi.ActividadAcademicaMenuActivity"
             android:label="@string/title_activity_actividad_academica_menu" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.AreMateriaConsultarActivity"
+            android:label="@string/title_activity_are_materia_consultar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.AreMateriaNuevaActivity"
+            android:label="@string/title_activity_are_materia_nueva" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.AreMateriaEliminarActivity"
+            android:label="@string/title_activity_are_materia_eliminar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.AreMateriaActualizarActivity"
+            android:label="@string/title_activity_are_materia_actualizar" >
+        </activity>
     </application>
 
 </manifest>

@@ -96,14 +96,14 @@
     <string name="btn1_insertar_ModalidadCurso">Insertar Modalidad Curso</string>
     <string name="btn2_consultar_ModalidadCurso">Consultar Modalidad Curso</string>
     <string name="btn3_eliminar_ModalidadCurso">Eliminar Modalidad Curso</string>
-    <string name="btn4_actualizar_ModalidadCurso">Actualizar Modalidad Curso</string>    
+    <string name="btn4_actualizar_ModalidadCurso">Actualizar Modalidad Curso</string>
     <string name="title_activity_actividad_academica_menu">ActividadAcademicaMenuActivity</string>
     <string name="TextViewActividadAcad">Menu Actividad Academica</string>
     <string name="btn1_insertar_ActividadAcad">Insertar Actividad Academica</string>
     <string name="btn2_consultar_ActividadAcad">Consultar Actividad Academica</string>
     <string name="btn3_eliminar_ActividadAcad">Eliminar Actividad Academica</string>
     <string name="btn4_actualizar_ActividadAcad">Actualizar Actividad Academica</string>
-    
+
     <!-- Michael -->
 
     <string name="title_activity_eliminar_depto">EliminarDeptoActivity</string>
@@ -121,5 +121,14 @@
     <string name="edtCodMateria">Codigo de Materia</string>
     <string name="btnGuardarMateria">Guardar Materia</string>
     <string name="msgActualizarMateria">Actualizar Materia</string>
+    <string name="title_activity_area_materia_insertar">AreaMateriaInsertarActivity</string>
+    <string name="title_activity_are_materia_consultar">AreMateriaConsultarActivity</string>
+    <string name="title_activity_are_materia_nueva">AreMateriaNuevaActivity</string>
+    <string name="title_activity_are_materia_eliminar">AreMateriaEliminarActivity</string>
+    <string name="title_activity_are_materia_actualizar">AreMateriaActualizarActivity</string>
+    <string name="bntNuevaAreaMat">Nueva Area de Materia</string>
+    <string name="btnNuevaAreaMateria">Nueva Area Materia</string>
+    <string name="edtIdAreaMat">Codigo Area Materia</string>
+    <string name="btnGuarfarAreaMat">Guardar area materia</string>
 
 </resources>
