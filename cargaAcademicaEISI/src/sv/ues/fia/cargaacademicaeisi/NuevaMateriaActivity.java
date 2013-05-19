@@ -29,7 +29,10 @@ public class NuevaMateriaActivity extends Activity {
 		helper.abrir();
 		regInsertados = helper.insertar(materia);
 		helper.cerrar();
-		Toast.makeText(this, regInsertados, Toast.LENGTH_LONG).show();
+		Toast.makeText(
+				this,
+				regInsertados + " : " + materia.getCodigomateria() + " : "
+						+ materia.getNom_materia(), Toast.LENGTH_LONG).show();
 	}
 
 	public void btnLimpiaDepto(View v) {

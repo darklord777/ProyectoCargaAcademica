@@ -192,6 +192,21 @@ public class ControlDB {
 		return regInsertados;
 	}
 
+	public String insertar(Materia materia) {
+		String regInsertados = "Registro insertado en la fila No.=";
+		long contador = 0;
+		ContentValues mat = new ContentValues();
+		mat.put("CODIGOMATERIA", materia.getCodigomateria());
+		mat.put("NOM_MATERIA", materia.getNom_materia());
+		contador = db.insert("MATERIA", null, mat);
+		if (contador == -1 || contador == 0) {
+			regInsertados = "Error, registro duplicado. Verificar Insercion";
+		} else {
+			regInsertados += contador;
+		}
+		return regInsertados;
+	}
+
 	public Departamento consultarDepto(String idepto) {
 		String[] id = { idepto };
 		Cursor cursor = db.query("DEPARTAMENTO", camposDepto,
@@ -256,21 +271,6 @@ public class ControlDB {
 				null);
 		regAfectados += contador;
 		return regAfectados;
-	}
-
-	public String insertar(Materia materia) {
-		String regInsertados = "Registro insertado en la fila No.=";
-		long contador = 0;
-		ContentValues mat = new ContentValues();
-		mat.put("CODIGOMATERIA", materia.getCodigomateria());
-		mat.put("NOM_MATERIA", materia.getNom_materia());
-		contador = db.insert("MATERIA", null, mat);
-		if (contador == -1 || contador == 0) {
-			regInsertados = "Error, registro duplicado. Verificar Insercion";
-		} else {
-			regInsertados += contador;
-		}
-		return regInsertados;
 	}
 
 	public Materia consultarMateria(String codmat) {
