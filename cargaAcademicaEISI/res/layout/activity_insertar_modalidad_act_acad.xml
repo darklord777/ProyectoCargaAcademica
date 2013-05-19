@@ -8,26 +8,71 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".InsertarModalidadActAcadActivity" >
-    
+
+    <TextView
+        android:id="@+id/textViewModAA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="@string/TextViewModAA" />
+
+    <Button
+        android:id="@+id/btnGModAA"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/limpiarModAA"
+        android:layout_alignLeft="@+id/limpiarModAA"
+        android:layout_marginBottom="47dp"
+        android:drawableRight="@drawable/save"
+        android:onClick="insertarModalidadAA"
+        android:text="@string/btnGuardarLocal"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/limpiarModAA"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idModalidadAA"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="81dp"
+        android:drawableRight="@drawable/clear"
+        android:onClick="limpiarModalidadAA"
+        android:text="@string/btn_limpiarLocal" />
+
+    <EditText
+        android:id="@+id/DesHoras"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/NombreModAA"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="@string/msgDescHorasModAA"
+        android:maxLength="6" />
+
+    <EditText
+        android:id="@+id/NombreModAA"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/DesHoras"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="@string/msgNombreModAA"
+        android:maxLength="6" >
+        <requestFocus />
+    </EditText>
+
     <EditText
         android:id="@+id/idModalidadAA"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
+        android:layout_above="@+id/NombreModAA"
+        android:layout_alignLeft="@+id/NombreModAA"
+        android:layout_marginBottom="14dp"
         android:ems="10"
-        android:hint="@string/msgidModalidadAA"        
+        android:hint="@string/msgidModalidadAA"
         android:maxLength="6" />
-
-    <EditText
-        android:id="@+id/idNombreModAA"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/idModalidadAA"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint="@string/msgNombreModAA"
-        android:maxLength="6" />
-   
+        
 </RelativeLayout>

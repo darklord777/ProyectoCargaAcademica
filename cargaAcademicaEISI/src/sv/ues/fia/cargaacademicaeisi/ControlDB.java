@@ -305,15 +305,16 @@ public class ControlDB {
 		}
 		return regInsertados;		
 	}
-	/*
 	
-	public String insertar(Modalidades modalidad) {
+	
+	public String insertar(Modalidad_Act_Acad modalidadAA) {
 		String regInsertados = "Registro insertado en la fila No.=";
 		long contador = 0;
-		ContentValues loc = new ContentValues();
-		loc.put("IDLOCAL", local.getIdlocal());
-		loc.put("CAPACIDAD", local.getCapacidad());
-		contador = db.insert("LOCALES", null, loc);
+		ContentValues modalidad = new ContentValues();
+		modalidad.put("IDMODALIDAD", modalidadAA.getIdmodalidad());
+		modalidad.put("NOM_MODALIDAD", modalidadAA.getNom_modalidad());
+		modalidad.put("DESCUENTO_HORAS", modalidadAA.getDescuento_horas());
+		contador = db.insert("LOCALES", null, modalidad);
 		if (contador == -1 || contador == 0) {
 			regInsertados = "Error. Verificar Insercion";
 		} else {
@@ -321,7 +322,7 @@ public class ControlDB {
 		}
 		return regInsertados;		
 	}
-*/
+
 	/** METODOS SERGIO */
 
 	/* Verificacion de integridad */
