@@ -9,4 +9,42 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".AreMateriaEliminarActivity" >
 
+    <TextView
+        android:id="@+id/tvConsultDeptoAreMat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spnElimAreaMateria"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/tvConsultDeptoAreMat"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="@string/btnEliminarAreaMat"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spnElimAreaMateria"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvConsultDeptoAreMat"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tvCodMatAreaMat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvConsultDeptoAreMat"
+        android:layout_below="@+id/tvConsultDeptoAreMat"
+        android:layout_marginTop="24dp"
+        android:text="@string/tvCodMatAreaMat"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
 </RelativeLayout>

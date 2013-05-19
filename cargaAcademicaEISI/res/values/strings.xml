@@ -130,5 +130,9 @@
     <string name="btnNuevaAreaMateria">Nueva Area Materia</string>
     <string name="edtIdAreaMat">Codigo Area Materia</string>
     <string name="btnGuarfarAreaMat">Guardar area materia</string>
+    <string name="btnConsultarAreaMat">Consultar Area Materia</string>
+    <string name="tvConsultDeptoAreMat">Codigo Departamento</string>
+    <string name="tvCodMatAreaMat">Codigo Materia</string>
+    <string name="btnEliminarAreaMat">Eliminar area Materia</string>
 
 </resources>
