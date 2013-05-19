@@ -269,6 +269,14 @@ public class ControlDB {
 		db.update("DEPARTAMENTO", values, "IDDEPARTAMENTO = ?", id);
 		return "Registro actualizado correctamente";
 	}
+	
+	public String actualizar(Materia materia) {
+		String[] id = { materia.getCodigomateria() };
+		ContentValues values = new ContentValues();
+		values.put("NOM_MATERIA", materia.getNom_materia());
+		db.update("MATERIA", values, "CODIGOMATERIA = ?", id);
+		return "Registro actualizado correctamente";
+	}
 
 	public String eliminar(Departamento departamento) {
 		String regAfectados = "";
