@@ -19,42 +19,8 @@
         android:text="@string/btnNuevaMateria"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <Button
-        android:id="@+id/btnGuardarMateria"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_below="@+id/editText2"
-        android:layout_marginTop="24dp"
-        android:drawableRight="@drawable/save2"
-        android:onClick="guardarMateria"
-        android:text="@string/btnGuardarMateria"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
     <EditText
-        android:id="@+id/editText2"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_below="@+id/editText1"
-        android:layout_marginTop="18dp"
-        android:ems="10"
-        android:hint="@string/edtNomMateria" />
-
-    <Button
-        android:id="@+id/btnLimpiaDepto"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btnGuardarMateria"
-        android:layout_below="@+id/btnGuardarMateria"
-        android:layout_marginTop="22dp"
-        android:drawableRight="@drawable/clear"
-        android:onClick="limpiarEntradas"
-        android:text="@string/btnLimpiaDepto"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/edtCodMateria"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
@@ -65,5 +31,39 @@
 
         <requestFocus />
     </EditText>
+
+    <EditText
+        android:id="@+id/edtNomMateria"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtCodMateria"
+        android:layout_below="@+id/edtCodMateria"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="@string/edtNomMateria" />
+
+    <Button
+        android:id="@+id/btnLimpiaDepto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtNomMateria"
+        android:layout_below="@+id/btnGuardarMateria"
+        android:layout_marginTop="20dp"
+        android:drawableRight="@drawable/clear"
+        android:onClick="limpiarEntradas"
+        android:text="@string/btnLimpiaDepto"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btnGuardarMateria"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnLimpiaDepto"
+        android:layout_below="@+id/edtNomMateria"
+        android:layout_marginTop="32dp"
+        android:drawableRight="@drawable/save2"
+        android:onClick="guardarMateria"
+        android:text="@string/btnGuardarMateria"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

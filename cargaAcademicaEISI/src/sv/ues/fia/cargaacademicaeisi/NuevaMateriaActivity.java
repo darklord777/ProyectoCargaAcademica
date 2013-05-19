@@ -3,13 +3,38 @@ package sv.ues.fia.cargaacademicaeisi;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class NuevaMateriaActivity extends Activity {
+	private ControlDB helper;
+	private EditText edtCodMateria;
+	private EditText edtNomMateria;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_nueva_materia);
+		helper = new ControlDB(this);
+		edtCodMateria = (EditText) findViewById(R.id.edtCodMateria);
+		edtNomMateria = (EditText) findViewById(R.id.edtNomMateria);
+	}
+
+	public void guardarMateria(View v) {
+		String regInsertados = "Registro insertado en la fila=";
+		Materia materia = new Materia();
+		materia.setCodigomateria(edtCodMateria.getText().toString());
+		materia.setNom_materia(edtNomMateria.getText().toString());
+		helper.abrir();
+		regInsertados = helper.insertar(materia);
+		helper.cerrar();
+		Toast.makeText(this, regInsertados, Toast.LENGTH_LONG).show();
+	}
+
+	public void btnLimpiaDepto(View v) {
+		edtCodMateria.setText("");
+		edtNomMateria.setText("");
 	}
 
 	@Override

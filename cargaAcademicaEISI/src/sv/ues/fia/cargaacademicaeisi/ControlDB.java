@@ -14,6 +14,9 @@ public class ControlDB {
 	/* Mario */
 	private static final String[] camposDepto = new String[] {
 			"IDDEPARTAMENTO", "NOM_DEPTO" };
+	private static final String[] camposMat = new String[] { "CODIGOMATERIA",
+			"NOM_MATERIA" };
+
 	private static final String[] camposCiclo = new String[] { "ANIO",
 			"NUMERO", "FECHAINI", "FECHAFIN" };
 
@@ -41,6 +44,7 @@ public class ControlDB {
 				// Mario
 				db.execSQL("CREATE TABLE DEPARTAMENTO ( IDDEPARTAMENTO  VARCHAR(6)  NOT NULL PRIMARY KEY, NOM_DEPTO VARCHAR(20));");
 				db.execSQL("CREATE TABLE AREA_MATERIA ( IDAREAMAT VARCHAR(6) NOT NULL PRIMARY KEY, IDDEPARTAMENTO VARCHAR(6), CODIGOMATERIA VARCHAR(6));");
+				db.execSQL("CREATE TABLE MATERIA ( CODIGOMATERIA VARCHAR(6) PRIMARY KEY NOT NULL, NOM_MATERIA VARCHAR(20) NULL);");
 				// Mario
 				db.execSQL("CREATE TABLE DOCENTE_DPTO ( IDDEPARTAMENTO  VARCHAR(6) NOT NULL, IDDOCENTE VARCHAR(8) NOT NULL, PRIMARY KEY (IDDEPARTAMENTO, IDDOCENTE));");
 				/** Alexis */
@@ -252,6 +256,35 @@ public class ControlDB {
 				null);
 		regAfectados += contador;
 		return regAfectados;
+	}
+
+	public String insertar(Materia materia) {
+		String regInsertados = "Registro insertado en la fila No.=";
+		long contador = 0;
+		ContentValues mat = new ContentValues();
+		mat.put("CODIGOMATERIA", materia.getCodigomateria());
+		mat.put("NOM_MATERIA", materia.getNom_materia());
+		contador = db.insert("MATERIA", null, mat);
+		if (contador == -1 || contador == 0) {
+			regInsertados = "Error, registro duplicado. Verificar Insercion";
+		} else {
+			regInsertados += contador;
+		}
+		return regInsertados;
+	}
+
+	public Materia consultarMateria(String codmat) {
+		String[] id = { codmat };
+		Cursor cursor = db.query("MATERIA", camposMat, "CODIGOMATERIA = ?", id,
+				null, null, null);
+		if (cursor.moveToFirst()) {
+			Materia materia = new Materia();
+			materia.setCodigomateria(cursor.getString(0));
+			materia.setNom_materia(cursor.getString(1));
+			return materia;
+		} else {
+			return null;
+		}
 	}
 
 	/** METODOS EMERSON */
