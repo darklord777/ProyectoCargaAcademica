@@ -277,6 +277,7 @@
     <string name="title_activity_consultar_contrato">ConsultarContratoActivity</string>
     <string name="title_activity_eliminar_contrato">EliminarContratoActivity</string>
     <string name="btnAdmonDetGpoAsig">Adminstrar Detalle grupo asignado</string>
+    
     <string name="title_activity_insertar_actividad_academica">InsertarActividadAcademicaActivity</string>
     <string name="msgActivAcad">Insertar Actividad Academica</string>
     <string name="msgidActAcad">Digite codigo</string>
@@ -291,6 +292,6 @@
     <string name="selectIdLocal">Seleccione Local</string>
     <string name="spinner_Slocal">Spinner Select Local</string>
     <string name="msgCapacLocal">Capidad Local</string>
-    <string name="btn_concultarLocal">Realizar Consulta</string>
+    <string name="selectCapaLocal">Capacidad del Local</string>
 
 </resources>

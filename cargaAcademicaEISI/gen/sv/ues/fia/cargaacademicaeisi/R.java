@@ -52,6 +52,7 @@ public final class R {
         public static final int NomModCurso=0x7f0a00c4;
         public static final int NombreActAcad=0x7f0a00ae;
         public static final int NombreModAA=0x7f0a00bf;
+        public static final int TextView01=0x7f0a00c7;
         public static final int action_settings=0x7f0a00ee;
         public static final int botonCargo=0x7f0a00d6;
         public static final int botonDepartamento=0x7f0a00d3;
@@ -131,7 +132,6 @@ public final class R {
         public static final int btn_MenuModalidad_Cons=0x7f0a00e2;
         public static final int btn_MenuModalidad_Elim=0x7f0a00e1;
         public static final int btn_MenuModalidad_Ins=0x7f0a00e3;
-        public static final int btn_consultarLocal=0x7f0a00c8;
         public static final int btnlimpiarInsertTipoCont=0x7f0a00b6;
         public static final int button1_MenuCARGAACADEMICA_Insert=0x7f0a0050;
         public static final int button1_MenuCiclo_A=0x7f0a006e;
@@ -158,7 +158,7 @@ public final class R {
         public static final int button4_MenuCiclo_D=0x7f0a006d;
         public static final int buttonZ1_eliminar_actividad=0x7f0a008d;
         public static final int capLocal=0x7f0a00b8;
-        public static final int capacidadLocal=0x7f0a00c7;
+        public static final int capacidadLocal=0x7f0a00c8;
         public static final int editText1_consult_inicio=0x7f0a0062;
         public static final int editText2_consult_fin=0x7f0a0064;
         public static final int editTxtConsultHorasTipoCont=0x7f0a0071;
@@ -525,7 +525,6 @@ public final class R {
         public static final int btnNuevoDepto=0x7f070007;
         public static final int btnNuevoDetGopAsig=0x7f0700ea;
         public static final int btnNuevoDocente=0x7f070070;
-        public static final int btn_concultarLocal=0x7f070109;
         public static final int btn_limpiarLocal=0x7f070026;
         public static final int btn_limpiarModC=0x7f070050;
         public static final int button1_ayuda_cargaacademica=0x7f0700b4;
@@ -606,6 +605,7 @@ public final class R {
         public static final int msj_fechafin_hint=0x7f0700de;
         public static final int msj_fechainicio_hint=0x7f0700dd;
         public static final int nLocal=0x7f070025;
+        public static final int selectCapaLocal=0x7f070109;
         public static final int selectIdLocal=0x7f070106;
         public static final int spinner_Slocal=0x7f070107;
         public static final int spinner_anio_ciclo=0x7f0700d8;

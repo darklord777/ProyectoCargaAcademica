@@ -24,28 +24,26 @@
         android:layout_marginTop="14dp"
         android:prompt="@string/spinner_Slocal" />
 
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/capacidadLocal"
+        android:layout_below="@+id/spn_Select_Local"
+        android:layout_marginTop="55dp"
+        android:text="@string/selectCapaLocal" />
+
     <EditText
         android:id="@+id/capacidadLocal"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/spn_Select_Local"
-        android:layout_below="@+id/spn_Select_Local"
-        android:layout_marginTop="32dp"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginTop="14dp"
         android:ems="10"
         android:hint="@string/msgCapacLocal"
         android:inputType="none"
-        android:maxLength="4" />
-
-    <Button
-        android:id="@+id/btn_consultarLocal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/capacidadLocal"
-        android:layout_below="@+id/capacidadLocal"
-        android:layout_marginTop="72dp"
-        android:drawableRight="@drawable/save2"
-        android:onClick="consultarLocal"
-        android:text="@string/btn_concultarLocal"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:maxLength="4" >
+    </EditText>
 
 </RelativeLayout>
