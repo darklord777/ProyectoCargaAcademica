@@ -28,7 +28,7 @@
         android:layout_marginTop="26dp" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/edtIdDeptoAreMat"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/spnElimAreaMateria"
@@ -47,17 +47,17 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="67dp"
-        android:text="@string/btnEliminarDetGpoAsig"
         android:drawableRight="@drawable/clear"
-        android:onClick="eliminarDetalle" />
+        android:onClick="eliminarDetalleAreaMat"
+        android:text="@string/btnEliminarDetGpoAsig" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/edtCodMateAreaMat"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_below="@+id/editText1"
-        android:layout_marginTop="17dp"
+        android:layout_alignLeft="@+id/edtIdDeptoAreMat"
+        android:layout_below="@+id/edtIdDeptoAreMat"
+        android:layout_marginTop="22dp"
         android:ems="10"
         android:hint="@string/edtCodMateAreaMat" />
 

@@ -2,24 +2,22 @@ package sv.ues.fia.cargaacademicaeisi;
 
 import java.util.List;
 
-import sv.ues.fia.cargaacademicaeisi.R.id;
-
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
 
 public class AreMateriaConsultarActivity extends Activity implements
 		OnItemSelectedListener {
 	private ControlDB helper;
 	private Spinner spnConsultAreaMat;
-	private TextView tvConsultDeptoAreMat;
-	private TextView tvCodMatAreaMat;
+	private EditText tvConsultDeptoAreMat;
+	private EditText tvCodMatAreaMat;
 	private List<String> idAreMats;
 	private ArrayAdapter<String> adapter;
 
@@ -29,8 +27,8 @@ public class AreMateriaConsultarActivity extends Activity implements
 		setContentView(R.layout.activity_are_materia_consultar);
 		helper = new ControlDB(this);
 		spnConsultAreaMat = (Spinner) findViewById(R.id.spnConsultAreaMat);
-		tvConsultDeptoAreMat = (TextView) findViewById(R.id.tvConsultDeptoAreMat);
-		tvCodMatAreaMat = (TextView) findViewById(R.id.tvCodMatAreaMat);
+		tvConsultDeptoAreMat = (EditText) findViewById(R.id.tvConsultDeptoAreMat);
+		tvCodMatAreaMat = (EditText) findViewById(R.id.tvCodMatAreaMat);
 
 		helper.abrir();
 		idAreMats = helper.getAllIdAreaMats();

@@ -24,11 +24,11 @@ public class ControlDB {
 			"CAPACIDAD" };
 	private static final String[] camposModalidadAA = new String[] {
 			"IDMODALIDAD", "NOM_MODALIDAD", "DESCUENTO_HORAS" };
-	
+
 	private static final String[] camposCargaAcademica = new String[] {
-		"IDDOCENTE", "ANIO", "NUMERO" };
+			"IDDOCENTE", "ANIO", "NUMERO" };
 	private static final String[] camposCiclo = new String[] { "ANIO",
-		"NUMERO", "FECHAINI", "FECHAFIN" };
+			"NUMERO", "FECHAINI", "FECHAFIN" };
 
 	private final Context context;
 	private DatabaseHelper DBHelper;
@@ -142,7 +142,7 @@ public class ControlDB {
 		// returning lables
 		return labels;
 	}
-	
+
 	// TABLA CICLO**************************************************
 	public String insertarCiclo(Ciclo ciclo) {
 		String regInsertados = "Registro de Ciclo Insertado Nº= ";
@@ -205,7 +205,6 @@ public class ControlDB {
 		return "Registro Actualizado Correctamente";
 	}
 
-	
 	// TABLA CARGA ACADEMICA********************************************
 	public String insertar(Carga_Academica carga) {
 		String regInsertados = "Registro Carga Academica Insertado Nº= ";
@@ -215,7 +214,7 @@ public class ControlDB {
 			ContentValues carga_acad = new ContentValues();
 			carga_acad.put("IDDOCENTE", carga.getIddocente());
 			carga_acad.put("ANIO", carga.getAnio());
-			carga_acad.put("NUMERO",carga.getNumero());
+			carga_acad.put("NUMERO", carga.getNumero());
 			contador = db.insert("CARGA_ACADEMICA", null, carga_acad);
 		}
 
@@ -227,10 +226,12 @@ public class ControlDB {
 
 		return regInsertados;
 	}
+
 	public String eliminar(Carga_Academica carga) {
-		//verificando si tiene REGISTROS hijos
+		// verificando si tiene REGISTROS hijos
 		String regAfectados = "Registro Carga Academica Eliminados= ";
-		String where = "IDDOCENTE ='"+carga.getIddocente()+"' AND ANIO = '" + carga.getAnio() + "' AND NUMERO='"+ carga.getNumero() + "'";
+		String where = "IDDOCENTE ='" + carga.getIddocente() + "' AND ANIO = '"
+				+ carga.getAnio() + "' AND NUMERO='" + carga.getNumero() + "'";
 		int contador = 0;
 		if (verificarIntegridad(carga, 3)) {
 			// contador += db.delete("ciclo",where, null);
@@ -242,8 +243,9 @@ public class ControlDB {
 
 		return regAfectados;
 	}
-	//   TABLA  DETALLE_CARGA_MAT**************************************************
-	//VERIFICAR INTEGRIDAD?????????????????????????????????????????????????
+
+	// TABLA DETALLE_CARGA_MAT**************************************************
+	// VERIFICAR INTEGRIDAD?????????????????????????????????????????????????
 	public String insertar(Detalle_Carga_Mat cargamat) {
 		String regInsertados = "Registro Insertado de Carga de Materias  Nº= ";
 		long contador = 0;
@@ -260,57 +262,62 @@ public class ControlDB {
 			contador = db.insert("DETALLE_CARGA_MAT", null, cargamaterias);
 			regInsertados = regInsertados + contador;
 		}
-		
+
 		/*
-		if (contador == -1 || contador == 0) {
-			regInsertados = "Error al Insertar el registro Ciclo, Ciclo Duplicado. Verificar Inserción";
-		} else {
-			regInsertados = regInsertados + contador;
-		}*/
+		 * if (contador == -1 || contador == 0) { regInsertados =
+		 * "Error al Insertar el registro Ciclo, Ciclo Duplicado. Verificar Inserción"
+		 * ; } else { regInsertados = regInsertados + contador; }
+		 */
 		return regInsertados;
 	}
-	
+
 	public String eliminar(Detalle_Carga_Mat cargamat) {
-		//verificando si tiene REGISTROS hijos
+		// verificando si tiene REGISTROS hijos
 		String regAfectados = "Registro Carga Materia Eliminados= ";
-		String where = "IDDOCENTE ='"+cargamat.getIddocente()+"' AND ANIO = '" + cargamat.getAnio() + "' AND NUMERO='"+ cargamat.getNumero() + "' AND IDDETALLECURSO='"+cargamat.getIddetallecurso()+"'";
+		String where = "IDDOCENTE ='" + cargamat.getIddocente()
+				+ "' AND ANIO = '" + cargamat.getAnio() + "' AND NUMERO='"
+				+ cargamat.getNumero() + "' AND IDDETALLECURSO='"
+				+ cargamat.getIddetallecurso() + "'";
 		int contador = 0;
 		contador += db.delete("DETALLE_CARGA_MAT", where, null);
 		regAfectados += contador;
 		return regAfectados;
 	}
-	
-//  TABLA  DETALLE_ACT_ACAD**************************************************
-	
-	//VERIFICAR INTEGRIDAD?????????????????????????????????????????????????
-		public String insertar(Detalle_Carga_ActAcad cargamat) {
-			String regInsertados = "Registro Insertado de Detalle Carga de Academica  Nº= ";
-			long contador = 0;
-			ContentValues cargaactividad = new ContentValues();
-			cargaactividad.put("IDDOCENTE", cargamat.getIddocente());
-			cargaactividad.put("ANIO", cargamat.getAnio());
-			cargaactividad.put("NUMERO", cargamat.getNumero());
-			cargaactividad.put("IDACTACAD", cargamat.getIdactacad());
 
-			if (verificarIntegridad(cargamat, 5)) {
-				regInsertados = "Error al Insertar el Detalle de Carga Academica, Registro Duplicado. Verificar inserción";
-			} else {
-				contador = db.insert("DETALLE_CARGA_ACT_ACAD", null, cargaactividad);
-				regInsertados = regInsertados + contador;
-			}
-			return regInsertados;
+	// TABLA DETALLE_ACT_ACAD**************************************************
+
+	// VERIFICAR INTEGRIDAD?????????????????????????????????????????????????
+	public String insertar(Detalle_Carga_ActAcad cargamat) {
+		String regInsertados = "Registro Insertado de Detalle Carga de Academica  Nº= ";
+		long contador = 0;
+		ContentValues cargaactividad = new ContentValues();
+		cargaactividad.put("IDDOCENTE", cargamat.getIddocente());
+		cargaactividad.put("ANIO", cargamat.getAnio());
+		cargaactividad.put("NUMERO", cargamat.getNumero());
+		cargaactividad.put("IDACTACAD", cargamat.getIdactacad());
+
+		if (verificarIntegridad(cargamat, 5)) {
+			regInsertados = "Error al Insertar el Detalle de Carga Academica, Registro Duplicado. Verificar inserción";
+		} else {
+			contador = db
+					.insert("DETALLE_CARGA_ACT_ACAD", null, cargaactividad);
+			regInsertados = regInsertados + contador;
 		}
-	
-		public String eliminar(Detalle_Carga_ActAcad cargaactiv) {
-			//verificando si tiene REGISTROS hijos
-			String regAfectados = "Registro Carga Materia Eliminados= ";
-			String where = "IDDOCENTE ='"+cargaactiv.getIddocente()+"' AND ANIO = '" + cargaactiv.getAnio() + "' AND NUMERO='"+ cargaactiv.getNumero() + "' AND IDACTACAD='"+cargaactiv.getIdactacad()+"'";
-			int contador = 0;
-			contador += db.delete("DETALLE_CARGA_ACT_ACAD", where, null);
-			regAfectados += contador;
-			return regAfectados;
-		}
-	
+		return regInsertados;
+	}
+
+	public String eliminar(Detalle_Carga_ActAcad cargaactiv) {
+		// verificando si tiene REGISTROS hijos
+		String regAfectados = "Registro Carga Materia Eliminados= ";
+		String where = "IDDOCENTE ='" + cargaactiv.getIddocente()
+				+ "' AND ANIO = '" + cargaactiv.getAnio() + "' AND NUMERO='"
+				+ cargaactiv.getNumero() + "' AND IDACTACAD='"
+				+ cargaactiv.getIdactacad() + "'";
+		int contador = 0;
+		contador += db.delete("DETALLE_CARGA_ACT_ACAD", where, null);
+		regAfectados += contador;
+		return regAfectados;
+	}
 
 	/** METODOS MARIO */
 	public String insertar(Departamento departamento) {
@@ -490,6 +497,16 @@ public class ControlDB {
 		return regAfectados;
 	}
 
+	public String eliminar(AreaMateria areaMateria) {
+		String regAfectados = "";
+		int contador = 0;
+		regAfectados = "No tiene registros hijos\nFilas afectadas=";
+		contador += db.delete("AREA_MATERIA",
+				"IDAREAMAT='" + areaMateria.getIdareamat() + "'", null);
+		regAfectados += contador;
+		return regAfectados;
+	}
+
 	public Materia consultarMateria(String codmat) {
 		String[] id = { codmat };
 		Cursor cursor = db.query("MATERIA", camposMat, "CODIGOMATERIA = ?", id,
@@ -506,8 +523,8 @@ public class ControlDB {
 
 	public AreaMateria consultarAreaMateria(String idaremat) {
 		String[] id = { idaremat };
-		Cursor cursor = db.query("AREA_MATERIA", camposAreaMat, "IDAREAMAT = ?",
-				id, null, null, null);
+		Cursor cursor = db.query("AREA_MATERIA", camposAreaMat,
+				"IDAREAMAT = ?", id, null, null, null);
 		if (cursor.moveToFirst()) {
 			AreaMateria areaMateria = new AreaMateria();
 			areaMateria.setIdareamat(cursor.getString(0));
@@ -568,10 +585,11 @@ public class ControlDB {
 		}
 		return regInsertados;
 	}
-	
+
 	public List<String> getAll_IdLocales() {
 		List<String> idLocales = new ArrayList<String>();
-		Cursor cursor = db.rawQuery("select IDLOCAL from LOCALES order by IDLOCAL;",null);
+		Cursor cursor = db.rawQuery(
+				"select IDLOCAL from LOCALES order by IDLOCAL;", null);
 		if (cursor.moveToFirst()) {
 			do {
 				idLocales.add(cursor.getString(0));
@@ -580,22 +598,23 @@ public class ControlDB {
 		cursor.close();
 		return idLocales;
 	}
-	
+
 	public Locales consultarLocal(String idLocal) {
 		return null;
-		
+
 	}
-	
+
 	public String eliminar(Locales local) {
 		String regAfectados = "";
 		int contador = 0;
 		if (verificarIntegridad(local, 7)) {
-				regAfectados += "Tiene registros hijos\nNo se puede borrar,";
+			regAfectados += "Tiene registros hijos\nNo se puede borrar,";
 			return regAfectados;
 		}
 		regAfectados = "No tiene registros hijos\nFilas afectadas=";
-		
-		contador += db.delete("LOCALES","IDLOCAL='" + local.getIdlocal() + "'",	null);
+
+		contador += db.delete("LOCALES",
+				"IDLOCAL='" + local.getIdlocal() + "'", null);
 		regAfectados += contador;
 		return regAfectados;
 	}
@@ -614,11 +633,13 @@ public class ControlDB {
 
 		switch (relacion) {
 		case 1: {
-			//VERIFICAR QUE AL ELIMINAR CICLONO EXISTA REGISTROS HIJOS EN TABLA CARGA_ACADEMICA
+			// VERIFICAR QUE AL ELIMINAR CICLONO EXISTA REGISTROS HIJOS EN TABLA
+			// CARGA_ACADEMICA
 			Ciclo ciclo2 = (Ciclo) dato;
-			String[] id0 = {"ANIO","NUMERO" };
+			String[] id0 = { "ANIO", "NUMERO" };
 			String[] id4 = { ciclo2.getAnio(), ciclo2.getNumero() };
-			Cursor c = db.query("CARGA_ACADEMICA", id0, "ANIO = ? AND NUMERO = ?",id4,null, null, null);
+			Cursor c = db.query("CARGA_ACADEMICA", id0,
+					"ANIO = ? AND NUMERO = ?", id4, null, null, null);
 			if (c.moveToFirst())
 				return true;
 			else
@@ -627,17 +648,21 @@ public class ControlDB {
 		}
 
 		case 2: {
-			// verificar que al insertar CARGA_aCADEMICA exista IDDOCENTE,  AÑIO y el
+			// verificar que al insertar CARGA_aCADEMICA exista IDDOCENTE, AÑIO
+			// y el
 			// CICLO
 			Carga_Academica carga = (Carga_Academica) dato;
 			String[] id1 = { carga.getIddocente() };
 			String[] id2 = { carga.getAnio() };
-			String[] id0 = {"ANIO","NUMERO" };
+			String[] id0 = { "ANIO", "NUMERO" };
 			String[] id4 = { carga.getAnio(), carga.getNumero() };
 			// abrir();
-			Cursor cursor1 = db.query("DOCENTE", null, "IDDOCENTE = ?", id1, null,null, null);
-			Cursor cursor2 = db.query("CICLO", id0, "ANIO = ? AND NUMERO = ?",id4,null, null, null);
-			//Cursor cursor3 = db.query("CICLO", null, "codmateria = ?", id3,null, null, null);
+			Cursor cursor1 = db.query("DOCENTE", null, "IDDOCENTE = ?", id1,
+					null, null, null);
+			Cursor cursor2 = db.query("CICLO", id0, "ANIO = ? AND NUMERO = ?",
+					id4, null, null, null);
+			// Cursor cursor3 = db.query("CICLO", null, "codmateria = ?",
+			// id3,null, null, null);
 			if (cursor1.moveToFirst() && cursor2.moveToFirst()) {
 				// Se encontraron datos
 				return true;
@@ -647,42 +672,61 @@ public class ControlDB {
 		}
 
 		case 3: {
-			//VERIFICAR QUE AL ELIMICAR CARGA_ACADEMICA EL REGISTRO NO TENGA HIJOS
-			//VERIFICAR QUE AL ELIMINAR CICLONO EXISTA REGISTROS HIJOS EN TABLA CARGA_ACADEMICA
+			// VERIFICAR QUE AL ELIMICAR CARGA_ACADEMICA EL REGISTRO NO TENGA
+			// HIJOS
+			// VERIFICAR QUE AL ELIMINAR CICLONO EXISTA REGISTROS HIJOS EN TABLA
+			// CARGA_ACADEMICA
 			Carga_Academica carga2 = (Carga_Academica) dato;
-			String[] id0 = {"IDDOCENTE","ANIO","NUMERO" };
-			String[] id4 = { carga2.getIddocente(), carga2.getAnio(), carga2.getNumero() };
-			Cursor c = db.query("DETALLE_CARGA_ACT_ACAD", id0, "IDDOCENTE = ? AND ANIO = ? AND NUMERO = ?",id4,null, null, null);
-			Cursor d = db.query("DETALLE_CARGA_MAT", id0, "IDDOCENTE = ? AND ANIO = ? AND NUMERO = ?",id4,null, null, null);
+			String[] id0 = { "IDDOCENTE", "ANIO", "NUMERO" };
+			String[] id4 = { carga2.getIddocente(), carga2.getAnio(),
+					carga2.getNumero() };
+			Cursor c = db.query("DETALLE_CARGA_ACT_ACAD", id0,
+					"IDDOCENTE = ? AND ANIO = ? AND NUMERO = ?", id4, null,
+					null, null);
+			Cursor d = db.query("DETALLE_CARGA_MAT", id0,
+					"IDDOCENTE = ? AND ANIO = ? AND NUMERO = ?", id4, null,
+					null, null);
 			if (c.moveToFirst() && d.moveToFirst())
-				return true;//SE ENCONTRARON REGISTROS HIJOS
+				return true;// SE ENCONTRARON REGISTROS HIJOS
 			else
 				return false;
 
 		}
 
 		case 4: {
-			//VERIFICA DUPLICIDAD DE DETALLE_CARGA_MAT AL INSERTAR
+			// VERIFICA DUPLICIDAD DE DETALLE_CARGA_MAT AL INSERTAR
 			Detalle_Carga_Mat cargamat = (Detalle_Carga_Mat) dato;
-			String[] id0 = {"IDDOCENTE","ANIO","NUMERO","IDDETALLECURSO" };
-			String[] id4 = { cargamat.getIddocente(), cargamat.getAnio(), cargamat.getNumero(),cargamat.getIddetallecurso() };
-			//Cursor c = db.query("DETALLE_CARGA_ACT_ACAD", id0, "IDDOCENTE = ? AND ANIO = ? AND NUMERO = ?",id4,null, null, null);
-			Cursor d = db.query("DETALLE_CARGA_MAT", id0, "IDDOCENTE = ? AND ANIO = ? AND NUMERO = ? AND IDDETALLECURSO = ?",id4,null, null, null);
+			String[] id0 = { "IDDOCENTE", "ANIO", "NUMERO", "IDDETALLECURSO" };
+			String[] id4 = { cargamat.getIddocente(), cargamat.getAnio(),
+					cargamat.getNumero(), cargamat.getIddetallecurso() };
+			// Cursor c = db.query("DETALLE_CARGA_ACT_ACAD", id0,
+			// "IDDOCENTE = ? AND ANIO = ? AND NUMERO = ?",id4,null, null,
+			// null);
+			Cursor d = db
+					.query("DETALLE_CARGA_MAT",
+							id0,
+							"IDDOCENTE = ? AND ANIO = ? AND NUMERO = ? AND IDDETALLECURSO = ?",
+							id4, null, null, null);
 			if (d.moveToFirst())
-				return true;//SE ENCONTRARON REGISTROS = DUPLICIDAD
+				return true;// SE ENCONTRARON REGISTROS = DUPLICIDAD
 			else
 				return false;
 
 		}
 
 		case 5: {
-			//VERIFICA DUPLICIDAD DE DETALLE_CARGA_ACT_ACAD AL INSERTAR!
+			// VERIFICA DUPLICIDAD DE DETALLE_CARGA_ACT_ACAD AL INSERTAR!
 			Detalle_Carga_ActAcad cargamat = (Detalle_Carga_ActAcad) dato;
-			String[] id0 = {"IDDOCENTE","ANIO","NUMERO","IDACTACAD" };
-			String[] id4 = { cargamat.getIddocente(), cargamat.getAnio(), cargamat.getNumero(),cargamat.getIdactacad() };
-			Cursor d = db.query("DETALLE_CARGA_ACT_ACAD", id0, "IDDOCENTE = ? AND ANIO = ? AND NUMERO = ? AND IDACTACAD = ?",id4,null, null, null);
+			String[] id0 = { "IDDOCENTE", "ANIO", "NUMERO", "IDACTACAD" };
+			String[] id4 = { cargamat.getIddocente(), cargamat.getAnio(),
+					cargamat.getNumero(), cargamat.getIdactacad() };
+			Cursor d = db
+					.query("DETALLE_CARGA_ACT_ACAD",
+							id0,
+							"IDDOCENTE = ? AND ANIO = ? AND NUMERO = ? AND IDACTACAD = ?",
+							id4, null, null, null);
 			if (d.moveToFirst())
-				return true;//SE ENCONTRARON REGISTROS = DUPLICIDAD
+				return true;// SE ENCONTRARON REGISTROS = DUPLICIDAD
 			else
 				return false;
 		}
@@ -735,7 +779,15 @@ public class ControlDB {
 				return false;
 		}
 		case 11: {
-			return true;
+			AreaMateria areaMateria = (AreaMateria) dato;
+			Cursor cursor = db.query(true, "DETALLE_CARGA_MAT",
+					new String[] { "CODIGOMATERIA" }, "CODIGOMATERIA='"
+							+ areaMateria.getCodigomateria() + "'", null, null,
+					null, null, null);
+			if (cursor.moveToFirst())
+				return true;
+			else
+				return false;
 		}
 		case 12: {
 			return true;
