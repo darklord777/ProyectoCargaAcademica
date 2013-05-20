@@ -280,6 +280,19 @@ public class ControlDB {
 		return idMaterias;
 	}
 
+	public List<String> getAllIdAreaMats() {
+		List<String> idMaterias = new ArrayList<String>();
+		Cursor cursor = db.rawQuery(
+				"select IDAREAMAT from AREA_MATERIA order by IDAREAMAT;", null);
+		if (cursor.moveToFirst()) {
+			do {
+				idMaterias.add(cursor.getString(0));
+			} while (cursor.moveToNext());
+		}
+		cursor.close();
+		return idMaterias;
+	}
+
 	public String actualizar(Departamento departamento) {
 		String[] id = { departamento.getIddepartamento() };
 		ContentValues values = new ContentValues();
@@ -356,6 +369,21 @@ public class ControlDB {
 		}
 	}
 
+	public AreaMateria consultarAreaMateria(String idaremat) {
+		String[] id = { idaremat };
+		Cursor cursor = db.query("AREA_MATERIA", camposMat, "IDAREAMAT = ?",
+				id, null, null, null);
+		if (cursor.moveToFirst()) {
+			AreaMateria areaMateria = new AreaMateria();
+			areaMateria.setIdareamat(cursor.getString(0));
+			areaMateria.setIddepartamento(cursor.getString(1));
+			areaMateria.setCodigomateria(cursor.getString(2));
+			return areaMateria;
+		} else {
+			return null;
+		}
+	}
+
 	/** METODOS EMERSON */
 
 	/** METODOS AGUSTIN */
@@ -389,7 +417,7 @@ public class ControlDB {
 		}
 		return regInsertados;
 	}
-	
+
 	public String insertar(Modalidad_Curso modalidadcurso) {
 		String regInsertados = "Registro insertado en la fila No.=";
 		long contador = 0;

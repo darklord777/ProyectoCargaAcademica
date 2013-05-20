@@ -21,7 +21,7 @@
 
     <Spinner
         android:id="@+id/spnConsultAreaMat"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/tvConsultDeptoAreMat"
         android:layout_below="@+id/textView1"
@@ -29,7 +29,7 @@
 
     <TextView
         android:id="@+id/tvConsultDeptoAreMat"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/spnConsultAreaMat"
         android:layout_centerHorizontal="true"
@@ -39,11 +39,11 @@
 
     <TextView
         android:id="@+id/tvCodMatAreaMat"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/tvConsultDeptoAreMat"
         android:layout_below="@+id/tvConsultDeptoAreMat"
-        android:layout_marginTop="26dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
         android:text="@string/tvCodMatAreaMat"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
