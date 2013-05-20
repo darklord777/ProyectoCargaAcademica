@@ -137,4 +137,50 @@
     <string name="btnAdmonAreaMateria">Administrar Area Materia</string>
     <string name="title_activity_admon_area_mat">AdmonAreaMatActivity</string>
 
+    <!-- YO -->
+    <string name="title_activity_admin_docentes">AdminDocentesActivity</string>
+    <string name="btnNuevoDocente">Nuevo Docente</string>
+    <string name="btnActualizarDocente">Actualizar Docente</string>
+    <string name="btnConsultarDocente">Consultar Docente</string>
+    <string name="btnEliminarDocente">Eliminar Docente</string>
+    <string name="title_activity_admin_tipo_contrato">AdminTipoContratoActivity</string>
+    <string name="btnNuevoContrato">Nuevo Tipo de Contrato</string>
+    <string name="btnActualizarContrato">Actualizar Tipo de Contrato</string>
+    <string name="btnConsultarContrato">Consultar Tipo de Contrato</string>
+    <string name="btnEliminarContrato">Eliminar Tipo de Contrato</string>
+    <string name="title_activity_admin_docente_depto">AdminDocenteDeptoActivity</string>
+    <string name="btnAsigDocDepto">Asignar Docentes a Departamentos</string>
+    <string name="btnConsultarDocDepto">Consultar Docentes en Departamentos</string>
+    <string name="btnEliminarDocDepto">Eliminar Docente de Departamento</string>
+    <string name="title_activity_materias_impartir">MateriasImpartirActivity</string>
+    <string name="btnAsigMatDoc">Asignar Materia a Docentes</string>
+    <string name="btnConsultarMatDoc">Consultar Materia de Docentes</string>
+    <string name="btnEliminarMatDoc">Eliminar Materias de Docentes</string>
+    <string name="title_activity_ingresar_tipo_contrato">IngresarTipoContratoActivity</string>
+    <string name="msgeditTxtCodTipCont">Codigo</string>
+    <string name="msgeditTxtNomTipCont">Nombre de Contrato</string>
+    <string name="msgeditTxtHorasTipCont">Cantidad de Horas del Contrato</string>
+    <string name="title_activity_admin_materias_impartir">AdminMateriasImpartirActivity</string>
+
+    <!-- sistema -->
+    <string name="btnDocente">Administracion de Docentes</string>
+    <string name="btnMaterias">Administracion de Materias</string>
+    <string name="msgTipoCont">Tipos de Contratos</string>
+    <string name="botonTipoContrato">Tipos de Contratos</string>
+    <string name="btnActividadAcademica">Administracion de Actividades Academicas</string>
+    <string name="title_activity_menu_materia">MenuMateriaActivity</string>
+    <string name="title_activity_menu_actividad_academica">MenuActividadAcademicaActivity</string>
+
+    <!-- menu docente -->
+    <string name="title_activity_menu_docentes">MenuDocentesActivity</string>
+    <string name="botonDocente">Docentes</string>
+    <string name="botonCargo">Cargos de Docentes</string>
+    <string name="botonPeriodo">Periodos de Cargos</string>
+    <string name="botonDepartamento">Departamentos de Docentes</string>
+    <string name="botonMateriasImpartir">Materias que Pueden Impartir los Docentes</string>
+
+    <!-- YO -->
+
+    <string name="title_activity_menu_docente">MenuDocenteActivity</string>
+
 </resources>

@@ -9,51 +9,65 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MenuPrincipalActivity" >
 
-    <Button
-        android:id="@+id/btnAdmonCat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
-        android:background="@drawable/button_custom"
-        android:text="@string/btnAdmonCat" />
+  <Button
+      android:id="@+id/btnMaterias"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/btnDocentes"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="30dp"
+      android:background="@drawable/button_custom"
+      android:text="@string/btnMaterias" />
 
-    <Button
-        android:id="@+id/btnModAcad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnAdmonCat"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="43dp"
-        android:background="@drawable/button_custom"
-        android:text="@string/btnModalAcad" />
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_below="@+id/button3"
-        android:layout_marginTop="36dp"
-        android:text="Button" />
+  <Button
+      android:id="@+id/btnActividadAcademica"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/btnMaterias"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="25dp"
+      android:background="@drawable/button_custom"
+      android:text="@string/btnActividadAcademica" />
+
+  <Button
+      android:id="@+id/btnDocentes"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/btnAdmonCat"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="31dp"
+      android:background="@drawable/button_custom"
+      android:text="@string/btnDocente" />
+
+  <Button
+      android:id="@+id/btnAdmonCat"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/btnDocentes"
+      android:layout_alignParentTop="true"
+      android:layout_marginTop="40dp"
+      android:background="@drawable/button_custom"
+      android:text="@string/btnAdmonCat" />
+
+  <Button
+      android:id="@+id/btnModAcad"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/btnDocentes"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="32dp"
+      android:background="@drawable/button_custom"
+      android:text="@string/btnModalAcad" />
 
   <Button
       android:id="@+id/btn5A_CargaAcademica"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_below="@+id/button4"
+      android:layout_above="@+id/btnModAcad"
       android:layout_centerHorizontal="true"
-      android:layout_marginTop="34dp"
+      android:layout_marginBottom="15dp"
       android:background="@drawable/button_custom"
       android:text="@string/btn5A_CargaAcademica"
       android:textAppearance="?android:attr/textAppearanceLarge" />
-
-  <Button
-      android:id="@+id/button3"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_centerHorizontal="true"
-      android:layout_centerVertical="true"
-      android:text="Button" />
 
 </RelativeLayout>

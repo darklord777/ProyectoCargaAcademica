@@ -15,6 +15,7 @@ public class AdminCatalogosActivity extends Activity implements
 	private Button btnAdmonMateria;
 	private Button btnMostrarTablas;
 	private Button btnAdmonAreaMateria;
+	private Button btncontrato;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,9 @@ public class AdminCatalogosActivity extends Activity implements
 		btnMostrarTablas.setOnClickListener(this);
 		btnAdmonAreaMateria = (Button) findViewById(R.id.btnAdmonAreaMateria);
 		btnAdmonAreaMateria.setOnClickListener(this);
+		btncontrato = (Button) findViewById(R.id.BtnTipoCont);
+		btncontrato.setOnClickListener(this);
+
 	}
 
 	@Override
@@ -58,6 +62,11 @@ public class AdminCatalogosActivity extends Activity implements
 					.show();
 			helper.cerrar();
 			break;
+		case R.id.BtnTipoCont:
+			startActivity(new Intent(getApplicationContext(), 
+					AdminTipoContratoActivity.class));
+			break;
+					
 		default:
 			break;
 		}

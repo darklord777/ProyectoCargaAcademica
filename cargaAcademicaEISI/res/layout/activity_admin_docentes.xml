@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AdminDocentesActivity" >
+
+    <Button
+        android:id="@+id/btnNuevoDocente"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnActualizarDocente"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="88dp"
+        android:drawableRight="@drawable/save2"
+        android:text="@string/btnNuevoDocente" />
+
+    <Button
+        android:id="@+id/btnActualizarDocente"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnConsultarDocente"
+        android:layout_below="@+id/btnNuevoDocente"
+        android:layout_marginTop="22dp"
+        android:drawableRight="@drawable/update"
+        android:text="@string/btnActualizarDocente" />
+
+    <Button
+        android:id="@+id/btnConsultarDocente"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnActualizarDocente"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:drawableRight="@drawable/search"
+        android:text="@string/btnConsultarDocente" />
+
+    <Button
+        android:id="@+id/btnEliminarDocente"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnConsultarDocente"
+        android:layout_below="@+id/btnConsultarDocente"
+        android:layout_marginTop="21dp"
+        android:drawableRight="@drawable/clear"
+        android:text="@string/btnEliminarDocente" />
+
+
+</RelativeLayout>

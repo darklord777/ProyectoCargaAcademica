@@ -142,6 +142,30 @@
             android:name="sv.ues.fia.cargaacademicaeisi.AdmonAreaMatActivity"
             android:label="@string/title_activity_admon_area_mat" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.AdminDocenteDeptoActivity"
+            android:label="@string/title_activity_admin_docente_depto" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.AdminDocentesActivity"
+            android:label="@string/title_activity_admin_docentes" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.AdminMateriasImpartirActivity"
+            android:label="@string/title_activity_admin_materias_impartir" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.AdminTipoContratoActivity"
+            android:label="@string/title_activity_admin_tipo_contrato" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.MenuDocenteActivity"
+            android:label="@string/title_activity_menu_docente" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.MenuMateriaActivity"
+            android:label="@string/title_activity_menu_materia" >
+        </activity>
     </application>
 
 </manifest>
