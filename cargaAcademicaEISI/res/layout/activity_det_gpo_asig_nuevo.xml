@@ -9,13 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".DetGpoAsigNuevoActivity" >
 
-    <Spinner
-        android:id="@+id/spinner3"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/spinner2"
-        android:layout_centerHorizontal="true" />
-
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
@@ -27,7 +20,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/edtIdDetGpoAsig"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
@@ -37,26 +30,34 @@
         android:hint="@string/edtIdDetGpoAsig" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/spnIdModNuevoDetGpoAsig"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/spinner3"
-        android:layout_below="@+id/spinner1" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/spinner3"
-        android:layout_centerHorizontal="true"
-        android:text="@string/btnGuardarDetGpoAsig"
-        android:drawableRight="@drawable/save2" />
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spnCodMateNuevoDetGpoAsig" />
 
     <Spinner
-        android:id="@+id/spinner1"
+        android:id="@+id/spnIdLocNuevoDetGpoAsig"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/spinner2"
-        android:layout_below="@+id/editText1" />
+        android:layout_alignLeft="@+id/spnIdModNuevoDetGpoAsig"
+        android:layout_below="@+id/spnIdModNuevoDetGpoAsig" />
+
+    <Button
+        android:id="@+id/btnGuardarDetGpoAsig"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spnIdLocNuevoDetGpoAsig"
+        android:layout_below="@+id/spnIdLocNuevoDetGpoAsig"
+        android:drawableRight="@drawable/save2"
+        android:text="@string/btnGuardarDetGpoAsig"
+        android:onClick="guardarDetGpoAsig" />
+
+    <Spinner
+        android:id="@+id/spnCodMateNuevoDetGpoAsig"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spnIdModNuevoDetGpoAsig"
+        android:layout_below="@+id/edtIdDetGpoAsig" />
 
 </RelativeLayout>
