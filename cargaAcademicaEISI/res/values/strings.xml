@@ -28,6 +28,7 @@
     <string name="msgElimDepto">Eliminar Departamento</string>
     <!-- Alexis -->
 
+
     <!-- Alexis -->
     <string name="btnAdmonDepto">Administracion de Dapartamento</string>
     <string name="title_activity_consultar_depto">ConsultarDeptoActivity</string>
@@ -174,9 +175,9 @@
     <string name="btnEliminarLocal">Realizar</string>
     <string name="title_activity_locales_actualizar">LocalesActualizarActivity</string>
     <string name="title_activity_locales_consultar">LocalesConsultarActivity</string>
-   
+
     <!-- alexis todavia no ordenado -->
-     <string name="title_activity_carga_academica_menu">Menu de Carga Academica</string>
+    <string name="title_activity_carga_academica_menu">Menu de Carga Academica</string>
     <string name="button1a4_menuTABLACARGAACAD_INSERT">Insertar Carga Academica</string>
     <string name="button2a4_menuTABLACARGAACAD_DELETE">Eliminar Carga Academica</string>
     <string name="button3a4_menuTABLACARGAACAD_CONSULT">Consultar Carga Academica</string>
@@ -217,9 +218,8 @@
     <string name="buttonz1_eliminar_academica">Eliminar Detalle de Actividad Academica</string>
     <string name="button1_fechainicioinsert">Ingresar Fecha inicio</string>
     <string name="button2_fechafininsert">Ingresar Fecha Fin</string>
-     <string name="textview1_inicio">Fecha:</string>
+    <string name="textview1_inicio">Fecha:</string>
     <string name="textview2_fin">Fecha:</string>
-    
     <string name="button2_insertar_ciclo">Ingresar Ciclo</string>
     <string name="button1_eliminar_ciclo">Eliminar Ciclo</string>
     <string name="button3_consultar_ciclo">Consultar Ciclo</string>
@@ -242,7 +242,24 @@
     <string name="consult_fechafin_hint">Fecha Fin Ciclo</string>
     <string name="button2a_concultar_Ci">Consultar</string>
     <string name="button3a_eliminar_Ciclo">Eliminar Ciclo</string>
-    
+
     <!-- fin alexis todavia no ordenado -->
-    
+
+    <string name="title_activity_det_gpo_asig_nuevo">DetGpoAsigNuevoActivity</string>
+    <string name="title_activity_det_gpo_asig_actualizar">DetGpoAsigActualizarActivity</string>
+    <string name="title_activity_det_gpo_asig_consultar">DetGpoAsigConsultarActivity</string>
+    <string name="title_activity_det_gpo_asig_eliminar">DetGpoAsigEliminarActivity</string>
+    <string name="title_activity_admin_det_gpo_asig">AdminDetGpoAsigActivity</string>
+    <string name="btnNuevoDetGopAsig">Nuevo Detalle Grupo Asignado</string>
+    <string name="btnConsultarDetGpoAsig">Consultar Detalle grupo asignado</string>
+    <string name="btnActualizarDetGpoAsig">Actualizar detalle grupo asignado</string>
+    <string name="btnEliminarDetGpoAsig">Eliminar detalle grupo asignado</string>
+    <string name="msgDetGpoAsignado">Menu Detalle grupo asignado</string>
+    <string name="btnGuardarDetGpoAsig">Guardar detalle grupo asignado</string>
+    <string name="edtIdDetGpoAsig">Codigo detalle</string>
+    <string name="msgConsultDetGpoAsig">Consultar Detalle</string>
+    <string name="edtCodMatDetGpoAsig">Codigo materia</string>
+    <string name="edtIdModDetGpoAsig">Codigo modalidad</string>
+    <string name="edtIdLocalDetGpoAsig">Codigo Local</string>
+
 </resources>

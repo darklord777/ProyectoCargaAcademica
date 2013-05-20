@@ -234,6 +234,26 @@
             android:name="sv.ues.fia.cargaacademicaeisi.DetalleCargaActAcadConsultarActivity"
             android:label="@string/title_activity_detalle_carga_act_acad_consultar" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.DetGpoAsigNuevoActivity"
+            android:label="@string/title_activity_det_gpo_asig_nuevo" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.DetGpoAsigActualizarActivity"
+            android:label="@string/title_activity_det_gpo_asig_actualizar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.DetGpoAsigConsultarActivity"
+            android:label="@string/title_activity_det_gpo_asig_consultar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.DetGpoAsigEliminarActivity"
+            android:label="@string/title_activity_det_gpo_asig_eliminar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.AdminDetGpoAsigActivity"
+            android:label="@string/title_activity_admin_det_gpo_asig" >
+        </activity>
     </application>
 
 </manifest>
