@@ -15,6 +15,7 @@ public class MenuPrincipalActivity extends Activity implements OnClickListener {
 	private Button btnA_CargaAcademica;
 	private Button btnDocentes;
 	private Button btnAdmonActAcad;
+	private Button btnMaterias;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,8 @@ public class MenuPrincipalActivity extends Activity implements OnClickListener {
 		btnDocentes.setOnClickListener(this);
 		btnAdmonActAcad = (Button) findViewById(R.id.btnActividadAcademica);
 		btnAdmonActAcad.setOnClickListener(this);
+		btnMaterias = (Button) findViewById(R.id.btnMaterias);
+		btnMaterias.setOnClickListener(this);
 	}
 
 	@Override
@@ -42,23 +45,28 @@ public class MenuPrincipalActivity extends Activity implements OnClickListener {
 		case R.id.btnAdmonCat:
 			startActivity(new Intent(getApplicationContext(),
 					AdminCatalogosActivity.class));
-			break;	
-			
+			break;
+
 		case R.id.btn5A_CargaAcademica:
 			startActivity(new Intent(getApplicationContext(),
 					GestionCargaAcadActivity.class));
 			break;
-			
+
 		case R.id.btnDocentes:
 			startActivity(new Intent(getApplicationContext(),
-					MenuDocenteActivity.class));		
+					MenuDocenteActivity.class));
 			break;
-		
+
 		case R.id.btnActividadAcademica:
 			startActivity(new Intent(getApplicationContext(),
-					MenuActAcademicasActivity.class));		
+					MenuActAcademicasActivity.class));
 			break;
-				
+			
+		case R.id.btnMaterias:
+			startActivity(new Intent(getApplicationContext(),
+					MenuActAcademicasActivity.class));
+			break;
+			
 		default:
 			break;
 		}
