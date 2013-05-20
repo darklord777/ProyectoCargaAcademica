@@ -433,6 +433,37 @@ public class ControlDB {
 		}
 		return regInsertados;
 	}
+	
+	public List<String> getAll_IdLocales() {
+		List<String> idLocales = new ArrayList<String>();
+		Cursor cursor = db.rawQuery("select IDLOCAL from LOCALES order by IDLOCAL;",null);
+		if (cursor.moveToFirst()) {
+			do {
+				idLocales.add(cursor.getString(0));
+			} while (cursor.moveToNext());
+		}
+		cursor.close();
+		return idLocales;
+	}
+	
+	public Locales consultarLocal(String idLocal) {
+		return null;
+		
+	}
+	
+	public String eliminar(Locales local) {
+		String regAfectados = "";
+		int contador = 0;
+		if (verificarIntegridad(local, 7)) {
+				regAfectados += "Tiene registros hijos\nNo se puede borrar,";
+			return regAfectados;
+		}
+		regAfectados = "No tiene registros hijos\nFilas afectadas=";
+		
+		contador += db.delete("LOCALES","IDLOCAL='" + local.getIdlocal() + "'",	null);
+		regAfectados += contador;
+		return regAfectados;
+	}
 
 	/** METODOS SERGIO */
 
