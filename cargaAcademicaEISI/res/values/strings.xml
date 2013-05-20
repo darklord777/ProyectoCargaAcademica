@@ -288,5 +288,9 @@
     <string name="title_activity_actividad_academica_consultar">ActividadAcademicaConsultarActivity</string>
     <string name="title_activity_mod_act_acad_consultar_main">ModActAcadConsultarMainActivity</string>
     <string name="title_activity_modalidad_curso_consultar">ModalidadCursoConsultarActivity</string>
+    <string name="selectIdLocal">Seleccione Local</string>
+    <string name="spinner_Slocal">Spinner Select Local</string>
+    <string name="msgCapacLocal">Capidad Local</string>
+    <string name="btn_concultarLocal">Realizar Consulta</string>
 
 </resources>

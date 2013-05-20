@@ -10,8 +10,42 @@
     tools:context=".LocalesConsultarActivity" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/selectIdLocal" />
+
+    <Spinner
+        android:id="@+id/spn_Select_Local"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="14dp"
+        android:prompt="@string/spinner_Slocal" />
+
+    <EditText
+        android:id="@+id/capacidadLocal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spn_Select_Local"
+        android:layout_below="@+id/spn_Select_Local"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/msgCapacLocal"
+        android:inputType="none"
+        android:maxLength="4" />
+
+    <Button
+        android:id="@+id/btn_consultarLocal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/capacidadLocal"
+        android:layout_below="@+id/capacidadLocal"
+        android:layout_marginTop="72dp"
+        android:drawableRight="@drawable/save2"
+        android:onClick="consultarLocal"
+        android:text="@string/btn_concultarLocal"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>
