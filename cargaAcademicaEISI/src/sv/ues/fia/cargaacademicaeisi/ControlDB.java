@@ -311,65 +311,6 @@ public class ControlDB {
 			return regAfectados;
 		}
 	
-	
-/*	public List<String> getAllLabels(String selectQuery, int posicion) {
-		List<String> labels = new ArrayList<String>();
-
-		// Select All Query
-		// String selectQuery = "SELECT  * FROM PAIS order by nom_pais" ;
-
-		db = DBHelper.getReadableDatabase();
-		Cursor cursor = db.rawQuery(selectQuery, null);
-
-		// looping through all rows and adding to list
-		if (cursor.moveToFirst()) {
-			do {
-				labels.add(cursor.getString(posicion));
-			} while (cursor.moveToNext());
-		}
-
-		// closing connection
-		cursor.close();
-		db.close();
-
-		// returning lables
-		return labels;
-	}
-
-	public String insertarCiclo(Ciclo ciclo) {
-		String regInsertados = "Registro de Ciclo Insertado Nº= ";
-		long contador = 0;
-		ContentValues ciclo1 = new ContentValues();
-		ciclo1.put("ANIO", ciclo.getAnio());
-		ciclo1.put("NUMERO", ciclo.getNumero());
-		ciclo1.put("FECHAINI", ciclo.getFechaini());
-		ciclo1.put("FECHAFIN", ciclo.getFechafin());
-
-		contador = db.insert("CICLO", null, ciclo1);
-
-		if (contador == -1 || contador == 0) {
-			regInsertados = "Error al Insertar el registro Ciclo, Ciclo Duplicado. Verificar Inserción";
-		} else {
-			regInsertados = regInsertados + contador;
-		}
-		return regInsertados;
-	}
-
-	public Ciclo consultarCiclo(String anio, String numciclo) {
-		String[] id = { anio, numciclo };
-		Cursor cursor = db.query("CICLO", camposCiclo,
-				"ANIO = ? AND NUMERO = ?", id, null, null, null);
-		if (cursor.moveToFirst()) {
-			Ciclo ciclo = new Ciclo();
-			ciclo.setAnio(cursor.getString(0));
-			ciclo.setNumero(cursor.getString(1));
-			ciclo.setFechaini(cursor.getString(2));
-			ciclo.setFechafin(cursor.getString(3));
-			return ciclo;
-		} else {
-			return null;
-		}
-	} por si acaso borrar al final*/
 
 	/** METODOS MARIO */
 	public String insertar(Departamento departamento) {
