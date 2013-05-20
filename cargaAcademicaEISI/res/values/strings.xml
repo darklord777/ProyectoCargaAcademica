@@ -165,7 +165,7 @@
     <string name="botonDepartamento">Departamentos de Docentes</string>
     <string name="botonMateriasImpartir">Materias que Pueden Impartir los Docentes</string>
 
-     <!-- Insertar contrato -->
+    <!-- Insertar contrato -->
     <string name="title_activity_insertar_contrato">InsertarContratoActivity</string>
     <string name="msgInsertCodigoTipoCont">Codigo</string>
     <string name="msgInsertTipoTipoCont">Nombre de Contrato</string>
@@ -173,8 +173,8 @@
     <string name="btnInsertGuardarTipoCont">Guardar Contrato</string>
     <string name="btnInsertLimpiarTipoCont">Limpiar</string>
     <string name="msgInsertCodigo">Codigo de Contrato</string>
-	<string name="msgInsertNombre">Nombre o Tipo del Contrato</string>
-	<string name="msgInsertHoras">Horas del Contrato</string>
+    <string name="msgInsertNombre">Nombre o Tipo del Contrato</string>
+    <string name="msgInsertHoras">Horas del Contrato</string>
     <!-- fin YO -->
 
     <string name="title_activity_menu_docente">MenuDocenteActivity</string>
@@ -277,5 +277,13 @@
     <string name="title_activity_consultar_contrato">ConsultarContratoActivity</string>
     <string name="title_activity_eliminar_contrato">EliminarContratoActivity</string>
     <string name="btnAdmonDetGpoAsig">Adminstrar Detalle grupo asignado</string>
+    
+    <string name="title_activity_insertar_actividad_academica">InsertarActividadAcademicaActivity</string>
+    <string name="msgActivAcad">Insertar Actividad Academica</string>
+    <string name="msgidActAcad">Digite codigo</string>
+    <string name="msgNombreActAcad">Digite nombre actividad</string>
+    <string name="msgCargoActAcad">Digite cargo</string>
+    <string name="btnGuardarActAcad">Guardar Actividad</string>
+    <string name="btnLimpiarActAcad">Limpiar Campos</string>
 
 </resources>

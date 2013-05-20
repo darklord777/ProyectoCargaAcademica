@@ -270,6 +270,10 @@
             android:name="sv.ues.fia.cargaacademicaeisi.EliminarContratoActivity"
             android:label="@string/title_activity_eliminar_contrato" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.InsertarActividadAcademicaActivity"
+            android:label="@string/title_activity_insertar_actividad_academica" >
+        </activity>
     </application>
 
 </manifest>
