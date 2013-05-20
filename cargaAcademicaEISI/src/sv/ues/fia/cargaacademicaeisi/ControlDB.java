@@ -29,7 +29,11 @@ public class ControlDB {
 			"IDDOCENTE", "ANIO", "NUMERO" };
 	private static final String[] camposCiclo = new String[] { "ANIO",
 			"NUMERO", "FECHAINI", "FECHAFIN" };
-
+	
+	/*Yo*/
+	private static final String[] camposContrato = new String[] { "IDCONTRATO",
+		"TIPO", "HORAS"};
+	/*Fin YO*/
 	private final Context context;
 	private DatabaseHelper DBHelper;
 	private SQLiteDatabase db;
@@ -552,6 +556,34 @@ public class ControlDB {
 		}
 		
 		return regInsertados;
+	}
+	
+	public TipoContrato ConsultarContrato(String idcontrato) {
+		String[] id = { idcontrato };
+		Cursor cursor = db.query("TIPO_CONTRATO", camposContrato, "IDCONTRATO = ?", id,
+				null, null, null);
+		if (cursor.moveToFirst()) {
+			TipoContrato contrato = new TipoContrato();
+			contrato.setIdContrato(cursor.getString(0));
+			contrato.setTipo(cursor.getString(1));
+			contrato.setHoras(cursor.getInt(2));
+			return contrato;
+		} else {
+			return null;
+		}
+	}
+	
+	public List<String> getAllIdContratos() {
+		List<String> idContratos = new ArrayList<String>();
+		Cursor cursor = db.rawQuery(
+				"select IDCONTRATO from TIPO_CONTRATO order by IDCONTRATO;", null);
+		if (cursor.moveToFirst()) {
+			do {
+				idContratos.add(cursor.getString(0));
+			} while (cursor.moveToNext());
+		}
+		cursor.close();
+		return idContratos;
 	}
 	
 	public String InsertarDocDepto(DocenteDepto docdepto){
