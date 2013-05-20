@@ -45,8 +45,8 @@ public class GestionCargaAcadActivity extends Activity implements
 			 DetalleCargaMateriaMenuActivity.class));
 			break;
 		case R.id.btn4DetCargaActAcademica:
-		//	startActivity(new Intent(getApplicationContext(),
-			//DetalleCargaActAcadMenuActivity.class));
+			startActivity(new Intent(getApplicationContext(),
+			DetalleCargaActAcadMenuActivity.class));
 			break;
 		default:
 			break;
