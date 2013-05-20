@@ -261,5 +261,7 @@
     <string name="edtCodMatDetGpoAsig">Codigo materia</string>
     <string name="edtIdModDetGpoAsig">Codigo modalidad</string>
     <string name="edtIdLocalDetGpoAsig">Codigo Local</string>
+    <string name="edtIdDeptoAreMat">Codigo departamento</string>
+    <string name="edtCodMateAreaMat">Codigo Materia</string>
 
 </resources>
