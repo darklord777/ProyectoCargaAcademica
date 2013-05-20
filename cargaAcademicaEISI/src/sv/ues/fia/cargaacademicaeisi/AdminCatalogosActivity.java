@@ -32,7 +32,7 @@ public class AdminCatalogosActivity extends Activity implements
 
 		btncontrato = (Button) findViewById(R.id.BtnTipoCont);
 		btncontrato.setOnClickListener(this);
-		btnModCurso = (Button) findViewById(R.id.BtnModCurso);
+		btnModCurso = (Button) findViewById(R.id.BtnModalidadCurso);
 		btnModCurso.setOnClickListener(this);
 		btnLocales = (Button) findViewById(R.id.BtnLocal);
 		btnLocales.setOnClickListener(this);
@@ -65,7 +65,7 @@ public class AdminCatalogosActivity extends Activity implements
 					AdminTipoContratoActivity.class));
 			break;
 
-		case R.id.BtnModCurso:
+		case R.id.BtnModalidadCurso:
 			startActivity(new Intent(getApplicationContext(),
 					ModalidadCursoMenuActivity.class));
 		case R.id.BtnLocal:

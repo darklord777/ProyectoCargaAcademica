@@ -90,6 +90,21 @@
     <string name="TextViewModC">Modalidad Curso</string>
     <string name="btnGuardarModalidadC">Guardar Modalidad Curso</string>
     <string name="btn_limpiarModC">Limpiar Entradas</string>
+    <string name="title_activity_insertar_actividad_academica">InsertarActividadAcademicaActivity</string>
+    <string name="msgActivAcad">Insertar Actividad Academica</string>
+    <string name="msgidActAcad">Digite codigo</string>
+    <string name="msgNombreActAcad">Digite nombre actividad</string>
+    <string name="msgCargoActAcad">Digite cargo</string>
+    <string name="btnGuardarActAcad">Guardar Actividad</string>
+    <string name="btnLimpiarActAcad">Limpiar Campos</string>
+    <string name="btnGuardarModaAA">Guardad Modalidad</string>
+    <string name="title_activity_actividad_academica_consultar">ActividadAcademicaConsultarActivity</string>
+    <string name="title_activity_mod_act_acad_consultar_main">ModActAcadConsultarMainActivity</string>
+    <string name="title_activity_modalidad_curso_consultar">ModalidadCursoConsultarActivity</string>
+    <string name="selectIdLocal">Seleccione Local</string>
+    <string name="spinner_Slocal">Spinner Select Local</string>
+    <string name="msgCapacLocal">Capidad Local</string>
+    <string name="selectCapaLocal">Capacidad del Local</string>
     <!-- Michael -->
 
     <string name="title_activity_eliminar_depto">EliminarDeptoActivity</string>
@@ -278,20 +293,6 @@
     <string name="title_activity_eliminar_contrato">EliminarContratoActivity</string>
     <string name="btnAdmonDetGpoAsig">Adminstrar Detalle grupo asignado</string>
     
-    <string name="title_activity_insertar_actividad_academica">InsertarActividadAcademicaActivity</string>
-    <string name="msgActivAcad">Insertar Actividad Academica</string>
-    <string name="msgidActAcad">Digite codigo</string>
-    <string name="msgNombreActAcad">Digite nombre actividad</string>
-    <string name="msgCargoActAcad">Digite cargo</string>
-    <string name="btnGuardarActAcad">Guardar Actividad</string>
-    <string name="btnLimpiarActAcad">Limpiar Campos</string>
-    <string name="btnGuardarModaAA">Guardad Modalidad</string>
-    <string name="title_activity_actividad_academica_consultar">ActividadAcademicaConsultarActivity</string>
-    <string name="title_activity_mod_act_acad_consultar_main">ModActAcadConsultarMainActivity</string>
-    <string name="title_activity_modalidad_curso_consultar">ModalidadCursoConsultarActivity</string>
-    <string name="selectIdLocal">Seleccione Local</string>
-    <string name="spinner_Slocal">Spinner Select Local</string>
-    <string name="msgCapacLocal">Capidad Local</string>
-    <string name="selectCapaLocal">Capacidad del Local</string>
+ 
 
 </resources>
