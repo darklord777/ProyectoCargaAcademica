@@ -76,9 +76,9 @@
         android:id="@+id/BtnLocal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btnMostrarTablas"
         android:layout_below="@+id/BtnModCurso"
-        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
         android:background="@drawable/button_custom"
         android:text="@string/btnLocales" />
 

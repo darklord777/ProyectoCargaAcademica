@@ -189,5 +189,8 @@
 
     <string name="title_activity_menu_docente">MenuDocenteActivity</string>
     <string name="title_activity_menu_act_academicas">MenuActAcademicasActivity</string>
+    <string name="title_activity_locales_eliminar">LocalesEliminarActivity</string>
+    <string name="title_activity_locales_actualizar">LocalesActualizarActivity</string>
+    <string name="title_activity_locales_consultar">LocalesConsultarActivity</string>
 
 </resources>
