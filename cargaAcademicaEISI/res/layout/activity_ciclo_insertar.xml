@@ -9,27 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".CicloInsertarActivity" >
 
-    <Button
-        android:id="@+id/button2_limpiartexto_ciclo"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1_insertar_ciclo"
-        android:layout_alignParentBottom="true"
-        android:drawableRight="@drawable/clear"
-        android:onClick="limpiarTexto"
-        android:text="@string/button2_limpiartexto_ciclo" />
-
-    <Button
-        android:id="@+id/button1_insertar_ciclo"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button2_limpiartexto_ciclo"
-        android:layout_alignLeft="@+id/editText2_fechafin"
-        android:drawableRight="@drawable/save2"
-        android:onClick="insertarCiclo"
-        android:text="@string/button1_insertar_ciclo"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
     <Spinner
         android:id="@+id/spinner_anio_ciclo"
         android:layout_width="fill_parent"
@@ -64,38 +43,6 @@
         android:text="@string/textview_fechaini"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <EditText
-        android:id="@+id/editText1_fechainicio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_below="@+id/textView3"
-        android:ems="10"
-        android:inputType="date"
-        android:hint="@string/msj_fechainicio_hint" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1_fechainicio"
-        android:layout_below="@+id/editText1_fechainicio"
-        android:text="@string/textview_fechafin"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <EditText
-        android:id="@+id/editText2_fechafin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_below="@+id/textView4"
-        android:ems="10"
-        android:hint="@string/msj_fechafin_hint"
-        android:inputType="date" >
-
-        <requestFocus />
-    </EditText>
-
     <TextView
         android:id="@+id/textview_selecioneanio_ciclo"
         android:layout_width="wrap_content"
@@ -104,5 +51,73 @@
         android:layout_alignParentTop="true"
         android:text="@string/textview_selecioneanio_ciclo"
         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="54dp"
+        android:text="@string/textview_fechafin"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button1_fechainicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:text="@string/button1_fechainicioinsert" />
+
+    <Button
+        android:id="@+id/button2_fechafin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignRight="@+id/button1_fechainicio"
+        android:layout_below="@+id/textView4"
+        android:text="@string/button2_fechafininsert" />
+
+    <TextView
+        android:id="@+id/textView1_fechainicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1_fechainicio"
+        android:layout_alignBottom="@+id/button1_fechainicio"
+        android:layout_alignRight="@+id/spinner_ciclo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2_fechafin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2_fechafin"
+        android:layout_alignBottom="@+id/button2_fechafin"
+        android:layout_alignRight="@+id/textView1_fechainicio"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button1_eliminar_cargaacademica"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2_fechafin"
+        android:layout_below="@+id/button2_fechafin"
+        android:layout_marginTop="38dp"
+        android:drawableRight="@drawable/save2"
+        android:onClick="insertarCiclo"
+        android:text="@string/button1_insertar_ciclo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button2_limpiartexto_ciclo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2_fechafin"
+        android:layout_below="@+id/button1_eliminar_cargaacademica"
+        android:drawableRight="@drawable/clear"
+        android:onClick="limpiarTexto"
+        android:text="@string/button2_limpiartexto_ciclo" />
 
 </RelativeLayout>

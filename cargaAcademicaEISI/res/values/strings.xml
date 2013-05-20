@@ -27,28 +27,7 @@
     <string name="title_activity_ciclo_insertar">Ingresar Ciclo Academico</string>
     <string name="msgElimDepto">Eliminar Departamento</string>
     <!-- Alexis -->
-    <string name="button2_insertar_ciclo">Ingresar Registro</string>
-    <string name="button1_eliminar_ciclo">Eliminar Registro</string>
-    <string name="button3_consultar_ciclo">Consultar Ciclo</string>
-    <string name="button4_actualizar_ciclo">Actualizar Ciclo</string>
-    <string name="button1_insertar_ciclo1">Guardar Registro</string>
-    <string name="button1a_insertarciclo">Ingresar Registro</string>
-    <string name="textview_fechaini">Fecha Inicio de Ciclo</string>
-    <string name="textview_fechafin">Fecha Fin de Ciclo</string>
-    <string name="textview_selecioneanio_ciclo">Selecione el año</string>
-    <string name="spinner_anio_ciclo">Selecione Año del Ciclo</string>
-    <string name="textview_selecione_ciclo">Selecione el Ciclo</string>
-    <string name="spinner_ciclo">Selecione el Ciclo</string>
-    <string name="button1_insertar_ciclo">Guardar Ciclo</string>
-    <string name="button2_limpiartexto_ciclo">Limpiar Entradas</string>
-    <string name="msj_fechainicio_hint">Digite Fecha Inicio Ciclo</string>
-    <string name="msj_fechafin_hint">Digite Fecha Fin Ciclo</string>
-    <string name="title_activity_ciclo_consultar">Consultar Ciclo Academico</string>
-    <string name="title_activity_ciclo_menu">Menu de Ciclo Academico</string>
-    <string name="consult_fechainicio_hint">Fecha Inicio Ciclo</string>
-    <string name="consult_fechafin_hint">Fecha Fin Ciclo</string>
-    <string name="button2a_concultar_Ci">Consultar</string>
-    <string name="button3a_eliminar_Ciclo">Eliminar Ciclo</string>
+
     <!-- Alexis -->
     <string name="btnAdmonDepto">Administracion de Dapartamento</string>
     <string name="title_activity_consultar_depto">ConsultarDeptoActivity</string>
@@ -195,5 +174,75 @@
     <string name="btnEliminarLocal">Realizar</string>
     <string name="title_activity_locales_actualizar">LocalesActualizarActivity</string>
     <string name="title_activity_locales_consultar">LocalesConsultarActivity</string>
-
+   
+    <!-- alexis todavia no ordenado -->
+     <string name="title_activity_carga_academica_menu">Menu de Carga Academica</string>
+    <string name="button1a4_menuTABLACARGAACAD_INSERT">Insertar Carga Academica</string>
+    <string name="button2a4_menuTABLACARGAACAD_DELETE">Eliminar Carga Academica</string>
+    <string name="button3a4_menuTABLACARGAACAD_CONSULT">Consultar Carga Academica</string>
+    <string name="button1a5_MenuDETALLECARGAMATERIA_INSERT">Ingresar Carga de Materias</string>
+    <string name="button2a5_MenuDETALLECARGAMATERIA_DELETE">Eliminar Carga de Materias</string>
+    <string name="button3a5_MenuDETALLECARGAMATERIA_CONSULT">Consultar Carga de Materias</string>
+    <string name="EditText1a3_updatefechaini">Actualizar Fecha Inicio de Ciclo</string>
+    <string name="EditText2a3_updatefechafin">Actualizar Fecha Fin de Ciclo</string>
+    <string name="title_activity_carga_academica_insertar">Ingresar Carga Academica</string>
+    <string name="title_activity_carga_academica_eliminar">Eliminar Carga Academica</string>
+    <string name="title_activity_carga_academica_consultar">Consultar Carga Academica</string>
+    <string name="TextView1_iddocente">Selecione ID Docente</string>
+    <string name="TextView4_1ayuda_consultarcarga">Selecione el Docente y luego prodra verificar</string>
+    <string name="TextView4_2ayuda_consultarcarga">que Ciclos tiene Asignados. Luego selecione ciclo que desea Consultar</string>
+    <string name="TextView4_3ayuda_consultarcarga">Selecione el Docente y luego prodra verificar</string>
+    <string name="button1_ayuda_cargaacademica">Contenido de Ayuda</string>
+    <string name="button1_insertar_cargaacademica">Guardar Carga Academica</string>
+    <string name="button1_eliminar_cargaacademica">Eliminar Carga Academica</string>
+    <string name="button1_consultar_cargaacademica">Consultar Carga Academica</string>
+    <string name="title_activity_detalle_carga_materia_menu">Menu Carga Academica de Materias</string>
+    <string name="title_activity_detalle_carga_materia_insertar">Ingresar Detalle de Carga de Materias</string>
+    <string name="title_activity_detalle_carga_materia_eliminar">Eliminar Detalle de Carga de Materias</string>
+    <string name="title_activity_detalle_carga_materia_consultar">Consultar Detalle de Carga de Materias</string>
+    <string name="textview1_detallemateria_insert1">Selecione el ID de la Grupo a Asignar</string>
+    <string name="button1_insertar_detalleactacad">Guardar Grupo Asignado</string>
+    <string name="button1_insertar_detallemateria">Guardar Grupo a Asignar</string>
+    <string name="button1_eliminar_DETALLECARGAMATERIA">Eliminar Carga Materia</string>
+    <string name="textview1_detallemateria_consult1">ID de la Grupo Consultado</string>
+    <string name="title_activity_detalle_carga_act_acad_menu">Menu Carga Actividad Acadademica</string>
+    <string name="button1a6_MenuDETALLEACTIVIDADACAD_INSERT">Ingresar Detalle de Actividad Academica</string>
+    <string name="button2a6_MenuDETALLEACTIVIDADACAD_DELETE">Eliminar Detalle de Actividad Academica</string>
+    <string name="button3a6_MenuDETALLEACTIVIDADACAD_CONSULT">Consultar Detalle de Actividad Academica</string>
+    <string name="title_activity_detalle_carga_act_acad_insertar">Ingresar Carga de Actividades Academicas</string>
+    <string name="title_activity_detalle_carga_act_acad_eliminar">Eliminar Carga de Actividades Academicas</string>
+    <string name="title_activity_detalle_carga_act_acad_consultar">Consultar Carga de Actividades Academicas</string>
+    <string name="textview4_actividadacademica_insert1">Selecione el ID de Actividad Academica</string>
+    <string name="title_activity_det_act_acad_insertar">DetActAcadInsertarActivity</string>
+    <string name="buttonz1_eliminar_academica">Eliminar Detalle de Actividad Academica</string>
+    <string name="button1_fechainicioinsert">Ingresar Fecha inicio</string>
+    <string name="button2_fechafininsert">Ingresar Fecha Fin</string>
+     <string name="textview1_inicio">Fecha:</string>
+    <string name="textview2_fin">Fecha:</string>
+    
+    <string name="button2_insertar_ciclo">Ingresar Ciclo</string>
+    <string name="button1_eliminar_ciclo">Eliminar Ciclo</string>
+    <string name="button3_consultar_ciclo">Consultar Ciclo</string>
+    <string name="button4_actualizar_ciclo">Actualizar Ciclo</string>
+    <string name="button1_insertar_ciclo1">Guardar Registro</string>
+    <string name="button1a_insertarciclo">Ingresar Registro</string>
+    <string name="textview_fechaini">Fecha Inicio de Ciclo</string>
+    <string name="textview_fechafin">Fecha Fin de Ciclo</string>
+    <string name="textview_selecioneanio_ciclo">Selecione el año</string>
+    <string name="spinner_anio_ciclo">Selecione Año del Ciclo</string>
+    <string name="textview_selecione_ciclo">Selecione el Ciclo</string>
+    <string name="spinner_ciclo">Selecione el Ciclo</string>
+    <string name="button1_insertar_ciclo">Guardar Ciclo</string>
+    <string name="button2_limpiartexto_ciclo">Limpiar Entradas</string>
+    <string name="msj_fechainicio_hint">Digite Fecha Inicio Ciclo</string>
+    <string name="msj_fechafin_hint">Digite Fecha Fin Ciclo</string>
+    <string name="title_activity_ciclo_consultar">Consultar Ciclo Academico</string>
+    <string name="title_activity_ciclo_menu">Menu de Ciclo Academico</string>
+    <string name="consult_fechainicio_hint">Fecha Inicio Ciclo</string>
+    <string name="consult_fechafin_hint">Fecha Fin Ciclo</string>
+    <string name="button2a_concultar_Ci">Consultar</string>
+    <string name="button3a_eliminar_Ciclo">Eliminar Ciclo</string>
+    
+    <!-- fin alexis todavia no ordenado -->
+    
 </resources>

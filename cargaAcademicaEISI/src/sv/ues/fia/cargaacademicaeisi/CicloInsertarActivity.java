@@ -1,12 +1,20 @@
 package sv.ues.fia.cargaacademicaeisi;
 
+import java.util.Calendar;
+
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.DatePickerDialog;
+import android.app.Dialog;
 import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.AdapterView;
 import android.widget.Toast;
@@ -15,10 +23,21 @@ public class CicloInsertarActivity extends Activity {
 	ControlDB helper;
 	Spinner anio;
 	Spinner ciclo;
-	EditText fecha_ini=null;
-	EditText fecha_fin=null;
+	private String fecha_ini;
+	private String fecha_fin;
 	private String año;
 	private String ciclo1;
+	
+	private int year;
+	private int month;
+	private int day;
+	private Button boton1_fechainicio;
+	private Button boton1_fechafin;
+	private TextView fechaini;
+	private TextView fechafin;
+	
+	static final int DATE_DIALOG_ID = 999;
+	private int var;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +46,12 @@ public class CicloInsertarActivity extends Activity {
 		helper = new ControlDB(this);
 		anio = (Spinner) findViewById(R.id.spinner_anio_ciclo);
 		ciclo = (Spinner) findViewById(R.id.spinner_ciclo);
-		fecha_ini = (EditText) findViewById(R.id.editText1_fechainicio);
-		fecha_fin = (EditText) findViewById(R.id.editText2_fechafin);
+		this.boton1_fechainicio =(Button) findViewById(R.id.button1_fechainicio);
+		this.boton1_fechafin =(Button) findViewById(R.id.button2_fechafin);
+		this.fechaini= (TextView) findViewById(R.id.textView1_fechainicio);
+		this.fechafin= (TextView) findViewById(R.id.textView2_fechafin);
+		//fecha_ini = (EditText) findViewById(R.id.editText1_fechainicio);
+		//fecha_fin = (EditText) findViewById(R.id.editText2_fechafin);
 
 		/** codigo llenado de spinner años */
 		ArrayAdapter adapter = ArrayAdapter.createFromResource(this,
@@ -48,10 +71,11 @@ public class CicloInsertarActivity extends Activity {
 
 			}
 		});
-		/** codigo llenado de spinner ciclos */
+
+		/** codigo llenado de spinner años */
 		ArrayAdapter adapter2 = ArrayAdapter.createFromResource(this,
 				R.array.ciclos, android.R.layout.simple_spinner_item);
-		adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		ciclo.setAdapter(adapter2);
 
 		ciclo.setOnItemSelectedListener(new OnItemSelectedListener() {
@@ -60,11 +84,6 @@ public class CicloInsertarActivity extends Activity {
 					View selectedItemView, int position, long id) {
 				// guardo en el string año el valor selecionado del spinner
 				ciclo1 = parentView.getItemAtPosition(position).toString();
-				/*
-				 * Toast.makeText( parentView.getContext(), "Has seleccionado "
-				 * + parentView.getItemAtPosition(position) .toString(),
-				 * Toast.LENGTH_LONG).show();
-				 */
 			}
 
 			public void onNothingSelected(AdapterView<?> parentView) {
@@ -72,37 +91,105 @@ public class CicloInsertarActivity extends Activity {
 			}
 		});
 
+	addListenerOnButton();
 	}// fin metod oncreate
 
 	public void insertarCiclo(View v) {
-		String fecha_inicio = fecha_ini.getText().toString();
-		String fecha_final = fecha_fin.getText().toString();
-		
-		if (fecha_inicio.equalsIgnoreCase("") || fecha_final.equalsIgnoreCase("")){
+
+		fecha_ini=fechaini.getText().toString();
+		fecha_fin=fechafin.getText().toString();
+
+
+		if (fecha_ini.equalsIgnoreCase("")
+				|| fecha_fin.equalsIgnoreCase("")) {
 			String msj = "Importante: Todos los campos son obligatorios!";
 			Toast.makeText(this, msj, Toast.LENGTH_SHORT).show();
-		}
-		else{
-		String regInsertados;
-		Ciclo ciclo = new Ciclo();
-		ciclo.setAnio(año);
-		ciclo.setNumero(ciclo1);
-		ciclo.setFechaini(fecha_inicio);
-		ciclo.setFechafin(fecha_final);
-		helper.abrir();
-		regInsertados = helper.insertarCiclo(ciclo);
-		helper.cerrar();
-		Toast.makeText(this, regInsertados, Toast.LENGTH_SHORT).show();
-		}
+		} else {
+			String regInsertados;
+			Ciclo ciclo = new Ciclo();
+			ciclo.setAnio(año);
+			ciclo.setNumero(ciclo1);
+			ciclo.setFechaini(fecha_ini);
+			ciclo.setFechafin(fecha_fin);
+			helper.abrir();
+			regInsertados = helper.insertarCiclo(ciclo);
+			helper.cerrar();
+			Toast.makeText(this, regInsertados, Toast.LENGTH_SHORT).show();
+	   }
+		
 	}
 
 	public void limpiarTexto(View v) {
-		
-		fecha_ini.setText("");
-		fecha_fin.setText("");
-		
+
+		fechaini.setText("");
+		fechafin.setText("");
+
 	}
 
+	//**********************************************************************
+	//METODOS DE AGREGAR FECHA
+		public void addListenerOnButton() {
+			final Calendar c = Calendar.getInstance();
+			year = c.get(Calendar.YEAR);
+			month = c.get(Calendar.MONTH);
+			day = c.get(Calendar.DAY_OF_MONTH);
+
+			boton1_fechainicio.setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View v) {
+					showDialog(DATE_DIALOG_ID);
+					var=0;
+				}
+
+			});
+			boton1_fechafin.setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View v) {
+					showDialog(DATE_DIALOG_ID);
+					var=1;
+				}
+
+			});
+
+		}//fin addListenerOnButton
+
+		@Override
+		protected Dialog onCreateDialog(int id) {
+			switch (id) {
+			case DATE_DIALOG_ID:
+				// set date picker as current date
+				return new DatePickerDialog(this, datePickerListener, year, month,
+						day);	
+			}
+			return null;
+		}//fin onCreateDialog
+
+		private DatePickerDialog.OnDateSetListener datePickerListener = new DatePickerDialog.OnDateSetListener() {
+
+			// when dialog box is closed, below method will be called.
+			public void onDateSet(DatePicker view, int selectedYear,
+					int selectedMonth, int selectedDay) {
+				year = selectedYear;
+				month = selectedMonth;
+				day = selectedDay;
+
+				// set selected date into textview
+				if(var==0){
+				fechaini.setText(new StringBuilder().append(day)
+						.append("/").append(month + 1).append("/").append(year)
+						.append(""));
+				}
+				else{
+					fechafin.setText(new StringBuilder().append(day)
+							.append("/").append(month + 1).append("/").append(year)
+							.append(""));
+				}
+			}
+		};
+		
+		
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
