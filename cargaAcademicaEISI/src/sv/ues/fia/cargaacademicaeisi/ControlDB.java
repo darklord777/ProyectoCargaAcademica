@@ -755,7 +755,17 @@ public class ControlDB {
 	}
 
 	public Locales consultarLocal(String idLocal) {
-		return null;
+		String[] id = { idLocal };
+		Cursor cursor = db.query("LOCALES", camposLocal,
+				"IDLOCAL = ?", id, null, null, null);
+		if (cursor.moveToFirst()) {
+			Locales local = new Locales();
+			local.setIdlocal(cursor.getString(0));
+			local.setCapacidad(cursor.getString(1));
+			return local;
+		} else {
+			return null;
+		}
 
 	}
 
