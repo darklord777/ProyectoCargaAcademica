@@ -724,7 +724,20 @@ public class ControlDB {
 	}
 	
 	public String insertar(Actividad_Academica ActAcademica) {
-		return null;
+		String regInsertados = "Registro insertado en la fila No.=";
+		long contador = 0;
+		ContentValues ActiviAcademica = new ContentValues();
+		ActiviAcademica.put("IDACTACAD", ActAcademica.getIdactacad());
+		
+		ActiviAcademica.put("NOM_ACT_ACAD", ActAcademica.getNom_act_acad());
+		ActiviAcademica.put(" CARGO", ActAcademica.getCargo());
+		contador = db.insert("ACTIVIDAD_ACADEMICA", null, ActiviAcademica);
+		if (contador == -1 || contador == 0) {
+			regInsertados = "Error. Verificar Insercion";
+		} else {
+			regInsertados += contador;
+		}
+		return regInsertados;
 		
 	}
 

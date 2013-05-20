@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class InsertarActividadAcademicaActivity extends Activity {
 
@@ -26,6 +27,19 @@ public class InsertarActividadAcademicaActivity extends Activity {
 	public void insertarActAcademica(View v) {
 		String regInsertados;
 		Actividad_Academica ActAcademica = new Actividad_Academica();
+		ActAcademica.setIdactacad(idActAcad.getText().toString());
+		ActAcademica.setNom_act_acad(nombreActAcad.getText().toString());
+		ActAcademica.setCargo(cargoActAcad.getText().toString());
+		helper.abrir();
+		regInsertados = helper.insertar(ActAcademica);
+		helper.cerrar();
+		Toast.makeText(this, regInsertados, Toast.LENGTH_LONG).show();
+	}
+	
+	public void limpiarActAcad(View v) {
+		idActAcad.setText("");
+		nombreActAcad.setText("");
+		cargoActAcad.setText("");
 	}
 
 	@Override

@@ -35,6 +35,8 @@ public class ActividadAcademicaMenuActivity extends Activity implements OnClickL
 		// TODO Auto-generated method stub
 		switch (v.getId()) {
 		case R.id.btn_MenuActividadAcad_Ins:
+			startActivity(new Intent(getApplicationContext(),
+					InsertarActividadAcademicaActivity.class));			
 			break;
 		case R.id.btn_MenuActividadAcad_Cons:
 			break;
