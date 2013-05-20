@@ -370,6 +370,23 @@ public class ControlDB {
 		return regInsertados;
 	}
 
+	public String insertar(DetalleGrupoAsignado grupoAsignado) {
+		String regInsertados = "Registro insertado en la fila No.=";
+		long contador = 0;
+		ContentValues gpoasig = new ContentValues();
+		gpoasig.put("IDMODALIDAD", grupoAsignado.getIddetallecurso());
+		gpoasig.put("NOM_MODALIDAD", grupoAsignado.getCodigomateria());
+		gpoasig.put("DESCUENTO_HORAS", grupoAsignado.getIdmodalidad());
+		gpoasig.put("DESCUENTO_HORAS", grupoAsignado.getIdlocal());
+		contador = db.insert("MODALIDAD_CURSO", null, gpoasig);
+		if (contador == -1 || contador == 0) {
+			regInsertados = "Error. Verificar Insercion";
+		} else {
+			regInsertados += contador;
+		}
+		return regInsertados;
+	}
+
 	public List<String> getAllIdModCurso() {
 		List<String> idMaterias = new ArrayList<String>();
 		Cursor cursor = db
