@@ -12,9 +12,9 @@ public class AdminCatalogosActivity extends Activity implements
 		android.view.View.OnClickListener {
 	private ControlDB helper;
 	private Button btnAdmonDepto;
-	private Button btnAdmonMateria;
+
 	private Button btnMostrarTablas;
-	private Button btnAdmonAreaMateria;
+
 	private Button btncontrato;
 	private Button btnModCurso;
 	private Button btnLocales;
@@ -26,14 +26,12 @@ public class AdminCatalogosActivity extends Activity implements
 		helper = new ControlDB(this);
 		btnAdmonDepto = (Button) findViewById(R.id.btnAdmonDepto);
 		btnAdmonDepto.setOnClickListener(this);
-		btnAdmonMateria = (Button) findViewById(R.id.btnAdmonMateria);
-		btnAdmonMateria.setOnClickListener(this);
+
 		btnMostrarTablas = (Button) findViewById(R.id.btnMostrarTablas);
 		btnMostrarTablas.setOnClickListener(this);
-		btnAdmonAreaMateria = (Button) findViewById(R.id.btnAdmonAreaMateria);
-		btnAdmonAreaMateria.setOnClickListener(this);
+
 		btncontrato = (Button) findViewById(R.id.BtnTipoCont);
-		btncontrato.setOnClickListener(this);		
+		btncontrato.setOnClickListener(this);
 		btnModCurso = (Button) findViewById(R.id.BtnModCurso);
 		btnModCurso.setOnClickListener(this);
 		btnLocales = (Button) findViewById(R.id.BtnLocal);
@@ -54,32 +52,26 @@ public class AdminCatalogosActivity extends Activity implements
 			startActivity(new Intent(getApplicationContext(),
 					AdmonDeptoActivity.class));
 			break;
-		case R.id.btnAdmonMateria:
-			startActivity(new Intent(getApplicationContext(),
-					AdmonMateriaActivity.class));
-			break;
-		case R.id.btnAdmonAreaMateria:
-			startActivity(new Intent(getApplicationContext(),
-					AdmonAreaMatActivity.class));
-			break;
+
 		case R.id.btnMostrarTablas:
 			helper.abrir();
-			Toast.makeText(this, helper.consultarTablas(), Toast.LENGTH_LONG).show();
+			Toast.makeText(this, helper.consultarTablas(), Toast.LENGTH_LONG)
+					.show();
 			helper.cerrar();
 			break;
-			
+
 		case R.id.BtnTipoCont:
-			startActivity(new Intent(getApplicationContext(), 
+			startActivity(new Intent(getApplicationContext(),
 					AdminTipoContratoActivity.class));
 			break;
-			
+
 		case R.id.BtnModCurso:
-			startActivity(new Intent(getApplicationContext(), 
+			startActivity(new Intent(getApplicationContext(),
 					ModalidadCursoMenuActivity.class));
 		case R.id.BtnLocal:
-			startActivity(new Intent(getApplicationContext(), 
+			startActivity(new Intent(getApplicationContext(),
 					LocalesMenuActivity.class));
-					
+
 		default:
 			break;
 		}
