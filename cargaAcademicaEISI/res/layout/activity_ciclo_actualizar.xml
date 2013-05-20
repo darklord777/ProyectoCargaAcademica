@@ -9,84 +9,114 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".CicloActualizarActivity" >
 
-    <Spinner
-        android:id="@+id/spinner1"
+    <Button
+        android:id="@+id/button1a5_consultarciclo"
         android:layout_width="fill_parent"
-        android:layout_height="40dp"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true" />
-
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="fill_parent"
-        android:layout_height="40dp"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true" />
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2a5_consultarciclo"
+        android:layout_alignLeft="@+id/button2a5_consultarciclo"
+        android:drawableRight="@drawable/search"
+        android:text="@string/button3_consultar_ciclo"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:onClick="consultarCiclo" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView1_cicloconsultar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/spinner2"
-        android:text="Medium Text"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/spinner1"
+        android:layout_alignLeft="@+id/spinnera1_cicloanio_consultar"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="16dp"
         android:text="@string/textview_selecioneanio_ciclo"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
+    <Spinner
+        android:id="@+id/spinnera1_cicloanio_consultar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView2_cicloconsultar"
+        android:layout_below="@+id/textView1_cicloconsultar" />
+
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView2_cicloconsultar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/spinner1"
-        android:layout_below="@+id/spinner1"
+        android:layout_alignLeft="@+id/spinnera2_ciclociclo_consultar"
+        android:layout_below="@+id/spinnera1_cicloanio_consultar"
         android:text="@string/textview_selecione_ciclo"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_below="@+id/textView3"
-        android:ems="10" >
-
-        <requestFocus />
-    </EditText>
+    <Spinner
+        android:id="@+id/spinnera2_ciclociclo_consultar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView3_cicloconsultar"
+        android:layout_below="@+id/textView2_cicloconsultar" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView3_cicloconsultar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_below="@+id/editText1"
-        android:text="Medium Text"
+        android:layout_alignLeft="@+id/textView4_cicloconsultar_fechafin"
+        android:layout_below="@+id/spinnera2_ciclociclo_consultar"
+        android:text="@string/EditText1a3_updatefechaini"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <EditText
-        android:id="@+id/editText2"
+    <Button
+        android:id="@+id/button1_fechainicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_below="@+id/textView4"
-        android:ems="10" />
+        android:layout_alignLeft="@+id/textView3_cicloconsultar"
+        android:layout_below="@+id/textView3_cicloconsultar"
+        android:text="@string/button1_fechainicioinsert" />
+
+    <TextView
+        android:id="@+id/textView4_cicloconsultar_fechafin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1a5_consultarciclo"
+        android:layout_centerVertical="true"
+        android:text="@string/EditText2a3_updatefechafin"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button2_fechafin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView2_cicloconsultar"
+        android:layout_below="@+id/textView4_cicloconsultar_fechafin"
+        android:text="@string/button2_fechafininsert" />
+
+    <Button
+        android:id="@+id/button2a5_consultarciclo"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_below="@+id/editText2"
-        android:layout_marginTop="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
         android:drawableRight="@drawable/update"
-        android:text="@string/button3a_eliminar_Ciclo"
+        android:onClick="actualizarCiclo"
+        android:text="@string/button4_actualizar_ciclo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2_fin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2_fechafin"
+        android:layout_alignBottom="@+id/button2_fechafin"
+        android:layout_alignRight="@+id/textView1_ini"
+        android:text="@string/textview2_fin"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView1_ini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1_fechainicio"
+        android:layout_alignBottom="@+id/button1_fechainicio"
+        android:layout_alignRight="@+id/spinnera2_ciclociclo_consultar"
+        android:layout_marginRight="19dp"
+        android:text="@string/textview1_inicio"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

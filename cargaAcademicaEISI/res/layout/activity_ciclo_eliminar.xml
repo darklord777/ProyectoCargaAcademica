@@ -10,7 +10,7 @@
     tools:context=".CicloEliminarActivity" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/textView4_detallemateria_insert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -21,37 +21,38 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Spinner
-        android:id="@+id/spinner1"
+        android:id="@+id/spinnera3_anio_eliminar"
         android:layout_width="fill_parent"
         android:layout_height="40dp"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1" />
+        android:layout_alignLeft="@+id/textView4_detallemateria_insert"
+        android:layout_below="@+id/textView4_detallemateria_insert" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView2_fin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/spinner1"
-        android:layout_below="@+id/spinner1"
+        android:layout_alignLeft="@+id/spinnera3_anio_eliminar"
+        android:layout_below="@+id/spinnera3_anio_eliminar"
         android:layout_marginTop="20dp"
         android:text="@string/textview_selecione_ciclo"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/spinnera3_ciclo_eliminar"
         android:layout_width="fill_parent"
         android:layout_height="40dp"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_below="@+id/textView2" />
+        android:layout_alignLeft="@+id/textView2_fin"
+        android:layout_below="@+id/textView2_fin" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button1_fechainicio"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/spinner2"
+        android:layout_alignRight="@+id/spinnera3_ciclo_eliminar"
         android:layout_centerVertical="true"
         android:drawableRight="@drawable/clear"
         android:text="@string/button3a_eliminar_Ciclo"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:onClick="eliminarAlumno" />
 
 </RelativeLayout>

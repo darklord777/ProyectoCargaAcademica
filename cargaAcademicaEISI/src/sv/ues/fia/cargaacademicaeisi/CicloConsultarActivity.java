@@ -29,64 +29,43 @@ public class CicloConsultarActivity extends Activity {
 		helper = new ControlDB(this);
 		this.spinner_anio = (Spinner) findViewById(R.id.spinner_anio_consultar);
 		this.spinner_ciclo = (Spinner) findViewById(R.id.spinner_ciclo_consultr);
-		loadSpinnerData(); // 1 HACE CONSULTA Y CARGA LOS LABELS EN EL SPINNER AÑOS
+		loadSpinnerData(); // 1 HACE CONSULTA Y CARGA LOS LABELS EN EL SPINNER
+							// AÑOS
 		this.iniciofecha = (EditText) findViewById(R.id.editText1_consult_inicio);
 		this.finfecha = (EditText) findViewById(R.id.editText2_consult_fin);
-		//deshabilitando edicion de editText
+		// deshabilitando edicion de editText
 		iniciofecha.setFocusable(false);
 		finfecha.setFocusable(false);
-		
-		/** codigo llenado de spinner ciclos FIJOS */
-		ArrayAdapter adapter2 = ArrayAdapter.createFromResource(this,
-				R.array.ciclos, android.R.layout.simple_spinner_item);
-		adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		spinner_ciclo.setAdapter(adapter2);
 
-		spinner_ciclo.setOnItemSelectedListener(new OnItemSelectedListener() {
-
-			public void onItemSelected(AdapterView<?> parentView,
-					View selectedItemView, int position, long id) {
-				// guardo en el string año el valor selecionado del spinner
-				ciclo1 = parentView.getItemAtPosition(position).toString();
-			}
-
-			public void onNothingSelected(AdapterView<?> parentView) {
-
-			}
-		});
-	}//fin metodo oncreate
+	}// fin metodo oncreate
 
 	/**
 	 * Función para cargar los datos de la base de datos SQLite spinner
 	 * */
 	private void loadSpinnerData() {
-		// database handler
-		// ControlBD db = new ControlBD(this);
-		//helper2 = new ControlDB(getApplicationContext());
+		// COPIAN A SU ACTIVITY SOLO CAMBIAN LA CONSULTA !!!!!
+		String selectQuery = "SELECT distinct ANIO FROM CICLO";
+		// LLAMA A getAllLabels en ControlDB !!! importante
+		List<String> lables = helper.getAllLabels(selectQuery, 0);
 
-		// Select All Query
-		//COPIAN A SU ACTIVITY SOLO CAMBIAN LA CONSULTA !!!!!
-        String selectQuery = "SELECT distinct ANIO FROM CICLO" ; 
-		// Spinner Drop down elements
-        // LLAMA A getAllLabels en ControlDB !!! importante
-		List<String> lables = helper.getAllLabels(selectQuery,0); 
-
-		// Creating adapter for spinner
+		// creando ADAPTER para el Spinner
 		ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_spinner_item, lables);
 
-		// Drop down layout style - list view with radio button
+		// vista de lista con el botón
 		dataAdapter
 				.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-		// attaching data adapter to spinner
+		// adaptador de datos para spinner
 		spinner_anio.setAdapter(dataAdapter);
-		//Guardando valor selecionado en variable para consulta posterior
+
+		// Guardando valor selecionado en variable para consulta posterior
 		spinner_anio.setOnItemSelectedListener(new OnItemSelectedListener() {
 			public void onItemSelected(AdapterView<?> parentView,
 					View selectedItemView, int position, long id) {
 				// guardo en el string año el valor selecionado del spinner
 				año = parentView.getItemAtPosition(position).toString();
+				loadSpinnerData2();
 			}
 
 			public void onNothingSelected(AdapterView<?> parentView) {
@@ -94,11 +73,39 @@ public class CicloConsultarActivity extends Activity {
 			}
 		});
 	}
-	
-	public void consultarCiclo(View v) {
 
+	/**
+	 * Función para cargar los datos de la base de datos SQLite spinner
+	 * */
+	private void loadSpinnerData2() {
+		String selectQuery = "SELECT distinct NUMERO FROM CICLO WHERE ANIO='"
+				+ año + "'";
+		List<String> lables = helper.getAllLabels(selectQuery, 0);
+		ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
+				android.R.layout.simple_spinner_item, lables);
+
+		dataAdapter
+				.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+		spinner_ciclo.setAdapter(dataAdapter);
+
+		spinner_ciclo.setOnItemSelectedListener(new OnItemSelectedListener() {
+			public void onItemSelected(AdapterView<?> parentView,
+					View selectedItemView, int position, long id) {
+				ciclo1 = parentView.getItemAtPosition(position).toString();
+			}
+
+			public void onNothingSelected(AdapterView<?> parentView) {
+
+			}
+		});
+	}
+
+	public void consultarCiclo(View v) {
+		iniciofecha.setText("");
+		finfecha.setText("");
 		helper.abrir();
-		Ciclo ciclo = helper.consultarCiclo(año,ciclo1);
+		Ciclo ciclo = helper.consultarCiclo(año, ciclo1);
 		helper.cerrar();
 		if (ciclo == null)
 			Toast.makeText(this, "Ciclo No Encontrado", Toast.LENGTH_LONG)
@@ -108,14 +115,13 @@ public class CicloConsultarActivity extends Activity {
 			finfecha.setText(String.valueOf(ciclo.getFechafin()));
 		}
 	}
-	
+
 	public void limpiarTexto(View v) {
 
 		iniciofecha.setText("");
 		finfecha.setText("");
 	}
 
-	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
