@@ -47,6 +47,12 @@ public class ConsultarMateriaActivity extends Activity implements
 	@Override
 	public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2,
 			long arg3) {
+		String idMateria = arg0.getItemAtPosition(arg2).toString();
+		Materia materia = new Materia();
+		helper.abrir();
+		materia = helper.consultarMateria(idMateria);
+		helper.cerrar();
+		edtNomMateria.setText(materia.getNom_materia());
 	}
 
 	@Override
