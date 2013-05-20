@@ -33,8 +33,7 @@ public class AdminCatalogosActivity extends Activity implements
 		btnAdmonAreaMateria = (Button) findViewById(R.id.btnAdmonAreaMateria);
 		btnAdmonAreaMateria.setOnClickListener(this);
 		btncontrato = (Button) findViewById(R.id.BtnTipoCont);
-		btncontrato.setOnClickListener(this);
-		
+		btncontrato.setOnClickListener(this);		
 		btnModCurso = (Button) findViewById(R.id.BtnModCurso);
 		btnModCurso.setOnClickListener(this);
 		btnLocales = (Button) findViewById(R.id.BtnLocal);
@@ -65,10 +64,10 @@ public class AdminCatalogosActivity extends Activity implements
 			break;
 		case R.id.btnMostrarTablas:
 			helper.abrir();
-			Toast.makeText(this, helper.consultarTablas(), Toast.LENGTH_LONG)
-					.show();
+			Toast.makeText(this, helper.consultarTablas(), Toast.LENGTH_LONG).show();
 			helper.cerrar();
 			break;
+			
 		case R.id.BtnTipoCont:
 			startActivity(new Intent(getApplicationContext(), 
 					AdminTipoContratoActivity.class));

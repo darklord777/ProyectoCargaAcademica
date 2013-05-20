@@ -27,7 +27,7 @@ public class LocalesEliminarActivity extends Activity implements OnItemSelectedL
 		setContentView(R.layout.activity_locales_eliminar);
 		helper = new ControlDB(this);
 		spnEliminarLocal = (Spinner) findViewById(R.id.spnEliminarLocal);
-		CapacidadLocal_Elim = (EditText) findViewById(R.id.NombreLocal_Elim);
+		CapacidadLocal_Elim = (EditText) findViewById(R.id.CapLocal_Elim);
 
 		helper.abrir();
 		idLocal = helper.getAll_IdLocales();

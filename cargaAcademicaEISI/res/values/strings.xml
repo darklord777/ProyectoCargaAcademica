@@ -72,7 +72,7 @@
     <string name="btnModAcad">Modalidad Actividad Academica</string>
     <string name="btnActAcad">Actividad Academica</string>
     <string name="btnLocales">Locales</string>
-    <string name="btnModCurso">Modalidad Curso</string>
+    <string name="btnModCurso">Modalidad de Curso</string>
     <string name="btnModalAcad">Modalidades Academicas</string>
     <string name="title_activity_locales_menu">LocalesMenuActivity</string>
     <string name="btn1_insertar_local">Insertar Local</string>
@@ -191,7 +191,7 @@
     <string name="title_activity_menu_act_academicas">MenuActAcademicasActivity</string>
     <string name="title_activity_locales_eliminar">LocalesEliminarActivity</string>
     <string name="TextViewElimLocal">Eliminar Local</string>
-    <string name="msgNombreLocal">Nombre del Local</string>
+    <string name="msgCapacidadLocal">Capacidad del Local</string>
     <string name="btnEliminarLocal">Realizar</string>
     <string name="title_activity_locales_actualizar">LocalesActualizarActivity</string>
     <string name="title_activity_locales_consultar">LocalesConsultarActivity</string>

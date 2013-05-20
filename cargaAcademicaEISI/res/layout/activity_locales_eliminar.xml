@@ -34,16 +34,16 @@
         android:layout_alignLeft="@+id/spnEliminarLocal"
         android:layout_below="@+id/spnEliminarLocal"
         android:ems="10"
-        android:hint="@string/msgNombreLocal"
+        android:hint="@string/msgCapacidadLocal"
         android:inputType="none" />
 
     <Button
         android:id="@+id/btnLocal_Elim"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/NombreLocal_Elim"
-        android:layout_below="@+id/NombreLocal_Elim"
-        android:layout_marginTop="70dp"
+        android:layout_alignLeft="@+id/CapLocal_Elim"
+        android:layout_below="@+id/CapLocal_Elim"
+        android:layout_marginTop="52dp"
         android:drawableRight="@drawable/clear"
         android:onClick="eliminarLocal"
         android:text="@string/btnEliminarLocal"
