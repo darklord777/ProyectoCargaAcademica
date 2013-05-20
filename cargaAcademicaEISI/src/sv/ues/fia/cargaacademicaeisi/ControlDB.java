@@ -722,6 +722,11 @@ public class ControlDB {
 		}
 		return regInsertados;
 	}
+	
+	public String insertar(Actividad_Academica ActAcademica) {
+		return null;
+		
+	}
 
 	public List<String> getAll_IdLocales() {
 		List<String> idLocales = new ArrayList<String>();
