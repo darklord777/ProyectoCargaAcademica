@@ -285,5 +285,6 @@
     <string name="msgCargoActAcad">Digite cargo</string>
     <string name="btnGuardarActAcad">Guardar Actividad</string>
     <string name="btnLimpiarActAcad">Limpiar Campos</string>
+    <string name="btnGuardarModaAA">Guardad Modalidad</string>
 
 </resources>

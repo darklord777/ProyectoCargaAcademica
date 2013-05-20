@@ -27,7 +27,7 @@
         android:layout_marginBottom="47dp"
         android:drawableRight="@drawable/save"
         android:onClick="insertarModalidadAA"
-        android:text="@string/btnGuardarLocal"
+        android:text="@string/btnGuardarModaAA"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
@@ -48,6 +48,7 @@
         android:layout_alignLeft="@+id/NombreModAA"
         android:layout_centerVertical="true"
         android:ems="10"
+        android:inputType="number"
         android:hint="@string/msgDescHorasModAA"
         android:maxLength="6" />
 

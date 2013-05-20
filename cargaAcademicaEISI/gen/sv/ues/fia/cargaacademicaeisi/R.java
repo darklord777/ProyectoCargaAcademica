@@ -498,6 +498,7 @@ public final class R {
         public static final int btnGuardarDetGpoAsig=0x7f0700ef;
         public static final int btnGuardarLocal=0x7f070024;
         public static final int btnGuardarMateria=0x7f07005e;
+        public static final int btnGuardarModaAA=0x7f070102;
         public static final int btnGuardarModalidadC=0x7f07004f;
         public static final int btnGuarfarAreaMat=0x7f070068;
         public static final int btnInsertGuardarTipoCont=0x7f070097;
