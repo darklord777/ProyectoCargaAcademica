@@ -186,6 +186,38 @@
             android:name="sv.ues.fia.cargaacademicaeisi.LocalesConsultarActivity"
             android:label="@string/title_activity_locales_consultar" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.CargaAcademicaMenuActivity"
+            android:label="@string/title_activity_carga_academica_menu" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.CargaAcademicaInsertarActivity"
+            android:label="@string/title_activity_carga_academica_insertar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.CargaAcademicaEliminarActivity"
+            android:label="@string/title_activity_carga_academica_eliminar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.CargaAcademicaConsultarActivity"
+            android:label="@string/title_activity_carga_academica_consultar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.DetalleCargaMateriaMenuActivity"
+            android:label="@string/title_activity_detalle_carga_materia_menu" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.DetalleCargaMateriaInsertarActivity"
+            android:label="@string/title_activity_detalle_carga_materia_insertar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.DetalleCargaMateriaEliminarActivity"
+            android:label="@string/title_activity_detalle_carga_materia_eliminar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.DetalleCargaMateriaConsultarActivity"
+            android:label="@string/title_activity_detalle_carga_materia_consultar" >
+        </activity>
     </application>
 
 </manifest>

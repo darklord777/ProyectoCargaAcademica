@@ -37,16 +37,16 @@ public class GestionCargaAcadActivity extends Activity implements
 			 CicloMenuActivity.class));
 			break;
 		case R.id.btn2TablaCargaAcademica:
-			// startActivity(new Intent(getApplicationContext(),
-			// GestionCargaAcadActivity.class));
+			 startActivity(new Intent(getApplicationContext(),
+			 CargaAcademicaMenuActivity.class));
 			break;
 		case R.id.btn3DetCargaMateria:
-			// startActivity(new Intent(getApplicationContext(),
-			// GestionCargaAcadActivity.class));
+			 startActivity(new Intent(getApplicationContext(),
+			 DetalleCargaMateriaMenuActivity.class));
 			break;
 		case R.id.btn4DetCargaActAcademica:
-			// startActivity(new Intent(getApplicationContext(),
-			// GestionCargaAcadActivity.class));
+		//	startActivity(new Intent(getApplicationContext(),
+			//DetalleCargaActAcadMenuActivity.class));
 			break;
 		default:
 			break;

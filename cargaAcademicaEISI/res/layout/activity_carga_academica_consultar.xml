@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CargaAcademicaConsultarActivity" >
+
+        <Spinner
+            android:id="@+id/spinner3_cargaacademica_cicloCiclo_consultar"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textView3A5_selecioneciclo"
+            android:layout_centerHorizontal="true" />
+
+        <Spinner
+            android:id="@+id/spinner2_cargaacademica_anioCiclo_consultar"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/spinner1_cargaacademica_iddocente_consultar"
+            android:layout_below="@+id/textView4A5_selecioneanio" />
+
+        <Spinner
+            android:id="@+id/spinner1_cargaacademica_iddocente_consultar"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/textView1A5_selecionedocente"
+            android:layout_below="@+id/textView1A5_selecionedocente" />
+
+        <TextView
+            android:id="@+id/textView4A5_selecioneanio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spinner1_cargaacademica_iddocente_consultar"
+            android:layout_below="@+id/spinner1_cargaacademica_iddocente_consultar"
+            android:layout_marginTop="20dp"
+            android:text="@string/spinner_anio_ciclo"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView3A5_selecioneciclo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spinner3_cargaacademica_cicloCiclo_consultar"
+            android:layout_below="@+id/spinner2_cargaacademica_anioCiclo_consultar"
+            android:layout_marginTop="26dp"
+            android:text="@string/spinner_ciclo"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView1A5_selecionedocente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3A5_selecioneciclo"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="18dp"
+            android:text="@string/TextView1_iddocente"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/button1_ayuda_consultacargaacademica"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spinner3_cargaacademica_cicloCiclo_consultar"
+            android:layout_below="@+id/spinner3_cargaacademica_cicloCiclo_consultar"
+            android:layout_marginTop="26dp"
+            android:drawableRight="@drawable/help"
+            android:text="@string/button1_ayuda_cargaacademica"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:onClick="ayuda" />
+        
+</RelativeLayout>
