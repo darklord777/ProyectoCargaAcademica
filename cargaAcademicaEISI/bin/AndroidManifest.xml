@@ -170,6 +170,10 @@
             android:name="sv.ues.fia.cargaacademicaeisi.InsertarModalidadCursoActivity"
             android:label="@string/title_activity_insertar_modalidad_curso" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.MenuActAcademicasActivity"
+            android:label="@string/title_activity_menu_act_academicas" >
+        </activity>
     </application>
 
 </manifest>

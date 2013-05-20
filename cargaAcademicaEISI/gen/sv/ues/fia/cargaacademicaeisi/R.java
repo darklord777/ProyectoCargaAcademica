@@ -157,7 +157,7 @@ public final class R {
         public static final int spnActIdDepto=0x7f0a0006;
         public static final int spnActMateria=0x7f0a000b;
         public static final int spnCodMateNuevaAreMat=0x7f0a0034;
-        public static final int spnConsultAreaMat=0x7f0a002e;
+        public static final int spnConsultAreaMat=0x7f0a002f;
         public static final int spnConsultarMateria=0x7f0a0052;
         public static final int spnElimAreaMateria=0x7f0a0031;
         public static final int spnElimDepto=0x7f0a0053;
@@ -179,7 +179,7 @@ public final class R {
         public static final int textview_selecione_ciclo=0x7f0a0049;
         public static final int textview_selecioneanio_ciclo=0x7f0a0048;
         public static final int tvCodMatAreaMat=0x7f0a0030;
-        public static final int tvConsultDeptoAreMat=0x7f0a002f;
+        public static final int tvConsultDeptoAreMat=0x7f0a002e;
     }
     public static final class layout {
         public static final int activity_actividad_academica_menu=0x7f030000;
@@ -213,13 +213,14 @@ public final class R {
         public static final int activity_insertar_modalidad_act_acad=0x7f03001c;
         public static final int activity_insertar_modalidad_curso=0x7f03001d;
         public static final int activity_locales_menu=0x7f03001e;
-        public static final int activity_menu_docente=0x7f03001f;
-        public static final int activity_menu_materia=0x7f030020;
-        public static final int activity_menu_principal=0x7f030021;
-        public static final int activity_modalidad_aamenu=0x7f030022;
-        public static final int activity_modalidad_curso_menu=0x7f030023;
-        public static final int activity_nueva_materia=0x7f030024;
-        public static final int activity_nuevo_depto=0x7f030025;
+        public static final int activity_menu_act_academicas=0x7f03001f;
+        public static final int activity_menu_docente=0x7f030020;
+        public static final int activity_menu_materia=0x7f030021;
+        public static final int activity_menu_principal=0x7f030022;
+        public static final int activity_modalidad_aamenu=0x7f030023;
+        public static final int activity_modalidad_curso_menu=0x7f030024;
+        public static final int activity_nueva_materia=0x7f030025;
+        public static final int activity_nuevo_depto=0x7f030026;
     }
     public static final class menu {
         public static final int actividad_academica_menu=0x7f090000;
@@ -253,13 +254,14 @@ public final class R {
         public static final int insertar_modalidad_act_acad=0x7f09001c;
         public static final int insertar_modalidad_curso=0x7f09001d;
         public static final int locales_menu=0x7f09001e;
-        public static final int menu_docente=0x7f09001f;
-        public static final int menu_materia=0x7f090020;
-        public static final int menu_principal=0x7f090021;
-        public static final int modalidad_aamenu=0x7f090022;
-        public static final int modalidad_curso_menu=0x7f090023;
-        public static final int nueva_materia=0x7f090024;
-        public static final int nuevo_depto=0x7f090025;
+        public static final int menu_act_academicas=0x7f09001f;
+        public static final int menu_docente=0x7f090020;
+        public static final int menu_materia=0x7f090021;
+        public static final int menu_principal=0x7f090022;
+        public static final int modalidad_aamenu=0x7f090023;
+        public static final int modalidad_curso_menu=0x7f090024;
+        public static final int nueva_materia=0x7f090025;
+        public static final int nuevo_depto=0x7f090026;
     }
     public static final class string {
         public static final int TextViewActividadAcad=0x7f07005b;
@@ -435,6 +437,7 @@ public final class R {
         public static final int title_activity_insertar_modalidad_curso=0x7f070060;
         public static final int title_activity_locales_menu=0x7f070043;
         public static final int title_activity_materias_impartir=0x7f070093;
+        public static final int title_activity_menu_act_academicas=0x7f0700aa;
         public static final int title_activity_menu_actividad_academica=0x7f0700a2;
         /**  YO 
          */

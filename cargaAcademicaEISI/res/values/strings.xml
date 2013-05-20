@@ -103,7 +103,6 @@
     <string name="btn2_consultar_ActividadAcad">Consultar Actividad Academica</string>
     <string name="btn3_eliminar_ActividadAcad">Eliminar Actividad Academica</string>
     <string name="btn4_actualizar_ActividadAcad">Actualizar Actividad Academica</string>
-
     <string name="title_activity_insertar_modalidad_curso">InsertarModalidadCursoActivity</string>
     <string name="msgidModalidadCurso">Digite codigo Mod Curso</string>
     <string name="msgNomModalidadCurso">Digite nombre de Modalidad</string>
@@ -189,6 +188,6 @@
     <!-- YO -->
 
     <string name="title_activity_menu_docente">MenuDocenteActivity</string>
-    
+    <string name="title_activity_menu_act_academicas">MenuActAcademicasActivity</string>
 
 </resources>
