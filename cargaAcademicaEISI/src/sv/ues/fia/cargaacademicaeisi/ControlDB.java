@@ -371,7 +371,7 @@ public class ControlDB {
 
 	public AreaMateria consultarAreaMateria(String idaremat) {
 		String[] id = { idaremat };
-		Cursor cursor = db.query("AREA_MATERIA", camposMat, "IDAREAMAT = ?",
+		Cursor cursor = db.query("AREA_MATERIA", camposAreaMat, "IDAREAMAT = ?",
 				id, null, null, null);
 		if (cursor.moveToFirst()) {
 			AreaMateria areaMateria = new AreaMateria();
