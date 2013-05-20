@@ -165,7 +165,17 @@
     <string name="botonDepartamento">Departamentos de Docentes</string>
     <string name="botonMateriasImpartir">Materias que Pueden Impartir los Docentes</string>
 
-    <!-- YO -->
+     <!-- Insertar contrato -->
+    <string name="title_activity_insertar_contrato">InsertarContratoActivity</string>
+    <string name="msgInsertCodigoTipoCont">Codigo</string>
+    <string name="msgInsertTipoTipoCont">Nombre de Contrato</string>
+    <string name="msgInsertHorasTipoCont">Horas del Contrato</string>
+    <string name="btnInsertGuardarTipoCont">Guardar Contrato</string>
+    <string name="btnInsertLimpiarTipoCont">Limpiar</string>
+    <string name="msgInsertCodigo">Codigo de Contrato</string>
+	<string name="msgInsertNombre">Nombre o Tipo del Contrato</string>
+	<string name="msgInsertHoras">Horas del Contrato</string>
+    <!-- fin YO -->
 
     <string name="title_activity_menu_docente">MenuDocenteActivity</string>
     <string name="title_activity_menu_act_academicas">MenuActAcademicasActivity</string>
@@ -263,5 +273,8 @@
     <string name="edtIdLocalDetGpoAsig">Codigo Local</string>
     <string name="edtIdDeptoAreMat">Codigo departamento</string>
     <string name="edtCodMateAreaMat">Codigo Materia</string>
+    <string name="title_activity_actualizar_contrato">ActualizarContratoActivity</string>
+    <string name="title_activity_consultar_contrato">ConsultarContratoActivity</string>
+    <string name="title_activity_eliminar_contrato">EliminarContratoActivity</string>
 
 </resources>

@@ -254,6 +254,22 @@
             android:name="sv.ues.fia.cargaacademicaeisi.AdminDetGpoAsigActivity"
             android:label="@string/title_activity_admin_det_gpo_asig" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.ActualizarContratoActivity"
+            android:label="@string/title_activity_actualizar_contrato" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.InsertarContratoActivity"
+            android:label="@string/title_activity_insertar_contrato" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.ConsultarContratoActivity"
+            android:label="@string/title_activity_consultar_contrato" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.EliminarContratoActivity"
+            android:label="@string/title_activity_eliminar_contrato" >
+        </activity>
     </application>
 
 </manifest>

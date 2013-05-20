@@ -537,6 +537,76 @@ public class ControlDB {
 	}
 
 	/** METODOS EMERSON */
+	public String InsertarContrato(TipoContrato tipocontrato){
+		String regInsertados = "Registro insertado en la fila No.= ";
+		long contador = 0;
+		ContentValues contrato = new ContentValues();
+		contrato.put("IDCONTRATO", tipocontrato.getIdContrato());
+		contrato.put("TIPO", tipocontrato.getTipo());
+		contrato.put("HORAS", tipocontrato.getHoras());
+		contador = db.insert("TIPO_CONTRATO", null, contrato);
+		if(contador == -1 || contador == 0){
+			regInsertados = "Error. Verificar Insercion";
+		} else {
+			regInsertados += contador;
+		}
+		
+		return regInsertados;
+	}
+	
+	public String InsertarDocDepto(DocenteDepto docdepto){
+		String regInsertados = "Registro insertado en la fila No.= ";
+		long contador = 0;
+		ContentValues relacion = new ContentValues();
+		relacion.put("IDDEPARTAMENTO", docdepto.getIdDepartamento());
+		relacion.put("IDDOCENTE", docdepto.getIdDocente());
+		contador = db.insert("DOCENTE_DEPTO", null, relacion);
+		if(contador == -1 || contador == 0){
+			regInsertados = "Error. Verificar Insercion";
+		} else {
+			regInsertados += contador;
+		}
+		
+		return regInsertados;
+	}
+	
+	public String InsertarMatImpart(MateriasImpartir mateimpart){
+		String regInsertados = "Registro insertado en la fila No.= ";
+		long contador = 0;
+		ContentValues relacion = new ContentValues();
+		relacion.put("IDDOCENTE", mateimpart.getIdDocente());
+		relacion.put("IDAREAMAT", mateimpart.getIdAreaMat());
+		contador = db.insert("MAT_AREA_PUEDE_IMPARTIR", null, relacion);
+		if(contador == -1 || contador == 0){
+			regInsertados = "Error. Verificar Insercion";
+		} else {
+			regInsertados += contador;
+		}
+		
+		return regInsertados;
+	}
+	
+	public String InsertarDocentes(Docente docente){
+		String regInsertados = "Registro insertado en la fila No.= ";
+		long contador = 0;
+		ContentValues doc = new ContentValues();
+		doc.put("IDDEPARTAMENTO", docente.getIdDocente());
+		doc.put("IDDOCENTE", docente.getIdContrato());
+		doc.put("NOMBRE", docente.getNombre());
+		doc.put("APELLIDO", docente.getApellido());
+		doc.put("GRADO_ACAD", docente.getGradoAcademico());
+		doc.put("CORREO", docente.getCorreo());
+		doc.put("TELEFONO", docente.getTelefono());
+		doc.put("HORAS_ASIG", docente.getHorasAsignadas());
+		contador = db.insert("DOCENTE_DEPTO", null, doc);
+		if(contador == -1 || contador == 0){
+			regInsertados = "Error. Verificar Insercion";
+		} else {
+			regInsertados += contador;
+		}
+		
+		return regInsertados;
+	}
 
 	/** METODOS AGUSTIN */
 	public String insertar(Locales local) {
