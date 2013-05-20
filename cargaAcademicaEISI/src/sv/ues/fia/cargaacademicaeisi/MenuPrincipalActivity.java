@@ -15,6 +15,7 @@ public class MenuPrincipalActivity extends Activity implements OnClickListener {
 	private Button btnA_CargaAcademica;
 	private Button btnModAcad;
 	private Button btnDocentes;
+	private Button btnAdmonActAcad;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,8 @@ public class MenuPrincipalActivity extends Activity implements OnClickListener {
 		btnModAcad.setOnClickListener(this);
 		btnDocentes = (Button) findViewById(R.id.btnDocentes);
 		btnDocentes.setOnClickListener(this);
+		btnAdmonActAcad = (Button) findViewById(R.id.btnActividadAcademica);
+		btnAdmonActAcad.setOnClickListener(this);
 	}
 
 	@Override

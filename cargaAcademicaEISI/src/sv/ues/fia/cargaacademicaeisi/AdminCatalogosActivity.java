@@ -16,6 +16,8 @@ public class AdminCatalogosActivity extends Activity implements
 	private Button btnMostrarTablas;
 	private Button btnAdmonAreaMateria;
 	private Button btncontrato;
+	private Button btnModCurso;
+	private Button btnLocales;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,11 @@ public class AdminCatalogosActivity extends Activity implements
 		btnAdmonAreaMateria.setOnClickListener(this);
 		btncontrato = (Button) findViewById(R.id.BtnTipoCont);
 		btncontrato.setOnClickListener(this);
+		
+		btnModCurso = (Button) findViewById(R.id.BtnModCurso);
+		btnModCurso.setOnClickListener(this);
+		btnLocales = (Button) findViewById(R.id.BtnLocal);
+		btnLocales.setOnClickListener(this);
 
 	}
 
@@ -66,6 +73,13 @@ public class AdminCatalogosActivity extends Activity implements
 			startActivity(new Intent(getApplicationContext(), 
 					AdminTipoContratoActivity.class));
 			break;
+			
+		case R.id.BtnModCurso:
+			startActivity(new Intent(getApplicationContext(), 
+					ModalidadCursoMenuActivity.class));
+		case R.id.BtnLocal:
+			startActivity(new Intent(getApplicationContext(), 
+					LocalesMenuActivity.class));
 					
 		default:
 			break;

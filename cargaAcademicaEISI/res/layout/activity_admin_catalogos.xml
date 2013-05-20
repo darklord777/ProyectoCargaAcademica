@@ -10,43 +10,23 @@
     tools:context=".AdminCatalogosActivity" >
 
     <Button
-        android:id="@+id/btnAdmonDepto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="44dp"
-        android:background="@drawable/button_custom"
-        android:text="@string/btnAdmonDepto"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <Button
         android:id="@+id/btnAdmonMateria"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/btnAdmonDepto"
-        android:layout_alignRight="@+id/btnAdmonDepto"
         android:layout_below="@+id/btnAdmonDepto"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="22dp"
         android:background="@drawable/button_custom"
         android:text="@string/msgAdmonMateria"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
-        android:id="@+id/btnMostrarTablas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="44dp"
-        android:text="ver tablas" />
-
-    <Button
         android:id="@+id/btnAdmonAreaMateria"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/btnAdmonMateria"
+        android:layout_below="@+id/btnAdmonMateria"
+        android:layout_marginTop="16dp"
         android:background="@drawable/button_custom"
         android:text="@string/btnAdmonAreaMateria"
         android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -57,9 +37,49 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnAdmonAreaMateria"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="14dp"
         android:background="@drawable/button_custom"
         android:text="@string/msgTipoCont"
         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/BtnModCurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BtnTipoCont"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/button_custom"
+        android:text="@string/btnModCurso" />
+
+    <Button
+        android:id="@+id/btnMostrarTablas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:text="ver tablas" />
+
+    <Button
+        android:id="@+id/btnAdmonDepto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/button_custom"
+        android:text="@string/btnAdmonDepto"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/BtnLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnMostrarTablas"
+        android:layout_below="@+id/BtnModCurso"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_custom"
+        android:text="@string/btnLocales" />
 
 </RelativeLayout>
