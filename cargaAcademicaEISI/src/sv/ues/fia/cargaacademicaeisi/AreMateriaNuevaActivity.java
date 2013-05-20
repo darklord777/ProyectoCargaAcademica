@@ -41,15 +41,16 @@ public class AreMateriaNuevaActivity extends Activity implements
 
 		adapterDepto = new ArrayAdapter<String>(this,
 				android.R.layout.simple_spinner_item, idDeptos);
+		adapterMat = new ArrayAdapter<String>(this,
+				android.R.layout.simple_spinner_item, idMaterias);
+
 		adapterDepto
 				.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		spnIdDeptoNuevaAreaMat.setAdapter(adapterDepto);
-
-		adapterMat = new ArrayAdapter<String>(this,
-				android.R.layout.simple_spinner_item, idDeptos);
 		adapterMat
 				.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		spnIdDeptoNuevaAreaMat.setAdapter(adapterMat);
+
+		spnIdDeptoNuevaAreaMat.setAdapter(adapterDepto);
+		spnCodMateNuevaAreMat.setAdapter(adapterMat);
 
 		spnIdDeptoNuevaAreaMat.setOnItemSelectedListener(this);
 		spnCodMateNuevaAreMat.setOnItemSelectedListener(this);
