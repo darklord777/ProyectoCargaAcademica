@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 import android.widget.AdapterView.OnItemSelectedListener;
 
 public class LocalesConsultarActivity extends Activity implements OnItemSelectedListener {
@@ -25,11 +26,11 @@ public class LocalesConsultarActivity extends Activity implements OnItemSelected
 		setContentView(R.layout.activity_locales_consultar);
 		
 		helper = new ControlDB(this);
-		CapLocales = (EditText) findViewById(R.id.edtNomDepto);
-		spnListaLocales = (Spinner) findViewById(R.id.spnListaDeptos);
+		CapLocales = (EditText) findViewById(R.id.capacidadLocal);
+		spnListaLocales = (Spinner) findViewById(R.id.spn_Select_Local);
 
 		helper.abrir();
-		idLocales = helper.getAllIdDeptos();
+		idLocales = helper.getAll_IdLocales();
 		helper.cerrar();
 		adapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_spinner_item, idLocales);
@@ -47,10 +48,18 @@ public class LocalesConsultarActivity extends Activity implements OnItemSelected
 	}
 
 	@Override
-	public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2,
-			long arg3) {
-		// TODO Auto-generated method stub
-		
+	public void onItemSelected(AdapterView<?> parent, View v, int pos, long id) {
+		String idLocal = parent.getItemAtPosition(pos).toString();
+		helper.abrir();		
+		Locales local = helper.consultarLocal(idLocal);
+		helper.cerrar();
+		if (local == null) {
+			Toast.makeText(this,"Identificador de departemento: " + idLocal
+							+ ". No existe.", Toast.LENGTH_LONG).show();
+		} else {
+			CapLocales.setText(local.getCapacidad());
+			Toast.makeText(this, "Valor de item=" + idLocal, Toast.LENGTH_LONG).show();
+		}
 	}
 
 	@Override
