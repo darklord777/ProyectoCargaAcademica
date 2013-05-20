@@ -19,6 +19,8 @@ public class ControlDB {
 			"NOM_MATERIA" };
 	private static final String[] camposAreaMat = new String[] { "IDAREAMAT",
 			"IDDEPARTAMENTO", "CODIGOMATERIA" };
+	private static final String[] camposDetGpoAsig = new String[] {
+			"IDDETALLECURSO", "CODIGOMATERIA", "IDMODALIDAD", "IDLOCAL" };
 
 	private static final String[] camposLocal = new String[] { "IDLOCAL",
 			"CAPACIDAD" };
@@ -374,11 +376,11 @@ public class ControlDB {
 		String regInsertados = "Registro insertado en la fila No.=";
 		long contador = 0;
 		ContentValues gpoasig = new ContentValues();
-		gpoasig.put("IDMODALIDAD", grupoAsignado.getIddetallecurso());
-		gpoasig.put("NOM_MODALIDAD", grupoAsignado.getCodigomateria());
-		gpoasig.put("DESCUENTO_HORAS", grupoAsignado.getIdmodalidad());
-		gpoasig.put("DESCUENTO_HORAS", grupoAsignado.getIdlocal());
-		contador = db.insert("MODALIDAD_CURSO", null, gpoasig);
+		gpoasig.put("IDDETALLECURSO", grupoAsignado.getIddetallecurso());
+		gpoasig.put("CODIGOMATERIA", grupoAsignado.getCodigomateria());
+		gpoasig.put("IDMODALIDAD", grupoAsignado.getIdmodalidad());
+		gpoasig.put("IDLOCAL", grupoAsignado.getIdlocal());
+		contador = db.insert("DETALLE_GRUPO_ASIGNADO", null, gpoasig);
 		if (contador == -1 || contador == 0) {
 			regInsertados = "Error. Verificar Insercion";
 		} else {

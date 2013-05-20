@@ -11,6 +11,7 @@ import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 public class DetGpoAsigNuevoActivity extends Activity implements
 		OnItemSelectedListener {
@@ -75,8 +76,9 @@ public class DetGpoAsigNuevoActivity extends Activity implements
 		grupoAsignado.setIdlocal(spnIdLocNuevoDetGpoAsig.getSelectedItem()
 				.toString());
 		helper.abrir();
-		String estado=helper.in
+		String estado = helper.insertar(grupoAsignado);
 		helper.cerrar();
+		Toast.makeText(this, estado, Toast.LENGTH_LONG).show();
 	}
 
 	@Override
