@@ -61,12 +61,12 @@ public class MenuPrincipalActivity extends Activity implements OnClickListener {
 			startActivity(new Intent(getApplicationContext(),
 					MenuActAcademicasActivity.class));
 			break;
-			
+
 		case R.id.btnMaterias:
 			startActivity(new Intent(getApplicationContext(),
-					MenuActAcademicasActivity.class));
+					MenuMateriaActivity.class));
 			break;
-			
+
 		default:
 			break;
 		}
