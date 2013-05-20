@@ -29,11 +29,11 @@ public class ControlDB {
 			"IDDOCENTE", "ANIO", "NUMERO" };
 	private static final String[] camposCiclo = new String[] { "ANIO",
 			"NUMERO", "FECHAINI", "FECHAFIN" };
-	
-	/*Yo*/
+
+	/* Yo */
 	private static final String[] camposContrato = new String[] { "IDCONTRATO",
-		"TIPO", "HORAS"};
-	/*Fin YO*/
+			"TIPO", "HORAS" };
+	/* Fin YO */
 	private final Context context;
 	private DatabaseHelper DBHelper;
 	private SQLiteDatabase db;
@@ -370,6 +370,21 @@ public class ControlDB {
 		return regInsertados;
 	}
 
+	public List<String> getAllIdModCurso() {
+		List<String> idMaterias = new ArrayList<String>();
+		Cursor cursor = db
+				.rawQuery(
+						"select IDMODALIDAD from MODALIDAD_CURSO order by IDMODALIDAD;",
+						null);
+		if (cursor.moveToFirst()) {
+			do {
+				idMaterias.add(cursor.getString(0));
+			} while (cursor.moveToNext());
+		}
+		cursor.close();
+		return idMaterias;
+	}
+
 	public Departamento consultarDepto(String idepto) {
 		String[] id = { idepto };
 		Cursor cursor = db.query("DEPARTAMENTO", camposDepto,
@@ -541,7 +556,7 @@ public class ControlDB {
 	}
 
 	/** METODOS EMERSON */
-	public String InsertarContrato(TipoContrato tipocontrato){
+	public String InsertarContrato(TipoContrato tipocontrato) {
 		String regInsertados = "Registro insertado en la fila No.= ";
 		long contador = 0;
 		ContentValues contrato = new ContentValues();
@@ -549,19 +564,19 @@ public class ControlDB {
 		contrato.put("TIPO", tipocontrato.getTipo());
 		contrato.put("HORAS", tipocontrato.getHoras());
 		contador = db.insert("TIPO_CONTRATO", null, contrato);
-		if(contador == -1 || contador == 0){
+		if (contador == -1 || contador == 0) {
 			regInsertados = "Error. Verificar Insercion";
 		} else {
 			regInsertados += contador;
 		}
-		
+
 		return regInsertados;
 	}
-	
+
 	public TipoContrato ConsultarContrato(String idcontrato) {
 		String[] id = { idcontrato };
-		Cursor cursor = db.query("TIPO_CONTRATO", camposContrato, "IDCONTRATO = ?", id,
-				null, null, null);
+		Cursor cursor = db.query("TIPO_CONTRATO", camposContrato,
+				"IDCONTRATO = ?", id, null, null, null);
 		if (cursor.moveToFirst()) {
 			TipoContrato contrato = new TipoContrato();
 			contrato.setIdContrato(cursor.getString(0));
@@ -572,11 +587,12 @@ public class ControlDB {
 			return null;
 		}
 	}
-	
+
 	public List<String> getAllIdContratos() {
 		List<String> idContratos = new ArrayList<String>();
 		Cursor cursor = db.rawQuery(
-				"select IDCONTRATO from TIPO_CONTRATO order by IDCONTRATO;", null);
+				"select IDCONTRATO from TIPO_CONTRATO order by IDCONTRATO;",
+				null);
 		if (cursor.moveToFirst()) {
 			do {
 				idContratos.add(cursor.getString(0));
@@ -585,40 +601,40 @@ public class ControlDB {
 		cursor.close();
 		return idContratos;
 	}
-	
-	public String InsertarDocDepto(DocenteDepto docdepto){
+
+	public String InsertarDocDepto(DocenteDepto docdepto) {
 		String regInsertados = "Registro insertado en la fila No.= ";
 		long contador = 0;
 		ContentValues relacion = new ContentValues();
 		relacion.put("IDDEPARTAMENTO", docdepto.getIdDepartamento());
 		relacion.put("IDDOCENTE", docdepto.getIdDocente());
 		contador = db.insert("DOCENTE_DEPTO", null, relacion);
-		if(contador == -1 || contador == 0){
+		if (contador == -1 || contador == 0) {
 			regInsertados = "Error. Verificar Insercion";
 		} else {
 			regInsertados += contador;
 		}
-		
+
 		return regInsertados;
 	}
-	
-	public String InsertarMatImpart(MateriasImpartir mateimpart){
+
+	public String InsertarMatImpart(MateriasImpartir mateimpart) {
 		String regInsertados = "Registro insertado en la fila No.= ";
 		long contador = 0;
 		ContentValues relacion = new ContentValues();
 		relacion.put("IDDOCENTE", mateimpart.getIdDocente());
 		relacion.put("IDAREAMAT", mateimpart.getIdAreaMat());
 		contador = db.insert("MAT_AREA_PUEDE_IMPARTIR", null, relacion);
-		if(contador == -1 || contador == 0){
+		if (contador == -1 || contador == 0) {
 			regInsertados = "Error. Verificar Insercion";
 		} else {
 			regInsertados += contador;
 		}
-		
+
 		return regInsertados;
 	}
-	
-	public String InsertarDocentes(Docente docente){
+
+	public String InsertarDocentes(Docente docente) {
 		String regInsertados = "Registro insertado en la fila No.= ";
 		long contador = 0;
 		ContentValues doc = new ContentValues();
@@ -631,12 +647,12 @@ public class ControlDB {
 		doc.put("TELEFONO", docente.getTelefono());
 		doc.put("HORAS_ASIG", docente.getHorasAsignadas());
 		contador = db.insert("DOCENTE_DEPTO", null, doc);
-		if(contador == -1 || contador == 0){
+		if (contador == -1 || contador == 0) {
 			regInsertados = "Error. Verificar Insercion";
 		} else {
 			regInsertados += contador;
 		}
-		
+
 		return regInsertados;
 	}
 
