@@ -35,6 +35,8 @@ public class ModalidadCursoMenuActivity extends Activity implements OnClickListe
 		// TODO Auto-generated method stub
 		switch (v.getId()) {
 		case R.id.btn_MenuModalidadCurso_Ins:
+			startActivity(new Intent(getApplicationContext(),
+					 InsertarModalidadCursoActivity.class));
 			break;
 		case R.id.btn_MenuModalidadCurso_Cons:
 			break;

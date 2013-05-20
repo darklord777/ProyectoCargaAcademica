@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".InsertarModalidadCursoActivity" >
+
+    <EditText
+        android:id="@+id/Desc_Horas_MCurs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idModalidadCurso"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="192dp"
+        android:ems="10"
+        android:hint="@string/msgDesHModalidadCurso"
+        android:maxLength="4"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnGModCurso"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Desc_Horas_MCurs"
+        android:layout_alignTop="@+id/Desc_Horas_MCurs"
+        android:layout_marginTop="74dp"
+        android:drawableRight="@drawable/save"
+        android:onClick="insertarModalidadCurso"
+        android:text="@string/btnGuardarModalidadC"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/limpiarModCurso"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnGModCurso"
+        android:layout_below="@+id/btnGModCurso"
+        android:drawableRight="@drawable/clear"
+        android:onClick="limpiarModalidadCurso"
+        android:text="@string/btn_limpiarModC"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/NomModCurso"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Desc_Horas_MCurs"
+        android:layout_alignLeft="@+id/Desc_Horas_MCurs"
+        android:ems="10"
+        android:hint="@string/msgNomModalidadCurso"
+        android:maxLength="20" />
+
+    <EditText
+        android:id="@+id/idModalidadCurso"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/NomModCurso"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/msgidModalidadCurso"
+        android:maxLength="6" />
+
+    <TextView
+        android:id="@+id/textViewMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/idModalidadCurso"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:text="@string/TextViewModC"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

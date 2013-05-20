@@ -389,6 +389,22 @@ public class ControlDB {
 		}
 		return regInsertados;
 	}
+	
+	public String insertar(Modalidad_Curso modalidadcurso) {
+		String regInsertados = "Registro insertado en la fila No.=";
+		long contador = 0;
+		ContentValues modcurso = new ContentValues();
+		modcurso.put("IDMODALIDAD", modalidadcurso.getIdmodalidadCurso());
+		modcurso.put("NOM_MODALIDAD", modalidadcurso.getNom_modalidad());
+		modcurso.put("DESCUENTO_HORAS", modalidadcurso.getDescuento_horas());
+		contador = db.insert("MODALIDAD_CURSO", null, modcurso);
+		if (contador == -1 || contador == 0) {
+			regInsertados = "Error. Verificar Insercion";
+		} else {
+			regInsertados += contador;
+		}
+		return regInsertados;
+	}
 
 	/** METODOS SERGIO */
 

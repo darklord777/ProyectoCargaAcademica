@@ -104,6 +104,13 @@
     <string name="btn3_eliminar_ActividadAcad">Eliminar Actividad Academica</string>
     <string name="btn4_actualizar_ActividadAcad">Actualizar Actividad Academica</string>
 
+    <string name="title_activity_insertar_modalidad_curso">InsertarModalidadCursoActivity</string>
+    <string name="msgidModalidadCurso">Digite codigo Mod Curso</string>
+    <string name="msgNomModalidadCurso">Digite nombre de Modalidad</string>
+    <string name="msgDesHModalidadCurso">Digite descuento horas</string>
+    <string name="TextViewModC">Modalidad Curso</string>
+    <string name="btnGuardarModalidadC">Guardar Modalidad Curso</string>
+    <string name="btn_limpiarModC">Limpiar Entradas</string>
     <!-- Michael -->
 
     <string name="title_activity_eliminar_depto">EliminarDeptoActivity</string>
@@ -182,5 +189,6 @@
     <!-- YO -->
 
     <string name="title_activity_menu_docente">MenuDocenteActivity</string>
+    
 
 </resources>
