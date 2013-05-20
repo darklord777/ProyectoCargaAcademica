@@ -11,6 +11,7 @@ import android.widget.Button;
 public class MenuMateriaActivity extends Activity implements OnClickListener {
 	private Button btnAdmonMateria;
 	private Button btnAdmonAreaMateria;
+	private Button btnAdmonDetGpoAsig;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,8 @@ public class MenuMateriaActivity extends Activity implements OnClickListener {
 		btnAdmonMateria.setOnClickListener(this);
 		btnAdmonAreaMateria = (Button) findViewById(R.id.btnAdmonAreaMateria);
 		btnAdmonAreaMateria.setOnClickListener(this);
+		btnAdmonDetGpoAsig = (Button) findViewById(R.id.btnAdmonDetGpoAsig);
+		btnAdmonDetGpoAsig.setOnClickListener(this);
 	}
 
 	@Override
@@ -39,6 +42,10 @@ public class MenuMateriaActivity extends Activity implements OnClickListener {
 		case R.id.btnAdmonAreaMateria:
 			startActivity(new Intent(getApplicationContext(),
 					AdmonAreaMatActivity.class));
+			break;
+		case R.id.btnAdmonDetGpoAsig:
+			startActivity(new Intent(getApplicationContext(),
+					AdminDetGpoAsigActivity.class));
 			break;
 		default:
 			break;

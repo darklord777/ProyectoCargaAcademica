@@ -50,7 +50,7 @@ public final class R {
         public static final int Desc_Horas_MCurs=0x7f0a00bc;
         public static final int NomModCurso=0x7f0a00c0;
         public static final int NombreModAA=0x7f0a00bb;
-        public static final int action_settings=0x7f0a00e6;
+        public static final int action_settings=0x7f0a00e7;
         public static final int botonCargo=0x7f0a00cf;
         public static final int botonDepartamento=0x7f0a00cc;
         public static final int botonDocente=0x7f0a00d0;
@@ -60,17 +60,18 @@ public final class R {
         public static final int btn2TablaCargaAcademica=0x7f0a00aa;
         public static final int btn3DetCargaMateria=0x7f0a00a9;
         public static final int btn4DetCargaActAcademica=0x7f0a00ac;
-        public static final int btn5A_CargaAcademica=0x7f0a00d7;
+        public static final int btn5A_CargaAcademica=0x7f0a00d8;
         public static final int btnActGuardarDepto=0x7f0a0008;
         public static final int btnActMateria=0x7f0a002d;
-        public static final int btnActividadAcademica=0x7f0a00d5;
+        public static final int btnActividadAcademica=0x7f0a00d6;
         public static final int btnActualizarContrato=0x7f0a0022;
         public static final int btnActualizarDepto=0x7f0a0028;
         public static final int btnActualizarDetGpoAsig=0x7f0a0015;
         public static final int btnActualizarDocente=0x7f0a001a;
         public static final int btnAdmonAreaMateria=0x7f0a00d2;
-        public static final int btnAdmonCat=0x7f0a00d6;
+        public static final int btnAdmonCat=0x7f0a00d7;
         public static final int btnAdmonDepto=0x7f0a000e;
+        public static final int btnAdmonDetGpoAsig=0x7f0a00d3;
         public static final int btnAdmonMateria=0x7f0a00d1;
         public static final int btnAsigDocDepto=0x7f0a0017;
         public static final int btnAsigMatDoc=0x7f0a001f;
@@ -82,7 +83,7 @@ public final class R {
         public static final int btnConsultarDocente=0x7f0a001b;
         public static final int btnConsultarMatDoc=0x7f0a001d;
         public static final int btnConsultarMateria=0x7f0a002c;
-        public static final int btnDocentes=0x7f0a00d4;
+        public static final int btnDocentes=0x7f0a00d5;
         public static final int btnEliminarAreaMat=0x7f0a0025;
         public static final int btnEliminarContrato=0x7f0a0023;
         public static final int btnEliminarDepto=0x7f0a002a;
@@ -95,14 +96,14 @@ public final class R {
         public static final int btnGLocal=0x7f0a00b5;
         public static final int btnGModAA=0x7f0a00b7;
         public static final int btnGModCurso=0x7f0a00be;
-        public static final int btnGuardarDepto=0x7f0a00e5;
+        public static final int btnGuardarDepto=0x7f0a00e6;
         public static final int btnGuardarDetGpoAsig=0x7f0a007f;
         public static final int btnGuardarInsertTipoCont=0x7f0a00b0;
         public static final int btnGuardarMateria=0x7f0a000c;
         public static final int btnGuarfarAreaMat=0x7f0a0039;
-        public static final int btnLimpiaDepto=0x7f0a00e2;
+        public static final int btnLimpiaDepto=0x7f0a00e3;
         public static final int btnLocal_Elim=0x7f0a00c4;
-        public static final int btnMaterias=0x7f0a00d3;
+        public static final int btnMaterias=0x7f0a00d4;
         public static final int btnModActAcad=0x7f0a00ca;
         public static final int btnMostrarTablas=0x7f0a0010;
         public static final int btnNuevaAreaMateria=0x7f0a0026;
@@ -119,14 +120,14 @@ public final class R {
         public static final int btn_MenuLocal_Cons=0x7f0a00c7;
         public static final int btn_MenuLocal_Elim=0x7f0a00c6;
         public static final int btn_MenuLocal_Ins=0x7f0a00c9;
-        public static final int btn_MenuModalidadCurso_Act=0x7f0a00e0;
-        public static final int btn_MenuModalidadCurso_Cons=0x7f0a00de;
-        public static final int btn_MenuModalidadCurso_Elim=0x7f0a00df;
-        public static final int btn_MenuModalidadCurso_Ins=0x7f0a00dd;
-        public static final int btn_MenuModalidad_Act=0x7f0a00d8;
-        public static final int btn_MenuModalidad_Cons=0x7f0a00da;
-        public static final int btn_MenuModalidad_Elim=0x7f0a00d9;
-        public static final int btn_MenuModalidad_Ins=0x7f0a00db;
+        public static final int btn_MenuModalidadCurso_Act=0x7f0a00e1;
+        public static final int btn_MenuModalidadCurso_Cons=0x7f0a00df;
+        public static final int btn_MenuModalidadCurso_Elim=0x7f0a00e0;
+        public static final int btn_MenuModalidadCurso_Ins=0x7f0a00de;
+        public static final int btn_MenuModalidad_Act=0x7f0a00d9;
+        public static final int btn_MenuModalidad_Cons=0x7f0a00db;
+        public static final int btn_MenuModalidad_Elim=0x7f0a00da;
+        public static final int btn_MenuModalidad_Ins=0x7f0a00dc;
         public static final int btnlimpiarInsertTipoCont=0x7f0a00b1;
         public static final int button1_MenuCARGAACADEMICA_Insert=0x7f0a0050;
         public static final int button1_MenuCiclo_A=0x7f0a006e;
@@ -163,7 +164,7 @@ public final class R {
         public static final int edtActNomDepto=0x7f0a0007;
         public static final int edtCodMatDetGpoAsigs=0x7f0a007a;
         public static final int edtCodMateAreaMat=0x7f0a0037;
-        public static final int edtCodMateria=0x7f0a00e1;
+        public static final int edtCodMateria=0x7f0a00e2;
         public static final int edtIdAreaMat=0x7f0a0038;
         public static final int edtIdDeptoAreMat=0x7f0a0036;
         public static final int edtIdDetGpoAsig=0x7f0a007b;
@@ -171,7 +172,7 @@ public final class R {
         public static final int edtIdModDetGpoAsig=0x7f0a0079;
         public static final int edtNomDepto=0x7f0a0075;
         public static final int edtNomMateria=0x7f0a000a;
-        public static final int idDepto=0x7f0a00e3;
+        public static final int idDepto=0x7f0a00e4;
         public static final int idLocal=0x7f0a00b2;
         public static final int idModalidadAA=0x7f0a00b9;
         public static final int idModalidadCurso=0x7f0a00bd;
@@ -179,7 +180,7 @@ public final class R {
         public static final int limpiarModAA=0x7f0a00b8;
         public static final int limpiarModCurso=0x7f0a00bf;
         public static final int msgActualizarMateria=0x7f0a0009;
-        public static final int nomDepto=0x7f0a00e4;
+        public static final int nomDepto=0x7f0a00e5;
         public static final int spinner1=0x7f0a0030;
         public static final int spinner1_cargaacademica_iddocente_consultar=0x7f0a0040;
         public static final int spinner1_cargaacademica_iddocente_eliminar=0x7f0a0046;
@@ -239,7 +240,7 @@ public final class R {
         public static final int spnIdModNuevoDetGpoAsig=0x7f0a007c;
         public static final int spnListaDeptos=0x7f0a0074;
         public static final int textLocales=0x7f0a00c5;
-        public static final int textMenuModalidad=0x7f0a00dc;
+        public static final int textMenuModalidad=0x7f0a00dd;
         public static final int textView1=0x7f0a0004;
         public static final int textView1A5_selecionedocente=0x7f0a0042;
         public static final int textView1_cicloconsultar=0x7f0a0053;
@@ -460,6 +461,7 @@ public final class R {
  Alexis 
          */
         public static final int btnAdmonDepto=0x7f070017;
+        public static final int btnAdmonDetGpoAsig=0x7f0700fa;
         public static final int btnAsigDocDepto=0x7f07007a;
         public static final int btnAsigMatDoc=0x7f07007e;
         public static final int btnConsultarAreaMat=0x7f070069;

@@ -276,5 +276,6 @@
     <string name="title_activity_actualizar_contrato">ActualizarContratoActivity</string>
     <string name="title_activity_consultar_contrato">ConsultarContratoActivity</string>
     <string name="title_activity_eliminar_contrato">EliminarContratoActivity</string>
+    <string name="btnAdmonDetGpoAsig">Adminstrar Detalle grupo asignado</string>
 
 </resources>
