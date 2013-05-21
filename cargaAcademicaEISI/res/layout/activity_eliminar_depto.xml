@@ -37,7 +37,7 @@
         android:drawableRight="@drawable/clear"
         android:onClick="eliminarDepto"
         android:text="@string/btnEliminarDepto"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMediumInverse" />
 
     <EditText
         android:id="@+id/edtNomDepto"

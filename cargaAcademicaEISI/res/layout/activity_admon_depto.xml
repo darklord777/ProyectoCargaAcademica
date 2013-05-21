@@ -17,7 +17,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:drawableRight="@drawable/save2"
-        android:text="@string/btnNuevoDepto" />
+        android:text="@string/btnNuevoDepto"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse" />
 
     <Button
         android:id="@+id/btnActualizarDepto"
@@ -27,7 +28,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:drawableRight="@drawable/update"
-        android:text="@string/btnActualizarDepto" />
+        android:text="@string/btnActualizarDepto"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse" />
 
     <Button
         android:id="@+id/btnConsultarDepto"
@@ -37,7 +39,8 @@
         android:layout_below="@+id/btnNuevoDepto"
         android:layout_marginTop="42dp"
         android:drawableRight="@drawable/search"
-        android:text="@string/btnConsultarDepto" />
+        android:text="@string/btnConsultarDepto"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse" />
 
     <Button
         android:id="@+id/btnEliminarDepto"
@@ -47,6 +50,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="48dp"
         android:drawableRight="@drawable/clear"
-        android:text="@string/btnEliminarDepto" />
+        android:text="@string/btnEliminarDepto"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse" />
 
 </RelativeLayout>
