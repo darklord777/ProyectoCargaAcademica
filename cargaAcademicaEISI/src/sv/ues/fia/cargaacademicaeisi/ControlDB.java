@@ -1164,7 +1164,60 @@ public class ControlDB {
 		case 13: {
 			return true;
 		}
+		
+		case 14: {
+			return true;
+		}
+		
+		case 15: {
+			return true;
+		}
+		
+		case 16: {
+			return true;
+		}
+		
+		case 17: {
+			return true;
+		}
+		
+		case 18: {
+			return true;
+		}
+		
+		case 19: {
+			Locales local = (Locales) dato;
+			Cursor cursor = db.query(true, "LOCALES",
+					new String[] { "IDLOCAL" }, "IDLOCAL='"+ local.getIdlocal() + "'", null, null,
+					null, null, null);
+			if (cursor.moveToFirst())
+				return true;
+			else
+				return true;
+		}
 
+		case 20: {
+			Actividad_Academica ActAcademica = (Actividad_Academica) dato;
+			Cursor cursor = db.query(true, "ACTIVIDAD_ACADEMICA",
+					new String[] { " IDACTACAD" }, " IDACTACAD ='"
+							+ ActAcademica.getIdactacad() + "'", null, null,
+					null, null, null);
+			if (cursor.moveToFirst())
+				return true;
+			else
+				return true;
+		}
+		case 21: {
+			return true;
+		}
+		
+		case 22: {
+			return true;
+		}
+		
+		case 23: {
+			return true;
+		}
 		default:
 			return false;
 
