@@ -19,32 +19,34 @@
         android:text="@string/btnConsultarAreaMat"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <TextView
-        android:id="@+id/tvConsultDeptoAreMat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/spnConsultAreaMat"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="19dp"
-        android:text="@string/tvConsultDeptoAreMat"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <TextView
-        android:id="@+id/tvCodMatAreaMat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tvConsultDeptoAreMat"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:text="@string/tvCodMatAreaMat"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
     <Spinner
         android:id="@+id/spnConsultAreaMat"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp" />
+        android:layout_marginTop="34dp" />
+
+    <EditText
+        android:id="@+id/edtConsultDeptoAreMat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="@string/tvConsultDeptoAreMat" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtCodMatAreaMat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtConsultDeptoAreMat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="@string/tvCodMatAreaMat" />
 
 </RelativeLayout>

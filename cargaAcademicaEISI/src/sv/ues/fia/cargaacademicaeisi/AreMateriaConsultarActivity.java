@@ -16,8 +16,8 @@ public class AreMateriaConsultarActivity extends Activity implements
 		OnItemSelectedListener {
 	private ControlDB helper;
 	private Spinner spnConsultAreaMat;
-	private EditText tvConsultDeptoAreMat;
-	private EditText tvCodMatAreaMat;
+	private EditText edtConsultDeptoAreMat;
+	private EditText edtCodMatAreaMat;
 	private List<String> idAreMats;
 	private ArrayAdapter<String> adapter;
 
@@ -27,8 +27,8 @@ public class AreMateriaConsultarActivity extends Activity implements
 		setContentView(R.layout.activity_are_materia_consultar);
 		helper = new ControlDB(this);
 		spnConsultAreaMat = (Spinner) findViewById(R.id.spnConsultAreaMat);
-		tvConsultDeptoAreMat = (EditText) findViewById(R.id.tvConsultDeptoAreMat);
-		tvCodMatAreaMat = (EditText) findViewById(R.id.tvCodMatAreaMat);
+		edtConsultDeptoAreMat = (EditText) findViewById(R.id.edtConsultDeptoAreMat);
+		edtCodMatAreaMat = (EditText) findViewById(R.id.edtCodMatAreaMat);
 
 		helper.abrir();
 		idAreMats = helper.getAllIdAreaMats();
@@ -59,8 +59,8 @@ public class AreMateriaConsultarActivity extends Activity implements
 		helper.abrir();
 		areaMateria = helper.consultarAreaMateria(idAreMat);
 		helper.cerrar();
-		tvConsultDeptoAreMat.setText(areaMateria.getIddepartamento());
-		tvCodMatAreaMat.setText(areaMateria.getCodigomateria());
+		edtConsultDeptoAreMat.setText(areaMateria.getIddepartamento());
+		edtCodMatAreaMat.setText(areaMateria.getCodigomateria());
 	}
 
 	@Override

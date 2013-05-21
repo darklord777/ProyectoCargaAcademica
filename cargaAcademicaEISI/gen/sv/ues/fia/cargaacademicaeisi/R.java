@@ -172,9 +172,11 @@ public final class R {
         public static final int editTxtInsertHorasTipoCont=0x7f0a00b5;
         public static final int editTxtInsertTipoTipoCont=0x7f0a00b4;
         public static final int edtActNomDepto=0x7f0a0007;
+        public static final int edtCodMatAreaMat=0x7f0a0034;
         public static final int edtCodMatDetGpoAsigs=0x7f0a007a;
         public static final int edtCodMateAreaMat=0x7f0a0037;
         public static final int edtCodMateria=0x7f0a00f0;
+        public static final int edtConsultDeptoAreMat=0x7f0a0033;
         public static final int edtIdAreaMat=0x7f0a0038;
         public static final int edtIdDeptoAreMat=0x7f0a0036;
         public static final int edtIdDetGpoAsig=0x7f0a007c;
@@ -238,7 +240,7 @@ public final class R {
         public static final int spnActMateria=0x7f0a000b;
         public static final int spnCodMateNuevaAreMat=0x7f0a003a;
         public static final int spnCodMateNuevoDetGpoAsig=0x7f0a007e;
-        public static final int spnConsultAreaMat=0x7f0a0033;
+        public static final int spnConsultAreaMat=0x7f0a0032;
         public static final int spnConsultCodTipoCont=0x7f0a0073;
         public static final int spnConsultarMateria=0x7f0a0076;
         public static final int spnElimAreaMateria=0x7f0a0035;
@@ -285,8 +287,6 @@ public final class R {
         public static final int textview_selecion_ciclo=0x7f0a005d;
         public static final int textview_selecione_ciclo=0x7f0a0069;
         public static final int textview_selecioneanio_ciclo=0x7f0a0068;
-        public static final int tvCodMatAreaMat=0x7f0a0034;
-        public static final int tvConsultDeptoAreMat=0x7f0a0032;
     }
     public static final class layout {
         public static final int activity_actividad_academica_actualizar=0x7f030000;
