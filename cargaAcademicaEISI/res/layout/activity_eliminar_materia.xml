@@ -46,6 +46,7 @@
         android:layout_marginTop="30dp"
         android:drawableRight="@drawable/clear"
         android:onClick="eliminarMateria"
-        android:text="@string/btnEliminarMateria" />
+        android:text="@string/btnEliminarMateria"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse" />
 
 </RelativeLayout>

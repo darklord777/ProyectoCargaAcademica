@@ -16,8 +16,9 @@
         android:layout_alignLeft="@+id/btnConsultarMateria"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="69dp"
+        android:drawableRight="@drawable/clear"
         android:text="@string/btnEliminarMateria"
-        android:drawableRight="@drawable/clear" />
+        android:textAppearance="?android:attr/textAppearanceMediumInverse" />
 
     <Button
         android:id="@+id/btnActMateria"
@@ -26,8 +27,9 @@
         android:layout_alignLeft="@+id/btnConsultarMateria"
         android:layout_below="@+id/btnConsultarMateria"
         android:layout_marginTop="40dp"
+        android:drawableRight="@drawable/update"
         android:text="@string/btnActMateria"
-        android:drawableRight="@drawable/update" />
+        android:textAppearance="?android:attr/textAppearanceMediumInverse" />
 
     <Button
         android:id="@+id/btnNuevaMateria"
@@ -37,7 +39,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
         android:drawableRight="@drawable/save2"
-        android:text="@string/btnNuevaMateria" />
+        android:text="@string/btnNuevaMateria"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse" />
 
     <Button
         android:id="@+id/btnConsultarMateria"
@@ -47,7 +50,8 @@
         android:layout_below="@+id/btnNuevaMateria"
         android:layout_marginTop="42dp"
         android:drawableRight="@drawable/search"
-        android:text="@string/btnConsultarMateria" />
+        android:text="@string/btnConsultarMateria"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse" />
 
     <TextView
         android:id="@+id/textView1"
