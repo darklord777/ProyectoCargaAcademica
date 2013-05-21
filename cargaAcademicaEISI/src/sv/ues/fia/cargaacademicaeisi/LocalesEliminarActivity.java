@@ -43,7 +43,7 @@ public class LocalesEliminarActivity extends Activity implements OnItemSelectedL
 		Locales local = new Locales();
 		local.setIdlocal(spnEliminarLocal.getSelectedItem().toString());
 		helper.abrir();
-		String estado = helper.eliminar(local);
+		String estado = helper.eliminarLocales(local);
 		helper.cerrar();
 		Toast.makeText(this, estado, Toast.LENGTH_LONG).show();
 	}

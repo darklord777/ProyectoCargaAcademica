@@ -806,7 +806,7 @@ public class ControlDB {
 		long contador = 0;
 		ContentValues ActiviAcademica = new ContentValues();
 		ActiviAcademica.put("IDACTACAD", ActAcademica.getIdactacad());
-
+		ActiviAcademica.put("IDMODALIDAD", ActAcademica.getIdmodalidad());
 		ActiviAcademica.put("NOM_ACT_ACAD", ActAcademica.getNom_act_acad());
 		ActiviAcademica.put(" CARGO", ActAcademica.getCargo());
 		contador = db.insert("ACTIVIDAD_ACADEMICA", null, ActiviAcademica);
@@ -816,7 +816,7 @@ public class ControlDB {
 			regInsertados += contador;
 		}
 		return regInsertados;
-
+		
 	}
 
 	public List<String> getAll_IdLocales() {
@@ -924,7 +924,7 @@ public class ControlDB {
 		return idActA;
 	}
 
-	public String eliminar(Locales local) {
+	public String eliminarLocales(Locales local) {
 		String regAfectados = "";
 		int contador = 0;
 		if (verificarIntegridad(local, 7)) {
@@ -933,8 +933,21 @@ public class ControlDB {
 		}
 		regAfectados = "No tiene registros hijos\nFilas afectadas=";
 
-		contador += db.delete("LOCALES",
-				"IDLOCAL='" + local.getIdlocal() + "'", null);
+		contador += db.delete("LOCALES","IDLOCAL='" + local.getIdlocal() + "'", null);
+		regAfectados += contador;
+		return regAfectados;
+	}
+	
+	public String eliminarModCurso(Modalidad_Curso ModCurso) {
+		String regAfectados = "";
+		int contador = 0;
+		if (verificarIntegridad(ModCurso, 7)) {
+			regAfectados += "Tiene registros hijos\nNo se puede borrar,";
+			return regAfectados;
+		}
+		regAfectados = "No tiene registros hijos\nFilas afectadas=";
+
+		contador += db.delete("MODALIDAD_CURSO","IDMODALIDAD='" + ModCurso.getIdmodalidadCurso() + "'", null);
 		regAfectados += contador;
 		return regAfectados;
 	}
