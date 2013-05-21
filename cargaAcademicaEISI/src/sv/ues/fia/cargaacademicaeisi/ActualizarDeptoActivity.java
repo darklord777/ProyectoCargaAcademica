@@ -63,14 +63,21 @@ public class ActualizarDeptoActivity extends Activity implements
 	}
 
 	public void actualizarDepto(View v) {
-		Departamento departamento = new Departamento();
-		departamento.setIddepartamento(spnActIdDepto.getSelectedItem()
-				.toString());
-		departamento.setNom_depto(edtActNomDepto.getText().toString());
-		helper.abrir();
-		String estado = helper.actualizar(departamento);
-		helper.cerrar();
-		Toast.makeText(this, estado, Toast.LENGTH_LONG).show();
+		if (!edtActNomDepto.getText().toString().trim().equals("")) {
+			Departamento departamento = new Departamento();
+			departamento.setIddepartamento(spnActIdDepto.getSelectedItem()
+					.toString());
+			departamento.setNom_depto(edtActNomDepto.getText().toString());
+			helper.abrir();
+			String estado = helper.actualizar(departamento);
+			helper.cerrar();
+			Toast.makeText(this, estado, Toast.LENGTH_LONG).show();
+		} else {
+			edtActNomDepto.setText("");
+			Toast.makeText(this, "El nombre del departamento es obligatorio",
+					Toast.LENGTH_LONG).show();
+		}
+
 	}
 
 	@Override

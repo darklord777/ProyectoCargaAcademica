@@ -40,13 +40,20 @@ public class ActualizarMateriaActivity extends Activity implements
 	}
 
 	public void guardarMateria(View v) {
-		String regInsertados;
-		Materia materia = new Materia();
-		materia.setCodigomateria(spnActMateria.getSelectedItem().toString());
-		helper.abrir();
-		regInsertados = helper.actualizar(materia);
-		helper.cerrar();
-		Toast.makeText(this, regInsertados, Toast.LENGTH_LONG).show();
+		if (!edtNomMateria.getText().toString().trim().equals("")) {
+			String regInsertados;
+			Materia materia = new Materia();
+			materia.setCodigomateria(spnActMateria.getSelectedItem().toString());
+			helper.abrir();
+			regInsertados = helper.actualizar(materia);
+			helper.cerrar();
+			Toast.makeText(this, regInsertados, Toast.LENGTH_LONG).show();
+		} else {
+			edtNomMateria.setText("");
+			Toast.makeText(this, "El nombre de la materia es obligatorio.",
+					Toast.LENGTH_LONG).show();
+		}
+
 	}
 
 	@Override
