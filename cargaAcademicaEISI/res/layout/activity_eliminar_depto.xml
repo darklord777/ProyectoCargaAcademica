@@ -31,24 +31,21 @@
         android:id="@+id/btnEliminarDepto"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/spnElimDepto"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="81dp"
+        android:layout_alignLeft="@+id/edtNomDepto"
+        android:layout_below="@+id/edtNomDepto"
+        android:layout_marginTop="45dp"
         android:drawableRight="@drawable/clear"
+        android:onClick="eliminarDepto"
         android:text="@string/btnEliminarDepto"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:onClick="eliminarDepto" />
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
         android:id="@+id/edtNomDepto"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/spnElimDepto"
+        android:layout_below="@+id/spnElimDepto"
         android:ems="10"
-        android:hint="@string/msgNomDepto" >
-
-        <requestFocus />
-    </EditText>
+        android:hint="@string/msgNomDepto" />
 
 </RelativeLayout>

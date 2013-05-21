@@ -52,7 +52,7 @@
         android:layout_below="@+id/nomDepto"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
-        android:drawableRight="@drawable/save"
+        android:drawableRight="@drawable/save2"
         android:onClick="insertarDepto"
         android:text="@string/btnGuardarDepto"
         android:textAppearance="?android:attr/textAppearanceMedium" />

@@ -32,9 +32,10 @@ public class NuevoDeptoActivity extends Activity {
 			regInsertados = helper.insertar(departamento);
 			helper.cerrar();
 			Toast.makeText(this, regInsertados, Toast.LENGTH_LONG).show();
+		} else {
+			Toast.makeText(this, "Los campos son obligatorios",
+					Toast.LENGTH_LONG).show();
 		}
-		Toast.makeText(this, "Los campos son obligatorios", Toast.LENGTH_LONG)
-				.show();
 	}
 
 	public void limpiarDepto(View v) {
