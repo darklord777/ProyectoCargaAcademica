@@ -107,7 +107,8 @@
     <string name="selectCapaLocal">Capacidad del Local</string>
     <string name="ConsModCurso">Seleccionar id de Modalidad</string>
     <string name="msgModalCurso">Nombre de Modalida</string>
-    <string name="msgDescModalCurso"></string>
+    <string name="msgDescModalCurso">Descuento Horas</string>
+    <string name="spinner_ModCurso">Spinner ModCurso</string>
     
     <!-- Michael -->
 
