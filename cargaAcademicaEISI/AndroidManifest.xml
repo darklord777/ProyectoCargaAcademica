@@ -302,6 +302,14 @@
             android:name="sv.ues.fia.cargaacademicaeisi.ModActAcadActualizarActivity"
             android:label="@string/title_activity_mod_act_acad_actualizar" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.ActividadAcademicaEliminarActivity"
+            android:label="@string/title_activity_actividad_academica_eliminar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.ActividadAcademicaActualizarActivity"
+            android:label="@string/title_activity_actividad_academica_actualizar" >
+        </activity>
     </application>
 
 </manifest>

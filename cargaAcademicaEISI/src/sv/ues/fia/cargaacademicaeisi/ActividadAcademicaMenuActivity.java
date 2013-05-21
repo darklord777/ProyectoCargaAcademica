@@ -39,10 +39,16 @@ public class ActividadAcademicaMenuActivity extends Activity implements OnClickL
 					InsertarActividadAcademicaActivity.class));			
 			break;
 		case R.id.btn_MenuActividadAcad_Cons:
+			startActivity(new Intent(getApplicationContext(),
+					ActividadAcademicaConsultarActivity.class));
 			break;
 		case R.id.btn_MenuActividadAcad_Elim:
+			startActivity(new Intent(getApplicationContext(),
+					ActividadAcademicaEliminarActivity.class));
 			break;
 		case R.id.btn_MenuActividadAcad_Act:
+			startActivity(new Intent(getApplicationContext(),
+					ActividadAcademicaActualizarActivity.class));
 			break;
 		}
 	}

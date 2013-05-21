@@ -10,8 +10,44 @@
     tools:context=".ModActAcadConsultarMainActivity" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/TV_ModAA" />
+
+    <Spinner
+        android:id="@+id/spn_Select_ModAA"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="18dp"
+        android:prompt="@string/spinner_Slocal" />
+
+    <EditText
+        android:id="@+id/DescHorasMAA"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spn_Select_ModAA"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="@string/msgDescModalCurso"
+        android:inputType="none"
+        android:maxLength="4" />
+
+    <EditText
+        android:id="@+id/NombreModalAA"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/DescHorasMAA"
+        android:layout_alignLeft="@+id/DescHorasMAA"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="@string/msgModalCurso"
+        android:inputType="none"
+        android:maxLength="4" >
+
+        <requestFocus />
+    </EditText>
 
 </RelativeLayout>

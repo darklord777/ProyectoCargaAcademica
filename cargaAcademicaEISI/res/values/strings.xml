@@ -297,9 +297,13 @@
     <string name="title_activity_consultar_contrato">ConsultarContratoActivity</string>
     <string name="title_activity_eliminar_contrato">EliminarContratoActivity</string>
     <string name="btnAdmonDetGpoAsig">Adminstrar Detalle grupo asignado</string>
+    
     <string name="title_activity_modalidad_curso_eliminar">ModalidadCursoEliminarActivity</string>
     <string name="title_activity_modalidad_curso_actualizar">ModalidadCursoActualizarActivity</string>
     <string name="title_activity_mod_act_acad_eliminar">ModActAcadEliminarActivity</string>
     <string name="title_activity_mod_act_acad_actualizar">ModActAcadActualizarActivity</string>
+    <string name="title_activity_actividad_academica_eliminar">ActividadAcademicaEliminarActivity</string>
+    <string name="title_activity_actividad_academica_actualizar">ActividadAcademicaActualizarActivity</string>
+    <string name="TV_ModAA">Seleccion Modalidad</string>
 
 </resources>

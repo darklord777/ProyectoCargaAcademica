@@ -40,10 +40,16 @@ public class ModalidadAAMenuActivity extends Activity implements OnClickListener
 					 InsertarModalidadActAcadActivity.class));
 			break;
 		case R.id.btn_MenuModalidad_Cons:
+			startActivity(new Intent(getApplicationContext(),
+					ModActAcadConsultarMainActivity.class));
 			break;
 		case R.id.btn_MenuModalidad_Elim:
+			startActivity(new Intent(getApplicationContext(),
+					ModActAcadEliminarActivity.class));
 			break;
 		case R.id.btn_MenuModalidad_Act:
+			startActivity(new Intent(getApplicationContext(),
+					ModActAcadActualizarActivity.class));
 			break;
 		}
 	}
