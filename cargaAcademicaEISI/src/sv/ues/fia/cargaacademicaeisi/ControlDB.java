@@ -3,6 +3,8 @@ package sv.ues.fia.cargaacademicaeisi;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.xml.sax.DTDHandler;
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -1097,11 +1099,11 @@ public class ControlDB {
 				return false;
 		}
 		case 11: {
-			AreaMateria areaMateria = (AreaMateria) dato;
+			DetalleGrupoAsignado grupoAsignado = (DetalleGrupoAsignado) dato;
 			Cursor cursor = db.query(true, "DETALLE_CARGA_MAT",
-					new String[] { "CODIGOMATERIA" }, "CODIGOMATERIA='"
-							+ areaMateria.getCodigomateria() + "'", null, null,
-					null, null, null);
+					new String[] { "IDDETALLECURSO" }, "IDDETALLECURSO='"
+							+ grupoAsignado.getIddetallecurso() + "'", null,
+					null, null, null, null);
 			if (cursor.moveToFirst())
 				return true;
 			else
