@@ -23,7 +23,7 @@ public class NuevoDeptoActivity extends Activity {
 
 	public void insertarDepto(View v) {
 		if (!idDepto.getText().toString().trim().equals("")
-				|| !nomDepto.getText().toString().trim().equals("")) {
+				&& !nomDepto.getText().toString().trim().equals("")) {
 			String regInsertados;
 			Departamento departamento = new Departamento();
 			departamento.setIddepartamento(idDepto.getText().toString());
