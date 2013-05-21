@@ -57,14 +57,15 @@ public class AreMateriaConsultarActivity extends Activity implements
 			long arg3) {
 		String idAreMat = arg0.getItemAtPosition(arg2).toString();
 		AreaMateria areaMateria = new AreaMateria();
+
 		helper.abrir();
 		areaMateria = helper.consultarAreaMateria(idAreMat);
-		edtConsultDeptoAreMat
-				.setText(helper.getAsociado("DEPARTAMENTO", "NOM_DEPTO",
-						"IDDEPARTAMENTO", areaMateria.getIddepartamento()));
-		edtCodMatAreaMat.setText(helper.getAsociado("materia", "NOM_MATERIA",
-				"CODIGOMATERIA", areaMateria.getCodigomateria()));
 		helper.cerrar();
+
+		edtConsultDeptoAreMat.setText(areaMateria.getIddepartamento());
+
+		edtCodMatAreaMat.setText(areaMateria.getCodigomateria());
+
 	}
 
 	@Override
