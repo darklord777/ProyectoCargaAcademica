@@ -637,6 +637,12 @@ public class ControlDB {
 		return regAfectados;
 	}
 
+	public String getAsociado(String tabla, String campo, String valor) {
+		String sql="select "+campo+" from "+tabla+" where "+campo+"='"+valor+"';";
+		String asocido = "";
+		return asocido;
+	}
+
 	/** METODOS EMERSON */
 	public String InsertarContrato(TipoContrato tipocontrato) {
 		String regInsertados = "Registro insertado en la fila No.= ";
