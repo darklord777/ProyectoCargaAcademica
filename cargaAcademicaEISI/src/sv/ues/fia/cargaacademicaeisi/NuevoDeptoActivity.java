@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-
 public class NuevoDeptoActivity extends Activity {
 	private ControlDB helper;
 	private EditText idDepto;
@@ -23,16 +22,21 @@ public class NuevoDeptoActivity extends Activity {
 	}
 
 	public void insertarDepto(View v) {
-		String regInsertados;
-		Departamento departamento = new Departamento();
-		departamento.setIddepartamento(idDepto.getText().toString());
-		departamento.setNom_depto(nomDepto.getText().toString());
-		helper.abrir();
-		regInsertados = helper.insertar(departamento);
-		helper.cerrar();
-		Toast.makeText(this, regInsertados, Toast.LENGTH_LONG).show();
+		if (!idDepto.getText().toString().trim().equals("")
+				|| !nomDepto.getText().toString().trim().equals("")) {
+			String regInsertados;
+			Departamento departamento = new Departamento();
+			departamento.setIddepartamento(idDepto.getText().toString());
+			departamento.setNom_depto(nomDepto.getText().toString());
+			helper.abrir();
+			regInsertados = helper.insertar(departamento);
+			helper.cerrar();
+			Toast.makeText(this, regInsertados, Toast.LENGTH_LONG).show();
+		}
+		Toast.makeText(this, "Los campos son obligatorios", Toast.LENGTH_LONG)
+				.show();
 	}
-	
+
 	public void limpiarDepto(View v) {
 		idDepto.setText("");
 		nomDepto.setText("");
