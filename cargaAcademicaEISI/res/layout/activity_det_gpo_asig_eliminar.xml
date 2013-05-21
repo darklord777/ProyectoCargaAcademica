@@ -60,4 +60,14 @@
         android:ems="10"
         android:hint="@string/edtCodMatDetGpoAsig" />
 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtCodMatDetGpoAsigs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/btnEliminarDetGpoAsig"
+        android:onClick="eliminarDetGpoAsignado" />
+
 </RelativeLayout>
