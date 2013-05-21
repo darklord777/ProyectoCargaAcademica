@@ -25,8 +25,8 @@ public class NuevaMateriaActivity extends Activity {
 		if (!edtCodMateria.getText().toString().trim().equals("")
 				&& !edtNomMateria.getText().toString().trim().equals("")) {
 			Materia materia = new Materia();
-			materia.setCodigomateria(edtCodMateria.getText().toString());
-			materia.setNom_materia(edtNomMateria.getText().toString());
+			materia.setCodigomateria(edtCodMateria.getText().toString().trim());
+			materia.setNom_materia(edtNomMateria.getText().toString().trim());
 			helper.abrir();
 			String regInsertados = helper.insertar(materia);
 			helper.cerrar();

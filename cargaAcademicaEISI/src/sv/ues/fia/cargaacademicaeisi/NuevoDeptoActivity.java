@@ -26,8 +26,8 @@ public class NuevoDeptoActivity extends Activity {
 				&& !nomDepto.getText().toString().trim().equals("")) {
 			String regInsertados;
 			Departamento departamento = new Departamento();
-			departamento.setIddepartamento(idDepto.getText().toString());
-			departamento.setNom_depto(nomDepto.getText().toString());
+			departamento.setIddepartamento(idDepto.getText().toString().trim());
+			departamento.setNom_depto(nomDepto.getText().toString().trim());
 			helper.abrir();
 			regInsertados = helper.insertar(departamento);
 			helper.cerrar();
