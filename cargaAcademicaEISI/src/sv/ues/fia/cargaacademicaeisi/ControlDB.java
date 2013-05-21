@@ -951,6 +951,34 @@ public class ControlDB {
 		regAfectados += contador;
 		return regAfectados;
 	}
+	
+	public String eliminarModalActAcad(Modalidad_Act_Acad ModalAA) {
+		String regAfectados = "";
+		int contador = 0;
+		if (verificarIntegridad(ModalAA, 7)) {
+			regAfectados += "Tiene registros hijos\nNo se puede borrar,";
+			return regAfectados;
+		}
+		regAfectados = "No tiene registros hijos\nFilas afectadas=";
+
+		contador += db.delete("MODALIDAD_ACT_ACAD","IDMODALIDAD='" + ModalAA.getIdmodalidad() + "'", null);
+		regAfectados += contador;
+		return regAfectados;
+	}
+	
+	public String eliminarActAcad(Actividad_Academica ActAcademica) {
+		String regAfectados = "";
+		int contador = 0;
+		if (verificarIntegridad(ActAcademica, 7)) {
+			regAfectados += "Tiene registros hijos\nNo se puede borrar,";
+			return regAfectados;
+		}
+		regAfectados = "No tiene registros hijos\nFilas afectadas=";
+
+		contador += db.delete("ACTIVIDAD_ACADEMICA","IDACTACAD='" + ActAcademica.getIdactacad() + "'", null);
+		regAfectados += contador;
+		return regAfectados;		
+	}
 
 	/** METODOS SERGIO */
 
