@@ -105,6 +105,10 @@
     <string name="spinner_Slocal">Spinner Select Local</string>
     <string name="msgCapacLocal">Capidad Local</string>
     <string name="selectCapaLocal">Capacidad del Local</string>
+    <string name="ConsModCurso">Seleccionar id de Modalidad</string>
+    <string name="msgModalCurso">Nombre de Modalida</string>
+    <string name="msgDescModalCurso"></string>
+    
     <!-- Michael -->
 
     <string name="title_activity_eliminar_depto">EliminarDeptoActivity</string>
