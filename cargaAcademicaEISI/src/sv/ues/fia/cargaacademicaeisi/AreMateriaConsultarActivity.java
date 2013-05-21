@@ -59,9 +59,9 @@ public class AreMateriaConsultarActivity extends Activity implements
 		AreaMateria areaMateria = new AreaMateria();
 		helper.abrir();
 		areaMateria = helper.consultarAreaMateria(idAreMat);
-		edtConsultDeptoAreMat.setText(helper.getAsociado("departamento", "",
-				areaMateria.getIddepartamento()));
-		edtCodMatAreaMat.setText(helper.getAsociado("materia", "",
+		edtConsultDeptoAreMat.setText(helper.getAsociado("departamento",
+				"NOM_DEPTO", areaMateria.getIddepartamento()));
+		edtCodMatAreaMat.setText(helper.getAsociado("materia", "NOM_MATERIA",
 				areaMateria.getCodigomateria()));
 		helper.cerrar();
 	}
