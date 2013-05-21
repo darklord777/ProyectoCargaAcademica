@@ -22,17 +22,25 @@ public class NuevaMateriaActivity extends Activity {
 	}
 
 	public void guardarMateria(View v) {
-		String regInsertados = "";
-		Materia materia = new Materia();
-		materia.setCodigomateria(edtCodMateria.getText().toString());
-		materia.setNom_materia(edtNomMateria.getText().toString());
-		helper.abrir();
-		regInsertados = helper.insertar(materia);
-		helper.cerrar();
-		Toast.makeText(
-				this,
-				regInsertados + " : " + materia.getCodigomateria() + " : "
-						+ materia.getNom_materia(), Toast.LENGTH_LONG).show();
+		if (!edtCodMateria.getText().toString().trim().equals("")
+				&& !edtNomMateria.getText().toString().trim().equals("")) {
+			String regInsertados = "";
+			Materia materia = new Materia();
+			materia.setCodigomateria(edtCodMateria.getText().toString());
+			materia.setNom_materia(edtNomMateria.getText().toString());
+			helper.abrir();
+			regInsertados = helper.insertar(materia);
+			helper.cerrar();
+			Toast.makeText(
+					this,
+					regInsertados + " : " + materia.getCodigomateria() + " : "
+							+ materia.getNom_materia(), Toast.LENGTH_LONG)
+					.show();
+		} else {
+			Toast.makeText(this, "Los campos son Obligatorios.",
+					Toast.LENGTH_LONG).show();
+		}
+
 	}
 
 	public void limpiarEntradas(View v) {
