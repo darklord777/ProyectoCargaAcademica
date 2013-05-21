@@ -286,6 +286,22 @@
             android:name="sv.ues.fia.cargaacademicaeisi.ModalidadCursoConsultarActivity"
             android:label="@string/title_activity_modalidad_curso_consultar" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.ModalidadCursoEliminarActivity"
+            android:label="@string/title_activity_modalidad_curso_eliminar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.ModalidadCursoActualizarActivity"
+            android:label="@string/title_activity_modalidad_curso_actualizar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.ModActAcadEliminarActivity"
+            android:label="@string/title_activity_mod_act_acad_eliminar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.ModActAcadActualizarActivity"
+            android:label="@string/title_activity_mod_act_acad_actualizar" >
+        </activity>
     </application>
 
 </manifest>

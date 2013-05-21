@@ -346,12 +346,16 @@ public final class R {
         public static final int activity_menu_docente=0x7f03003a;
         public static final int activity_menu_materia=0x7f03003b;
         public static final int activity_menu_principal=0x7f03003c;
-        public static final int activity_mod_act_acad_consultar_main=0x7f03003d;
-        public static final int activity_modalidad_aamenu=0x7f03003e;
-        public static final int activity_modalidad_curso_consultar=0x7f03003f;
-        public static final int activity_modalidad_curso_menu=0x7f030040;
-        public static final int activity_nueva_materia=0x7f030041;
-        public static final int activity_nuevo_depto=0x7f030042;
+        public static final int activity_mod_act_acad_actualizar=0x7f03003d;
+        public static final int activity_mod_act_acad_consultar_main=0x7f03003e;
+        public static final int activity_mod_act_acad_eliminar=0x7f03003f;
+        public static final int activity_modalidad_aamenu=0x7f030040;
+        public static final int activity_modalidad_curso_actualizar=0x7f030041;
+        public static final int activity_modalidad_curso_consultar=0x7f030042;
+        public static final int activity_modalidad_curso_eliminar=0x7f030043;
+        public static final int activity_modalidad_curso_menu=0x7f030044;
+        public static final int activity_nueva_materia=0x7f030045;
+        public static final int activity_nuevo_depto=0x7f030046;
     }
     public static final class menu {
         public static final int actividad_academica_consultar=0x7f090000;
@@ -415,12 +419,16 @@ public final class R {
         public static final int menu_docente=0x7f09003a;
         public static final int menu_materia=0x7f09003b;
         public static final int menu_principal=0x7f09003c;
-        public static final int mod_act_acad_consultar_main=0x7f09003d;
-        public static final int modalidad_aamenu=0x7f09003e;
-        public static final int modalidad_curso_consultar=0x7f09003f;
-        public static final int modalidad_curso_menu=0x7f090040;
-        public static final int nueva_materia=0x7f090041;
-        public static final int nuevo_depto=0x7f090042;
+        public static final int mod_act_acad_actualizar=0x7f09003d;
+        public static final int mod_act_acad_consultar_main=0x7f09003e;
+        public static final int mod_act_acad_eliminar=0x7f09003f;
+        public static final int modalidad_aamenu=0x7f090040;
+        public static final int modalidad_curso_actualizar=0x7f090041;
+        public static final int modalidad_curso_consultar=0x7f090042;
+        public static final int modalidad_curso_eliminar=0x7f090043;
+        public static final int modalidad_curso_menu=0x7f090044;
+        public static final int nueva_materia=0x7f090045;
+        public static final int nuevo_depto=0x7f090046;
     }
     public static final class string {
         public static final int ConsModCurso=0x7f070060;
@@ -708,9 +716,13 @@ public final class R {
         public static final int title_activity_menu_docentes=0x7f0700a0;
         public static final int title_activity_menu_materia=0x7f07009e;
         public static final int title_activity_menu_principal=0x7f070003;
+        public static final int title_activity_mod_act_acad_actualizar=0x7f070111;
         public static final int title_activity_mod_act_acad_consultar_main=0x7f07005a;
+        public static final int title_activity_mod_act_acad_eliminar=0x7f070110;
         public static final int title_activity_modalidad_aamenu=0x7f070038;
+        public static final int title_activity_modalidad_curso_actualizar=0x7f07010f;
         public static final int title_activity_modalidad_curso_consultar=0x7f07005b;
+        public static final int title_activity_modalidad_curso_eliminar=0x7f07010e;
         public static final int title_activity_modalidad_curso_menu=0x7f07003e;
         public static final int title_activity_nueva_materia=0x7f07006b;
         public static final int title_activity_nuevo_depto=0x7f070008;

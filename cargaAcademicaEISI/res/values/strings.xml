@@ -106,10 +106,10 @@
     <string name="msgCapacLocal">Capidad Local</string>
     <string name="selectCapaLocal">Capacidad del Local</string>
     <string name="ConsModCurso">Seleccionar id de Modalidad</string>
-    <string name="msgModalCurso">Nombre de Modalida</string>
+    <string name="msgModalCurso">Nombre de Modalidad</string>
     <string name="msgDescModalCurso">Descuento Horas</string>
     <string name="spinner_ModCurso">Spinner ModCurso</string>
-    
+
     <!-- Michael -->
 
     <string name="title_activity_eliminar_depto">EliminarDeptoActivity</string>
@@ -297,7 +297,9 @@
     <string name="title_activity_consultar_contrato">ConsultarContratoActivity</string>
     <string name="title_activity_eliminar_contrato">EliminarContratoActivity</string>
     <string name="btnAdmonDetGpoAsig">Adminstrar Detalle grupo asignado</string>
-    
- 
+    <string name="title_activity_modalidad_curso_eliminar">ModalidadCursoEliminarActivity</string>
+    <string name="title_activity_modalidad_curso_actualizar">ModalidadCursoActualizarActivity</string>
+    <string name="title_activity_mod_act_acad_eliminar">ModActAcadEliminarActivity</string>
+    <string name="title_activity_mod_act_acad_actualizar">ModActAcadActualizarActivity</string>
 
 </resources>

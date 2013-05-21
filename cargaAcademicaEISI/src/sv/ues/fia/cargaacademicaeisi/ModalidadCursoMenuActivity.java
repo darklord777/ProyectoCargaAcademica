@@ -38,10 +38,13 @@ public class ModalidadCursoMenuActivity extends Activity implements OnClickListe
 			startActivity(new Intent(getApplicationContext(), InsertarModalidadCursoActivity.class));  
 			break;
 		case R.id.btn_MenuModalidadCurso_Cons:
+			startActivity(new Intent(getApplicationContext(), ModalidadCursoConsultarActivity.class));			
 			break;
 		case R.id.btn_MenuModalidadCurso_Elim:
+			startActivity(new Intent(getApplicationContext(), ModalidadCursoEliminarActivity.class));
 			break;
 		case R.id.btn_MenuModalidadCurso_Act:
+			startActivity(new Intent(getApplicationContext(), ModalidadCursoActualizarActivity.class));
 			break;
 		}
 	}

@@ -47,6 +47,8 @@ public class LocalesMenuActivity extends Activity implements OnClickListener{
 					 LocalesEliminarActivity.class));
 			break;
 		case R.id.btn_MenuLocal_Act:
+			startActivity(new Intent(getApplicationContext(),
+					LocalesActualizarActivity.class));
 			break;
 		}
 		

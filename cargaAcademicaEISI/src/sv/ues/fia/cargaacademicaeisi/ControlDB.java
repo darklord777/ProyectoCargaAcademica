@@ -823,7 +823,7 @@ public class ControlDB {
 			ActAcad.setIdactacad(cursor.getString(0));
 			ActAcad.setIdmodalidad(cursor.getString(1));
 			ActAcad.setNom_act_acad(cursor.getString(2));
-			ActAcad.setCargo(cursor.getString(2));
+			ActAcad.setCargo(cursor.getString(3));
 			return ActAcad;
 		} else {
 			return null;
