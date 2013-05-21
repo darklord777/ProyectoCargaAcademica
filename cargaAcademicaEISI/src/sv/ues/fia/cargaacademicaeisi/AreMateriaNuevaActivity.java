@@ -57,16 +57,23 @@ public class AreMateriaNuevaActivity extends Activity implements
 	}
 
 	public void guardarAreaMateria(View v) {
-		AreaMateria areaMateria = new AreaMateria();
-		areaMateria.setIdareamat(edtIdAreaMat.getText().toString());
-		areaMateria.setIddepartamento(spnIdDeptoNuevaAreaMat.getSelectedItem()
-				.toString());
-		areaMateria.setCodigomateria(spnCodMateNuevaAreMat.getSelectedItem()
-				.toString());
-		helper.abrir();
-		String estado = helper.insertar(areaMateria);
-		helper.cerrar();
-		Toast.makeText(this, estado, Toast.LENGTH_LONG).show();
+		if (!edtIdAreaMat.getText().toString().trim().equals("")) {
+			AreaMateria areaMateria = new AreaMateria();
+			areaMateria.setIdareamat(edtIdAreaMat.getText().toString().trim());
+			areaMateria.setIddepartamento(spnIdDeptoNuevaAreaMat
+					.getSelectedItem().toString());
+			areaMateria.setCodigomateria(spnCodMateNuevaAreMat
+					.getSelectedItem().toString());
+			helper.abrir();
+			String estado = helper.insertar(areaMateria);
+			helper.cerrar();
+			Toast.makeText(this, estado, Toast.LENGTH_LONG).show();
+		} else {
+			edtIdAreaMat.setText("");
+			Toast.makeText(this, "Codigo de area materia es obligatorio.",
+					Toast.LENGTH_LONG).show();
+		}
+
 	}
 
 	@Override

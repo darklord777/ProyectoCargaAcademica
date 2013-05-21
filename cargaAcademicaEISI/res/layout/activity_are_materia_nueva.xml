@@ -41,7 +41,8 @@
         android:layout_marginTop="22dp"
         android:drawableRight="@drawable/save2"
         android:onClick="guardarAreaMateria"
-        android:text="@string/btnGuarfarAreaMat" />
+        android:text="@string/btnGuarfarAreaMat"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse" />
 
     <Spinner
         android:id="@+id/spnIdDeptoNuevaAreaMat"
