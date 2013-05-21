@@ -24,12 +24,11 @@ public class NuevaMateriaActivity extends Activity {
 	public void guardarMateria(View v) {
 		if (!edtCodMateria.getText().toString().trim().equals("")
 				&& !edtNomMateria.getText().toString().trim().equals("")) {
-			String regInsertados = "";
 			Materia materia = new Materia();
 			materia.setCodigomateria(edtCodMateria.getText().toString());
 			materia.setNom_materia(edtNomMateria.getText().toString());
 			helper.abrir();
-			regInsertados = helper.insertar(materia);
+			String regInsertados = helper.insertar(materia);
 			helper.cerrar();
 			Toast.makeText(
 					this,
