@@ -398,10 +398,7 @@ public class ControlDB {
 
 	public List<String> getAllIdModCurso() {
 		List<String> idMaterias = new ArrayList<String>();
-		Cursor cursor = db
-				.rawQuery(
-						"select IDMODALIDAD from MODALIDAD_CURSO order by IDMODALIDAD;",
-						null);
+		Cursor cursor = db.rawQuery("select IDMODALIDAD from MODALIDAD_CURSO order by IDMODALIDAD;",null);
 		if (cursor.moveToFirst()) {
 			do {
 				idMaterias.add(cursor.getString(0));
@@ -805,6 +802,19 @@ public class ControlDB {
 		}		
 	}
 	
+	public List<String> getAll_IdModAA() {
+		List<String> idModAA = new ArrayList<String>();
+		Cursor cursor = db.rawQuery(
+				"select IDMODALIDAD from MODALIDAD_ACT_ACAD order by IDMODALIDAD;", null);
+		if (cursor.moveToFirst()) {
+			do {
+				idModAA.add(cursor.getString(0));
+			} while (cursor.moveToNext());
+		}
+		cursor.close();
+		return idModAA;
+	}
+	
 	public Actividad_Academica consultarActAcademica(String idActAcademica) {
 		String[] id = { idActAcademica };
 		Cursor cursor = db.query("ACTIVIDAD_ACADEMICA", camposActAcademica,"IDACTACADD = ?", id, null, null, null);
@@ -818,6 +828,19 @@ public class ControlDB {
 		} else {
 			return null;
 		}			
+	}
+	
+	public List<String> getAll_IdActA() {
+		List<String> idActA = new ArrayList<String>();
+		Cursor cursor = db.rawQuery(
+				"select IDACTACADD from ACTIVIDAD_ACADEMICA order by IDACTACADD;", null);
+		if (cursor.moveToFirst()) {
+			do {
+				idActA.add(cursor.getString(0));
+			} while (cursor.moveToNext());
+		}
+		cursor.close();
+		return idActA;
 	}
 
 	public String eliminar(Locales local) {
