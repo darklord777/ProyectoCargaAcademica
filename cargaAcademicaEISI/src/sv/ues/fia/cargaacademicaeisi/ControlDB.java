@@ -979,6 +979,14 @@ public class ControlDB {
 		regAfectados += contador;
 		return regAfectados;		
 	}
+	
+	public String actualizar(Locales local) {
+		String[] id = { local.getIdlocal() };
+		ContentValues values = new ContentValues();
+		values.put("CAPACIDAD", local.getCapacidad());
+		db.update("LOCALES", values, "IDLOCAL = ?", id);
+		return "Registro actualizado correctamente";
+	}
 
 	/** METODOS SERGIO */
 

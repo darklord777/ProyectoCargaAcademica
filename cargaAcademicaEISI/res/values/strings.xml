@@ -305,5 +305,6 @@
     <string name="title_activity_actividad_academica_eliminar">ActividadAcademicaEliminarActivity</string>
     <string name="title_activity_actividad_academica_actualizar">ActividadAcademicaActualizarActivity</string>
     <string name="TV_ModAA">Seleccion Modalidad</string>
+    <string name="Act_Locales">Seleccionar Local</string>
 
 </resources>

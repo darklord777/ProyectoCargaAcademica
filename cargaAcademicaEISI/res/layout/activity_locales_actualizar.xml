@@ -10,8 +10,41 @@
     tools:context=".LocalesActualizarActivity" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/Act_Locales" />
+
+    <Spinner
+        android:id="@+id/spnActIdLocales"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CapLocal_Act"
+        android:layout_below="@+id/textView1" />
+
+    <EditText
+        android:id="@+id/CapLocal_Act"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spnActIdLocales"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/msgCapacidadLocal"/>
+
+    <Button
+        android:id="@+id/btnGLocal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CapLocal_Act"
+        android:layout_below="@+id/CapLocal_Act"
+        android:layout_marginTop="64dp"
+        android:drawableRight="@drawable/save"
+        android:onClick="actualizarLocal"
+        android:text="@string/btnGuardarLocal"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>
