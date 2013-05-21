@@ -47,6 +47,7 @@
         android:layout_below="@+id/edtActNomDepto"
         android:layout_marginTop="26dp"
         android:onClick="actualizarDepto"
-        android:text="@string/btnGuardarDepto" />
+        android:text="@string/btnGuardarDepto"
+        android:drawableRight="@drawable/save2" />
 
 </RelativeLayout>
