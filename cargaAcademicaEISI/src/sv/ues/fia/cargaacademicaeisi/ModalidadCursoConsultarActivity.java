@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 import android.widget.AdapterView.OnItemSelectedListener;
 
 public class ModalidadCursoConsultarActivity extends Activity implements OnItemSelectedListener{
@@ -49,10 +50,21 @@ public class ModalidadCursoConsultarActivity extends Activity implements OnItemS
 	}
 
 	@Override
-	public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2,
-			long arg3) {
+	public void onItemSelected(AdapterView<?> parent, View v, int pos, long id) {
 		// TODO Auto-generated method stub
-		
+		String idModCurso = parent.getItemAtPosition(pos).toString();
+		helper.abrir();		
+		Modalidad_Curso ModCurso = helper.consultarModCurso(idModCurso);
+		helper.cerrar();
+		if (ModCurso == null) {
+			Toast.makeText(this,"Identificador de departemento: " + idModCurso
+							+ ". No existe.", Toast.LENGTH_LONG).show();
+		} else {
+			NombreModCurso.setText(ModCurso.getNom_modalidad());
+			Toast.makeText(this, "Valor de item=" + idModCurso, Toast.LENGTH_LONG).show();
+			DesHrsModCurso.setText(ModCurso.getDescuento_horas());
+			Toast.makeText(this, "Valor de item=" + idModCurso, Toast.LENGTH_LONG).show();
+		}
 	}
 
 	@Override

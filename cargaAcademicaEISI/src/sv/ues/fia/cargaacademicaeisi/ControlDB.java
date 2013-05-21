@@ -26,9 +26,16 @@ public class ControlDB {
 			"CAPACIDAD" };
 	private static final String[] camposModalidadAA = new String[] {
 			"IDMODALIDAD", "NOM_MODALIDAD", "DESCUENTO_HORAS" };
+	
+	private static final String[] camposModCurso = new String[] {"IDMODALIDAD",
+			"NOM_MODALIDAD", "DESCUENTO_HORAS" };
+	
+	private static final String[] camposActAcademica = new String[] {"IDACTACAD",
+		"IDMODALIDAD", "NOM_ACT_ACAD", "CARGO" };	
 
 	private static final String[] camposCargaAcademica = new String[] {
 			"IDDOCENTE", "ANIO", "NUMERO" };
+	
 	private static final String[] camposCiclo = new String[] { "ANIO",
 			"NUMERO", "FECHAINI", "FECHAFIN" };
 
@@ -767,6 +774,50 @@ public class ControlDB {
 			return null;
 		}
 
+	}
+	
+	public Modalidad_Curso consultarModCurso(String idModCurso) {
+		String[] id = { idModCurso };
+		Cursor cursor = db.query("MODALIDAD_CURSO", camposModCurso,"IDMODALIDAD = ?", id, null, null, null);
+		if (cursor.moveToFirst()) {
+			Modalidad_Curso ModalCurso = new Modalidad_Curso();
+			ModalCurso.setIdmodalidadCurso(cursor.getString(0));
+			ModalCurso.setNom_modalidad(cursor.getString(1));
+			ModalCurso.setDescuento_horas(cursor.getInt(2));
+			return ModalCurso;
+		} else {
+			return null;
+		}
+		
+	}
+	
+	public Modalidad_Act_Acad consultarModActAcad(String idModActA) {
+		String[] id = { idModActA };
+		Cursor cursor = db.query("MODALIDAD_ACT_ACAD", camposModalidadAA,"IDMODALIDAD = ?", id, null, null, null);
+		if (cursor.moveToFirst()) {
+			Modalidad_Act_Acad ModalAA = new Modalidad_Act_Acad();
+			ModalAA.setIdmodalidad(cursor.getString(0));
+			ModalAA.setNom_modalidad(cursor.getString(1));
+			ModalAA.setDescuento_horas(cursor.getInt(2));
+			return ModalAA;
+		} else {
+			return null;
+		}		
+	}
+	
+	public Actividad_Academica consultarActAcademica(String idActAcademica) {
+		String[] id = { idActAcademica };
+		Cursor cursor = db.query("ACTIVIDAD_ACADEMICA", camposActAcademica,"IDACTACADD = ?", id, null, null, null);
+		if (cursor.moveToFirst()) {
+			Actividad_Academica ActAcad = new Actividad_Academica();
+			ActAcad.setIdactacad(cursor.getString(0));
+			ActAcad.setIdmodalidad(cursor.getString(1));
+			ActAcad.setNom_act_acad(cursor.getString(2));
+			ActAcad.setCargo(cursor.getString(2));
+			return ActAcad;
+		} else {
+			return null;
+		}			
 	}
 
 	public String eliminar(Locales local) {
