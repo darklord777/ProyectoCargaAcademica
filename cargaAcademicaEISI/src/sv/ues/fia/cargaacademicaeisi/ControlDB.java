@@ -637,10 +637,11 @@ public class ControlDB {
 		return regAfectados;
 	}
 
-	public String getAsociado(String tabla, String campo, String valor) {
-		String sql = "select " + campo + " from " + tabla + " where " + campo
+	public String getAsociado(String tabla, String campo, String clave,
+			String valor) {
+		String sql = "select " + campo + " from " + tabla + " where " + clave
 				+ "='" + valor + "';";
-		String asocido = "";
+		String asocido = "no hay dato";
 		Cursor cursor = db.rawQuery(sql, null);
 		if (cursor.moveToFirst()) {
 			asocido = cursor.getString(0);
