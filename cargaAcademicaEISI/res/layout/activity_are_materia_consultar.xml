@@ -25,28 +25,29 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp" />
+        android:layout_marginTop="14dp" />
 
     <EditText
         android:id="@+id/edtConsultDeptoAreMat"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/edtCodMatAreaMat"
+        android:layout_below="@+id/spnConsultAreaMat"
+        android:layout_marginTop="21dp"
         android:ems="10"
-        android:hint="@string/tvConsultDeptoAreMat" >
-
-        <requestFocus />
-    </EditText>
+        android:hint="@string/tvConsultDeptoAreMat" />
 
     <EditText
         android:id="@+id/edtCodMatAreaMat"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spnConsultAreaMat"
         android:layout_below="@+id/edtConsultDeptoAreMat"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="18dp"
         android:ems="10"
-        android:hint="@string/tvCodMatAreaMat" />
+        android:hint="@string/tvCodMatAreaMat" >
+
+        <requestFocus />
+    </EditText>
 
 </RelativeLayout>

@@ -441,16 +441,18 @@ public class ControlDB {
 
 	public AreaMateria consultarAreaMateria(String idaremat) {
 		String[] id = { idaremat };
+
+		Cursor cursor = db.query("AREA_MATERIA", camposAreaMat,
+				"IDAREAMAT = ?", id, null, null, null);
+
 		/*
-		 * Cursor cursor = db.query("AREA_MATERIA", camposAreaMat,
-		 * "IDAREAMAT = ?", id, null, null, null);
+		 * String sql =
+		 * "select idareamat,(select nom_depto from departamento) departamento, "
+		 * + "(select nom_materia from materia) materia " +
+		 * "from area_materia where idareamat='" + idaremat + "';";
+		 * 
+		 * Cursor cursor = db.rawQuery(sql, null);
 		 */
-		
-		Cursor cursor = db.rawQuery(
-				"select idareamat,(select nom_depto from departamento) departamento, "
-						+ "(select nom_materia from materia) materia "
-						+ "from area_materia where idareamat='" + idaremat
-						+ "';", null);
 
 		if (cursor.moveToFirst()) {
 			AreaMateria areaMateria = new AreaMateria();
