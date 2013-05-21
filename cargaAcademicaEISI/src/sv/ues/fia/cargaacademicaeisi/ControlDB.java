@@ -638,8 +638,14 @@ public class ControlDB {
 	}
 
 	public String getAsociado(String tabla, String campo, String valor) {
-		String sql="select "+campo+" from "+tabla+" where "+campo+"='"+valor+"';";
+		String sql = "select " + campo + " from " + tabla + " where " + campo
+				+ "='" + valor + "';";
 		String asocido = "";
+		Cursor cursor = db.rawQuery(sql, null);
+		if (cursor.moveToFirst()) {
+			asocido = cursor.getString(0);
+		}
+
 		return asocido;
 	}
 
