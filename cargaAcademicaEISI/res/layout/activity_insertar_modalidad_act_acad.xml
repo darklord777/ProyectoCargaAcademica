@@ -30,7 +30,7 @@
         android:text="@string/btnGuardarModaAA"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <Button
+    <Button 
         android:id="@+id/limpiarModAA"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

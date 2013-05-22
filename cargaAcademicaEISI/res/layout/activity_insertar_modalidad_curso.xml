@@ -20,7 +20,7 @@
         android:hint="@string/msgDesHModalidadCurso"
         android:maxLength="4"
         android:inputType="number" />
-
+ 
     <Button
         android:id="@+id/btnGModCurso"
         android:layout_width="fill_parent"

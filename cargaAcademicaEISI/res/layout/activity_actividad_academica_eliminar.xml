@@ -34,6 +34,7 @@
         android:layout_below="@+id/SelNombreActAcad"
         android:layout_marginTop="68dp"
         android:drawableRight="@drawable/clear"
+        android:onClick="eliminarActAcad"
         android:text="@string/btn3_elim_ActividadAcad" 
         android:textAppearance="?android:attr/textAppearanceMedium" />
 

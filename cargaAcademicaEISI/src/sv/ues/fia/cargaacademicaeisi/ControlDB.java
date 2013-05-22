@@ -1209,7 +1209,15 @@ public class ControlDB {
 		}
 
 		case 20: {			
+			Actividad_Academica ActAcad = (Actividad_Academica) dato;			
+			Cursor cursor = db.query(true, "DETALLE_CARGA_ACT_ACAD",
+					new String[] { " IDACTACAD" }, " IDACTACAD='"
+							+ ActAcad.getIdactacad() + "'", null, null,
+					null, null, null);
+			if (cursor.moveToFirst())
 				return true;
+			else
+				return false;
 		}
 		case 21: {			
 			Modalidad_Act_Acad ModActAcademica = (Modalidad_Act_Acad) dato;

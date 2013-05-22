@@ -22,7 +22,7 @@ public class InsertarModalidadCursoActivity extends Activity {
 		idModCurso = (EditText) findViewById(R.id.idModalidadCurso);
 		NomModCurso = (EditText) findViewById(R.id.NomModCurso);
 		DesHorasModCurso = (EditText) findViewById(R.id.Desc_Horas_MCurs);
-	}
+	} 
 	
 	public void insertarModalidadCurso(View v) {
 		String regInsertados;

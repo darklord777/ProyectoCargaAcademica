@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ConsModCurso" />
-
+ 
     <Spinner
         android:id="@+id/spn_Select_ModCurso"
         android:layout_width="wrap_content"

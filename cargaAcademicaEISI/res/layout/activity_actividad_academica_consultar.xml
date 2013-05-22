@@ -18,7 +18,7 @@
         android:layout_marginLeft="37dp"
         android:layout_marginTop="39dp"
         android:text="@string/SelecActAcademica" />
-
+ 
     <Spinner
         android:id="@+id/spin_Select_ActAcademica"
         android:layout_width="wrap_content" 

@@ -21,7 +21,7 @@ public class InsertarModalidadActAcadActivity extends Activity {
 		idModalidadAA = (EditText) findViewById(R.id.idModalidadAA);
 		nombreModalidad = (EditText) findViewById(R.id.NombreModAA);
 		descHoras = (EditText) findViewById(R.id.DesHoras);
-	}
+	} 
 	public void insertarModalidadAA(View v) {
 		String regInsertados;
 		Modalidad_Act_Acad modalidadAA = new Modalidad_Act_Acad();

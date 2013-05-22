@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/CapLocal_Act"
         android:layout_below="@+id/textView1" />
-
+ 
     <EditText
         android:id="@+id/CapLocal_Act"
         android:layout_width="fill_parent"

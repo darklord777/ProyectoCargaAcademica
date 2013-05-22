@@ -25,7 +25,7 @@ public class ModalidadCursoEliminarActivity extends Activity implements OnItemSe
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_modalidad_curso_eliminar);
-		
+		 
 		helper = new ControlDB(this);
 		spnEliminarModC = (Spinner) findViewById(R.id.spn_Select_ModC);
 		NombreModC_Elim = (EditText) findViewById(R.id.ModCursoN_Elim);

@@ -13,7 +13,7 @@ import android.widget.Toast;
 import android.widget.AdapterView.OnItemSelectedListener;
 
 public class ModalidadCursoConsultarActivity extends Activity implements OnItemSelectedListener{
-
+ 
 	private ControlDB helper;
 	private EditText NombreModCurso;
 	private EditText DesHrsModCurso;

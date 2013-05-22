@@ -24,7 +24,7 @@
         android:layout_below="@+id/textView1"
         android:layout_marginTop="64dp"
         android:text="@string/TextView_ElimModaAA" />
-
+ 
     <Spinner
         android:id="@+id/spn_Elim_ModActA"
         android:layout_width="wrap_content"

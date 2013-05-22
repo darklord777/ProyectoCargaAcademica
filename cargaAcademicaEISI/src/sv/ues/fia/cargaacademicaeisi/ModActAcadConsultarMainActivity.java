@@ -15,19 +15,19 @@ import android.widget.AdapterView.OnItemSelectedListener;
 
 public class ModActAcadConsultarMainActivity extends Activity  implements OnItemSelectedListener {
 
-/*	private ControlDB helper;
+	private ControlDB helper;
 	private EditText NombreModAA;
 	private EditText DesHrsModAA;
 	private Spinner spnListaModalidadAA;
 	private List<String> idModalidadAA;
 	private ArrayAdapter<String> adapter;
-	*/
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_mod_act_acad_consultar_main);
 		
-/*		helper = new ControlDB(this);
+		helper = new ControlDB(this);
 		NombreModAA = (EditText) findViewById(R.id.NombreModalAA);
 		DesHrsModAA = (EditText) findViewById(R.id.DescHorasMAA);
 		spnListaModalidadAA = (Spinner) findViewById(R.id.spn_Select_ModAA);
@@ -40,7 +40,7 @@ public class ModActAcadConsultarMainActivity extends Activity  implements OnItem
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spnListaModalidadAA.setAdapter(adapter);
 		spnListaModalidadAA.setOnItemSelectedListener(this);
-*/	}
+	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -52,20 +52,20 @@ public class ModActAcadConsultarMainActivity extends Activity  implements OnItem
 	@Override
 	public void onItemSelected(AdapterView<?> parent, View v, int pos, long id) {
 		// TODO Auto-generated method stub
-/*		String idModAA = parent.getItemAtPosition(pos).toString();
+		String idModActA = parent.getItemAtPosition(pos).toString();
 		helper.abrir();		
-		Modalidad_Act_Acad ModalAA = helper.consultarModActAcad(idModAA);
+		Modalidad_Act_Acad ModalAA = helper.consultarModActAcad(idModActA);
 		helper.cerrar();
 		if (ModalAA == null) {
-			Toast.makeText(this,"Identificador de modalidad: " + idModAA
+			Toast.makeText(this,"Identificador de modalidad: " + idModActA
 							+ ". No existe.", Toast.LENGTH_LONG).show();
 		} else {
 			NombreModAA.setText(ModalAA.getNom_modalidad());
-			Toast.makeText(this, "Valor de item=" + idModAA, Toast.LENGTH_LONG).show();
+			Toast.makeText(this, "Valor de item=" + idModActA, Toast.LENGTH_LONG).show();
 			DesHrsModAA.setText(ModalAA.getDescuento_horas());
-			Toast.makeText(this, "Valor de item=" + idModAA, Toast.LENGTH_LONG).show();
+			Toast.makeText(this, "Valor de item=" + idModActA, Toast.LENGTH_LONG).show();
 		}
-*/	}
+	}
 
 	@Override
 	public void onNothingSelected(AdapterView<?> arg0) {

@@ -22,7 +22,7 @@ public class InsertarActividadAcademicaActivity extends Activity implements OnIt
 	private EditText cargoActAcad;	
 	private List<String> idModalAA;
 	private ArrayAdapter<String> adapterModalAA;
-	
+	 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

@@ -54,18 +54,18 @@ public class ActividadAcademicaConsultarActivity extends Activity implements OnI
 	@Override
 	public void onItemSelected(AdapterView<?> parent, View v, int pos, long id) {
 		// TODO Auto-generated method stub
-		String idActAcad = parent.getItemAtPosition(pos).toString();
+		String idActAcademica = parent.getItemAtPosition(pos).toString();
 		helper.abrir();		
-		Actividad_Academica ActiAcad = helper.consultarActAcademica(idActAcad);
+		Actividad_Academica ActiAcad = helper.consultarActAcademica(idActAcademica);
 		helper.cerrar();
 		if (ActiAcad == null) {
-			Toast.makeText(this,"Identificador de departemento: " + idActAcad
+			Toast.makeText(this,"Identificador de departemento: " + idActAcademica
 							+ ". No existe.", Toast.LENGTH_LONG).show();
 		} else {
 			idModalAA.setText(ActiAcad.getIdmodalidad());
 			NombreActAcad.setText(ActiAcad.getNom_act_acad());
 			cargo.setText(ActiAcad.getCargo());
-			Toast.makeText(this, "Valor de item=" + idActAcad, Toast.LENGTH_LONG).show();
+			Toast.makeText(this, "Valor de item=" + idActAcademica, Toast.LENGTH_LONG).show();
 		}
 	}
 

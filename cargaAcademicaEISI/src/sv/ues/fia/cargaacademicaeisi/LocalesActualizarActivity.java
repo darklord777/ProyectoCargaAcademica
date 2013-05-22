@@ -20,7 +20,7 @@ public class LocalesActualizarActivity extends Activity implements OnItemSelecte
 	private Spinner spnListaLocales;
 	private List<String> idLocales;
 	private ArrayAdapter<String> adapter;
-	
+	 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

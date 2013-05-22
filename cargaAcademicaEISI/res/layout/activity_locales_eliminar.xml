@@ -26,7 +26,7 @@
         android:layout_marginTop="21dp"
         android:text="@string/TextViewElimLocal"
         android:textAppearance="?android:attr/textAppearanceLarge" />
-
+ 
     <EditText
         android:id="@+id/CapLocal_Elim"
         android:layout_width="fill_parent"

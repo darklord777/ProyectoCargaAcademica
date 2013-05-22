@@ -37,7 +37,7 @@ public class LocalesConsultarActivity extends Activity implements OnItemSelected
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spnListaLocales.setAdapter(adapter);
 		spnListaLocales.setOnItemSelectedListener(this);
-		
+		 
 	}
 
 	@Override

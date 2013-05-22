@@ -19,7 +19,7 @@ public class LocalesEliminarActivity extends Activity implements OnItemSelectedL
 	private EditText CapacidadLocal_Elim;
 	private List<String> idLocal;
 	private ArrayAdapter<String> adapter;
-	
+	 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

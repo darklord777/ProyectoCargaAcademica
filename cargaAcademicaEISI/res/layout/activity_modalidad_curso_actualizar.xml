@@ -17,7 +17,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="42dp"
         android:text="@string/Act_ModCurso" />
-
+ 
     <Spinner
         android:id="@+id/spn_Select_Local"
         android:layout_width="wrap_content"
