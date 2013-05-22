@@ -1,7 +1,6 @@
 package sv.ues.fia.cargaacademicaeisi;
 
 import java.util.List;
-
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -40,10 +39,11 @@ public class LocalesEliminarActivity extends Activity implements OnItemSelectedL
 	}	
 	
 	public void eliminarLocal(View v) {
+		String estado;
 		Locales local = new Locales();
 		local.setIdlocal(spnEliminarLocal.getSelectedItem().toString());
 		helper.abrir();
-		String estado = helper.eliminarLocales(local);
+		estado = helper.eliminarLocales(local);
 		helper.cerrar();
 		Toast.makeText(this, estado, Toast.LENGTH_LONG).show();
 	}
@@ -59,15 +59,11 @@ public class LocalesEliminarActivity extends Activity implements OnItemSelectedL
 	public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
 		// TODO Auto-generated method stub
 		String idLocal = arg0.getItemAtPosition(arg2).toString();
+		Locales local = new Locales();
 		helper.abrir();
-		Locales local = helper.consultarLocal(idLocal);
+		local = helper.consultarLocal(idLocal);
 		helper.cerrar();
-		if (local == null) {
-			Toast.makeText(this,"Identificador de departemento: " 
-					+ idLocal+ ". No existe.", Toast.LENGTH_LONG).show();
-		} else {
-			CapacidadLocal_Elim.setText(local.getCapacidad());
-		}
+		CapacidadLocal_Elim.setText(local.getCapacidad());
 	}
 
 	@Override

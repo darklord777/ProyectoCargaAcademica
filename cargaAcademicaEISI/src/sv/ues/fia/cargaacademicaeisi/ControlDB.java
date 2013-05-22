@@ -927,7 +927,7 @@ public class ControlDB {
 	public String eliminarLocales(Locales local) {
 		String regAfectados = "";
 		int contador = 0;
-		if (verificarIntegridad(local, 7)) {
+		if (verificarIntegridad(local, 19)) {
 			regAfectados += "Tiene registros hijos\nNo se puede borrar,";
 			return regAfectados;
 		}
@@ -941,7 +941,7 @@ public class ControlDB {
 	public String eliminarModCurso(Modalidad_Curso ModCurso) {
 		String regAfectados = "";
 		int contador = 0;
-		if (verificarIntegridad(ModCurso, 7)) {
+		if (verificarIntegridad(ModCurso, 22)) {
 			regAfectados += "Tiene registros hijos\nNo se puede borrar,";
 			return regAfectados;
 		}
@@ -955,7 +955,7 @@ public class ControlDB {
 	public String eliminarModalActAcad(Modalidad_Act_Acad ModalAA) {
 		String regAfectados = "";
 		int contador = 0;
-		if (verificarIntegridad(ModalAA, 7)) {
+		if (verificarIntegridad(ModalAA, 21)) {
 			regAfectados += "Tiene registros hijos\nNo se puede borrar,";
 			return regAfectados;
 		}
@@ -969,7 +969,7 @@ public class ControlDB {
 	public String eliminarActAcad(Actividad_Academica ActAcademica) {
 		String regAfectados = "";
 		int contador = 0;
-		if (verificarIntegridad(ActAcademica, 7)) {
+		if (verificarIntegridad(ActAcademica, 20)) {
 			regAfectados += "Tiene registros hijos\nNo se puede borrar,";
 			return regAfectados;
 		}
@@ -1186,33 +1186,42 @@ public class ControlDB {
 		}
 		
 		case 19: {
-			Locales local = (Locales) dato;
-			Cursor cursor = db.query(true, "LOCALES",
-					new String[] { "IDLOCAL" }, "IDLOCAL='"+ local.getIdlocal() + "'", null, null,
+			Locales local = (Locales) dato;			
+			Cursor cursor = db.query(true, "DETALLE_GRUPO_ASIGNADO",
+					new String[] { "IDLOCAL" }, "IDLOCAL='"
+							+ local.getIdlocal() + "'", null, null,
 					null, null, null);
 			if (cursor.moveToFirst())
 				return true;
 			else
-				return true;
+				return false;
 		}
 
-		case 20: {
-			Actividad_Academica ActAcademica = (Actividad_Academica) dato;
+		case 20: {			
+				return true;
+		}
+		case 21: {			
+			Modalidad_Act_Acad ModActAcademica = (Modalidad_Act_Acad) dato;
 			Cursor cursor = db.query(true, "ACTIVIDAD_ACADEMICA",
-					new String[] { " IDACTACAD" }, " IDACTACAD ='"
-							+ ActAcademica.getIdactacad() + "'", null, null,
+					new String[] { "IDACTACAD " }, "IDACTACAD ='"
+							+ ModActAcademica.getIdmodalidad() + "'", null, null,
 					null, null, null);
 			if (cursor.moveToFirst())
 				return true;
 			else
-				return true;
-		}
-		case 21: {
-			return true;
+				return false;
 		}
 		
 		case 22: {
-			return true;
+			Modalidad_Curso ModCurso = (Modalidad_Curso) dato;
+			Cursor cursor = db.query(true, "DETALLE_GRUPO_ASIGNADO",
+					new String[] { "IDMODALIDAD" }, "IDMODALIDAD='"
+							+ ModCurso.getIdmodalidadCurso() + "'", null, null,
+					null, null, null);
+			if (cursor.moveToFirst())
+				return true;
+			else
+				return false;
 		}
 		
 		case 23: {

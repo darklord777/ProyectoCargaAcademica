@@ -55,7 +55,7 @@ public class LocalesActualizarActivity extends Activity implements OnItemSelecte
 		Locales local = helper.consultarLocal(idLocal);
 		helper.cerrar();
 		if (local == null) {
-			Toast.makeText(this,"Identificador de departemento: " + idLocal
+			Toast.makeText(this,"Identificador de local: " + idLocal
 							+ ". No existe.", Toast.LENGTH_LONG).show();
 		} else {
 			CapLocales.setText(local.getCapacidad());
@@ -69,7 +69,7 @@ public class LocalesActualizarActivity extends Activity implements OnItemSelecte
 		
 	}
 	
-	public void actualizarDepto(View v) {
+	public void actualizarLocal(View v) {
 		if (!CapLocales.getText().toString().trim().equals("")) {
 			Locales local = new Locales();
 			local.setIdlocal(spnListaLocales.getSelectedItem().toString());
