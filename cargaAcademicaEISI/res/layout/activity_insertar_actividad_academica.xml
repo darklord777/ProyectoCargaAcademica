@@ -38,7 +38,7 @@
         android:layout_marginTop="57dp"
         android:ems="10"
         android:hint="@string/msgNombreActAcad"
-        android:maxLength="6" />
+        android:maxLength="30" />
 
     <EditText
         android:id="@+id/CargoActAcad"
@@ -48,7 +48,7 @@
         android:layout_below="@+id/NombreActAcad"
         android:ems="10"
         android:hint="@string/msgCargoActAcad"
-        android:maxLength="6" />
+        android:maxLength="20" />
 
     <Button
         android:id="@+id/btnGuardarActAcad"

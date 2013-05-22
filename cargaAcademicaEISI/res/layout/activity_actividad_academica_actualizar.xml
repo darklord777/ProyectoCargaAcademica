@@ -10,8 +10,55 @@
     tools:context=".ActividadAcademicaActualizarActivity" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/ActActAcademica" />
+
+    <Spinner
+        android:id="@+id/spin_Act_ActAcademica"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:prompt="@string/spinner_ActActAcad" />
+    
+    <EditText 
+        android:ems="10" 
+        android:id="@+id/CargoActAcad" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_alignParentLeft="true" 
+        android:layout_below="@+id/SelNombreActAcad"
+		android:hint="@string/msgSelectCargoActAcad" 
+		android:inputType="none" 
+		android:maxLength="20"/>
+
+    <EditText
+        android:id="@+id/SelNombreActAcad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CargoActAcad"
+        android:layout_below="@+id/spin_Act_ActAcademica"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="@string/msgSelectActAcad"
+        android:inputType="none"
+        android:maxLength="30" />
+
+    <Button
+        android:id="@+id/button1ActActividadAcad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CargoActAcad"
+        android:layout_below="@+id/CargoActAcad"
+        android:layout_marginTop="16dp"
+        android:drawableRight="@drawable/save2"
+        android:text="@string/ButtonActActAcademica"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

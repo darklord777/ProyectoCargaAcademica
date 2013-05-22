@@ -10,8 +10,57 @@
     tools:context=".ActividadAcademicaConsultarActivity" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="39dp"
+        android:text="@string/SelecActAcademica" />
+
+    <Spinner
+        android:id="@+id/spin_Select_ActAcademica"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:prompt="@string/spinner_SelActAcad" />
+
+    <EditText
+        android:id="@+id/idModActA"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spin_Select_ActAcademica"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/msgidSelecActAcad"
+        android:maxLength="6"
+        android:inputType="none" />
+
+    <EditText
+        android:id="@+id/SelNombreActAcad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spin_Select_ActAcademica"
+        android:layout_below="@+id/idModActA"
+        android:ems="10"
+        android:hint="@string/msgSelectActAcad"
+        android:maxLength="30"
+        android:inputType="none" />
+
+    <EditText
+        android:id="@+id/CargoActAcad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SelNombreActAcad"
+        android:layout_below="@+id/SelNombreActAcad"
+        android:ems="10"
+        android:hint="@string/msgSelectCargoActAcad"
+        android:maxLength="20"
+        android:inputType="none" >
+
+        <requestFocus />
+    </EditText>
 
 </RelativeLayout>
