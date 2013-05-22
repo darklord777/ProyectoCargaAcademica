@@ -51,6 +51,7 @@
         android:layout_below="@+id/NombreModalAA"
         android:layout_marginTop="73dp"
         android:drawableRight="@drawable/clear"
+        android:onClick="eliminarModActA"
         android:text="@string/btn3_elim_ActividadAcad"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
