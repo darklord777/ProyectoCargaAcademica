@@ -18,7 +18,7 @@ public class ModalidadCursoEliminarActivity extends Activity implements OnItemSe
 	private ControlDB helper;
 	private Spinner spnEliminarModC;
 	private EditText NombreModC_Elim;
-	private List<String> idLocal;
+	private List<String> idMCurso;
 	private ArrayAdapter<String> adapter;
 	
 	@Override
@@ -30,13 +30,12 @@ public class ModalidadCursoEliminarActivity extends Activity implements OnItemSe
 		spnEliminarModC = (Spinner) findViewById(R.id.spn_Select_ModC);
 		NombreModC_Elim = (EditText) findViewById(R.id.ModCursoN_Elim);
 		helper.abrir();
-		idLocal = helper.getAllIdModCurso();
+		idMCurso = helper.getAllIdModCurso();
 		helper.cerrar();		
-		adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, idLocal);
+		adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, idMCurso);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spnEliminarModC.setAdapter(adapter);
-		spnEliminarModC.setOnItemSelectedListener(this);
-		
+		spnEliminarModC.setOnItemSelectedListener(this);		
 	}
 	
 	public void eliminarModC(View v) {

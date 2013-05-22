@@ -998,6 +998,24 @@ public class ControlDB {
 		return "Registro actualizado correctamente";
 	}
 	
+	public String actualizar(Modalidad_Act_Acad ModActAcad) {
+		String[] id = {ModActAcad.getIdmodalidad() };
+		ContentValues values = new ContentValues();
+		values.put("NOM_MODALIDAD", ModActAcad.getNom_modalidad());
+		values.put("DESCUENTO_HORAS", ModActAcad.getDescuento_horas());
+		db.update("MODALIDAD_ACT_ACAD", values, "IDMODALIDAD = ?", id);
+		return "Registro actualizado correctamente";
+	}
+	
+	public String actualizar(Actividad_Academica ActAcad) {
+		String[] id = {ActAcad.getIdmodalidad() };
+		ContentValues values = new ContentValues();
+		values.put("NOM_ACT_ACAD", ActAcad.getNom_act_acad());
+		values.put("CARGO", ActAcad.getCargo());
+		db.update("ACTIVIDAD_ACADEMICA", values, "IDACTACAD = ?", id);
+		return "Registro actualizado correctamente";
+	}
+	
 
 	/** METODOS SERGIO */
 
@@ -1222,7 +1240,7 @@ public class ControlDB {
 		case 21: {			
 			Modalidad_Act_Acad ModActAcademica = (Modalidad_Act_Acad) dato;
 			Cursor cursor = db.query(true, "ACTIVIDAD_ACADEMICA",
-					new String[] { "IDACTACAD " }, "IDACTACAD ='"
+					new String[] { " IDMODALIDAD " }, " IDMODALIDAD ='"
 							+ ModActAcademica.getIdmodalidad() + "'", null, null,
 					null, null, null);
 			if (cursor.moveToFirst())
