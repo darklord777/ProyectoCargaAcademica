@@ -50,21 +50,25 @@ public final class R {
         public static final int CargoActAcad=0x7f0a00b0;
         public static final int DesHoras=0x7f0a00c0;
         public static final int DescHorasMAA=0x7f0a00e5;
-        public static final int DescHorasMC=0x7f0a00ed;
+        public static final int DescHorasMC=0x7f0a00ef;
         public static final int Desc_Horas_MCurs=0x7f0a00c2;
+        public static final int ModCursoDH_Act=0x7f0a00ed;
+        public static final int ModCursoN_Act=0x7f0a00ec;
+        public static final int ModCursoN_Elim=0x7f0a00f1;
         public static final int NomModCurso=0x7f0a00c6;
         public static final int NombreActAcad=0x7f0a00af;
         public static final int NombreModAA=0x7f0a00c1;
         public static final int NombreModalAA=0x7f0a00e6;
-        public static final int NombreModalCurso=0x7f0a00ee;
+        public static final int NombreModalCurso=0x7f0a00f0;
         public static final int TextView01=0x7f0a00cb;
-        public static final int action_settings=0x7f0a00f8;
+        public static final int action_settings=0x7f0a00fc;
         public static final int botonCargo=0x7f0a00da;
         public static final int botonDepartamento=0x7f0a00d7;
         public static final int botonDocente=0x7f0a00db;
         public static final int botonMateriasImpartir=0x7f0a00d8;
         public static final int botonPeriodo=0x7f0a00d9;
         public static final int btn1TablaCiclo=0x7f0a00ac;
+        public static final int btn1_ElimModC=0x7f0a00f2;
         public static final int btn2TablaCargaAcademica=0x7f0a00ab;
         public static final int btn3DetCargaMateria=0x7f0a00aa;
         public static final int btn4DetCargaActAcademica=0x7f0a00ad;
@@ -105,12 +109,12 @@ public final class R {
         public static final int btnGModAA=0x7f0a00bd;
         public static final int btnGModCurso=0x7f0a00c4;
         public static final int btnGuardarActAcad=0x7f0a00b1;
-        public static final int btnGuardarDepto=0x7f0a00f7;
+        public static final int btnGuardarDepto=0x7f0a00fb;
         public static final int btnGuardarDetGpoAsig=0x7f0a0080;
         public static final int btnGuardarInsertTipoCont=0x7f0a00b7;
         public static final int btnGuardarMateria=0x7f0a000c;
         public static final int btnGuarfarAreaMat=0x7f0a0039;
-        public static final int btnLimpiaDepto=0x7f0a00f4;
+        public static final int btnLimpiaDepto=0x7f0a00f8;
         public static final int btnLocal_Elim=0x7f0a00cf;
         public static final int btnMaterias=0x7f0a00df;
         public static final int btnModActAcad=0x7f0a00d5;
@@ -129,10 +133,10 @@ public final class R {
         public static final int btn_MenuLocal_Cons=0x7f0a00d2;
         public static final int btn_MenuLocal_Elim=0x7f0a00d1;
         public static final int btn_MenuLocal_Ins=0x7f0a00d4;
-        public static final int btn_MenuModalidadCurso_Act=0x7f0a00f2;
-        public static final int btn_MenuModalidadCurso_Cons=0x7f0a00f0;
-        public static final int btn_MenuModalidadCurso_Elim=0x7f0a00f1;
-        public static final int btn_MenuModalidadCurso_Ins=0x7f0a00ef;
+        public static final int btn_MenuModalidadCurso_Act=0x7f0a00f6;
+        public static final int btn_MenuModalidadCurso_Cons=0x7f0a00f4;
+        public static final int btn_MenuModalidadCurso_Elim=0x7f0a00f5;
+        public static final int btn_MenuModalidadCurso_Ins=0x7f0a00f3;
         public static final int btn_MenuModalidad_Act=0x7f0a00e7;
         public static final int btn_MenuModalidad_Cons=0x7f0a00e9;
         public static final int btn_MenuModalidad_Elim=0x7f0a00e8;
@@ -176,7 +180,7 @@ public final class R {
         public static final int edtCodMatAreaMat=0x7f0a0034;
         public static final int edtCodMatDetGpoAsigs=0x7f0a007a;
         public static final int edtCodMateAreaMat=0x7f0a0037;
-        public static final int edtCodMateria=0x7f0a00f3;
+        public static final int edtCodMateria=0x7f0a00f7;
         public static final int edtConsultDeptoAreMat=0x7f0a0033;
         public static final int edtIdAreaMat=0x7f0a0038;
         public static final int edtIdDeptoAreMat=0x7f0a0036;
@@ -186,7 +190,7 @@ public final class R {
         public static final int edtNomDepto=0x7f0a0075;
         public static final int edtNomMateria=0x7f0a000a;
         public static final int idActAcademica=0x7f0a00ae;
-        public static final int idDepto=0x7f0a00f5;
+        public static final int idDepto=0x7f0a00f9;
         public static final int idLocal=0x7f0a00b9;
         public static final int idModalidadAA=0x7f0a00bf;
         public static final int idModalidadCurso=0x7f0a00c3;
@@ -194,7 +198,7 @@ public final class R {
         public static final int limpiarModAA=0x7f0a00be;
         public static final int limpiarModCurso=0x7f0a00c5;
         public static final int msgActualizarMateria=0x7f0a0009;
-        public static final int nomDepto=0x7f0a00f6;
+        public static final int nomDepto=0x7f0a00fa;
         public static final int spin_Select_ModalAA=0x7f0a00b3;
         public static final int spinner1=0x7f0a0030;
         public static final int spinner1_cargaacademica_iddocente_consultar=0x7f0a0040;
@@ -257,7 +261,7 @@ public final class R {
         public static final int spnListaDeptos=0x7f0a0074;
         public static final int spn_Select_Local=0x7f0a00ca;
         public static final int spn_Select_ModAA=0x7f0a00e4;
-        public static final int spn_Select_ModCurso=0x7f0a00ec;
+        public static final int spn_Select_ModCurso=0x7f0a00ee;
         public static final int textLocales=0x7f0a00d0;
         public static final int textMenuModalidad=0x7f0a00eb;
         public static final int textView1=0x7f0a0004;
@@ -443,9 +447,13 @@ public final class R {
     }
     public static final class string {
         public static final int Act_Locales=0x7f070115;
+        public static final int Act_ModCurso=0x7f070118;
+        public static final int ButtonActModalidadC=0x7f07011c;
+        public static final int ButtonEliminarModCurso=0x7f07011b;
         public static final int ConsModCurso=0x7f070060;
         public static final int EditText1a3_updatefechaini=0x7f0700be;
         public static final int EditText2a3_updatefechafin=0x7f0700bf;
+        public static final int ElimModCurso=0x7f070117;
         public static final int TV_ModAA=0x7f070114;
         public static final int TextView1_iddocente=0x7f0700c3;
         public static final int TextView4_1ayuda_consultarcarga=0x7f0700c4;
@@ -603,6 +611,7 @@ public final class R {
         public static final int msgCargoActAcad=0x7f070055;
         public static final int msgConsultDetGpoAsig=0x7f070104;
         public static final int msgDesHModalidadCurso=0x7f07004d;
+        public static final int msgDesHorasModCurso=0x7f07011a;
         public static final int msgDescHorasModAA=0x7f070035;
         public static final int msgDescModalCurso=0x7f070062;
         public static final int msgDetGpoAsignado=0x7f070101;
@@ -618,6 +627,7 @@ public final class R {
         public static final int msgNomModalidadCurso=0x7f07004c;
         public static final int msgNombreActAcad=0x7f070054;
         public static final int msgNombreModAA=0x7f070033;
+        public static final int msgNombreModCurso=0x7f070119;
         public static final int msgTipoCont=0x7f07009b;
         public static final int msgeditTxtCodTipCont=0x7f070095;
         public static final int msgeditTxtHorasTipCont=0x7f070097;
@@ -634,6 +644,7 @@ public final class R {
         public static final int nLocal=0x7f070025;
         public static final int selectCapaLocal=0x7f07005f;
         public static final int selectIdLocal=0x7f07005c;
+        public static final int spinner_EModCurso=0x7f070116;
         public static final int spinner_ModCurso=0x7f070063;
         public static final int spinner_Slocal=0x7f07005d;
         public static final int spinner_anio_ciclo=0x7f0700eb;

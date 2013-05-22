@@ -10,8 +10,39 @@
     tools:context=".ModalidadCursoEliminarActivity" >
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/ElimModCurso" />
+
+    <Spinner
+        android:id="@+id/spn_Select_Local"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:prompt="@string/spinner_EModCurso" />
+
+    <EditText
+        android:id="@+id/ModCursoN_Elim"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spn_Select_Local"
+        android:layout_below="@+id/spn_Select_Local"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/msgNombreModCurso"
+        android:inputType="none" />
+
+    <Button
+        android:id="@+id/btn1_ElimModC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/ButtonEliminarModCurso" />
 
 </RelativeLayout>

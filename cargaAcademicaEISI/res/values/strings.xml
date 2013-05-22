@@ -306,5 +306,12 @@
     <string name="title_activity_actividad_academica_actualizar">ActividadAcademicaActualizarActivity</string>
     <string name="TV_ModAA">Seleccion Modalidad</string>
     <string name="Act_Locales">Seleccionar Local</string>
+    <string name="spinner_EModCurso">Spinner ModCurso</string>
+    <string name="ElimModCurso">Seleccione Curso</string>
+    <string name="Act_ModCurso">Seleccione Curso a Actualizar</string>
+    <string name="msgNombreModCurso">Nombre Modalidad</string>
+    <string name="msgDesHorasModCurso">Descuento Horas</string>
+    <string name="ButtonEliminarModCurso">Eliminar Modalidad</string>
+    <string name="ButtonActModalidadC">Actualizar</string>
 
 </resources>
