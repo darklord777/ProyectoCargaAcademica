@@ -10,8 +10,48 @@
     tools:context=".ModActAcadEliminarActivity" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/TextV_ModAA" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="64dp"
+        android:text="@string/TextView_ElimModaAA" />
+
+    <Spinner
+        android:id="@+id/spn_Elim_ModActA"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:prompt="@string/spinner_SelecModaAA" />
+
+    <EditText
+        android:id="@+id/NombreModalAA"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:ems="10"
+        android:hint="@string/msgModalCurso"
+        android:inputType="none"
+        android:maxLength="4" />
+    <Button
+        android:id="@+id/btn_ModalActividadAcad_Elim"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/NombreModalAA"
+        android:layout_below="@+id/NombreModalAA"
+        android:layout_marginTop="73dp"
+        android:drawableRight="@drawable/clear"
+        android:text="@string/btn3_elim_ActividadAcad"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

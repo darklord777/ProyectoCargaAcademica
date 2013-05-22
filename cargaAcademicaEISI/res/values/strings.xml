@@ -304,9 +304,9 @@
     <string name="title_activity_mod_act_acad_actualizar">ModActAcadActualizarActivity</string>
     <string name="title_activity_actividad_academica_eliminar">ActividadAcademicaEliminarActivity</string>
     <string name="title_activity_actividad_academica_actualizar">ActividadAcademicaActualizarActivity</string>
-    <string name="TV_ModAA">Seleccion Modalidad</string>
+    <string name="TextV_ModAA">Seleccionar Modalidad</string>
     <string name="Act_Locales">Seleccionar Local</string>
-    <string name="spinner_EModCurso">Spinner ModCurso</string>
+    <string name="spinner_EModCurso">Modalidad Curso</string>
     <string name="ElimModCurso">Seleccione Curso</string>
     <string name="Act_ModCurso">Seleccione Curso a Actualizar</string>
     <string name="msgNombreModCurso">Nombre Modalidad</string>
@@ -314,12 +314,20 @@
     <string name="ButtonEliminarModCurso">Eliminar Modalidad</string>
     <string name="ButtonActModalidadC">Actualizar</string>
     <string name="SelecActAcademica">Seleccionar Actividad</string>
-    <string name="spinner_SelActAcad">Spiner ActAcad</string>
+    <string name="spinner_SelActAcad">Actividad Academica</string>
     <string name="msgidSelecActAcad">id Modalidad Act Academica</string>
     <string name="msgSelectActAcad">Nombre de Actividad</string>
     <string name="msgSelectCargoActAcad">Cargo</string>
     <string name="ActActAcademica">Actividad a Actualizar</string>
     <string name="spinner_ActActAcad">spiner Actualizar</string>
     <string name="ButtonActActAcademica">Actualizar Datos</string>
+    <string name="TextView_NombreAA">Nombre de la actividad</string>
+    <string name="btn3_elim_ActividadAcad">Eliminar</string>
+    <string name="TextView_ElimModaAA">Nombre de la modalidad</string>
+    <string name="spinner_SelecModaAA">Modalidad a Eliminar</string>
+    <string name="Act_ModalidadAA">Seleccionar Modalidad</string>
+    <string name="msgDHModalAA">Descuento horas</string>
+    <string name="msgNombreModalAA_Act">Nombre Modalidad</string>
+    <string name="btnActualizarModalAA">Actualizar</string>
 
 </resources>
