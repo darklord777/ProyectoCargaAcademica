@@ -11,47 +11,51 @@
 
   <Button
       android:id="@+id/btnMaterias"
-      android:layout_width="wrap_content"
+      android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:layout_below="@+id/btnDocentes"
       android:layout_centerHorizontal="true"
       android:layout_marginTop="30dp"
       android:background="@drawable/button_custom"
-      android:text="@string/btnMaterias" />
+      android:text="@string/btnMaterias"
+      android:textAppearance="?android:attr/textAppearanceMedium"  />
 
   <Button
       android:id="@+id/btnActividadAcademica"
-      android:layout_width="wrap_content"
+      android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:layout_below="@+id/btnMaterias"
       android:layout_centerHorizontal="true"
       android:layout_marginTop="25dp"
       android:background="@drawable/button_custom"
-      android:text="@string/btnActividadAcademica" />
+      android:text="@string/btnActividadAcademica"
+      android:textAppearance="?android:attr/textAppearanceMedium"  />
 
   <Button
       android:id="@+id/btnDocentes"
-      android:layout_width="wrap_content"
+      android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:layout_below="@+id/btnAdmonCat"
       android:layout_centerHorizontal="true"
       android:layout_marginTop="31dp"
       android:background="@drawable/button_custom"
-      android:text="@string/btnDocente" />
+      android:text="@string/btnDocente"
+      android:textAppearance="?android:attr/textAppearanceMedium"  />
 
   <Button
       android:id="@+id/btnAdmonCat"
-      android:layout_width="wrap_content"
+      android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:layout_alignLeft="@+id/btnDocentes"
       android:layout_alignParentTop="true"
       android:layout_marginTop="40dp"
       android:background="@drawable/button_custom"
-      android:text="@string/btnAdmonCat" />
+      android:text="@string/btnAdmonCat"
+      android:textAppearance="?android:attr/textAppearanceMedium"  />
 
   <Button
       android:id="@+id/btn5A_CargaAcademica"
-      android:layout_width="wrap_content"
+      android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:layout_below="@+id/btnActividadAcademica"
       android:layout_centerHorizontal="true"

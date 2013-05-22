@@ -11,7 +11,7 @@
 
     <Button
         android:id="@+id/botonDepartamento"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/botonMateriasImpartir"
         android:layout_centerHorizontal="true"
@@ -22,7 +22,7 @@
 
     <Button
         android:id="@+id/botonPeriodo"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/botonDepartamento"
         android:layout_centerHorizontal="true"
@@ -33,7 +33,7 @@
 
     <Button
         android:id="@+id/botonCargo"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/botonPeriodo"
         android:layout_alignLeft="@+id/botonPeriodo"
@@ -44,7 +44,7 @@
 
     <Button
         android:id="@+id/botonDocente"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -55,7 +55,7 @@
 
     <Button
         android:id="@+id/botonMateriasImpartir"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"

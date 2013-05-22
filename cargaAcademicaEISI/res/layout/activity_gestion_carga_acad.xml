@@ -11,46 +11,45 @@
 
     <Button
         android:id="@+id/btn3DetCargaMateria"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn2TablaCargaAcademica"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_alignLeft="@+id/btn2TablaCargaAcademica"
+        android:layout_centerVertical="true"
         android:background="@drawable/button_custom"
         android:text="@string/btn3DetCargaMateria"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <Button
-        android:id="@+id/btn1TablaCiclo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="46dp"
-        android:background="@drawable/button_custom"
-        android:text="@string/btn1TablaCiclo"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
         android:id="@+id/btn2TablaCargaAcademica"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn1TablaCiclo"
         android:layout_below="@+id/btn1TablaCiclo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/button_custom"
         android:text="@string/btn2TablaCargaAcademica"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btn1TablaCiclo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:background="@drawable/button_custom"
+        android:text="@string/btn1TablaCiclo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
         android:id="@+id/btn4DetCargaActAcademica"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn3DetCargaMateria"
         android:layout_below="@+id/btn3DetCargaMateria"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="34dp"
         android:background="@drawable/button_custom"
         android:text="@string/btn4DetCargaActAcademica"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

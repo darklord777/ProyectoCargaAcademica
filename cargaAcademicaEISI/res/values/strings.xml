@@ -19,10 +19,10 @@
     <string name="btnLimpiaDepto">Limpiar entradas</string>
     <string name="title_activity_admin_catalogos">AdminCatalogosActivity</string>
     <string name="title_activity_gestion_carga_acad">Gestion Carga Academica</string>
-    <string name="btn1TablaCiclo">Tabla Ciclo</string>
-    <string name="btn2TablaCargaAcademica">Tabla Carga Academica</string>
-    <string name="btn3DetCargaMateria">Tabla Carga Materia</string>
-    <string name="btn4DetCargaActAcademica">Tabla Carga Act Academica</string>
+    <string name="btn1TablaCiclo">Ciclos</string>
+    <string name="btn2TablaCargaAcademica">Carga Academica</string>
+    <string name="btn3DetCargaMateria">Asignacion de Curso</string>
+    <string name="btn4DetCargaActAcademica">Asignacion de Carga Academica</string>
     <string name="btn5A_CargaAcademica">Gestion Carga Academica</string>
     <string name="title_activity_ciclo_insertar">Ingresar Ciclo Academico</string>
     <string name="msgElimDepto">Eliminar Departamento</string>
