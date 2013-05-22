@@ -78,6 +78,6 @@
         android:layout_height="40dp"
         android:layout_alignLeft="@+id/idActAcademica"
         android:layout_below="@+id/idActAcademica"
-        android:prompt="@string/spinner_Slocal" />
+        android:prompt="@string/spinner_SActAcad" />
 
 </RelativeLayout>
