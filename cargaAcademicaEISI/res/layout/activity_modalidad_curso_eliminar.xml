@@ -19,7 +19,7 @@
         android:text="@string/ElimModCurso" />
 
     <Spinner
-        android:id="@+id/spn_Select_Local"
+        android:id="@+id/spn_Select_ModC"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_below="@+id/textView2"
@@ -30,8 +30,8 @@
         android:id="@+id/ModCursoN_Elim"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/spn_Select_Local"
-        android:layout_below="@+id/spn_Select_Local"
+        android:layout_alignLeft="@+id/spn_Select_ModC"
+        android:layout_below="@+id/spn_Select_ModC"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/msgNombreModCurso"
@@ -43,6 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+         android:onClick="eliminarModC"
         android:text="@string/ButtonEliminarModCurso" />
 
 </RelativeLayout>

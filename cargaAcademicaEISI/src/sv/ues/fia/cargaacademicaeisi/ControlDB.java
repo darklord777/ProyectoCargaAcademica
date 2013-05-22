@@ -981,12 +981,22 @@ public class ControlDB {
 	}
 	
 	public String actualizar(Locales local) {
-		String[] id = { local.getIdlocal() };
+		String[] id = {local.getIdlocal() };
 		ContentValues values = new ContentValues();
 		values.put("CAPACIDAD", local.getCapacidad());
 		db.update("LOCALES", values, "IDLOCAL = ?", id);
 		return "Registro actualizado correctamente";
 	}
+	
+	public String actualizar(Modalidad_Curso ModCurso) {
+		String[] id = {ModCurso.getIdmodalidadCurso() };
+		ContentValues values = new ContentValues();
+		values.put("NOM_MODALIDAD", ModCurso.getNom_modalidad());
+		values.put("DESCUENTO_HORAS", ModCurso.getDescuento_horas());
+		db.update("MODALIDAD_CURSO", values, "IDMODALIDAD = ?", id);
+		return "Registro actualizado correctamente";
+	}
+	
 
 	/** METODOS SERGIO */
 

@@ -33,18 +33,10 @@ public class LocalesActualizarActivity extends Activity implements OnItemSelecte
 		helper.abrir();
 		idLocales = helper.getAll_IdLocales();
 		helper.cerrar();
-		adapter = new ArrayAdapter<String>(this,
-				android.R.layout.simple_spinner_item, idLocales);
+		adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, idLocales);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spnListaLocales.setAdapter(adapter);
 		spnListaLocales.setOnItemSelectedListener(this);
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.locales_actualizar, menu);
-		return true;
 	}
 
 	@Override

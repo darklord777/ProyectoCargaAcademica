@@ -5,7 +5,6 @@ public class Modalidad_Curso {
 	public String nom_modalidad;
 	public int descuento_horas;
 
-
 	public Modalidad_Curso(){
 	}
 	
