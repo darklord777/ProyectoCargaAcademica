@@ -141,7 +141,6 @@
     <string name="msgNombreModalAA_Act">Nombre Modalidad</string>
     <string name="btnActualizarModalAA">Actualizar</string>
     <string name="spinner_SActAcad">Seleccionar Modalidad</string>
-
     <!-- Michael -->
 
     <string name="title_activity_eliminar_depto">EliminarDeptoActivity</string>

@@ -14,6 +14,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.Toast;
 
 public class ControlDB {
+	
 	/* Mario */
 	private static final String[] camposDepto = new String[] {
 			"IDDEPARTAMENTO", "NOM_DEPTO" };

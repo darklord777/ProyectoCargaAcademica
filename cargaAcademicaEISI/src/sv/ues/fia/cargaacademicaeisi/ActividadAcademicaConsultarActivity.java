@@ -22,6 +22,7 @@ public class ActividadAcademicaConsultarActivity extends Activity implements OnI
 	private Spinner spnListaActAcad;
 	private List<String> idActA;
 	private ArrayAdapter<String> adapter;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

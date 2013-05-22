@@ -19,7 +19,7 @@
         android:layout_marginTop="34dp"
         android:text="@string/ActActAcademica" />
 
-    <Spinner
+    <Spinner 
         android:id="@+id/spin_Act_ActAcademica"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
