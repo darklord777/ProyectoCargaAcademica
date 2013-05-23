@@ -46,7 +46,7 @@ public final class R {
         public static final int BtnModalidadCurso=0x7f0a0017;
         public static final int BtnTipoCont=0x7f0a0015;
         public static final int CapLocal_Act=0x7f0a00cf;
-        public static final int CapLocal_Elim=0x7f0a00d4;
+        public static final int CapLocal_Elim=0x7f0a00d3;
         public static final int CargoActAcad=0x7f0a0002;
         public static final int DesHoras=0x7f0a00c6;
         public static final int DesHrsModalAA_Act=0x7f0a00ed;
@@ -264,7 +264,7 @@ public final class R {
         public static final int spnElimAreaMateria=0x7f0a003c;
         public static final int spnElimDepto=0x7f0a00af;
         public static final int spnElimMateria=0x7f0a00b0;
-        public static final int spnEliminarLocal=0x7f0a00d3;
+        public static final int spnEliminarLocal=0x7f0a00d4;
         public static final int spnIdDeptoNuevaAreaMat=0x7f0a0042;
         public static final int spnIdDetGpoAsig=0x7f0a007e;
         public static final int spnIdLocNuevoDetGpoAsig=0x7f0a0086;
