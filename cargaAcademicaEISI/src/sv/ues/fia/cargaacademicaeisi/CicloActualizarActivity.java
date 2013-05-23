@@ -29,9 +29,14 @@ public class CicloActualizarActivity extends Activity {
 	private Button boton1_fechafin;
 	private TextView fechaini;
 	private TextView fechafin;
+	private String fecha_ini;
+	private String fecha_fin;
 	private int year;
 	private int month;
 	private int day;
+	private int year2=0;
+	private int month2;
+	private int day2;
 	static final int DATE_DIALOG_ID = 999;
 	private int var;
 
@@ -125,20 +130,51 @@ public class CicloActualizarActivity extends Activity {
 	}
 
 	public void actualizarCiclo(View v) {
-		Ciclo ciclo = new Ciclo();
-		ciclo.setAnio(año);
-		ciclo.setNumero(ciclo1);
-		ciclo.setFechaini(fechaini.getText().toString());
-		ciclo.setFechafin(fechafin.getText().toString());
-		helper.abrir();
-		String estado = helper.actualizar(ciclo);
-		helper.cerrar();
-		Toast.makeText(this, estado, Toast.LENGTH_SHORT).show();
-		fechaini.setText("");
-		fechafin.setText("");
-		//valores por defecto spinner
-		spinner_anio.setSelection(0);
-		spinner_ciclo.setSelection(0);
+		fecha_ini=fechaini.getText().toString();
+		fecha_fin=fechafin.getText().toString();
+
+
+		if (fecha_ini.equalsIgnoreCase("") || fecha_fin.equalsIgnoreCase("")) {
+			String msj = "Importante: Todos los campos son obligatorios!";
+			Toast.makeText(this, msj, Toast.LENGTH_SHORT).show();
+		} else {
+			if(year<=year2 && month<month2){
+				if(year==Integer.parseInt(año) && year2==Integer.parseInt(año)){
+					//******************************
+					Ciclo ciclo = new Ciclo();
+					ciclo.setAnio(año);
+					ciclo.setNumero(ciclo1);
+					ciclo.setFechaini(fechaini.getText().toString());
+					ciclo.setFechafin(fechafin.getText().toString());
+					helper.abrir();
+					String estado = helper.actualizar(ciclo);
+					helper.cerrar();
+					Toast.makeText(this, estado, Toast.LENGTH_SHORT).show();
+					fechaini.setText("");
+					fechafin.setText("");
+					//valores por defecto spinner
+					spinner_anio.setSelection(0);
+					spinner_ciclo.setSelection(0);
+					//*******************************
+				}else{
+					String msj3 = "Importante: El año de fecha inicio y fin debe coincidir con el año del ciclo que selecionado anteriormente!";
+					Toast.makeText(this, msj3, Toast.LENGTH_SHORT).show();
+				}//fin else año correcto segun spinner
+			
+			}
+			else{
+				if(year2==0){
+					String msj2 = "Importante: Debe actualizar las fechas inicio y fin para poder realizar la accion!";
+					Toast.makeText(this, msj2, Toast.LENGTH_SHORT).show();
+				}else{
+					String msj2 = "Importante: La fecha de inicio de Ciclo debe ser Menor que la Fecha Fin!";
+					Toast.makeText(this, msj2, Toast.LENGTH_SHORT).show();
+				}
+			}//fin else validacion fecha
+	   }//fin else validacion campos vacios
+		
+		
+		
 	}
 
 	
@@ -187,20 +223,23 @@ public class CicloActualizarActivity extends Activity {
 				// when dialog box is closed, below method will be called.
 				public void onDateSet(DatePicker view, int selectedYear,
 						int selectedMonth, int selectedDay) {
-					year = selectedYear;
-					month = selectedMonth;
-					day = selectedDay;
 
 					// set selected date into textview
 					if(var==0){
-					fechaini.setText(new StringBuilder().append(day)
+						year = selectedYear;
+						month = selectedMonth;
+						day = selectedDay;
+						fechaini.setText(new StringBuilder().append(day)
 							.append("/").append(month + 1).append("/").append(year)
 							.append(""));
 					}
 					else{
-						fechafin.setText(new StringBuilder().append(day)
-								.append("/").append(month + 1).append("/").append(year)
-								.append(""));
+						year2 = selectedYear;
+						month2 = selectedMonth;
+						day2 = selectedDay;
+						fechafin.setText(new StringBuilder().append(day2)
+								.append("/").append(month2 + 1).append("/").append(year2)
+								.append(""));		
 					}
 				}
 			};
