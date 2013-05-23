@@ -32,7 +32,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginBottom="150dp"
         android:drawableRight="@drawable/save"
-        android:onClick="actualizarLocal"
+        android:onClick="actualizarModAA"
         android:text="@string/btnActualizarModalAA"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 

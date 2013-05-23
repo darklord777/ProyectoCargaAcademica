@@ -102,13 +102,13 @@
     <string name="title_activity_mod_act_acad_consultar_main">Consultar Modalidad</string>
     <string name="title_activity_modalidad_curso_consultar">Cosultar Modalidad de Curso</string>
     <string name="selectIdLocal">Seleccione Local</string>
-    <string name="spinner_Slocal">Selecionar Local</string>
+    <string name="spinner_Slocal">Seleccionar Local</string>
     <string name="msgCapacLocal">Capacidad Local</string>
     <string name="selectCapaLocal">Capacidad del Local</string>
     <string name="ConsModCurso">Seleccionar id de Modalidad</string>
     <string name="msgModalCurso">Nombre de Modalidad</string>
     <string name="msgDescModalCurso">Descuento Horas</string>
-    <string name="spinner_ModCurso">Spinner ModCurso</string>
+    <string name="spinner_ModCurso">Modalidad Curso</string>
     <string name="title_activity_modalidad_curso_eliminar">Eliminar Modalidad de Curso</string>
     <string name="title_activity_modalidad_curso_actualizar">Actualizar Modalidad de Curso</string>
     <string name="title_activity_mod_act_acad_eliminar">Eliminar Modalidad Actividad Academica</string>
@@ -130,7 +130,7 @@
     <string name="msgSelectActAcad">Nombre de Actividad</string>
     <string name="msgSelectCargoActAcad">Cargo</string>
     <string name="ActActAcademica">Actividad a Actualizar</string>
-    <string name="spinner_ActActAcad">spiner Actualizar</string>
+    <string name="spinner_ActActAcad">Actualizar</string>
     <string name="ButtonActActAcademica">Actualizar Datos</string>
     <string name="TextView_NombreAA">Nombre de la actividad</string>
     <string name="btn3_elim_ActividadAcad">Eliminar</string>
@@ -141,6 +141,14 @@
     <string name="msgNombreModalAA_Act">Nombre Modalidad</string>
     <string name="btnActualizarModalAA">Actualizar</string>
     <string name="spinner_SActAcad">Seleccionar Modalidad</string>
+    <string name="title_activity_menu_act_academicas">Menu Actividades Academicas</string>
+    <string name="title_activity_locales_eliminar">Eliminar Locales</string>
+    <string name="TextViewElimLocal">Eliminar Local</string>
+    <string name="msgCapacidadLocal">Capacidad del Local</string>
+    <string name="btnEliminarLocal">Realizar</string>
+    <string name="title_activity_locales_actualizar">Actualizar Locales</string>
+    <string name="title_activity_locales_consultar">Consultar Locales</string>
+    
     <!-- Michael -->
 
     <string name="title_activity_eliminar_depto">EliminarDeptoActivity</string>
@@ -210,6 +218,7 @@
 
     <!-- menu docente -->
     <string name="title_activity_menu_docentes">MenuDocentesActivity</string>
+    <string name="title_activity_menu_docente">MenuDocenteActivity</string>    
     <string name="botonDocente">Docentes</string>
     <string name="botonCargo">Cargos de Docentes</string>
     <string name="botonPeriodo">Periodos de Cargos</string>
@@ -227,15 +236,6 @@
     <string name="msgInsertNombre">Nombre o Tipo del Contrato</string>
     <string name="msgInsertHoras">Horas del Contrato</string>
     <!-- fin YO -->
-
-    <string name="title_activity_menu_docente">MenuDocenteActivity</string>
-    <string name="title_activity_menu_act_academicas">MenuActAcademicasActivity</string>
-    <string name="title_activity_locales_eliminar">LocalesEliminarActivity</string>
-    <string name="TextViewElimLocal">Eliminar Local</string>
-    <string name="msgCapacidadLocal">Capacidad del Local</string>
-    <string name="btnEliminarLocal">Realizar</string>
-    <string name="title_activity_locales_actualizar">LocalesActualizarActivity</string>
-    <string name="title_activity_locales_consultar">LocalesConsultarActivity</string>
 
     <!-- alexis todavia no ordenado -->
     <string name="title_activity_carga_academica_menu">Menu Gestion de Carga Academica</string>

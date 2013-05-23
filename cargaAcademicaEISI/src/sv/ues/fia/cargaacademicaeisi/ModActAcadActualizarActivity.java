@@ -19,7 +19,7 @@ public class ModActAcadActualizarActivity extends Activity implements OnItemSele
 	private Spinner spnActModAA;
 	private EditText edtNomModAA;
 	private EditText DesHrsModAA;
-	private List<String> idMaterias;
+	private List<String> idModAA;
 	private ArrayAdapter<String> adapter;
 	
 	@Override
@@ -28,7 +28,7 @@ public class ModActAcadActualizarActivity extends Activity implements OnItemSele
 		setContentView(R.layout.activity_mod_act_acad_actualizar);
 	}
 	
-	public void guardarMateria(View v) {
+	public void actualizarModAA(View v) {
 		if (!edtNomModAA.getText().toString().trim().equals("")) {
 			String regInsertados;
 			Modalidad_Act_Acad ModActAcad = new Modalidad_Act_Acad();

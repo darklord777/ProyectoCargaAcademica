@@ -1,22 +1,67 @@
 package sv.ues.fia.cargaacademicaeisi;
 
+import java.util.List;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.AdapterView.OnItemSelectedListener;
 
-public class ActividadAcademicaActualizarActivity extends Activity {
+public class ActividadAcademicaActualizarActivity extends Activity implements
+			OnItemSelectedListener {
+	
+	private ControlDB helper;
+	private Spinner spnActIdActAcad;
+	private EditText edtActNomAct;
+	private EditText edtActCargo;
+	private List<String> idActAcad;
+	private ArrayAdapter<String> adapter;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_actividad_academica_actualizar);
-	}
- 
+		
+		helper = new ControlDB(this);
+		spnActIdActAcad = (Spinner) findViewById(R.id.spin_Act_ActAcademica);
+		edtActNomAct = (EditText) findViewById(R.id.SelNombreActAcad);
+		edtActNomAct = (EditText) findViewById(R.id.CargoActAcad);
+
+		helper.abrir();
+		idActAcad = helper.getAll_IdActA();
+		helper.cerrar();
+		adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, idActAcad);
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spnActIdActAcad.setAdapter(adapter);
+		spnActIdActAcad.setOnItemSelectedListener(this);
+	}	
+
 	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.actividad_academica_actualizar, menu);
-		return true;
+	public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2,
+			long arg3) {
+		// TODO Auto-generated method stub
+		String idActA = arg0.getItemAtPosition(arg2).toString();
+		Actividad_Academica ActA = new Actividad_Academica();
+		helper.abrir();
+		ActA = helper.consultarActAcademica(idActA);
+		helper.cerrar();
+		edtActNomAct.setText(ActA.getNom_act_acad());
+		edtActCargo.setText(ActA.getCargo());
+	}
+	
+	public void ActualizarActAcademica(View v) {
+		
+	}
+
+	@Override
+	public void onNothingSelected(AdapterView<?> arg0) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
