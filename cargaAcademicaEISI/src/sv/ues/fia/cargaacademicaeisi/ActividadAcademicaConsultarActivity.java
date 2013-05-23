@@ -35,10 +35,9 @@ public class ActividadAcademicaConsultarActivity extends Activity implements OnI
 		spnListaActAcad = (Spinner) findViewById(R.id.spin_Select_ActAcademica);
 		
 		helper.abrir();
-		idActA = helper.getAll_IdModAA();
+		idActA = helper.getAll_IdActA();
 		helper.cerrar();
-		adapter = new ArrayAdapter<String>(this,
-				android.R.layout.simple_spinner_item, idActA);
+		adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, idActA);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spnListaActAcad.setAdapter(adapter);
 		spnListaActAcad.setOnItemSelectedListener(this);
@@ -59,7 +58,7 @@ public class ActividadAcademicaConsultarActivity extends Activity implements OnI
 		Actividad_Academica ActiAcad = helper.consultarActAcademica(idActAcademica);
 		helper.cerrar();
 		if (ActiAcad == null) {
-			Toast.makeText(this,"Identificador de departemento: " + idActAcademica
+			Toast.makeText(this,"Identificador de Actividad: " + idActAcademica
 							+ ". No existe.", Toast.LENGTH_LONG).show();
 		} else {
 			idModalAA.setText(ActiAcad.getIdmodalidad());
