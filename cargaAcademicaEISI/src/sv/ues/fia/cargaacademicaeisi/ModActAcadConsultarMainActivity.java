@@ -62,7 +62,7 @@ public class ModActAcadConsultarMainActivity extends Activity  implements OnItem
 		} else {
 			NombreModAA.setText(ModalAA.getNom_modalidad());
 			Toast.makeText(this, "Valor de item=" + idModActA, Toast.LENGTH_LONG).show();
-			DesHrsModAA.setText(ModalAA.getDescuento_horas());
+			DesHrsModAA.setText(String.valueOf(ModalAA.getDescuento_horas()));
 			Toast.makeText(this, "Valor de item=" + idModActA, Toast.LENGTH_LONG).show();
 		}
 	}

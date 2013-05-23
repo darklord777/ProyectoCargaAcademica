@@ -27,8 +27,8 @@ public class ModActAcadEliminarActivity extends Activity  implements OnItemSelec
 		setContentView(R.layout.activity_mod_act_acad_eliminar);
 		
 		helper = new ControlDB(this);
-		spnEliminarModAA = (Spinner) findViewById(R.id.spn_Select_ModC);
-		NombreModAA_Elim = (EditText) findViewById(R.id.ModCursoN_Elim);
+		spnEliminarModAA = (Spinner) findViewById(R.id.spn_Elim_ModActA);
+		NombreModAA_Elim = (EditText) findViewById(R.id.NombreModalAA);
 		helper.abrir();
 		idModalAA = helper.getAllIdModCurso();
 		helper.cerrar();		
