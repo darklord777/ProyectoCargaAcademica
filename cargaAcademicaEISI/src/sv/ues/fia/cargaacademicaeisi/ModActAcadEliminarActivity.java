@@ -30,7 +30,7 @@ public class ModActAcadEliminarActivity extends Activity  implements OnItemSelec
 		spnEliminarModAA = (Spinner) findViewById(R.id.spn_Elim_ModActA);
 		NombreModAA_Elim = (EditText) findViewById(R.id.NombreModalAA);
 		helper.abrir();
-		idModalAA = helper.getAllIdModCurso();
+		idModalAA = helper.getAll_IdModAA();
 		helper.cerrar();		
 		adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, idModalAA);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

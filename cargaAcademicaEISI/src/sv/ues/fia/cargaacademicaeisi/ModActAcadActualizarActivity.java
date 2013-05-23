@@ -26,24 +26,37 @@ public class ModActAcadActualizarActivity extends Activity implements OnItemSele
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_mod_act_acad_actualizar);
+		
+		helper = new ControlDB(this);
+		edtNomModAA = (EditText) findViewById(R.id.NombreModalAA_Act);
+		DesHrsModAA = (EditText) findViewById(R.id.DesHrsModalAA_Act);
+		spnActModAA = (Spinner) findViewById(R.id.spnActIdModalAA);
+
+		helper.abrir();
+		idModAA = helper.getAll_IdModAA();
+		helper.cerrar();
+		adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, idModAA);
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spnActModAA.setAdapter(adapter);
+		spnActModAA.setOnItemSelectedListener(this);
 	}
 	
 	public void actualizarModAA(View v) {
-		if (!edtNomModAA.getText().toString().trim().equals("")) {
+		if (!edtNomModAA.getText().toString().trim().equals("") || !DesHrsModAA.getText().toString().trim().equals("")) {
 			String regInsertados;
 			Modalidad_Act_Acad ModActAcad = new Modalidad_Act_Acad();
 			ModActAcad.setIdmodalidad(spnActModAA.getSelectedItem().toString());
+			ModActAcad.setNom_modalidad(edtNomModAA.getText().toString());
+			ModActAcad.setDescuento_horas(Integer.valueOf(DesHrsModAA.getText().toString()));
 			helper.abrir();
 			regInsertados = helper.actualizar(ModActAcad);
 			helper.cerrar();
 			Toast.makeText(this, regInsertados, Toast.LENGTH_LONG).show();
 		} else {
 			edtNomModAA.setText("");
-			Toast.makeText(this, "El nombre de la modalidad es obligatorio.",
-					Toast.LENGTH_LONG).show();
+			Toast.makeText(this, "El nombre de la modalidad es obligatorio.",Toast.LENGTH_LONG).show();
 			DesHrsModAA.setText("");
-			Toast.makeText(this, "Las horas de descuento es obligatorio.",
-					Toast.LENGTH_LONG).show();
+			Toast.makeText(this, "Las horas de descuento es obligatorio.", Toast.LENGTH_LONG).show();
 		}
 
 	}
@@ -65,7 +78,7 @@ public class ModActAcadActualizarActivity extends Activity implements OnItemSele
 		MAA = helper.consultarModActAcad(idModalAA);
 		helper.cerrar();
 		edtNomModAA.setText(MAA.getNom_modalidad());
-		DesHrsModAA.setText(MAA.getDescuento_horas());
+		DesHrsModAA.setText(String.valueOf(MAA.getDescuento_horas()));
 	}
 
 	@Override
