@@ -32,8 +32,7 @@ public class LocalesConsultarActivity extends Activity implements OnItemSelected
 		helper.abrir();
 		idLocales = helper.getAll_IdLocales();
 		helper.cerrar();
-		adapter = new ArrayAdapter<String>(this,
-				android.R.layout.simple_spinner_item, idLocales);
+		adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, idLocales);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spnListaLocales.setAdapter(adapter);
 		spnListaLocales.setOnItemSelectedListener(this);
@@ -54,7 +53,7 @@ public class LocalesConsultarActivity extends Activity implements OnItemSelected
 		Locales local = helper.consultarLocal(idLocal);
 		helper.cerrar();
 		if (local == null) {
-			Toast.makeText(this,"Identificador de departemento: " + idLocal
+			Toast.makeText(this,"Identificador de local: " + idLocal
 							+ ". No existe.", Toast.LENGTH_LONG).show();
 		} else {
 			CapLocales.setText(local.getCapacidad());

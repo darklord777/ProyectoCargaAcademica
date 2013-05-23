@@ -27,8 +27,8 @@ public class LocalesActualizarActivity extends Activity implements OnItemSelecte
 		setContentView(R.layout.activity_locales_actualizar);
 		
 		helper = new ControlDB(this);
-		CapLocales = (EditText) findViewById(R.id.capacidadLocal);
-		spnListaLocales = (Spinner) findViewById(R.id.spn_Select_Local);
+		CapLocales = (EditText) findViewById(R.id.CapLocal_Act);
+		spnListaLocales = (Spinner) findViewById(R.id.spnActIdLocales);
 
 		helper.abrir();
 		idLocales = helper.getAll_IdLocales();
@@ -57,14 +57,18 @@ public class LocalesActualizarActivity extends Activity implements OnItemSelecte
 	}
 
 	@Override
-	public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2,long arg3) {
-		// TODO Auto-generated method stub
-		String idLocal = arg0.getItemAtPosition(arg2).toString();
-		Locales local = new Locales();
+	public void onItemSelected(AdapterView<?> parent, View v, int pos, long id) {
+		String idLocal = parent.getItemAtPosition(pos).toString();
 		helper.abrir();		
-		local = helper.consultarLocal(idLocal);
+		Locales local = helper.consultarLocal(idLocal);
 		helper.cerrar();
-		CapLocales.setText(local.getCapacidad());		
+		if (local == null) {
+			Toast.makeText(this,"Identificador de departemento: " + idLocal
+							+ ". No existe.", Toast.LENGTH_LONG).show();
+		} else {
+			CapLocales.setText(local.getCapacidad());
+			Toast.makeText(this, "Valor de item=" + idLocal, Toast.LENGTH_LONG).show();
+		}
 	}
 
 	@Override
