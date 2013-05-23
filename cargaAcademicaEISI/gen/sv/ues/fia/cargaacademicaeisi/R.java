@@ -51,7 +51,6 @@ public final class R {
         public static final int DesHoras=0x7f0a00c6;
         public static final int DesHrsModalAA_Act=0x7f0a00ed;
         public static final int DescHorasMAA=0x7f0a00ef;
-        public static final int DescHorasMC=0x7f0a00fb;
         public static final int Desc_Horas_MCurs=0x7f0a00c8;
         public static final int ModCursoDH_Act=0x7f0a00f9;
         public static final int ModCursoN_Act=0x7f0a00f8;
@@ -61,8 +60,9 @@ public final class R {
         public static final int NombreModAA=0x7f0a00c7;
         public static final int NombreModalAA=0x7f0a00f0;
         public static final int NombreModalAA_Act=0x7f0a00ec;
-        public static final int NombreModalCurso=0x7f0a00fc;
         public static final int SelNombreActAcad=0x7f0a0003;
+        public static final int SelectDescHorasMC=0x7f0a00fb;
+        public static final int SelectNombreModalCurso=0x7f0a00fc;
         public static final int TextView01=0x7f0a00d1;
         public static final int action_settings=0x7f0a0109;
         public static final int botonCargo=0x7f0a00e0;
@@ -274,7 +274,7 @@ public final class R {
         public static final int spn_Select_Local=0x7f0a00d0;
         public static final int spn_Select_ModAA=0x7f0a00ee;
         public static final int spn_Select_ModC=0x7f0a00fd;
-        public static final int spn_Select_ModCurso=0x7f0a00fa;
+        public static final int spn_Select_ModalidadCurso=0x7f0a00fa;
         public static final int textLocales=0x7f0a00d6;
         public static final int textMenuModalidad=0x7f0a00f7;
         public static final int textView1=0x7f0a0000;

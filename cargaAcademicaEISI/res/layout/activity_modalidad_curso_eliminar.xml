@@ -20,7 +20,7 @@
  
     <Spinner
         android:id="@+id/spn_Select_ModC"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="40dp"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
@@ -39,7 +39,7 @@
 
     <Button
         android:id="@+id/btn1_ElimModC"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"

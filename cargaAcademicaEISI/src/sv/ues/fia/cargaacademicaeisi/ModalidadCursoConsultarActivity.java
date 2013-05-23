@@ -27,9 +27,9 @@ public class ModalidadCursoConsultarActivity extends Activity implements OnItemS
 		setContentView(R.layout.activity_modalidad_curso_consultar);
 		
 		helper = new ControlDB(this);
-		NombreModCurso = (EditText) findViewById(R.id.NombreModalCurso);
-		DesHrsModCurso = (EditText) findViewById(R.id.DescHorasMC);
-		spnListaModalidadCurso = (Spinner) findViewById(R.id.spn_Select_ModCurso);
+		NombreModCurso = (EditText) findViewById(R.id.SelectNombreModalCurso);
+		DesHrsModCurso = (EditText) findViewById(R.id.SelectDescHorasMC);
+		spnListaModalidadCurso = (Spinner) findViewById(R.id.spn_Select_ModalidadCurso);
 		
 		helper.abrir();
 		idModalidadC = helper.getAllIdModCurso();
@@ -56,12 +56,12 @@ public class ModalidadCursoConsultarActivity extends Activity implements OnItemS
 		Modalidad_Curso ModCurso = helper.consultarModCurso(idModCurso);
 		helper.cerrar();
 		if (ModCurso == null) {
-			Toast.makeText(this,"Identificador de departemento: " + idModCurso
+			Toast.makeText(this,"Identificador de Modalidad: " + idModCurso
 							+ ". No existe.", Toast.LENGTH_LONG).show();
 		} else {
 			NombreModCurso.setText(ModCurso.getNom_modalidad());
 			Toast.makeText(this, "Valor de item=" + idModCurso, Toast.LENGTH_LONG).show();
-			DesHrsModCurso.setText(ModCurso.getDescuento_horas());
+			DesHrsModCurso.setText(String.valueOf(ModCurso.getDescuento_horas()));
 			Toast.makeText(this, "Valor de item=" + idModCurso, Toast.LENGTH_LONG).show();
 		}
 	}

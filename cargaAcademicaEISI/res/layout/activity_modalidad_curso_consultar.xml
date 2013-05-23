@@ -1,3 +1,4 @@
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,8 +17,8 @@
         android:text="@string/ConsModCurso" />
  
     <Spinner
-        android:id="@+id/spn_Select_ModCurso"
-        android:layout_width="wrap_content"
+        android:id="@+id/spn_Select_ModalidadCurso"
+        android:layout_width="fill_parent"
         android:layout_height="40dp"
         android:layout_alignLeft="@+id/textView1"
         android:layout_below="@+id/textView1"
@@ -25,25 +26,22 @@
         android:prompt="@string/spinner_ModCurso" />
 
     <EditText
-        android:id="@+id/DescHorasMC"
+        android:id="@+id/SelectDescHorasMC"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/spn_Select_ModCurso"
-        android:layout_below="@+id/spn_Select_ModCurso"
+        android:layout_alignLeft="@+id/spn_Select_ModalidadCurso"
+        android:layout_below="@+id/spn_Select_ModalidadCurso"
         android:layout_marginTop="100dp"
         android:ems="10"
         android:hint="@string/msgDescModalCurso"
         android:inputType="none"
-        android:maxLength="4" >
-
-        <requestFocus />
-    </EditText>
-
+        android:maxLength="4" />
+    
     <EditText
-        android:id="@+id/NombreModalCurso"
+        android:id="@+id/SelectNombreModalCurso"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/spn_Select_ModCurso"
+        android:layout_below="@+id/spn_Select_ModalidadCurso"
         android:layout_marginTop="42dp"
         android:ems="10"
         android:hint="@string/msgModalCurso"
