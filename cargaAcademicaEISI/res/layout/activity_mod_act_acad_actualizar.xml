@@ -53,6 +53,7 @@
         android:layout_alignLeft="@+id/NombreModalAA_Act"
         android:layout_below="@+id/NombreModalAA_Act"
         android:ems="10"
+        android:inputType="number"
         android:hint="@string/msgDHModalAA" />
 
 </RelativeLayout>

@@ -42,16 +42,18 @@
         android:layout_alignLeft="@+id/ModCursoN_Act"
         android:layout_below="@+id/ModCursoN_Act"
         android:ems="10"
+        android:inputType="number"
         android:hint="@string/msgDesHorasModCurso" />
     
     <Button
         android:id="@+id/actualizarModCurso"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ModCursoDH_Act"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
         android:onClick="ActualizarModCurso"
+        android:drawableRight="@drawable/save2"        
         android:text="@string/ButtonActModalidadC" />
 
 </RelativeLayout>

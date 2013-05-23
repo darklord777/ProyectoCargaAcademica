@@ -33,6 +33,7 @@
         android:layout_below="@+id/spnActIdLocales"
         android:layout_centerHorizontal="true"
         android:ems="10"
+        android:inputType="number"
         android:hint="@string/msgCapacidadLocal"/>
 
     <Button
