@@ -38,28 +38,6 @@ public class LocalesActualizarActivity extends Activity implements OnItemSelecte
 		spnListaLocales.setAdapter(adapter);
 		spnListaLocales.setOnItemSelectedListener(this);
 	}
-
-	@Override
-	public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2,long arg3) {
-		// TODO Auto-generated method stub
-		String idLocal = arg0.getItemAtPosition(arg2).toString();
-		helper.abrir();		
-		Locales local = helper.consultarLocal(idLocal);
-		helper.cerrar();
-		if (local == null) {
-			Toast.makeText(this,"Identificador de local: " + idLocal
-							+ ". No existe.", Toast.LENGTH_LONG).show();
-		} else {
-			CapLocales.setText(local.getCapacidad());
-			Toast.makeText(this, "Valor de item=" + idLocal, Toast.LENGTH_LONG).show();
-		}
-	}
-
-	@Override
-	public void onNothingSelected(AdapterView<?> arg0) {
-		// TODO Auto-generated method stub
-		
-	}
 	
 	public void actualizarLocal(View v) {
 		if (!CapLocales.getText().toString().trim().equals("")) {
@@ -77,4 +55,23 @@ public class LocalesActualizarActivity extends Activity implements OnItemSelecte
 		}
 
 	}
+
+	@Override
+	public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2,long arg3) {
+		// TODO Auto-generated method stub
+		String idLocal = arg0.getItemAtPosition(arg2).toString();
+		Locales local = new Locales();
+		helper.abrir();		
+		local = helper.consultarLocal(idLocal);
+		helper.cerrar();
+		CapLocales.setText(local.getCapacidad());		
+	}
+
+	@Override
+	public void onNothingSelected(AdapterView<?> arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
 }
