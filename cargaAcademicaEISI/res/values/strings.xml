@@ -148,7 +148,8 @@
     <string name="btnEliminarLocal">Realizar</string>
     <string name="title_activity_locales_actualizar">Actualizar Locales</string>
     <string name="title_activity_locales_consultar">Consultar Locales</string>
-    
+    <string name="ActNombre_AA">Nombre Actividad</string>
+    <string name="ActCargo_ActAcademica">Cargo</string>
     <!-- Michael -->
 
     <string name="title_activity_eliminar_depto">EliminarDeptoActivity</string>
