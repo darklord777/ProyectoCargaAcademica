@@ -102,6 +102,9 @@ public class CicloEliminarActivity extends Activity {
 		regEliminadas = helper.eliminar(ciclo);
 		helper.cerrar();
 		Toast.makeText(this, regEliminadas, Toast.LENGTH_SHORT).show();
+		//valores por defecto spinner
+		spinner_anio.setSelection(0);
+		spinner_ciclo.setSelection(0);
 
 	}
 

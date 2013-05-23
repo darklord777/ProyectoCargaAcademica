@@ -136,6 +136,9 @@ public class CicloActualizarActivity extends Activity {
 		Toast.makeText(this, estado, Toast.LENGTH_SHORT).show();
 		fechaini.setText("");
 		fechafin.setText("");
+		//valores por defecto spinner
+		spinner_anio.setSelection(0);
+		spinner_ciclo.setSelection(0);
 	}
 
 	

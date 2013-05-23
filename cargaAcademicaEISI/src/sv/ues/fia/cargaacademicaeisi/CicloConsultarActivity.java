@@ -120,6 +120,9 @@ public class CicloConsultarActivity extends Activity {
 
 		iniciofecha.setText("");
 		finfecha.setText("");
+		//valores por defecto spinner
+		spinner_anio.setSelection(0);
+		spinner_ciclo.setSelection(0);
 	}
 
 	@Override

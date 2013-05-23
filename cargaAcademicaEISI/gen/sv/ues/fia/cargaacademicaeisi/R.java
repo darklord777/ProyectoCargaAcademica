@@ -477,7 +477,7 @@ public final class R {
         public static final int TextView4_2ayuda_consultarcarga=0x7f0700e5;
         public static final int TextView4_3ayuda_consultarcarga=0x7f0700e6;
         public static final int TextViewActividadAcad=0x7f070045;
-        public static final int TextViewElimLocal=0x7f0700d2;
+        public static final int TextViewElimLocal=0x7f070086;
         public static final int TextViewLocales=0x7f070032;
         public static final int TextViewModAA=0x7f070036;
         public static final int TextViewModC=0x7f07004e;
@@ -487,13 +487,13 @@ public final class R {
         public static final int TextView_NombreAA=0x7f07007b;
         public static final int action_settings=0x7f070001;
         public static final int app_name=0x7f070000;
-        public static final int bntNuevaAreaMat=0x7f070098;
-        public static final int botonCargo=0x7f0700c2;
-        public static final int botonDepartamento=0x7f0700c4;
-        public static final int botonDocente=0x7f0700c1;
-        public static final int botonMateriasImpartir=0x7f0700c5;
-        public static final int botonPeriodo=0x7f0700c3;
-        public static final int botonTipoContrato=0x7f0700bc;
+        public static final int bntNuevaAreaMat=0x7f07009f;
+        public static final int botonCargo=0x7f0700ca;
+        public static final int botonDepartamento=0x7f0700cc;
+        public static final int botonDocente=0x7f0700c9;
+        public static final int botonMateriasImpartir=0x7f0700cd;
+        public static final int botonPeriodo=0x7f0700cb;
+        public static final int botonTipoContrato=0x7f0700c3;
         public static final int btn1TablaCiclo=0x7f070010;
         public static final int btn1_insertar_ActividadAcad=0x7f070046;
         public static final int btn1_insertar_Modalidad=0x7f07003a;
@@ -517,42 +517,42 @@ public final class R {
         public static final int btn4_actualizar_local=0x7f070031;
         public static final int btn5A_CargaAcademica=0x7f070014;
         public static final int btnActAcad=0x7f070029;
-        public static final int btnActMateria=0x7f070088;
-        public static final int btnActividadAcademica=0x7f0700bd;
-        public static final int btnActualizarContrato=0x7f0700a9;
+        public static final int btnActMateria=0x7f07008f;
+        public static final int btnActividadAcademica=0x7f0700c4;
+        public static final int btnActualizarContrato=0x7f0700b0;
         public static final int btnActualizarDepto=0x7f07001b;
         public static final int btnActualizarDetGpoAsig=0x7f07011f;
-        public static final int btnActualizarDocente=0x7f0700a4;
+        public static final int btnActualizarDocente=0x7f0700ab;
         public static final int btnActualizarModalAA=0x7f070082;
-        public static final int btnAdmonAreaMateria=0x7f0700a0;
+        public static final int btnAdmonAreaMateria=0x7f0700a7;
         public static final int btnAdmonCat=0x7f070005;
         /**  Alexis 
  Alexis 
          */
         public static final int btnAdmonDepto=0x7f070017;
         public static final int btnAdmonDetGpoAsig=0x7f07012d;
-        public static final int btnAsigDocDepto=0x7f0700ad;
-        public static final int btnAsigMatDoc=0x7f0700b1;
-        public static final int btnConsultarAreaMat=0x7f07009c;
-        public static final int btnConsultarContrato=0x7f0700aa;
+        public static final int btnAsigDocDepto=0x7f0700b4;
+        public static final int btnAsigMatDoc=0x7f0700b8;
+        public static final int btnConsultarAreaMat=0x7f0700a3;
+        public static final int btnConsultarContrato=0x7f0700b1;
         public static final int btnConsultarDepto=0x7f070019;
         public static final int btnConsultarDetGpoAsig=0x7f07011e;
-        public static final int btnConsultarDocDepto=0x7f0700ae;
-        public static final int btnConsultarDocente=0x7f0700a5;
-        public static final int btnConsultarMatDoc=0x7f0700b2;
-        public static final int btnConsultarMateria=0x7f070087;
+        public static final int btnConsultarDocDepto=0x7f0700b5;
+        public static final int btnConsultarDocente=0x7f0700ac;
+        public static final int btnConsultarMatDoc=0x7f0700b9;
+        public static final int btnConsultarMateria=0x7f07008e;
         /**  sistema 
          */
-        public static final int btnDocente=0x7f0700b9;
-        public static final int btnEliminarAreaMat=0x7f07009f;
-        public static final int btnEliminarContrato=0x7f0700ab;
+        public static final int btnDocente=0x7f0700c0;
+        public static final int btnEliminarAreaMat=0x7f0700a6;
+        public static final int btnEliminarContrato=0x7f0700b2;
         public static final int btnEliminarDepto=0x7f07001c;
         public static final int btnEliminarDetGpoAsig=0x7f070120;
-        public static final int btnEliminarDocDepto=0x7f0700af;
-        public static final int btnEliminarDocente=0x7f0700a6;
-        public static final int btnEliminarLocal=0x7f0700d4;
-        public static final int btnEliminarMatDoc=0x7f0700b3;
-        public static final int btnEliminarMateria=0x7f070089;
+        public static final int btnEliminarDocDepto=0x7f0700b6;
+        public static final int btnEliminarDocente=0x7f0700ad;
+        public static final int btnEliminarLocal=0x7f070088;
+        public static final int btnEliminarMatDoc=0x7f0700ba;
+        public static final int btnEliminarMateria=0x7f070090;
         /**  sistema 
          */
         public static final int btnEntrarSistema=0x7f070004;
@@ -560,25 +560,25 @@ public final class R {
         public static final int btnGuardarDepto=0x7f07000c;
         public static final int btnGuardarDetGpoAsig=0x7f070122;
         public static final int btnGuardarLocal=0x7f070024;
-        public static final int btnGuardarMateria=0x7f070091;
+        public static final int btnGuardarMateria=0x7f070098;
         public static final int btnGuardarModaAA=0x7f070058;
         public static final int btnGuardarModalidadC=0x7f07004f;
-        public static final int btnGuarfarAreaMat=0x7f07009b;
-        public static final int btnInsertGuardarTipoCont=0x7f0700ca;
-        public static final int btnInsertLimpiarTipoCont=0x7f0700cb;
+        public static final int btnGuarfarAreaMat=0x7f0700a2;
+        public static final int btnInsertGuardarTipoCont=0x7f0700d2;
+        public static final int btnInsertLimpiarTipoCont=0x7f0700d3;
         public static final int btnLimpiaDepto=0x7f07000d;
         public static final int btnLimpiarActAcad=0x7f070057;
         public static final int btnLocales=0x7f07002a;
-        public static final int btnMaterias=0x7f0700ba;
+        public static final int btnMaterias=0x7f0700c1;
         public static final int btnModAcad=0x7f070028;
         public static final int btnModCurso=0x7f07002b;
         public static final int btnModalAcad=0x7f07002c;
-        public static final int btnNuevaAreaMateria=0x7f070099;
-        public static final int btnNuevaMateria=0x7f070086;
-        public static final int btnNuevoContrato=0x7f0700a8;
+        public static final int btnNuevaAreaMateria=0x7f0700a0;
+        public static final int btnNuevaMateria=0x7f07008d;
+        public static final int btnNuevoContrato=0x7f0700af;
         public static final int btnNuevoDepto=0x7f070007;
         public static final int btnNuevoDetGopAsig=0x7f07011d;
-        public static final int btnNuevoDocente=0x7f0700a3;
+        public static final int btnNuevoDocente=0x7f0700aa;
         public static final int btn_limpiarLocal=0x7f070026;
         public static final int btn_limpiarModC=0x7f070050;
         public static final int button1_ayuda_cargaacademica=0x7f0700e7;
@@ -614,21 +614,21 @@ public final class R {
         public static final int consult_fechainicio_hint=0x7f070114;
         public static final int edtCodMatDetGpoAsig=0x7f070125;
         public static final int edtCodMateAreaMat=0x7f070129;
-        public static final int edtCodMateria=0x7f070090;
-        public static final int edtIdAreaMat=0x7f07009a;
+        public static final int edtCodMateria=0x7f070097;
+        public static final int edtIdAreaMat=0x7f0700a1;
         public static final int edtIdDeptoAreMat=0x7f070128;
         public static final int edtIdDetGpoAsig=0x7f070123;
         public static final int edtIdLocalDetGpoAsig=0x7f070127;
         public static final int edtIdModDetGpoAsig=0x7f070126;
-        public static final int edtNomMateria=0x7f07008f;
+        public static final int edtNomMateria=0x7f070096;
         public static final int hello_world=0x7f070002;
         public static final int msgActivAcad=0x7f070052;
         public static final int msgActualizarDepto=0x7f07001e;
-        public static final int msgActualizarMateria=0x7f070092;
-        public static final int msgAdmonMateria=0x7f07008a;
+        public static final int msgActualizarMateria=0x7f070099;
+        public static final int msgAdmonMateria=0x7f070091;
         public static final int msgCapLocal=0x7f070023;
         public static final int msgCapacLocal=0x7f07005e;
-        public static final int msgCapacidadLocal=0x7f0700d3;
+        public static final int msgCapacidadLocal=0x7f070087;
         public static final int msgCargoActAcad=0x7f070055;
         public static final int msgConsultDetGpoAsig=0x7f070124;
         public static final int msgDHModalAA=0x7f070080;
@@ -638,12 +638,12 @@ public final class R {
         public static final int msgDescModalCurso=0x7f070062;
         public static final int msgDetGpoAsignado=0x7f070121;
         public static final int msgElimDepto=0x7f070016;
-        public static final int msgInsertCodigo=0x7f0700cc;
-        public static final int msgInsertCodigoTipoCont=0x7f0700c7;
-        public static final int msgInsertHoras=0x7f0700ce;
-        public static final int msgInsertHorasTipoCont=0x7f0700c9;
-        public static final int msgInsertNombre=0x7f0700cd;
-        public static final int msgInsertTipoTipoCont=0x7f0700c8;
+        public static final int msgInsertCodigo=0x7f0700d4;
+        public static final int msgInsertCodigoTipoCont=0x7f0700cf;
+        public static final int msgInsertHoras=0x7f0700d6;
+        public static final int msgInsertHorasTipoCont=0x7f0700d1;
+        public static final int msgInsertNombre=0x7f0700d5;
+        public static final int msgInsertTipoTipoCont=0x7f0700d0;
         public static final int msgModalCurso=0x7f070061;
         public static final int msgNomDepto=0x7f07000b;
         public static final int msgNomModalidadCurso=0x7f07004c;
@@ -653,10 +653,10 @@ public final class R {
         public static final int msgNombreModalAA_Act=0x7f070081;
         public static final int msgSelectActAcad=0x7f070076;
         public static final int msgSelectCargoActAcad=0x7f070077;
-        public static final int msgTipoCont=0x7f0700bb;
-        public static final int msgeditTxtCodTipCont=0x7f0700b5;
-        public static final int msgeditTxtHorasTipCont=0x7f0700b7;
-        public static final int msgeditTxtNomTipCont=0x7f0700b6;
+        public static final int msgTipoCont=0x7f0700c2;
+        public static final int msgeditTxtCodTipCont=0x7f0700bc;
+        public static final int msgeditTxtHorasTipCont=0x7f0700be;
+        public static final int msgeditTxtNomTipCont=0x7f0700bd;
         public static final int msgidActAcad=0x7f070053;
         /**  Mario 
          */
@@ -694,27 +694,28 @@ public final class R {
         public static final int title_activity_actividad_academica_menu=0x7f070044;
         public static final int title_activity_actualizar_contrato=0x7f07012a;
         public static final int title_activity_actualizar_depto=0x7f07001d;
-        public static final int title_activity_actualizar_materia=0x7f07008c;
+        public static final int title_activity_actualizar_materia=0x7f070093;
         public static final int title_activity_admin_catalogos=0x7f07000e;
         public static final int title_activity_admin_det_gpo_asig=0x7f07011c;
-        public static final int title_activity_admin_docente_depto=0x7f0700ac;
+        public static final int title_activity_admin_docente_depto=0x7f0700b3;
         /**  YO 
          */
-        public static final int title_activity_admin_docentes=0x7f0700a2;
-        public static final int title_activity_admin_materias_impartir=0x7f0700b8;
-        public static final int title_activity_admin_tipo_contrato=0x7f0700a7;
-        public static final int title_activity_admon_area_mat=0x7f0700a1;
+        public static final int title_activity_admin_docentes=0x7f0700a9;
+        public static final int title_activity_admin_materias_impartir=0x7f0700bf;
+        public static final int title_activity_admin_tipo_contrato=0x7f0700ae;
+        public static final int title_activity_admon_area_mat=0x7f0700a8;
         public static final int title_activity_admon_depto=0x7f070006;
-        public static final int title_activity_admon_materia=0x7f070085;
-        public static final int title_activity_are_materia_actualizar=0x7f070097;
-        public static final int title_activity_are_materia_consultar=0x7f070094;
-        public static final int title_activity_are_materia_eliminar=0x7f070096;
-        public static final int title_activity_are_materia_nueva=0x7f070095;
-        public static final int title_activity_area_materia_insertar=0x7f070093;
+        public static final int title_activity_admon_materia=0x7f07008c;
+        public static final int title_activity_are_materia_actualizar=0x7f07009e;
+        public static final int title_activity_are_materia_consultar=0x7f07009b;
+        public static final int title_activity_are_materia_eliminar=0x7f07009d;
+        public static final int title_activity_are_materia_nueva=0x7f07009c;
+        public static final int title_activity_area_materia_insertar=0x7f07009a;
         public static final int title_activity_carga_academica_consultar=0x7f0700e2;
         public static final int title_activity_carga_academica_eliminar=0x7f0700e1;
         public static final int title_activity_carga_academica_insertar=0x7f0700e0;
-        /**  alexis todavia no ordenado 
+        /**  fin YO 
+ alexis todavia no ordenado 
          */
         public static final int title_activity_carga_academica_menu=0x7f0700d7;
         public static final int title_activity_ciclo_actualizar=0x7f070020;
@@ -724,7 +725,7 @@ public final class R {
         public static final int title_activity_ciclo_menu=0x7f070113;
         public static final int title_activity_consultar_contrato=0x7f07012b;
         public static final int title_activity_consultar_depto=0x7f070018;
-        public static final int title_activity_consultar_materia=0x7f07008d;
+        public static final int title_activity_consultar_materia=0x7f070094;
         public static final int title_activity_det_act_acad_insertar=0x7f0700fc;
         public static final int title_activity_det_gpo_asig_actualizar=0x7f070119;
         public static final int title_activity_det_gpo_asig_consultar=0x7f07011a;
@@ -743,34 +744,32 @@ public final class R {
         public static final int title_activity_eliminar_contrato=0x7f07012c;
         /**  Michael 
          */
-        public static final int title_activity_eliminar_depto=0x7f070084;
-        public static final int title_activity_eliminar_materia=0x7f07008e;
+        public static final int title_activity_eliminar_depto=0x7f07008b;
+        public static final int title_activity_eliminar_materia=0x7f070095;
         public static final int title_activity_gestion_carga_acad=0x7f07000f;
         public static final int title_activity_gestion_mod_acad=0x7f070027;
-        public static final int title_activity_ingresar_tipo_contrato=0x7f0700b4;
+        public static final int title_activity_ingresar_tipo_contrato=0x7f0700bb;
         public static final int title_activity_insertar_actividad_academica=0x7f070051;
         /**  Insertar contrato 
          */
-        public static final int title_activity_insertar_contrato=0x7f0700c6;
+        public static final int title_activity_insertar_contrato=0x7f0700ce;
         /**  Michael 
          */
         public static final int title_activity_insertar_locales=0x7f070021;
         public static final int title_activity_insertar_modalidad_act_acad=0x7f070037;
         public static final int title_activity_insertar_modalidad_curso=0x7f07004a;
-        public static final int title_activity_locales_actualizar=0x7f0700d5;
-        public static final int title_activity_locales_consultar=0x7f0700d6;
-        public static final int title_activity_locales_eliminar=0x7f0700d1;
+        public static final int title_activity_locales_actualizar=0x7f070089;
+        public static final int title_activity_locales_consultar=0x7f07008a;
+        public static final int title_activity_locales_eliminar=0x7f070085;
         public static final int title_activity_locales_menu=0x7f07002d;
-        public static final int title_activity_materias_impartir=0x7f0700b0;
-        public static final int title_activity_menu_act_academicas=0x7f0700d0;
-        public static final int title_activity_menu_actividad_academica=0x7f0700bf;
-        /**  fin YO 
-         */
-        public static final int title_activity_menu_docente=0x7f0700cf;
+        public static final int title_activity_materias_impartir=0x7f0700b7;
+        public static final int title_activity_menu_act_academicas=0x7f070084;
+        public static final int title_activity_menu_actividad_academica=0x7f0700c6;
+        public static final int title_activity_menu_docente=0x7f0700c8;
         /**  menu docente 
          */
-        public static final int title_activity_menu_docentes=0x7f0700c0;
-        public static final int title_activity_menu_materia=0x7f0700be;
+        public static final int title_activity_menu_docentes=0x7f0700c7;
+        public static final int title_activity_menu_materia=0x7f0700c5;
         public static final int title_activity_menu_principal=0x7f070003;
         public static final int title_activity_mod_act_acad_actualizar=0x7f070067;
         public static final int title_activity_mod_act_acad_consultar_main=0x7f07005a;
@@ -780,11 +779,11 @@ public final class R {
         public static final int title_activity_modalidad_curso_consultar=0x7f07005b;
         public static final int title_activity_modalidad_curso_eliminar=0x7f070064;
         public static final int title_activity_modalidad_curso_menu=0x7f07003e;
-        public static final int title_activity_nueva_materia=0x7f07008b;
+        public static final int title_activity_nueva_materia=0x7f070092;
         public static final int title_activity_nuevo_depto=0x7f070008;
         public static final int tituloDepto=0x7f07000a;
-        public static final int tvCodMatAreaMat=0x7f07009e;
-        public static final int tvConsultDeptoAreMat=0x7f07009d;
+        public static final int tvCodMatAreaMat=0x7f0700a5;
+        public static final int tvConsultDeptoAreMat=0x7f0700a4;
         public static final int tvConsultarDepto=0x7f07001a;
     }
     public static final class style {

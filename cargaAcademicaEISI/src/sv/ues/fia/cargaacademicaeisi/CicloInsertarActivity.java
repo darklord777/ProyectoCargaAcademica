@@ -123,6 +123,8 @@ public class CicloInsertarActivity extends Activity {
 
 		fechaini.setText("");
 		fechafin.setText("");
+		anio.setSelection(0);
+		ciclo.setSelection(0);
 
 	}
 

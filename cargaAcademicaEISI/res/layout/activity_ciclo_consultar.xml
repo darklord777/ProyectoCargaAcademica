@@ -11,7 +11,7 @@
 
      <Spinner
          android:id="@+id/spinner_anio_consultar"
-         android:layout_width="wrap_content"
+         android:layout_width="fill_parent"
          android:layout_height="40dp"
          android:layout_alignParentLeft="true"
          android:layout_below="@+id/textview_selecion_ciclo"
@@ -59,7 +59,7 @@
 
     <Spinner
         android:id="@+id/spinner_ciclo_consultr"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="40dp"
         android:layout_alignLeft="@+id/spinner_anio_consultar"
         android:layout_below="@+id/textview_consultselecione_anio"
@@ -99,7 +99,7 @@
         android:id="@+id/editText2_consult_fin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/textView2_consult_fin"
+        android:layout_alignRight="@+id/editText1_consult_inicio"
         android:layout_below="@+id/textView2_consult_fin"
         android:ems="10"
         android:hint="@string/consult_fechafin_hint" />

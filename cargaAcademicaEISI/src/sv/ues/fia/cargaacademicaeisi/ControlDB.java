@@ -196,7 +196,7 @@ public class ControlDB {
 	}
 
 	public String eliminar(Ciclo ciclo) {
-		String regAfectados = "Registro de Ciclo afectados= ";
+		String regAfectados = "Ciclo Eliminado Correctamente, afectados= ";
 		String where = "ANIO='" + ciclo.getAnio() + "'" + " AND NUMERO='"
 				+ ciclo.getNumero() + "'";
 		int contador = 0;
