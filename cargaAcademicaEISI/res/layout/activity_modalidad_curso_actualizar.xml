@@ -19,7 +19,7 @@
         android:text="@string/Act_ModCurso" />
  
     <Spinner
-        android:id="@+id/spn_Select_Local"
+        android:id="@+id/spn_Select_MC"
         android:layout_width="fill_parent"
         android:layout_height="40dp"
         android:layout_below="@+id/textView1"
@@ -30,7 +30,7 @@
         android:id="@+id/ModCursoN_Act"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/spn_Select_Local"
+        android:layout_below="@+id/spn_Select_MC"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="@string/msgNombreModCurso"/>
@@ -42,13 +42,10 @@
         android:layout_alignLeft="@+id/ModCursoN_Act"
         android:layout_below="@+id/ModCursoN_Act"
         android:ems="10"
-        android:hint="@string/msgDesHorasModCurso" >
-
-        <requestFocus />
-    </EditText>
-
+        android:hint="@string/msgDesHorasModCurso" />
+    
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/actualizarModCurso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ModCursoDH_Act"
