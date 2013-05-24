@@ -26,18 +26,8 @@ public class ActividadAcademicaConsultarActivity extends Activity implements OnI
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_actividad_academica_consultar);
-		
-	/*	this.spinner_anio = (Spinner) findViewById(R.id.spinner_anio_consultar);
-		this.spinner_ciclo = (Spinner) findViewById(R.id.spinner_ciclo_consultr);
-		loadSpinnerData(); // 1 HACE CONSULTA Y CARGA LOS LABELS EN EL SPINNER
-							// AÑOS
-		this.iniciofecha = (EditText) findViewById(R.id.editText1_consult_inicio);
-		this.finfecha = (EditText) findViewById(R.id.editText2_consult_fin);
-		// deshabilitando edicion de editText
-		iniciofecha.setFocusable(false);
-		finfecha.setFocusable(false);
-		*/
+		setContentView(R.layout.activity_actividad_academica_consultar);	
+/*	
 		helper = new ControlDB(this);
 		idModalAA = (EditText) findViewById(R.id.idModActA);
 		NombreActAcad = (EditText) findViewById(R.id.SelNombreActAcad);
@@ -50,7 +40,7 @@ public class ActividadAcademicaConsultarActivity extends Activity implements OnI
 		adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, idActA);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spnListaActAcad.setAdapter(adapter);
-		spnListaActAcad.setOnItemSelectedListener(this);	
+		spnListaActAcad.setOnItemSelectedListener(this);	*/
 	}
 
 	@Override
