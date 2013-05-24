@@ -2,15 +2,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".ConsultarDocenteDeptoActivity" >
 
-    <TextView
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/btnConsultarDocDepto"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTxtConsulNomDepDocDepto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignLeft="@+id/editTxtCunsulNomDocDepto"
+        android:layout_below="@+id/spnConsulIdDepDocDepto"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/msgeditTxtInsertNomDeptoDocDepto" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTxtCunsulNomDocDepto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTxtConsulApeDocDepto"
+        android:layout_centerHorizontal="true"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/msgeditTxtInsertNomDocDepto" />
+
+    <Spinner
+        android:id="@+id/spnConsulIdDocDocDepto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTxtCunsulNomDocDepto"
+        android:layout_alignLeft="@+id/textView1" />
+
+    <EditText
+        android:id="@+id/editTxtConsulApeDocDepto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTxtCunsulNomDocDepto"
+        android:layout_centerVertical="true"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/msgeditTxtInsertApeDocDepto" />
+
+    <Spinner
+        android:id="@+id/spnConsulIdDepDocDepto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spnConsulIdDocDocDepto"
+        android:layout_below="@+id/editTxtConsulApeDocDepto" />
 
 </RelativeLayout>
