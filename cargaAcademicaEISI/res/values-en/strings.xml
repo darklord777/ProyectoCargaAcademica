@@ -1,341 +1,396 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="app_name">Carga Academica EISI UES</string>
-    <!-- Titulos activitys -->
+    <string name="app_name">Load Academic EISI UES</string>
+    <!-- Titulosctivitys -->
     <string name="title_activity_menu_principal">Main Menu</string>
-    <string name="title_activity_admon_depto">Deparments Administration</string>
-    <string name="title_activity_nuevo_depto">New Deparment</string>
-    <string name="title_activity_admin_catalogos">Administracion de Catalogos</string>
-    <string name="title_activity_gestion_carga_acad">Gestion Carga Academica</string>
-    <string name="title_activity_ciclo_insertar">Ingresar Ciclo Academico</string>
-    <string name="title_activity_consultar_depto">Select Deparment</string>
-    <string name="title_activity_actualizar_depto">Deparment Update</string>
-    <string name="title_activity_ciclo_eliminar">Delete Cicle Academic</string>
-    <string name="title_activity_ciclo_actualizar">Update Cicle Academic</string>
+    <string name="title_activity_admon_depto">Administration Departments</string>
+    <string name="title_activity_nuevo_depto">New Department</string>
+    <string name="title_activity_admin_catalogos">Catalogs Administration</string>
+    <string name="title_activity_gestion_carga_acad">Academic Load Management</string>
+    <string name="title_activity_ciclo_insertar">Sign Academic Cycle</string>
+    <string name="title_activity_consultar_depto">ConsultarDeptoActivity</string>
+    <string name="title_activity_actualizar_depto">ActualizarDeptoActivity</string>
+    <string name="title_activity_ciclo_eliminar">Delete Academic Cycle</string>
+    <string name="title_activity_ciclo_actualizar">Reload Academic Cycle</string>
     <string name="title_activity_insertar_locales">Insert Local</string>
-    <string name="title_activity_gestion_mod_acad">Gestion Modalidad Academica</string>
+    <string name="title_activity_gestion_mod_acad">Academica Management Mode</string>
     <string name="title_activity_locales_menu">Local Menu</string>
-    <string name="title_activity_insertar_modalidad_act_acad">Insert Modality Academic Activity</string>
-    <string name="title_activity_modalidad_aamenu">Modal Menu</string>
-    <string name="title_activity_modalidad_curso_menu">Course Modality Menu</string>
+    <string name="title_activity_insertar_modalidad_act_acad">Academic Activity Insert mode</string>
+    <string name="title_activity_modalidad_aamenu">Menu mode</string>
+    <string name="title_activity_modalidad_curso_menu">Course Menu mode</string>
     <string name="title_activity_actividad_academica_menu">Academic Activity Menu</string>
-    <string name="title_activity_insertar_actividad_academica">Academic Activity Insert</string>
-    <string name="title_activity_actividad_academica_consultar">Academic Activity Select</string>
-    <string name="title_activity_mod_act_acad_consultar_main">Select Modal</string>
-    <string name="title_activity_modalidad_curso_consultar">Course Modal Select</string>
-    <string name="title_activity_modalidad_curso_eliminar">Course Modal Delete</string>
-    <string name="title_activity_modalidad_curso_actualizar">Course Modal Update</string>
-    <string name="title_activity_mod_act_acad_eliminar">Academic Modality Activity</string>
-    <string name="title_activity_mod_act_acad_actualizar">Modality</string>
-    <string name="title_activity_actividad_academica_eliminar">Eliminar Actividad Academica</string>
-    <string name="title_activity_actividad_academica_actualizar">Actualizar Actividad Academica</string>
-    <string name="title_activity_menu_act_academicas">Menu Actividades Academicas</string>
-    <string name="title_activity_locales_eliminar">Eliminar Locales</string>
-    <string name="title_activity_locales_actualizar">Actualizar Locales</string>
-    <string name="title_activity_locales_consultar">Consultar Locales</string>
-    <string name="title_activity_eliminar_depto">Eliminar Departamento</string>
-    <string name="title_activity_admon_materia">Administracion de Materias</string>
-    <string name="title_activity_nueva_materia">Nueva Materia</string>
-    <string name="title_activity_actualizar_materia">Actualizar Materia</string>
-    <string name="title_activity_consultar_materia">Consultar Materia</string>
-    <string name="title_activity_eliminar_materia">Eliminar Materia</string>
-    <string name="title_activity_area_materia_insertar">Insertar Area de Materia</string>
-    <string name="title_activity_are_materia_consultar">Consultar Are de Materia</string>
-    <string name="title_activity_are_materia_nueva">Nueva Are de Materia </string>
-    <string name="title_activity_are_materia_eliminar">Eliminar Area de Materia</string>
-    <string name="title_activity_are_materia_actualizar">Actualizar Are de Materia</string>
-    <string name="title_activity_admon_area_mat">Administrar Area de Materia</string>
-    <string name="title_activity_admin_tipo_contrato">Adminnistrar Tipo de Contrato</string>
-    <string name="title_activity_admin_docente_depto">Administrar Departamento Docente</string>
-    <string name="title_activity_materias_impartir">Materias a Impartir</string>
-    <string name="action_settings">COnfiguraciones</string>
-    <string name="hello_world">Hola mundo!</string>
+    <string name="title_activity_insertar_actividad_academica">Insert Academic Activity</string>
+    <string name="title_activity_actividad_academica_consultar">Consult Academic Activity</string>
+    <string name="title_activity_mod_act_acad_consultar_main">View mode</string>
+    <string name="title_activity_modalidad_curso_consultar">Course moof cosultar</string>
+    <string name="title_activity_modalidad_curso_eliminar">Delete Course Mode</string>
+    <string name="title_activity_modalidad_curso_actualizar">Update Course Mode</string>
+    <string name="title_activity_mod_act_acad_eliminar">Remove moof Academic Activity</string>
+    <string name="title_activity_mod_act_acad_actualizar">Reload mode</string>
+    <string name="title_activity_actividad_academica_eliminar">Delete Activity Academic</string>
+    <string name="title_activity_actividad_academica_actualizar">Reload Academic Activity</string>
+    <string name="title_activity_menu_act_academicas">Academic Activities Menu</string>
+    <string name="title_activity_locales_eliminar">remove Local</string>
+    <string name="title_activity_locales_actualizar">Local Update</string>
+    <string name="title_activity_locales_consultar">consult Local</string>
+    <string name="title_activity_eliminar_depto">remove Department</string>
+    <string name="title_activity_admon_materia">Materials Management</string>
+    <string name="title_activity_nueva_materia">new Stuff</string>
+    <string name="title_activity_actualizar_materia">Reload matter</string>
+    <string name="title_activity_consultar_materia">See matter</string>
+    <string name="title_activity_eliminar_materia">Delete Subject</string>
+    <string name="title_activity_area_materia_insertar">Insert Subject Area</string>
+    <string name="title_activity_are_materia_consultar">Consult Subject Area</string>
+    <string name="title_activity_are_materia_nueva">New Are Subject</string>
+    <string name="title_activity_are_materia_eliminar">Delete Subject Area</string>
+    <string name="title_activity_are_materia_actualizar">Reload Are Subject</string>
+    <string name="title_activity_admon_area_mat">Managing Subject Area</string>
+    <string name="action_settings">configurations</string>
+    <string name="hello_world">Hello world!</string>
 
     <!-- sistema -->
-    <string name="btnEntrarSistema">Entrar al sistema</string>
-    <string name="btnAdmonCat">Administracion de Catalogos</string>
-    <string name="btnNuevoDepto">Nuevo Departamento</string>
+    <string name="btnEntrarSistema">Entrarl sistema</string>
+    <string name="btnAdmonCat">Administration of Catalogos</string>
+    <string name="btnNuevoDepto">New Department</string>
 
     <!-- Mario -->
-    <string name="msgidDepto">Codigo del departamento</string>
-    <string name="tituloDepto">Nuevo Departamento</string>
-    <string name="msgNomDepto">Nombre del departamento</string>
-    <string name="btnGuardarDepto">Guardar Departamento</string>
-    <string name="btnLimpiaDepto">Limpiar entradas</string>
+    <string name="msgidDepto">Coof  deparment</string>
+    <string name="tituloDepto">New Department</string>
+    <string name="msgNomDepto">Name  deparment</string>
+    <string name="btnGuardarDepto">Save Department</string>
+    <string name="btnLimpiaDepto">Clear entradas</string>
     <string name="btn1TablaCiclo">Ciclos</string>
-    <string name="btn2TablaCargaAcademica">Carga Academica</string>
-    <string name="btn3DetCargaMateria">Asignacion de Curso</string>
-    <string name="btn4DetCargaActAcademica">Asignacion de Carga Academica</string>
-    <string name="btn5A_CargaAcademica">Gestion Carga Academica</string>
-    <string name="msgElimDepto">Eliminar Departamento</string>
+    <string name="btn2TablaCargaAcademica">Load Academic</string>
+    <string name="btn3DetCargaMateria">Asignation of Curse</string>
+    <string name="btn4DetCargaActAcademica">Asignation of Load Academic</string>
+    <string name="btn5A_CargaAcademica">Gestion Load Academic</string>
+    <string name="msgElimDepto">Remove Department</string>
     <!-- Alexis -->
 
 
     <!-- Alexis -->
-    <string name="btnAdmonDepto">Administracion de Dapartamento</string>
-    <string name="btnConsultarDepto">Consultar Departamento</string>
-    <string name="tvConsultarDepto">Consultar Departamento</string>
-    <string name="btnActualizarDepto">Actualizar Departamento</string>
-    <string name="btnEliminarDepto">Eliminar Departamento</string>
-    <string name="msgActualizarDepto">Actualizar Departamento</string>
+    <string name="btnAdmonDepto">Administration of Dapartamento</string>
+    <string name="btnConsultarDepto">Consult Department</string>
+    <string name="tvConsultarDepto">Consult Department</string>
+    <string name="btnActualizarDepto">Update Department</string>
+    <string name="btnEliminarDepto">Remove Department</string>
+    <string name="msgActualizarDepto">Update Department</string>
 
     <!-- Michael -->
 
-    <string name="msgidLocal">Digite codigo del Local</string>
-    <string name="msgCapLocal">Digite capacidad del Local</string>
-    <string name="btnGuardarLocal">Guardar Local</string>
-    <string name="nLocal">Nuevo Local</string>
-    <string name="btn_limpiarLocal">Limpiar Entradas</string>
-    <string name="btnModAcad">Modalidad Actividad Academica</string>
-    <string name="btnActAcad">Actividad Academica</string>
+    <string name="msgidLocal">Type coof  Local</string>
+    <string name="msgCapLocal">Type capacidad  Local</string>
+    <string name="btnGuardarLocal">Save Local</string>
+    <string name="nLocal">New Local</string>
+    <string name="btn_limpiarLocal">Clear Entrances</string>
+    <string name="btnModAcad">Modality  Activity Academic</string>
+    <string name="btnActAcad">ActivityAcademic</string>
     <string name="btnLocales">Locales</string>
-    <string name="btnModCurso">Modalidad de Curso</string>
-    <string name="btnCrago_Docentes2">Cargo para Docentes</string>
-    <string name="btnModalAcad">Modalidades Academicas</string>
-    <string name="btn1_insertar_local">Insertar Local</string>
-    <string name="btn2_consultar_local">Consultar Local</string>
-    <string name="btn3_eliminar_local">Eliminar Local</string>
-    <string name="btn4_actualizar_local">Actualizar Local</string>
-    <string name="TextViewLocales">Menu Locales</string>
-    <string name="msgNombreModAA">Digite nombre modalidad</string>
-    <string name="msgidModalidadAA">Digite codigo de modalidad</string>
-    <string name="msgDescHorasModAA">Digite horas de descuento</string>
-    <string name="TextViewModAA">Insertar Modalidad Actividad Academica</string>
-    <string name="TextViewModalidad">Menu Modalidad Act Academica</string>
-    <string name="btn1_insertar_Modalidad">Insertar Modalidad Act Acad</string>
-    <string name="btn2_consultar_Modalidad">Consultar Modalidad Act Acad</string>
-    <string name="btn3_eliminar_Modalidad">Eliminar Modalidad Act Acad</string>
-    <string name="btn4_actualizar_Modalidad">Actualizar Modalidad AA</string>
-    <string name="TextViewModalidadCurso">Menu Modalidad Curso</string>
-    <string name="btn1_insertar_ModalidadCurso">Insertar Modalidad Curso</string>
-    <string name="btn2_consultar_ModalidadCurso">Consultar Modalidad Curso</string>
-    <string name="btn3_eliminar_ModalidadCurso">Eliminar Modalidad Curso</string>
-    <string name="btn4_actualizar_ModalidadCurso">Actualizar Modalidad Curso</string>
-    <string name="TextViewActividadAcad">Menu Actividad Academica</string>
-    <string name="btn1_insertar_ActividadAcad">Insertar Actividad Academica</string>
-    <string name="btn2_consultar_ActividadAcad">Consultar Actividad Academica</string>
-    <string name="btn3_eliminar_ActividadAcad">Eliminar Actividad Academica</string>
-    <string name="btn4_actualizar_ActividadAcad">Actualizar Actividad Academica</string>
-    <string name="title_activity_insertar_modalidad_curso">Insertar Modalidad Curso</string>
-    <string name="msgidModalidadCurso">Digite codigo Mod Curso</string>
-    <string name="msgNomModalidadCurso">Digite nombre de Modalidad</string>
-    <string name="msgDesHModalidadCurso">Digite descuento horas</string>
-    <string name="TextViewModC">Modalidad Curso</string>
-    <string name="btnGuardarModalidadC">Guardar Modalidad Curso</string>
-    <string name="btn_limpiarModC">Limpiar Entradas</string>
-    <string name="msgActivAcad">Insertar Actividad Academica</string>
-    <string name="msgidActAcad">Digite codigo</string>
-    <string name="msgNombreActAcad">Digite nombre actividad</string>
-    <string name="msgCargoActAcad">Digite cargo</string>
-    <string name="btnGuardarActAcad">Guardar Actividad</string>
-    <string name="btnLimpiarActAcad">Limpiar Campos</string>
-    <string name="btnGuardarModaAA">Guardad Modalidad</string>
-    <string name="selectIdLocal">Seleccione Local</string>
-    <string name="spinner_Slocal">Seleccionar Local</string>
-    <string name="msgCapacLocal">Capacidad Local</string>
-    <string name="selectCapaLocal">Capacidad del Local</string>
-    <string name="ConsModCurso">Seleccionar id de Modalidad</string>
-    <string name="msgModalCurso">Nombre de Modalidad</string>
-    <string name="msgDescModalCurso">Descuento Horas</string>
-    <string name="spinner_ModCurso">Modalidad Curso</string>
-    <string name="TextV_ModAA">Seleccionar Modalidad</string>
-    <string name="Act_Locales">Seleccionar Local</string>
-    <string name="spinner_EModCurso">Modalidad Curso</string>
-    <string name="ElimModCurso">Seleccione Curso</string>
-    <string name="Act_ModCurso">Seleccione Curso a Actualizar</string>
-    <string name="msgNombreModCurso">Nombre Modalidad</string>
-    <string name="msgDesHorasModCurso">Descuento Horas</string>
-    <string name="ButtonEliminarModCurso">Eliminar Modalidad</string>
-    <string name="ButtonActModalidadC">Actualizar</string>
-    <string name="SelecActAcademica">Seleccionar Actividad</string>
-    <string name="spinner_SelActAcad">Actividad Academica</string>
-    <string name="msgidSelecActAcad">id Modalidad Act Academica</string>
-    <string name="msgSelectActAcad">Nombre de Actividad</string>
-    <string name="msgSelectCargoActAcad">Cargo</string>
-    <string name="ActActAcademica">Actividad a Actualizar</string>
-    <string name="spinner_ActActAcad">Actualizar</string>
-    <string name="ButtonActActAcademica">Actualizar Datos</string>
-    <string name="TextView_NombreAA">Nombre de la actividad</string>
+    <string name="btnModCurso">Modality  of Curse</string>
+    <string name="btnCrago_Docentes2">Charge para Teachings</string>
+    <string name="btnModalAcad">Modalities Academics</string>
+    <string name="btn1_insertar_local">Insert Local</string>
+    <string name="btn2_consultar_local">Consult Local</string>
+    <string name="btn3_eliminar_local">Remove Local</string>
+    <string name="btn4_actualizar_local">Update Local</string>
+    <string name="TextViewLocales">Menu locals</string>
+    <string name="msgNombreModAA">Type name modality</string>
+    <string name="msgidModalidadAA">Type coof of modality</string>
+    <string name="msgDescHorasModAA">Type hours of descuento</string>
+    <string name="TextViewModAA">Insert Modality  Activity Academic</string>
+    <string name="TextViewModalidad">Menu Modality Act Academic</string>
+    <string name="btn1_insertar_Modalidad">Insert Modality Act Acad</string>
+    <string name="btn2_consultar_Modalidad">Consult Modality Act Acad</string>
+    <string name="btn3_eliminar_Modalidad">Remove Modality Act Acad</string>
+    <string name="btn4_actualizar_Modalidad">Update Modality AA</string>
+    <string name="TextViewModalidadCurso">Menu Modality Curse</string>
+    <string name="btn1_insertar_ModalidadCurso">Insert Modality Curse</string>
+    <string name="btn2_consultar_ModalidadCurso">Consult Modality Curse</string>
+    <string name="btn3_eliminar_ModalidadCurso">Remove Modality Curse</string>
+    <string name="btn4_actualizar_ModalidadCurso">Update Modality Curse</string>
+    <string name="TextViewActividadAcad">Menu Activity Academic</string>
+    <string name="btn1_insertar_ActividadAcad">Insert Activity Academic</string>
+    <string name="btn2_consultar_ActividadAcad">Consult Activity Academic</string>
+    <string name="btn3_eliminar_ActividadAcad">Remove Activity Academic</string>
+    <string name="btn4_actualizar_ActividadAcad">Update Activity Academic</string>
+    <string name="title_activity_insertar_modalidad_curso">Insert Modality Curse</string>
+    <string name="msgidModalidadCurso">Type coof Mod Curse</string>
+    <string name="msgNomModalidadCurso">Type name of Modality</string>
+    <string name="msgDesHModalidadCurso">Type descuento hours</string>
+    <string name="TextViewModC">Modality Curse</string>
+    <string name="btnGuardarModalidadC">Save Modality Curse</string>
+    <string name="btn_limpiarModC">Clear Entrances</string>
+    <string name="msgActivAcad">Insert Activity Academic</string>
+    <string name="msgidActAcad">Type code</string>
+    <string name="msgNombreActAcad">Type namectividad</string>
+    <string name="msgCargoActAcad">Type Charge</string>
+    <string name="btnGuardarActAcad">Save Activity</string>
+    <string name="btnLimpiarActAcad">Clear Campos</string>
+    <string name="btnGuardarModaAA">Guardad Modality</string>
+    <string name="selectIdLocal">Select Local</string>
+    <string name="spinner_Slocal">Select Local</string>
+    <string name="msgCapacLocal">Capacity Local</string>
+    <string name="selectCapaLocal">Capacity  Local</string>
+    <string name="ConsModCurso">Select id of Modality</string>
+    <string name="msgModalCurso">Name of Modality</string>
+    <string name="msgDescModalCurso">discount hours</string>
+    <string name="spinner_ModCurso">Modality Curse</string>
+    <string name="TextV_ModAA">Select Modality</string>
+    <string name="Act_Locales">Select Local</string>
+    <string name="spinner_EModCurso">Modality Curse</string>
+    <string name="ElimModCurso">Select Curse</string>
+    <string name="Act_ModCurso">Select Curse Update</string>
+    <string name="msgNombreModCurso">Name Modality</string>
+    <string name="msgDesHorasModCurso">discount hours</string>
+    <string name="ButtonEliminarModCurso">Remove Modality</string>
+    <string name="ButtonActModalidadC">Update</string>
+    <string name="SelecActAcademica">Select Activity</string>
+    <string name="spinner_SelActAcad">ActivityAcademic</string>
+    <string name="msgidSelecActAcad">id Modality Act Academic</string>
+    <string name="msgSelectActAcad">Name of Activity</string>
+    <string name="msgSelectCargoActAcad">Charge</string>
+    <string name="ActActAcademica">Activitya Update</string>
+    <string name="spinner_ActActAcad">Update</string>
+    <string name="ButtonActActAcademica">Update Datos</string>
+    <string name="TextView_NombreAA">Name ofctividad</string>
     <string name="btn3_elim_ActividadAcad">Eliminar</string>
-    <string name="TextView_ElimModaAA">Nombre de la modalidad</string>
-    <string name="spinner_SelecModaAA">Modalidad a Eliminar</string>
-    <string name="Act_ModalidadAA">Seleccionar Modalidad</string>
-    <string name="msgDHModalAA">Descuento horas</string>
-    <string name="msgNombreModalAA_Act">Nombre Modalidad</string>
-    <string name="btnActualizarModalAA">Actualizar</string>
-    <string name="spinner_SActAcad">Seleccionar Modalidad</string>
-    <string name="TextViewElimLocal">Eliminar Local</string>
-    <string name="msgCapacidadLocal">Capacidad del Local</string>
+    <string name="TextView_ElimModaAA">Name of modality</string>
+    <string name="spinner_SelecModaAA">Modality Eliminar</string>
+    <string name="Act_ModalidadAA">Select Modality</string>
+    <string name="msgDHModalAA">discount hours</string>
+    <string name="msgNombreModalAA_Act">Name Modality</string>
+    <string name="btnActualizarModalAA">Update</string>
+    <string name="spinner_SActAcad">Select Modality</string>
+    <string name="TextViewElimLocal">Remove Local</string>
+    <string name="msgCapacidadLocal">Capacity  Local</string>
     <string name="btnEliminarLocal">Realizar</string>
-    <string name="ActNombre_AA">Nombre Actividad</string>
-    <string name="ActCargo_ActAcademica">Cargo</string>
-    <string name="ActidModAA_ActAcademica">Codigo Modalidad Actvidad Academica</string>
+    <string name="ActNombre_AA">Name Activity</string>
+    <string name="ActCargo_ActAcademica">Charge</string>
+    <string name="ActidModAA_ActAcademica">Coof Modality Actvidad Academic</string>
     <!-- Michael -->
 
-    <string name="btnNuevaMateria">Nueva Materia</string>
-    <string name="btnConsultarMateria">Consultar Materia</string>
-    <string name="btnActMateria">Actualizar Materia</string>
-    <string name="btnEliminarMateria">Eliminar Materia</string>
-    <string name="msgAdmonMateria">Administracion de Materias</string>
-    <string name="edtNomMateria">Nombre de Materia</string>
-    <string name="edtCodMateria">Codigo de Materia</string>
-    <string name="btnGuardarMateria">Guardar Materia</string>
-    <string name="msgActualizarMateria">Actualizar Materia</string>
-    <string name="bntNuevaAreaMat">Nueva Area de Materia</string>
-    <string name="btnNuevaAreaMateria">Nueva Area Materia</string>
-    <string name="edtIdAreaMat">Codigo Area Materia</string>
-    <string name="btnGuarfarAreaMat">Guardar area materia</string>
-    <string name="btnConsultarAreaMat">Consultar Area Materia</string>
-    <string name="tvConsultDeptoAreMat">Codigo Departamento</string>
-    <string name="tvCodMatAreaMat">Codigo Materia</string>
-    <string name="btnEliminarAreaMat">Eliminar area Materia</string>
-    <string name="btnAdmonAreaMateria">Administrar Area Materia</string>
+    <string name="btnNuevaMateria">New Stuff</string>
+    <string name="btnConsultarMateria">Consult Stuff</string>
+    <string name="btnActMateria">Update Stuff</string>
+    <string name="btnEliminarMateria">Remove Stuff</string>
+    <string name="msgAdmonMateria">Administration of Stuffs</string>
+    <string name="edtNomMateria">Name of Stuff</string>
+    <string name="edtCodMateria">Coof of Stuff</string>
+    <string name="btnGuardarMateria">Save Stuff</string>
+    <string name="msgActualizarMateria">Update Stuff</string>
+    <string name="bntNuevaAreaMat">New Area of Stuff</string>
+    <string name="btnNuevaAreaMateria">New Area Stuff</string>
+    <string name="edtIdAreaMat">Coof Area Stuff</string>
+    <string name="btnGuarfarAreaMat">Saverea materia</string>
+    <string name="btnConsultarAreaMat">Consult Area Stuff</string>
+    <string name="tvConsultDeptoAreMat">Coof Department</string>
+    <string name="tvCodMatAreaMat">Coof Stuff</string>
+    <string name="btnEliminarAreaMat">Removerea Stuff</string>
+    <string name="btnAdmonAreaMateria">AdministerArea Stuff</string>
 
     <!-- YO -->
     <string name="title_activity_admin_docentes">AdminDocentesActivity</string>
-    <string name="btnNuevoDocente">Nuevo Docente</string>
-    <string name="btnActualizarDocente">Actualizar Docente</string>
-    <string name="btnConsultarDocente">Consultar Docente</string>
-    <string name="btnEliminarDocente">Eliminar Docente</string>
-    <string name="btnNuevoContrato">Nuevo Tipo de Contrato</string>
-    <string name="btnActualizarContrato">Actualizar Tipo de Contrato</string>
-    <string name="btnConsultarContrato">Consultar Tipo de Contrato</string>
-    <string name="btnEliminarContrato">Eliminar Tipo de Contrato</string>
-    <string name="btnAsigDocDepto">Asignar Docentes a Departamentos</string>
-    <string name="btnConsultarDocDepto">Consultar Docentes en Departamentos</string>
-    <string name="btnEliminarDocDepto">Eliminar Docente de Departamento</string>
-    <string name="btnAsigMatDoc">Asignar Materia a Docentes</string>
-    <string name="btnConsultarMatDoc">Consultar Materia de Docentes</string>
-    <string name="btnEliminarMatDoc">Eliminar Materias de Docentes</string>
+    <string name="msgactivityadmindocente">Administration of Teachings</string>
+    <string name="btnNuevoDocente">New Teaching</string>
+    <string name="btnActualizarDocente">Update Teaching</string>
+    <string name="btnConsultarDocente">Consult Teaching</string>
+    <string name="btnEliminarDocente">Remove Teaching</string>
+    <string name="title_activity_admin_tipo_contrato">AdminTipoContratoActivity</string>
+    <string name="msgactivityadmintipocontrato">Administration of kind contract</string>
+    <string name="btnNuevoContrato">New kind of contract</string>
+    <string name="btnActualizarContrato">Update kind of contract</string>
+    <string name="btnConsultarContrato">Consult kind of contract</string>
+    <string name="btnEliminarContrato">Remove kind of contract</string>
+    <string name="title_activity_admin_docente_depto">AdminDocenteDeptoActivity</string>
+    <string name="msgactivityadmindocentedepto">Administration of Teachings y Departments</string>
+    <string name="btnAsigDocDepto">Assign Teachings Departments</string>
+    <string name="btnConsultarDocDepto">Consult Teachings en Departments</string>
+    <string name="btnEliminarDocDepto">Remove Teaching of Department</string>
+    <string name="title_activity_materias_impartir">MateriasImpartirActivity</string>
+    <string name="btnAsigMatDoc">Assign Stuff Teachings</string>
+    <string name="btnConsultarMatDoc">Consult Stuff of Teachings</string>
+    <string name="btnEliminarMatDoc">Remove Stuffs of Teachings</string>
     <string name="title_activity_ingresar_tipo_contrato">IngresarTipoContratoActivity</string>
     <string name="msgeditTxtCodTipCont">Codigo</string>
-    <string name="msgeditTxtNomTipCont">Nombre de Contrato</string>
-    <string name="msgeditTxtHorasTipCont">Cantidad de Horas del Contrato</string>
+    <string name="msgeditTxtNomTipCont">Name of contract</string>
+    <string name="msgeditTxtHorasTipCont">Amountof hours  contract</string>
     <string name="title_activity_admin_materias_impartir">AdminMateriasImpartirActivity</string>
+    <string name="msgactivityadminmateriasimpartir">Administration of Stuffs que Pueden Impartir los Teachings</string>
 
     <!-- sistema -->
-    <string name="btnDocente">Administracion de Docentes</string>
-    <string name="btnMaterias">Administracion de Materias</string>
-    <string name="msgTipoCont">Tipos de Contratos</string>
-    <string name="botonTipoContrato">Tipos de Contratos</string>
-    <string name="btnActividadAcademica">Administracion de Actividades Academicas</string>
+    <string name="btnDocente">Administration of Teachings</string>
+    <string name="btnMaterias">Administration of Stuffs</string>
+    <string name="msgTipoCont">Tipos of Contracts</string>
+    <string name="botonTipoContrato">Tipos of Contracts</string>
+    <string name="btnActividadAcademica">Administration of Activityes Academics</string>
     <string name="title_activity_menu_materia">MenuMateriaActivity</string>
     <string name="title_activity_menu_actividad_academica">MenuActividadAcademicaActivity</string>
 
     <!-- menu docente -->
     <string name="title_activity_menu_docentes">MenuDocentesActivity</string>
-    <string name="title_activity_menu_docente">MenuDocenteActivity</string>
-    <string name="botonDocente">Docentes</string>
-    <string name="botonCargo">Cargos de Docentes</string>
-    <string name="botonPeriodo">Periodos de Cargos</string>
-    <string name="botonDepartamento">Departamentos de Docentes</string>
-    <string name="botonMateriasImpartir">Materias que Pueden Impartir los Docentes</string>
+    <string name="botonDocente">AdministerTeachings</string>
+    <string name="botonCargo">AdministerCargos of Teachings</string>
+    <string name="botonPeriodo">AdministerPeriodos of Charges</string>
+    <string name="botonDepartamento">AdministerDepartments of Teachings</string>
+    <string name="botonMateriasImpartir">Materias que Pueden Impartir los Teachings</string>
 
-    <!-- Insertar contrato -->
+    <!-- Insert contrato -->
     <string name="title_activity_insertar_contrato">InsertarContratoActivity</string>
     <string name="msgInsertCodigoTipoCont">Codigo</string>
-    <string name="msgInsertTipoTipoCont">Nombre de Contrato</string>
-    <string name="msgInsertHorasTipoCont">Horas del Contrato</string>
-    <string name="btnInsertGuardarTipoCont">Guardar Contrato</string>
-    <string name="btnInsertLimpiarTipoCont">Limpiar</string>
-    <string name="msgInsertCodigo">Codigo de Contrato</string>
-    <string name="msgInsertNombre">Nombre o Tipo del Contrato</string>
-    <string name="msgInsertHoras">Horas del Contrato</string>
+    <string name="msgInsertTipoTipoCont">Name of contract</string>
+    <string name="msgInsertHorasTipoCont">Hours contract</string>
+    <string name="btnInsertGuardarTipoCont">Save contract</string>
+    <string name="btnInsertLimpiarTipoCont">Clear</string>
+    <string name="msgInsertCodigo">Coof of contract</string>
+    <string name="msgInsertNombre">Name o kind  contract</string>
+    <string name="msgInsertHoras">Hours contract</string>
+    <string name="msgactivityinsertarcontrato">Insert kind of contract</string>
+    <string name="msgpromtspninsertar">Kind of contract</string>
+
+    <!-- Consult contrato -->
+    <string name="title_activity_consultar_contrato">ConsultarContratoActivity</string>
+    <string name="msgeditTxtConsultarNomTipoCont">Name  contract</string>
+    <string name="msgeditTxtConsultarHorasTipoCont">Hours contract</string>
+    <string name="msgactivityconsultarcontrato">Consult kind of contract</string>
+
+    <!-- Update contrato -->
+    <string name="title_activity_actualizar_contrato">ActualizarContratoActivity</string>
+    <string name="msgactivityactualizarcontrato">Update kind of contract</string>
+
+    <!-- Remove contrato -->
+    <string name="title_activity_eliminar_contrato">EliminarContratoActivity</string>
+    <string name="msgactivityeliminararcontrato">Remove kind of contract</string>
+
+    <!-- Insert docente -->
+    <string name="title_activity_insertar_docente">InsertarDocenteActivity</string>
+    <string name="msgeditTxtInsertIdDocente">Coof  Teaching</string>
+    <string name="msgeditTxtInsertNomDocente">Name  Teaching</string>
+    <string name="msgeditTxtInsertApeDocente">Last name  Teaching</string>
+    <string name="msgeditTxtInsertGraDocente">Grado Academico</string>
+    <string name="msgeditTxtInsertEmailDocente">Email  Teaching</string>
+    <string name="msgeditTxtInsertTelDocente">Telephone  Teaching</string>
+    <string name="msgbtnInsertGuardar">Save</string>
+    <string name="msgactivityinsertardocente">Insert Teaching</string>
+
+    <!-- Update docente -->
+    <string name="title_activity_actualizar_docente">ActualizarDocenteActivity</string>
+    <string name="msgactivityactualizardocente">Update Teaching</string>
+    <string name="msgbtnactualizardocente">Update Information</string>
+
+    <!-- Consult docente -->
+    <string name="title_activity_consultar_docente">ConsultarDocenteActivity</string>
+    <string name="msgeditTxtConsultarhorasdocente">HoursAsignadas</string>
+    <string name="msgactivityconsultardocente">Consult Teaching</string>
+    <string name="msgeditTxtcunsulTipoContDoce">Kind of contract</string>
+
+    <!-- Remove docente -->
+    <string name="title_activity_eliminar_docente">EliminarDocenteActivity</string>
+    <string name="msgactivityeliminardocente">Remove Teaching</string>
+    <string name="msgbtneliminardocente">Remove Teaching</string>
+
+    <!-- Insert docente deparment -->
+    <string name="title_activity_insertar_docente_depto">InsertarDocenteDeptoActivity</string>
+    <string name="msgeditTxtInsertNomDocDepto">Name Teaching</string>
+    <string name="msgeditTxtInsertApeDocDepto">Last name Teaching</string>
+    <string name="msgeditTxtInsertNomDeptoDocDepto">Name Department</string>
+    <string name="msgbtnInserAsignarDocDepto">Asiganar</string>
+
+    <!-- Remove docente deparment -->
+    <string name="title_activity_eliminar_docente_depto">EliminarDocenteDeptoActivity</string>
+
+    <!-- Consult docente deparment -->
+    <string name="title_activity_consultar_docente_depto">ConsultarDocenteDeptoActivity</string>
     <!-- fin YO -->
 
 
-    <!-- alexis todavia no ordenado -->
-    <string name="title_activity_carga_academica_menu">Menu Gestion de Carga Academica</string>
-    <string name="button1a4_menuTABLACARGAACAD_INSERT">Insertar Carga Academica</string>
-    <string name="button2a4_menuTABLACARGAACAD_DELETE">Eliminar Carga Academica</string>
-    <string name="button3a4_menuTABLACARGAACAD_CONSULT">Consultar Carga Academica</string>
-    <string name="button1a5_MenuDETALLECARGAMATERIA_INSERT">Ingresar Carga de Materias</string>
-    <string name="button2a5_MenuDETALLECARGAMATERIA_DELETE">Eliminar Carga de Materias</string>
-    <string name="button3a5_MenuDETALLECARGAMATERIA_CONSULT">Consultar Carga de Materias</string>
-    <string name="EditText1a3_updatefechaini">Actualizar Fecha Inicio de Ciclo</string>
-    <string name="EditText2a3_updatefechafin">Actualizar Fecha Fin de Ciclo</string>
-    <string name="title_activity_carga_academica_insertar">Asignar Carga Academica</string>
-    <string name="title_activity_carga_academica_eliminar">Eliminar Asignacion de Carga Academica</string>
-    <string name="title_activity_carga_academica_consultar">Consultar Asignacion de Carga Academica</string>
-    <string name="TextView1_iddocente">Selecione ID Docente</string>
-    <string name="TextView4_1ayuda_consultarcarga">Selecione el Docente y luego prodra verificar</string>
-    <string name="TextView4_2ayuda_consultarcarga">que Ciclos tiene Asignados. Luego selecione ciclo que desea Consultar</string>
-    <string name="TextView4_3ayuda_consultarcarga">Selecione el Docente y luego prodra verificar</string>
-    <string name="button1_ayuda_cargaacademica">Contenido de Ayuda</string>
-    <string name="button1_insertar_cargaacademica">Guardar Carga Academica</string>
-    <string name="button1_eliminar_cargaacademica">Eliminar Carga Academica</string>
-    <string name="button1_consultar_cargaacademica">Consultar Carga Academica</string>
-    <string name="title_activity_detalle_carga_materia_menu">Menu Asignacion de Curso</string>
-    <string name="title_activity_detalle_carga_materia_insertar">Asignar Curso</string>
-    <string name="title_activity_detalle_carga_materia_eliminar">Eliminar Asignacion de Curso</string>
-    <string name="title_activity_detalle_carga_materia_consultar">Consultar Asignacion de Curso</string>
-    <string name="textview1_detallemateria_insert1">Selecione el ID de la Grupo a Asignar</string>
-    <string name="button1_insertar_detalleactacad">Guardar Grupo Asignado</string>
-    <string name="button1_insertar_detallemateria">Guardar Grupo a Asignar</string>
-    <string name="button1_eliminar_DETALLECARGAMATERIA">Eliminar Carga Materia</string>
-    <string name="textview1_detallemateria_consult1">ID de la Grupo Consultado</string>
-    <string name="title_activity_detalle_carga_act_acad_menu">Menu de Asignacion de Actividad Acadademica</string>
-    <string name="button1a6_MenuDETALLEACTIVIDADACAD_INSERT">Ingresar Detalle de Actividad Academica</string>
-    <string name="button2a6_MenuDETALLEACTIVIDADACAD_DELETE">Eliminar Detalle de Actividad Academica</string>
-    <string name="button3a6_MenuDETALLEACTIVIDADACAD_CONSULT">Consultar Detalle de Actividad Academica</string>
-    <string name="title_activity_detalle_carga_act_acad_insertar">Asignar Actividades Academicas</string>
-    <string name="title_activity_detalle_carga_act_acad_eliminar">Eliminar Asignacion Actividades Academicas</string>
-    <string name="title_activity_detalle_carga_act_acad_consultar">Consultar Asignacion Actividades Academicas</string>
-    <string name="textview4_actividadacademica_insert1">Selecione el ID de Actividad Academica</string>
-    <string name="title_activity_det_act_acad_insertar">Asignar Actividad Academica</string>
-    <string name="buttonz1_eliminar_academica">Eliminar Detalle de Actividad Academica</string>
-    <string name="button1_fechainicioinsert">Ingresar Fecha inicio</string>
-    <string name="button2_fechafininsert">Ingresar Fecha Fin</string>
-    <string name="textview1_inicio">Fecha:</string>
-    <string name="textview2_fin">Fecha:</string>
-    <string name="button2_insertar_ciclo">Ingresar Ciclo</string>
-    <string name="button1_eliminar_ciclo">Eliminar Ciclo</string>
-    <string name="button3_consultar_ciclo">Consultar Ciclo</string>
-    <string name="button4_actualizar_ciclo">Actualizar Ciclo</string>
-    <string name="button1_insertar_ciclo1">Guardar Registro</string>
-    <string name="button1a_insertarciclo">Ingresar Registro</string>
-    <string name="textview_fechaini">Fecha Inicio de Ciclo</string>
-    <string name="textview_fechafin">Fecha Fin de Ciclo</string>
-    <string name="textview_selecioneanio_ciclo">Selecione el año</string>
-    <string name="spinner_anio_ciclo">Selecione Año del Ciclo</string>
-    <string name="textview_selecione_ciclo">Selecione el Ciclo</string>
-    <string name="spinner_ciclo">Selecione el Ciclo</string>
-    <string name="button1_insertar_ciclo">Guardar Ciclo</string>
-    <string name="button2_limpiartexto_ciclo">Limpiar Entradas</string>
-    <string name="msj_fechainicio_hint">Digite Fecha Inicio Ciclo</string>
-    <string name="msj_fechafin_hint">Digite Fecha Fin Ciclo</string>
-    <string name="title_activity_ciclo_consultar">Consultar Ciclo Academico</string>
-    <string name="title_activity_ciclo_menu">Menu Gestion de Ciclo Academico</string>
-    <string name="consult_fechainicio_hint">Fecha Inicio Ciclo</string>
-    <string name="consult_fechafin_hint">Fecha Fin Ciclo</string>
-    <string name="button2a_concultar_Ci">Consultar</string>
-    <string name="button3a_eliminar_Ciclo">Eliminar Ciclo</string>
+    <!--lexis todavia no ordenado -->
+    <string name="title_activity_carga_academica_menu">Menu management  of Load Academic</string>
+    <string name="button1a4_menuTABLACARGAACAD_INSERT">Insert Load Academic</string>
+    <string name="button2a4_menuTABLACARGAACAD_DELETE">Remove Load Academic</string>
+    <string name="button3a4_menuTABLACARGAACAD_CONSULT">Consult Load Academic</string>
+    <string name="button1a5_MenuDETALLECARGAMATERIA_INSERT">Type Load of Stuffs</string>
+    <string name="button2a5_MenuDETALLECARGAMATERIA_DELETE">Remove Load of Stuffs</string>
+    <string name="button3a5_MenuDETALLECARGAMATERIA_CONSULT">Consult Load of Stuffs</string>
+    <string name="EditText1a3_updatefechaini">Update Date Start of Cycle</string>
+    <string name="EditText2a3_updatefechafin">Update Date end  of Cycle</string>
+    <string name="title_activity_carga_academica_insertar">Assign Load Academic</string>
+    <string name="title_activity_carga_academica_eliminar">Remove Asignation of Load Academic</string>
+    <string name="title_activity_carga_academica_consultar">Consult Asignation of Load Academic</string>
+    <string name="TextView1_iddocente">Select ID Teaching</string>
+    <string name="TextView4_1ayuda_consultarcarga">Select the Teaching y luego prodra verificar</string>
+    <string name="TextView4_2ayuda_consultarcarga">que Cycles tiene earmarkeds. Luego selecione ciclo que desea Consultar</string>
+    <string name="TextView4_3ayuda_consultarcarga">Select the Teaching y luego prodra verificar</string>
+    <string name="button1_ayuda_cargaacademica">Content of Help</string>
+    <string name="button1_insertar_cargaacademica">Save Load Academic</string>
+    <string name="button1_eliminar_cargaacademica">Remove Load Academic</string>
+    <string name="button1_consultar_cargaacademica">Consult Load Academic</string>
+    <string name="title_activity_detalle_carga_materia_menu">Menu Asignation of Curse</string>
+    <string name="title_activity_detalle_carga_materia_insertar">Assign Curse</string>
+    <string name="title_activity_detalle_carga_materia_eliminar">Remove Asignation of Curse</string>
+    <string name="title_activity_detalle_carga_materia_consultar">Consult Asignation of Curse</string>
+    <string name="textview1_detallemateria_insert1">Select the ID of Groupssign</string>
+    <string name="button1_insertar_detalleactacad">Save Group earmarked</string>
+    <string name="button1_insertar_detallemateria">Save Groupssign</string>
+    <string name="button1_eliminar_DETALLECARGAMATERIA">Remove Load Stuff</string>
+    <string name="textview1_detallemateria_consult1">ID of Group Consultado</string>
+    <string name="title_activity_detalle_carga_act_acad_menu">Menu of Asignation of Activity Acadademica</string>
+    <string name="button1a6_MenuDETALLEACTIVIDADACAD_INSERT">Type detail of Activity Academic</string>
+    <string name="button2a6_MenuDETALLEACTIVIDADACAD_DELETE">Remove detail of Activity Academic</string>
+    <string name="button3a6_MenuDETALLEACTIVIDADACAD_CONSULT">Consult detail of Activity Academic</string>
+    <string name="title_activity_detalle_carga_act_acad_insertar">Assign Activityes Academics</string>
+    <string name="title_activity_detalle_carga_act_acad_eliminar">Remove Asignation Activityes Academics</string>
+    <string name="title_activity_detalle_carga_act_acad_consultar">Consult Asignation Activityes Academics</string>
+    <string name="textview4_actividadacademica_insert1">Select the ID of Activity Academic</string>
+    <string name="title_activity_det_act_acad_insertar">Assign Activity Academic</string>
+    <string name="buttonz1_eliminar_academica">Remove detail of Activity Academic</string>
+    <string name="button1_fechainicioinsert">Type Date start</string>
+    <string name="button2_fechafininsert">Type Date end </string>
+    <string name="textview1_inicio">Date:</string>
+    <string name="textview2_fin">Date:</string>
+    <string name="button2_insertar_ciclo">Type Cycle</string>
+    <string name="button1_eliminar_ciclo">Remove Cycle</string>
+    <string name="button3_consultar_ciclo">Consult Cycle</string>
+    <string name="button4_actualizar_ciclo">Update Cycle</string>
+    <string name="button1_insertar_ciclo1">Save Registro</string>
+    <string name="button1a_insertarciclo">Type Registro</string>
+    <string name="textview_fechaini">Date Start of Cycle</string>
+    <string name="textview_fechafin">Date end  of Cycle</string>
+    <string name="textview_selecioneanio_ciclo">Select theño</string>
+    <string name="spinner_anio_ciclo">Select year  Cycle</string>
+    <string name="textview_selecione_ciclo">Select the Cycle</string>
+    <string name="spinner_ciclo">Select the Cycle</string>
+    <string name="button1_insertar_ciclo">Save Cycle</string>
+    <string name="button2_limpiartexto_ciclo">Clear Entrances</string>
+    <string name="msj_fechainicio_hint">Type Date Start Cycle</string>
+    <string name="msj_fechafin_hint">Type Date end  Cycle</string>
+    <string name="title_activity_ciclo_consultar">Consult Cycle Academico</string>
+    <string name="title_activity_ciclo_menu">Menu management  of Cycle Academico</string>
+    <string name="consult_fechainicio_hint">Date Start Cycle</string>
+    <string name="consult_fechafin_hint">Date end  Cycle</string>
+    <string name="button2a_concultar_Ci">consult</string>
+    <string name="button3a_eliminar_Ciclo">Remove Cycle</string>
 
-    <!-- fin alexis todavia no ordenado -->
+    <!-- finlexis todavia no ordenado -->
 
     <string name="title_activity_det_gpo_asig_nuevo">DetGpoAsigNuevoActivity</string>
     <string name="title_activity_det_gpo_asig_actualizar">DetGpoAsigActualizarActivity</string>
     <string name="title_activity_det_gpo_asig_consultar">DetGpoAsigConsultarActivity</string>
     <string name="title_activity_det_gpo_asig_eliminar">DetGpoAsigEliminarActivity</string>
     <string name="title_activity_admin_det_gpo_asig">AdminDetGpoAsigActivity</string>
-    <string name="btnNuevoDetGopAsig">Nuevo Detalle Grupo Asignado</string>
-    <string name="btnConsultarDetGpoAsig">Consultar Detalle grupo asignado</string>
-    <string name="btnActualizarDetGpoAsig">Actualizar detalle grupo asignado</string>
-    <string name="btnEliminarDetGpoAsig">Eliminar detalle grupo asignado</string>
-    <string name="msgDetGpoAsignado">Menu Detalle grupo asignado</string>
-    <string name="btnGuardarDetGpoAsig">Guardar detalle grupo asignado</string>
-    <string name="edtIdDetGpoAsig">Codigo detalle</string>
-    <string name="msgConsultDetGpoAsig">Consultar Detalle</string>
-    <string name="edtCodMatDetGpoAsig">Codigo materia</string>
-    <string name="edtIdModDetGpoAsig">Codigo modalidad</string>
-    <string name="edtIdLocalDetGpoAsig">Codigo Local</string>
-    <string name="edtIdDeptoAreMat">Codigo departamento</string>
-    <string name="edtCodMateAreaMat">Codigo Materia</string>
-    <string name="title_activity_actualizar_contrato">ActualizarContratoActivity</string>
-    <string name="title_activity_consultar_contrato">ConsultarContratoActivity</string>
-    <string name="title_activity_eliminar_contrato">EliminarContratoActivity</string>
-    <string name="btnAdmonDetGpoAsig">Adminstrar Detalle grupo asignado</string>
+    <string name="btnNuevoDetGopAsig">New detail Group earmarked</string>
+    <string name="btnConsultarDetGpoAsig">Consult detail group earmarked</string>
+    <string name="btnActualizarDetGpoAsig">Update detail group earmarked</string>
+    <string name="btnEliminarDetGpoAsig">Remove detail group earmarked</string>
+    <string name="msgDetGpoAsignado">Menu detail group earmarked</string>
+    <string name="btnGuardarDetGpoAsig">Save detail group earmarked</string>
+    <string name="edtIdDetGpoAsig">Coof detail</string>
+    <string name="msgConsultDetGpoAsig">Consult detail</string>
+    <string name="edtCodMatDetGpoAsig">Coof materia</string>
+    <string name="edtIdModDetGpoAsig">Coof modality</string>
+    <string name="edtIdLocalDetGpoAsig">Coof Local</string>
+    <string name="edtIdDeptoAreMat">Coof deparment</string>
+    <string name="edtCodMateAreaMat">Coof Stuff</string>
+    <string name="btnAdmonDetGpoAsig">Adminstrar detail group earmarked</string>
     <string name="title_activity_cargo_menu">CargoMenuActivity</string>
     <string name="title_activity_periodo_menu">PeriodoMenuActivity</string>
     <string name="title_activity_docente_cargo_menu">DocenteCargoMenuActivity</string>
@@ -352,102 +407,104 @@
     <string name="title_activity_docente_cargo_actualizar">DocenteCargoActualizarActivity</string>
     <string name="title_activity_docente_cargo_consultar">DocenteCargoConsultarActivity</string>
     <string name="title_activity_control_bdsergio">ControlBDSergioActivity</string>
-    <string name="nombre_proyecto">SQLite Base de datos: ALUMNO</string>
-    <string name="cargo_menu">Función a Ejecutar Cargo</string>
-    <string name="docente_cargo_menu">Función a Ejecutar Docente_Cargo</string>
-    <string name="periodo_menu">Función a Ejecutar Perido</string>
-    <string name="tabla_docente_cargo">Tabla Docente_Cargo</string>
-    <string name="tabla_periodo">Tabla Periodo</string>
-    <string name="llenar_base">Llenar Base</string>
+    <string name="nombre_proyecto">SQLite DataBase : ALUMNO</string>
+    <string name="cargo_menu">Function run Charge</string>
+    <string name="docente_cargo_menu">Function run Teaching_Cargo</string>
+    <string name="periodo_menu">Function run Perido</string>
+    <string name="tabla_docente_cargo">Table Teaching_Cargo</string>
+    <string name="tabla_periodo">Table Period</string>
+    <string name="llenar_base">Fill Base</string>
     <string name="tabla_cargo">TablaCargo</string>
-    <string name="btnNuevoCargo">Insertar Cargo</string>
-    <string name="btnActualizarCargo">Actualizar Cargo</string>
-    <string name="btnEliminarCargO">Eliminar Cargo</string>
-    <string name="btnConsultarCargo">Consultar Cargo</string>
-    <string name="btnNuevoDocentCargo">Insertar Docente_Cargo</string>
-    <string name="btnEliminarDocentCargO">Eliminar Docente_Cargo</string>
-    <string name="btnConsultarDocentCargo">Consultar Docente_Cargo</string>
-    <string name="btnNuevoPeriodo">Insertar Periodo</string>
-    <string name="btnEliminarPeriodO">Eliminar Periodo</string>
-    <string name="btnActualizarPeriodo">Actualizar Periodo</string>
-    <string name="btnConsultarPeriodo">Consultar Periodo</string>
+    <string name="btnNuevoCargo">Insert Charge</string>
+    <string name="btnActualizarCargo">Update Charge</string>
+    <string name="btnEliminarCargO">Remove Charge</string>
+    <string name="btnConsultarCargo">Consult Charge</string>
+    <string name="btnNuevoDocentCargo">Insert Teaching_Cargo</string>
+    <string name="btnEliminarDocentCargO">Remove Teaching_Cargo</string>
+    <string name="btnConsultarDocentCargo">Consult Teaching_Cargo</string>
+    <string name="btnNuevoPeriodo">Insert Period</string>
+    <string name="btnEliminarPeriodO">Remove Period</string>
+    <string name="btnActualizarPeriodo">Update Period</string>
+    <string name="btnConsultarPeriodo">Consult Period</string>
 
-    <!-- InsertarCargo -->
-    <string name="MsjIDCARgo">Id del cargo</string>
-    <string name="tituloCargo">Nuevo Cargo</string>
-    <string name="nombreCARGO">Nombre del Cargo</string>
-    <string name="btnGuardarCargo">Guardar Cargo</string>
-    <string name="btnLimpiarCargo">Limpiar Entradas</string>
-    <string name="msgidCargo">Id del Cargo</string>
+    <!-- InsertarCharge -->
+    <string name="MsjIDCARgo">Id  Charge</string>
+    <string name="tituloCargo">New Charge</string>
+    <string name="nombreCARGO">Name  Charge</string>
+    <string name="btnGuardarCargo">Save Charge</string>
+    <string name="btnLimpiarCargo">Clear Entrances</string>
+    <string name="msgidCargo">Id  Charge</string>
 
-    <!-- InsertarDocente_Cargo -->
+    <!-- InsertarDocente_Charge -->
 
-    <string name="btnNuevoDocCargo">Nuevo Docente_Cargo</string>
-    <string name="edtIdDocCarg">Id Docente_Cargo</string>
-    <string name="btnGuardarDocCar">Guardar Docente_Cargo</string>
+    <string name="btnNuevoDocCargo">New Teaching_Cargo</string>
+    <string name="edtIdDocCarg">Id Teaching_Cargo</string>
+    <string name="btnGuardarDocCar">Save Teaching_Cargo</string>
 
-    <!-- ActualizarDocente_Cargo -->
-    <string name="msjActualizar">Actualizar Docente_Cargo</string>
-    <string name="MsjIdPeriodo">Id Periodo</string>
-    <string name="MsjIdCargo">Id Cargo</string>
-    <string name="MsjIdDocente">Id Docente</string>
-    <string name="ActlDoc_CAr">Actualizar  Docente_Cargo</string>
+    <!-- UpdateDocente_Charge -->
+    <string name="msjActualizar">Update Teaching_Cargo</string>
+    <string name="MsjIdPeriodo">Id Period</string>
+    <string name="MsjIdCargo">Id Charge</string>
+    <string name="MsjIdDocente">Id Teaching</string>
+    <string name="ActlDoc_CAr">Update Teaching_Cargo</string>
 
-    <!-- ConsultarDocente_Cargo -->
-    <string name="msjQueDocar">Consultar Docente_Cargo</string>
-    <string name="iDpEr">Id Periodo</string>
-    <string name="iDCaRg">Id Cargo</string>
-    <string name="iDdOc">Id Docente</string>
+    <!-- ConsultarDocente_Charge -->
+    <string name="msjQueDocar">Consult Teaching_Cargo</string>
+    <string name="iDpEr">Id Period</string>
+    <string name="iDCaRg">Id Charge</string>
+    <string name="iDdOc">Id Teaching</string>
 
-    <!-- EliminarDocente_Cargo -->
-    <string name="MSJ_EDCA">Eliminar Docente_Cargo</string>
-    <string name="PeriodoID">Id Periodo</string>
-    <string name="CargoID">Id Cargo</string>
-    <string name="DocentID">Id Docente</string>
-    <string name="btnDOCARGOEl">Eliminar  Docente_Cargo</string>
+    <!-- EliminarDocente_Charge -->
+    <string name="MSJ_EDCA">Remove Teaching_Cargo</string>
+    <string name="PeriodoID">Id Period</string>
+    <string name="CargoID">Id Charge</string>
+    <string name="DocentID">Id Teaching</string>
+    <string name="btnDOCARGOEl">Remove Teaching_Cargo</string>
 
-    <!-- ActualizarCargo -->
-    <string name="NombreNew">Nombre de Cargo</string>
-    <string name="CargoActu">Actualizar Cargo</string>
-    <string name="msgActualizarCargo">Actualizar  Cargo</string>
+    <!-- UpdateCharge -->
+    <string name="NombreNew">Name of Charge</string>
+    <string name="CargoActu">Update Charge</string>
+    <string name="msgActualizarCargo">Update Charge</string>
 
-    <!-- EliminarCargo -->
-    <string name="btnEliminarCargo">Eliminar Cargo</string>
-    <string name="msgNomCargo">Nombre del Cargo</string>
-    <string name="msgElimCargo">Eliminar Cargo</string>
+    <!-- EliminarCharge -->
+    <string name="btnEliminarCargo">Remove Charge</string>
+    <string name="msgNomCargo">Name  Charge</string>
+    <string name="msgElimCargo">Remove Charge</string>
 
-    <!-- ConsultarCargo -->
-    <string name="tvConsultarCargo">Consultar  Cargo</string>
-    <string name="msgNomCargo3">Nombre del Cargo</string>
+    <!-- ConsultarCharge -->
+    <string name="tvConsultarCargo">Consult Charge</string>
+    <string name="msgNomCargo3">Name  Charge</string>
 
     <!-- InsertarPeriodo -->
 
-    <string name="msgidPeriodo">Id del Periodo</string>
-    <string name="tituloPeriodo">Nuevo Periodo</string>
-    <string name="msgFechaIni">Fecha de Inicio</string>
-    <string name="msgFechaFin">Fecha de Fin</string>
-    <string name="btnLimpiarPeriodo">Limpiar Entradas</string>
-    <string name="btnGuardarPeriodo">Guardar Periodo</string>
+    <string name="msgidPeriodo">Id  Period</string>
+    <string name="tituloPeriodo">New Period</string>
+    <string name="msgFechaIni">Date of Inicio</string>
+    <string name="msgFechaFin">Date of end </string>
+    <string name="btnLimpiarPeriodo">Clear Entrances</string>
+    <string name="btnGuardarPeriodo">Save Period</string>
 
-    <!-- ActualizarPeriodo -->
+    <!-- UpdatePeriodo -->
 
-    <string name="fechafinMsj">Fecha Fin </string>
-    <string name="fechainiMsj">Fecha Inicio </string>
-    <string name="ButtonPERiodoUPDa">Guardar Periodo</string>
-    <string name="msgActualizarPeriodo">Actualizar Periodo</string>
+    <string name="fechafinMsj">Date end  </string>
+    <string name="fechainiMsj">Date Start </string>
+    <string name="ButtonPERiodoUPDa">Save Period</string>
+    <string name="msgActualizarPeriodo">Update Period</string>
 
     <!-- ConsultarPeriodo -->
 
     <string name="msgFini">Fin </string>
-    <string name="msgInic">Inicio </string>
-    <string name="msgConsultPeriodo">Consultar Periodo</string>
+    <string name="msgInic">Start </string>
+    <string name="msgConsultPeriodo">Consult Period</string>
 
     <!-- EliminarPeriodo -->
 
-    <string name="Msj_Finper">Fin de Periodo </string>
-    <string name="Msj_Iniper">Inicio de Periodo </string>
-    <string name="msgElimPeriodo">Eliminar Periodo</string>
-    <string name="Button_Perielim">Eliminar Periodo</string>
-    <string name="VerTablasCAtalogos">Ver Tablas</string>
-
+    <string name="Msj_Finper">Fin of Period </string>
+    <string name="Msj_Iniper">Start of Period </string>
+    <string name="msgElimPeriodo">Remove Period</string>
+    <string name="Button_Perielim">Remove Period</string>
+    <string name="VerTablasCAtalogos">View Tables</string>
+    <string name="title_activity_insertar_materias_impartir">InsertarMateriasImpartirActivity</string>
+    <string name="title_activity_eliminar_materias_impartir">EliminarMateriasImpartirActivity</string>
+    <string name="title_activity_consultar_materias_impartir">ConsultarMateriasImpartirActivity</string>    
 </resources>
