@@ -331,4 +331,126 @@
     <string name="btnAdmonDetGpoAsig">Adminstrar Detalle grupo asignado</string>
     
     
+        <string name="title_activity_cargo_menu">CargoMenuActivity</string>
+    <string name="title_activity_periodo_menu">PeriodoMenuActivity</string>
+    <string name="title_activity_docente_cargo_menu">DocenteCargoMenuActivity</string>
+    <string name="title_activity_cargo_insertar">CargoInsertarActivity</string>
+    <string name="title_activity_cargo_eliminar">CargoEliminarActivity</string>
+    <string name="title_activity_cargo_actualizar">CargoActualizarActivity</string>
+    <string name="title_activity_cargo_consultar">CargoConsultarActivity</string>
+    <string name="title_activity_periodo_insertar">PeriodoInsertarActivity</string>
+    <string name="title_activity_periodo_eliminar">PeriodoEliminarActivity</string>
+    <string name="title_activity_periodo_actualizar">PeriodoActualizarActivity</string>
+    <string name="title_activity_perido_consultar">PeridoConsultarActivity</string>
+    <string name="title_activity_docente_cargo_insertar">DocenteCargoInsertarActivity</string>
+    <string name="title_activity_docente_cargo_eliminar">DocenteCargoEliminarActivity</string>
+    <string name="title_activity_docente_cargo_actualizar">DocenteCargoActualizarActivity</string>
+    <string name="title_activity_docente_cargo_consultar">DocenteCargoConsultarActivity</string>
+    <string name="title_activity_control_bdsergio">ControlBDSergioActivity</string>
+    
+    <string name="nombre_proyecto">SQLite Base de datos: ALUMNO</string>
+    <string name="cargo_menu">Función a Ejecutar Cargo</string>
+    <string name="docente_cargo_menu">Función a Ejecutar Docente_Cargo</string>
+    <string name="periodo_menu">Función a Ejecutar Perido</string>
+    
+    <string name="tabla_docente_cargo">Tabla Docente_Cargo</string>
+    <string name="tabla_periodo">Tabla Periodo</string>
+    <string name="llenar_base">Llenar Base</string>
+    <string name="tabla_cargo">TablaCargo</string>
+    
+    
+    
+    <string name="btnNuevoCargo">Insertar Cargo</string>
+    <string name="btnActualizarCargo">Actualizar Cargo</string>
+    <string name="btnEliminarCargO">Eliminar Cargo</string>
+    <string name="btnConsultarCargo">Consultar Cargo</string>
+    
+    <string name="btnNuevoDocentCargo">Insertar Docente_Cargo</string>
+    <string name="btnEliminarDocentCargO">Eliminar Docente_Cargo</string>
+    <string name="btnConsultarDocentCargo">Consultar Docente_Cargo</string>
+    
+     <string name="btnNuevoPeriodo">Insertar Periodo</string>
+     <string name="btnEliminarPeriodO">Eliminar Periodo</string>
+     <string name="btnActualizarPeriodo">Actualizar Periodo</string>
+     <string name="btnConsultarPeriodo">Consultar Periodo</string>
+     
+     <!-- InsertarCargo -->
+    <string name="MsjIDCARgo">Id del cargo</string>
+    <string name="tituloCargo">Nuevo Cargo</string>
+    <string name="nombreCARGO">Nombre del Cargo</string>
+    <string name="btnGuardarCargo">Guardar Cargo</string>
+    <string name="btnLimpiarCargo">Limpiar Entradas</string>
+    <string name="msgidCargo">Id del Cargo</string>
+ 
+    
+      <!-- InsertarDocente_Cargo -->
+      
+   <string name="btnNuevoDocCargo">Nuevo Docente_Cargo</string>
+   <string name="edtIdDocCarg">Id Docente_Cargo</string>
+   <string name="btnGuardarDocCar">Guardar Docente_Cargo</string>
+   
+   <!-- ActualizarDocente_Cargo -->
+    <string name="msjActualizar">Actualizar Docente_Cargo</string>
+    <string name="MsjIdPeriodo">Id Periodo</string>
+    <string name="MsjIdCargo">Id Cargo</string>
+    <string name="MsjIdDocente">Id Docente</string>
+    <string name="ActlDoc_CAr">Actualizar  Docente_Cargo</string>
+   
+     <!-- ConsultarDocente_Cargo -->
+    <string name="msjQueDocar">Consultar Docente_Cargo</string>
+    <string name="iDpEr">Id Periodo</string>
+    <string name="iDCaRg">Id Cargo</string>
+    <string name="iDdOc">Id Docente</string>
+    
+   <!-- EliminarDocente_Cargo -->
+    <string name="MSJ_EDCA">Eliminar Docente_Cargo</string>
+    <string name="PeriodoID">Id Periodo</string>
+    <string name="CargoID">Id Cargo</string>
+    <string name="DocentID">Id Docente</string>
+    <string name="btnDOCARGOEl">Eliminar  Docente_Cargo</string>
+  
+   <!-- ActualizarCargo -->
+    <string name="NombreNew">Nombre de Cargo</string>
+    <string name="CargoActu">Actualizar Cargo</string>
+    <string name="msgActualizarCargo">Actualizar  Cargo</string>
+   
+     <!-- EliminarCargo -->
+    <string name="btnEliminarCargo">Eliminar Cargo</string>
+    <string name="msgNomCargo">Nombre del Cargo</string>
+    <string name="msgElimCargo">Eliminar Cargo</string>
+   
+     <!-- ConsultarCargo -->
+    <string name="tvConsultarCargo">Consultar  Cargo</string>
+    <string name="msgNomCargo3">Nombre del Cargo</string>
+    
+    <!-- InsertarPeriodo -->
+    
+    <string name="msgidPeriodo">Id del Periodo</string>
+    <string name="tituloPeriodo">Nuevo Periodo</string>
+    <string name="msgFechaIni">Fecha de Inicio</string>
+    <string name="msgFechaFin">Fecha de Fin</string>
+    <string name="btnLimpiarPeriodo">Limpiar Entradas</string>
+    <string name="btnGuardarPeriodo">Guardar Periodo</string>
+   
+   <!-- ActualizarPeriodo -->
+   
+    <string name="fechafinMsj">Fecha Fin </string>
+    <string name="fechainiMsj">Fecha Inicio </string>
+    <string name="ButtonPERiodoUPDa">Guardar Periodo</string>
+    <string name="msgActualizarPeriodo">Actualizar Periodo</string>
+    
+      <!-- ConsultarPeriodo -->
+   
+    <string name="msgFini">Fin </string>
+    <string name="msgInic">Inicio </string>
+    <string name="msgConsultPeriodo">Consultar Periodo</string>
+    
+     <!-- EliminarPeriodo -->
+    
+    <string name="Msj_Finper">Fin de Periodo </string>
+    <string name="Msj_Iniper">Inicio de Periodo </string>
+    <string name="msgElimPeriodo">Eliminar Periodo</string>
+    <string name="Button_Perielim">Eliminar Periodo</string>
+    
+    
 </resources>

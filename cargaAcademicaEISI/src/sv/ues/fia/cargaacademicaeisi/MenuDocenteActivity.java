@@ -13,6 +13,8 @@ public class MenuDocenteActivity extends Activity implements OnClickListener {
 	private Button botonDocente;
 	private Button botonDepartamento;
 	private Button botonMateriasImpartir;
+	private Button botoncargo;
+	private Button botonperiodo;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,11 @@ public class MenuDocenteActivity extends Activity implements OnClickListener {
 		botonDepartamento.setOnClickListener(this);
 		botonMateriasImpartir = (Button) findViewById(R.id.botonMateriasImpartir);
 		botonMateriasImpartir.setOnClickListener(this);
+		botoncargo = (Button) findViewById(R.id.botonCargo);
+		botoncargo.setOnClickListener(this);
+		botonperiodo = (Button) findViewById(R.id.botonPeriodo);
+		botonperiodo.setOnClickListener(this);
+		
 	}
 
 	@Override
@@ -52,6 +59,15 @@ public class MenuDocenteActivity extends Activity implements OnClickListener {
 					AdminMateriasImpartirActivity.class));
 		break;
 		
+		case R.id.botonCargo:
+			startActivity(new Intent(getApplicationContext(), 
+					CargoMenuActivity.class));
+		break;
+		
+		case R.id.botonPeriodo:
+			startActivity(new Intent(getApplicationContext(), 
+					AdminMateriasImpartirActivity.class)); //falta
+		break;
 		default:
 		break;
 		}

@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CargoMenuActivity" >
+
+        <Button
+        android:id="@+id/btnNuevoDocente_Cargo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:drawableRight="@drawable/save2"
+        android:text="@string/btnNuevoCargo" />
+
+    <Button
+        android:id="@+id/btnActualizarNvoDocente_Cargo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnConsultarNvoDocente_Cargo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:drawableRight="@drawable/update"
+        android:text="@string/btnActualizarCargo" />
+
+    <Button
+        android:id="@+id/btnConsultarNvoDocente_Cargo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnNuevoDocente_Cargo"
+        android:layout_below="@+id/btnNuevoDocente_Cargo"
+        android:layout_marginTop="42dp"
+        android:drawableRight="@drawable/search"
+        android:text="@string/btnConsultarCargo" />
+
+    <Button
+        android:id="@+id/btnEliminarNvoDocente_Cargo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnActualizarNvoDocente_Cargo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:drawableRight="@drawable/clear"
+        android:text="@string/btnEliminarCargO" />
+    
+</RelativeLayout>

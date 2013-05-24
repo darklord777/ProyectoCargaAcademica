@@ -3,15 +3,12 @@ package sv.ues.fia.cargaacademicaeisi;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.xml.sax.DTDHandler;
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.widget.Toast;
 
 public class ControlDB {
 	
@@ -46,6 +43,11 @@ public class ControlDB {
 	private static final String[] camposContrato = new String[] { "IDCONTRATO",
 			"TIPO", "HORAS" };
 	/* Fin YO */
+	private static final String[]camposCARGO = new String [] {"IDCARGO","NOM_CARGO"};
+	private static final String[]camposDOCENTE_CARGO = new String [] {"IDDOCCAR","IDDOCENTE","IDPERIODO","IDCARGO"};
+	private static final String[]camposPERIODO = new String [] {"IDPERIODO","FECHA_INI","FECHA_FIN"};
+	
+	
 	private final Context context;
 	private DatabaseHelper DBHelper;
 	private SQLiteDatabase db;
@@ -1017,8 +1019,229 @@ public class ControlDB {
 	}
 	
 
-	/** METODOS SERGIO */
+	/** METODOS SERGIO  ***********************************************/
 
+	public String insertar(CARGO cargo){
+		String regInsertados = "Registro insertado en la fila No.=";
+		long contador = 0;
+		ContentValues car = new ContentValues();
+		car.put("IDCARGO", cargo.getIdCargo());
+		car.put("NOM_CARGO", cargo.getNomCargo());
+		contador = db.insert("CARGO", null, car);
+		if (contador == -1 || contador == 0) {
+			regInsertados = "Error, registro duplicado. Verificar Insercion";
+		} else {
+			regInsertados += contador;
+		}
+		return regInsertados;
+	}
+
+	public String actualizar(CARGO cargo) {
+		if(verificarIntegridad(cargo, 28)){
+		String[] id = { cargo.getIdCargo() };
+		ContentValues values = new ContentValues();
+		values.put("NOM_CARGO", cargo.getNomCargo());
+		db.update("CARGO", values, "IDCARGO = ?", id);
+		return "Registro actualizado correctamente";
+		}else{
+			return "Registro con IdCargo " + cargo.getIdCargo() + " no existe";
+		}
+	}
+	public CARGO consultarCargo(String idCargo) {
+		String[] id = { idCargo };
+		Cursor cursor = db.query("CARGO", camposCARGO,"IDCARGO = ?", id, null, null, null);
+		if (cursor.moveToFirst()) {
+			CARGO cargo = new CARGO();
+			cargo.setIdCargo(cursor.getString(0));
+			cargo.setNomCargo(cursor.getString(1));
+			return cargo;
+		} else {
+			return null;
+		}
+	}
+	public String eliminar(CARGO cargo) {
+		String regAfectados = "";
+		int contador = 0;
+		if (verificarIntegridad(cargo, 25)){
+			regAfectados += "Tiene registros hijos\nNo se puede borrar,";
+			if (verificarIntegridad(cargo, 25))
+				regAfectados += " DOCENTE_CARGO tiene registros.";
+			return regAfectados;
+		}
+
+		regAfectados = "No tiene registros hijos\nFilas afectadas=";
+		
+		contador += db.delete("CARGO","IDCARGO='" + cargo.getIdCargo() + "'",null);
+		regAfectados += contador;
+		return regAfectados;
+	}
+	public String insertar(DOCENTE_CARGO cargoAsignado){
+		
+		String regInsertados="Registro Insertado Nº= ";
+		long contador=0;
+	ContentValues doccargos = new ContentValues();
+		 doccargos.put("IDDOCCAR", cargoAsignado.getIdDocCar());
+		// doccargos.put("IDDOCENTE", cargoAsignado.getIdDocente());
+		 doccargos.put("IDPERIODO", cargoAsignado.getIdPeriodo());
+		 doccargos.put("IDCARGO", cargoAsignado.getIdCargo());
+		contador=db.insert("DOCENTE_CARGO", null, doccargos);
+
+		if(contador==-1 || contador==0)
+		{
+			regInsertados= "Error al Insertar el registro, Registro Duplicado. Verificar inserción"+cargoAsignado.getIdDocCar();
+		}
+		else {
+				regInsertados=regInsertados+contador;
+		}
+		
+		return regInsertados;
+
+	}
+	public String eliminar(DOCENTE_CARGO cargoAsignado) {
+		String regAfectados = "";
+		int contador = 0;
+		
+		regAfectados = "No tiene registros hijos\nFilas afectadas=";
+		contador += db.delete("DOCENTE_CARGO", "IDDOCCAR='"
+				+ cargoAsignado.getIdDocCar() + "'", null);
+		regAfectados += contador;
+		return regAfectados;
+	}
+
+
+	public DOCENTE_CARGO consultarDocenteCargo(String idetcurso) {
+		String[] id = { idetcurso };
+		Cursor cursor = db.query("DOCENTE_CARGO", camposDOCENTE_CARGO,
+				"IDDOCCAR = ?", id, null, null, null);
+		if (cursor.moveToFirst()) {
+			DOCENTE_CARGO cargoAsignado = new DOCENTE_CARGO();
+			cargoAsignado.setIdDocCar(cursor.getString(0));
+			cargoAsignado.setIdDocente(cursor.getString(1));
+			cargoAsignado.setIdPeriodo(cursor.getString(2));
+		    cargoAsignado.setIdCargo(cursor.getString(3));
+			return cargoAsignado;
+		} else {
+			return null;
+		}
+	}
+
+	public String insertar(PERIODO periodo){
+			
+			String regInsertados="Registro Insertado Nº= ";
+			long contador=0;
+
+			
+			ContentValues periodos = new ContentValues();
+			periodos.put("IDPERIODO", periodo.getIdPeriodo());
+			periodos.put("FECHA_FIN", periodo.getFechaIni());
+			periodos.put("FECHA_FIN", periodo.getFechaFin());
+			contador=db.insert("PERIODO", null, periodos);
+			
+			if(contador==-1 || contador==0)
+			{
+				regInsertados= "Error al Insertar el registro, Registro Duplicado. Verificar inserción"+periodo.getIdPeriodo();
+			}
+			else {
+					regInsertados=regInsertados+contador;
+			}
+			
+			return regInsertados;
+
+		}
+	public String actualizar(PERIODO periodo) {
+		if(verificarIntegridad(periodo, 27)){
+		String[] id = { periodo.getIdPeriodo() };
+		ContentValues values = new ContentValues();
+		values.put("FECHA_INI", periodo.getFechaIni());
+		values.put("FECHA_FIN", periodo.getFechaFin());
+		db.update("PERIODO", values, "IDPERIODO = ?", id);
+		return "Registro actualizado correctamente";
+		}else{
+			return "Registro con IdPeriodo " + periodo.getIdPeriodo() + " no existe";
+		}
+	}
+
+	public PERIODO consultarPeriodo(String idPeriodo) {
+		String[] id = { idPeriodo };
+		Cursor cursor = db.query("PERIODO", camposPERIODO,"IDPERIODO = ?", id, null, null, null);
+		if (cursor.moveToFirst()) {
+			PERIODO periodo = new PERIODO();
+			periodo.setIdPeriodo(cursor.getString(0));
+			periodo.setFechaIni(cursor.getString(1));
+			periodo.setFechaFin(cursor.getString(2));
+			return periodo;
+		} else {
+			return null;
+		}
+	}
+	public String eliminar(PERIODO periodo){
+		String regAfectados="filas afectadas= ";
+		int contador=0;
+		if (verificarIntegridad(periodo,26)) {
+			regAfectados += "Tiene registros hijos\nNo se puede borrar,";
+			if (verificarIntegridad(periodo,2))
+			regAfectados += " DOCENTE_CARGO tiene registros.";	
+			return regAfectados;
+		}
+		regAfectados = "No tiene registros hijos\nFilas afectadas=";
+		contador+=db.delete("PERIODO", "IDPERIODO='"+periodo.getIdPeriodo()+"'", null);
+		regAfectados+=contador;
+		return regAfectados;	
+	}
+	
+	
+	
+	public List<String> getAllIdCargos() {
+		List<String> idCargos = new ArrayList<String>();
+		Cursor cursor = db.rawQuery("select IDCARGO from CARGO order by IDCARGO;",null);
+		if (cursor.moveToFirst()) {
+			do {
+				idCargos.add(cursor.getString(0));
+			} while (cursor.moveToNext());
+		}
+		cursor.close();
+		return idCargos;
+	}
+	public List<String> getAllIdDocCar() {
+		List<String> idDocCargos = new ArrayList<String>();
+		Cursor cursor = db
+				.rawQuery(
+						"select IDDOCCAR from DOCENTE_CARGO order by IDDOCCAR;",
+						null);
+		if (cursor.moveToFirst()) {
+			do {
+				idDocCargos.add(cursor.getString(0));
+			} while (cursor.moveToNext());
+		}
+		cursor.close();
+		return idDocCargos;
+	}
+	public List<String> getAllIdPeriodos() {
+		List<String> idPeriodos = new ArrayList<String>();
+		Cursor cursor = db.rawQuery("select IDPERIODO from PERIODO order by IDPERIODO;",
+						null);
+		if (cursor.moveToFirst()) {
+			do {
+				idPeriodos.add(cursor.getString(0));
+			} while (cursor.moveToNext());
+		}
+		cursor.close();
+		return idPeriodos;
+	}
+	public List<String> getAllIdDocentes() {
+		List<String> idDocentes = new ArrayList<String>();
+		Cursor cursor = db	.rawQuery("select IDDOCENTE from DOCENTE order by IDDOCENTE;",null);
+		if (cursor.moveToFirst()) {
+			do {
+				idDocentes.add(cursor.getString(0));
+			} while (cursor.moveToNext());
+		}
+		cursor.close();
+		return idDocentes;
+	}
+
+	
+		
 	/* Verificacion de integridad */
 	// FUNCION DE VERIFICACION DE INTEGRIDAD
 	// 1 AL 6 aLEXIS
@@ -1264,6 +1487,56 @@ public class ControlDB {
 		case 23: {
 			return true;
 		}
+		
+		case 24: {
+			return true;
+		}
+		//SERGIO
+		case 25: {
+			CARGO cargo = (CARGO) dato;
+			Cursor cursor = db.query(true, "DOCENTE_CARGO",
+					new String[] { "IDCARGO" }, "IDCARGO='"
+							+ cargo.getIdCargo() + "'", null,
+					null, null, null, null);
+			if (cursor.moveToFirst())
+				return true;
+			else
+				return false;
+				
+		}
+		case 26: {
+			PERIODO periodo = (PERIODO)dato;
+			Cursor cursor=db.query(true, "DOCENTE_CARGO", new String[] {
+					"IDPERIODO" }, "IDPERIODO='"+periodo.getIdPeriodo()+"'",null, null, null, null, null);
+			if(cursor.moveToFirst())
+			return true;
+			else
+			return false;	
+		}
+		
+		case 27: {
+			//verificar que exista Periodo
+			PERIODO periodo2 = (PERIODO)dato;
+			String[] idp = {periodo2.getIdPeriodo()};
+			abrir();
+			Cursor cursor = db.query("PERIODO", null, "IDPERIODO = ?", idp, null, null, null);
+			if(cursor.moveToFirst()){
+				
+				return true;
+			}			
+		}
+		case 28: {
+			// Verificar que exista cargo
+			CARGO cargo2 = (CARGO)dato;
+			String[] id = {cargo2.getIdCargo()};
+			abrir();
+			Cursor cursor = db.query("CARGO", null, "IdCargo = ?", id, null, null, null);
+			if(cursor.moveToFirst()){
+				
+				return true;
+			}		
+		}
+		
 		default:
 			return false;
 
