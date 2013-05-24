@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -9,8 +10,107 @@
     tools:context=".ConsultarDocenteActivity" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/msgactivityconsultardocente"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spnConsulIdDocente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spnConsulCodTipContDocente"
+        android:layout_below="@+id/textView1"
+        android:prompt="@string/msgpromtspninsertar" />
+
+    <EditText
+        android:id="@+id/editTxtCosulApeDocente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTxtConsulNomDocente"
+        android:layout_below="@+id/editTxtConsulNomDocente"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/msgeditTxtInsertApeDocente" />
+
+    <EditText
+        android:id="@+id/editTxtConsulGraDocente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTxtCosulApeDocente"
+        android:layout_below="@+id/editTxtCosulApeDocente"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/msgeditTxtInsertGraDocente" />
+
+    <EditText
+        android:id="@+id/editTxtConsulEmailDocente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTxtConsulTelDocente"
+        android:layout_below="@+id/editTxtConsulGraDocente"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/msgeditTxtInsertEmailDocente"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTxtConsulTelDocente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTxtConsulHorasDocente"
+        android:layout_below="@+id/editTxtConsulEmailDocente"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/msgeditTxtInsertTelDocente"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editTxtConsulHorasDocente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTxtConsulGraDocente"
+        android:layout_alignParentBottom="true"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/msgeditTxtConsultarhorasdocente" />
+
+    <EditText
+        android:id="@+id/editTxtConsulNomDocente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spnConsulIdDocente"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/msgeditTxtInsertNomDocente" />
+
+    <EditText
+        android:id="@+id/editTxtConsulTipoContDocente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editTxtConsulNomDocente"
+        android:layout_below="@+id/spnConsulIdDocente"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/msgeditTxtcunsulTipoContDoce" />
 
 </RelativeLayout>
