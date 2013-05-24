@@ -66,7 +66,7 @@ public class MenuDocenteActivity extends Activity implements OnClickListener {
 		
 		case R.id.botonPeriodo:
 			startActivity(new Intent(getApplicationContext(), 
-					AdminMateriasImpartirActivity.class)); //falta
+					PeriodoMenuActivity.class)); //falta
 		break;
 		default:
 		break;
