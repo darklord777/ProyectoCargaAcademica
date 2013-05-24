@@ -27,7 +27,7 @@ public class ActividadAcademicaConsultarActivity extends Activity implements OnI
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_actividad_academica_consultar);	
-/*	
+	
 		helper = new ControlDB(this);
 		idModalAA = (EditText) findViewById(R.id.idModActA);
 		NombreActAcad = (EditText) findViewById(R.id.SelNombreActAcad);
@@ -40,7 +40,10 @@ public class ActividadAcademicaConsultarActivity extends Activity implements OnI
 		adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, idActA);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spnListaActAcad.setAdapter(adapter);
-		spnListaActAcad.setOnItemSelectedListener(this);	*/
+		spnListaActAcad.setOnItemSelectedListener(this);
+		idModalAA.setFocusable(false);
+		NombreActAcad.setFocusable(false);
+		cargo.setFocusable(false);
 	}
 
 	@Override

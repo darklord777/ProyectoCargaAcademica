@@ -899,7 +899,7 @@ public class ControlDB {
 	public Actividad_Academica consultarActAcademica(String idActAcademica) {
 		String[] id = { idActAcademica };
 		Cursor cursor = db.query("ACTIVIDAD_ACADEMICA", camposActAcademica,
-				"IDACTACADD = ?", id, null, null, null);
+				"IDACTACAD = ?", id, null, null, null);
 		if (cursor.moveToFirst()) {
 			Actividad_Academica ActAcad = new Actividad_Academica();
 			ActAcad.setIdactacad(cursor.getString(0));
@@ -916,7 +916,7 @@ public class ControlDB {
 		List<String> idActA = new ArrayList<String>();
 		Cursor cursor = db
 				.rawQuery(
-						"select IDACTACADD from ACTIVIDAD_ACADEMICA order by IDACTACADD;",
+						"select IDACTACAD from ACTIVIDAD_ACADEMICA order by IDACTACAD;",
 						null);
 		if (cursor.moveToFirst()) {
 			do {
