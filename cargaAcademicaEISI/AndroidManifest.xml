@@ -366,6 +366,46 @@
             android:name="sv.ues.fia.cargaacademicaeisi.DocenteCargoConsultarActivity"
             android:label="@string/title_activity_docente_cargo_consultar" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.InsertarDocenteActivity"
+            android:label="@string/title_activity_insertar_docente" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.EliminarDocenteActivity"
+            android:label="@string/title_activity_eliminar_docente" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.ConsultarDocenteActivity"
+            android:label="@string/title_activity_consultar_docente" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.ActualizarDocenteActivity"
+            android:label="@string/title_activity_actualizar_docente" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.InsertarDocenteDeptoActivity"
+            android:label="@string/title_activity_insertar_docente_depto" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.ConsultarDocenteDeptoActivity"
+            android:label="@string/title_activity_consultar_docente_depto" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.EliminarDocenteDeptoActivity"
+            android:label="@string/title_activity_eliminar_docente_depto" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.InsertarMateriasImpartirActivity"
+            android:label="@string/title_activity_insertar_materias_impartir" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.EliminarMateriasImpartirActivity"
+            android:label="@string/title_activity_eliminar_materias_impartir" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.ConsultarMateriasImpartirActivity"
+            android:label="@string/title_activity_consultar_materias_impartir" >
+        </activity>
     </application>
 
 </manifest>

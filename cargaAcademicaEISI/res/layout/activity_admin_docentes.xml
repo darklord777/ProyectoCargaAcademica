@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".AdminDocentesActivity" >
 
-    <Button
+     <Button
         android:id="@+id/btnNuevoDocente"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -48,6 +48,15 @@
         android:layout_marginTop="21dp"
         android:drawableRight="@drawable/clear"
         android:text="@string/btnEliminarDocente" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/msgactivityadmindocente"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 
 </RelativeLayout>

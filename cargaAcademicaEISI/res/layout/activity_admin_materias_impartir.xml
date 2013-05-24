@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".AdminMateriasImpartirActivity" >
 
-     <Button
+      <Button
         android:id="@+id/btnConsultarMatDoc"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -39,5 +39,13 @@
         android:drawableRight="@drawable/save2"
         android:text="@string/btnAsigMatDoc" />
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/msgactivityadminmateriasimpartir"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

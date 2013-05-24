@@ -46,9 +46,6 @@
     <string name="title_activity_are_materia_eliminar">Eliminar Area de Materia</string>
     <string name="title_activity_are_materia_actualizar">Actualizar Are de Materia</string>
     <string name="title_activity_admon_area_mat">Administrar Area de Materia</string>
-    <string name="title_activity_admin_tipo_contrato">Adminnistrar Tipo de Contrato</string>
-    <string name="title_activity_admin_docente_depto">Administrar Departamento Docente</string>
-    <string name="title_activity_materias_impartir">Materias a Impartir</string>
     <string name="action_settings">COnfiguraciones</string>
     <string name="hello_world">Hola mundo!</string>
 
@@ -194,17 +191,23 @@
 
     <!-- YO -->
     <string name="title_activity_admin_docentes">AdminDocentesActivity</string>
+    <string name="msgactivityadmindocente">Administracion de Docentes</string>
     <string name="btnNuevoDocente">Nuevo Docente</string>
     <string name="btnActualizarDocente">Actualizar Docente</string>
     <string name="btnConsultarDocente">Consultar Docente</string>
     <string name="btnEliminarDocente">Eliminar Docente</string>
+    <string name="title_activity_admin_tipo_contrato">AdminTipoContratoActivity</string>
+    <string name="msgactivityadmintipocontrato">Administracion de Tipo Contrato</string>
     <string name="btnNuevoContrato">Nuevo Tipo de Contrato</string>
     <string name="btnActualizarContrato">Actualizar Tipo de Contrato</string>
     <string name="btnConsultarContrato">Consultar Tipo de Contrato</string>
     <string name="btnEliminarContrato">Eliminar Tipo de Contrato</string>
+    <string name="title_activity_admin_docente_depto">AdminDocenteDeptoActivity</string>
+    <string name="msgactivityadmindocentedepto">Administracion de Docentes y Departamentos</string>
     <string name="btnAsigDocDepto">Asignar Docentes a Departamentos</string>
     <string name="btnConsultarDocDepto">Consultar Docentes en Departamentos</string>
     <string name="btnEliminarDocDepto">Eliminar Docente de Departamento</string>
+    <string name="title_activity_materias_impartir">MateriasImpartirActivity</string>
     <string name="btnAsigMatDoc">Asignar Materia a Docentes</string>
     <string name="btnConsultarMatDoc">Consultar Materia de Docentes</string>
     <string name="btnEliminarMatDoc">Eliminar Materias de Docentes</string>
@@ -213,6 +216,7 @@
     <string name="msgeditTxtNomTipCont">Nombre de Contrato</string>
     <string name="msgeditTxtHorasTipCont">Cantidad de Horas del Contrato</string>
     <string name="title_activity_admin_materias_impartir">AdminMateriasImpartirActivity</string>
+    <string name="msgactivityadminmateriasimpartir">Administracion de Materias que Pueden Impartir los Docentes</string>
 
     <!-- sistema -->
     <string name="btnDocente">Administracion de Docentes</string>
@@ -225,11 +229,10 @@
 
     <!-- menu docente -->
     <string name="title_activity_menu_docentes">MenuDocentesActivity</string>
-    <string name="title_activity_menu_docente">MenuDocenteActivity</string>
-    <string name="botonDocente">Docentes</string>
-    <string name="botonCargo">Cargos de Docentes</string>
-    <string name="botonPeriodo">Periodos de Cargos</string>
-    <string name="botonDepartamento">Departamentos de Docentes</string>
+    <string name="botonDocente">Administrar Docentes</string>
+    <string name="botonCargo">Administrar Cargos de Docentes</string>
+    <string name="botonPeriodo">Administrar Periodos de Cargos</string>
+    <string name="botonDepartamento">Administrar Departamentos de Docentes</string>
     <string name="botonMateriasImpartir">Materias que Pueden Impartir los Docentes</string>
 
     <!-- Insertar contrato -->
@@ -242,6 +245,62 @@
     <string name="msgInsertCodigo">Codigo de Contrato</string>
     <string name="msgInsertNombre">Nombre o Tipo del Contrato</string>
     <string name="msgInsertHoras">Horas del Contrato</string>
+    <string name="msgactivityinsertarcontrato">Insertar Tipo de Contrato</string>
+    <string name="msgpromtspninsertar">Tipo de Contrato</string>
+
+    <!-- Consultar contrato -->
+    <string name="title_activity_consultar_contrato">ConsultarContratoActivity</string>
+    <string name="msgeditTxtConsultarNomTipoCont">Nombre del Contrato</string>
+    <string name="msgeditTxtConsultarHorasTipoCont">Horas del Contrato</string>
+    <string name="msgactivityconsultarcontrato">Consultar Tipo de Contrato</string>
+
+    <!-- Actualizar contrato -->
+    <string name="title_activity_actualizar_contrato">ActualizarContratoActivity</string>
+    <string name="msgactivityactualizarcontrato">Actualizar Tipo de Contrato</string>
+
+    <!-- Eliminar contrato -->
+    <string name="title_activity_eliminar_contrato">EliminarContratoActivity</string>
+    <string name="msgactivityeliminararcontrato">Eliminar Tipo de Contrato</string>
+
+    <!-- Insertar docente -->
+    <string name="title_activity_insertar_docente">InsertarDocenteActivity</string>
+    <string name="msgeditTxtInsertIdDocente">Codigo del Docente</string>
+    <string name="msgeditTxtInsertNomDocente">Nombre del Docente</string>
+    <string name="msgeditTxtInsertApeDocente">Apellido del Docente</string>
+    <string name="msgeditTxtInsertGraDocente">Grado Academico</string>
+    <string name="msgeditTxtInsertEmailDocente">Correo del Docente</string>
+    <string name="msgeditTxtInsertTelDocente">Telefono del Docente</string>
+    <string name="msgbtnInsertGuardar">Guardar</string>
+    <string name="msgactivityinsertardocente">Insertar Docente</string>
+
+    <!-- Actualizar docente -->
+    <string name="title_activity_actualizar_docente">ActualizarDocenteActivity</string>
+    <string name="msgactivityactualizardocente">Actualizar Docente</string>
+    <string name="msgbtnactualizardocente">Actualizar Informacion</string>
+
+    <!-- Consultar docente -->
+    <string name="title_activity_consultar_docente">ConsultarDocenteActivity</string>
+    <string name="msgeditTxtConsultarhorasdocente">Horas Asignadas</string>
+    <string name="msgactivityconsultardocente">Consultar Docente</string>
+    <string name="msgeditTxtcunsulTipoContDoce">Tipo de Contrato</string>
+
+    <!-- Eliminar docente -->
+    <string name="title_activity_eliminar_docente">EliminarDocenteActivity</string>
+    <string name="msgactivityeliminardocente">Eliminar Docente</string>
+    <string name="msgbtneliminardocente">Eliminar Docente</string>
+
+    <!-- Insertar docente departamento -->
+    <string name="title_activity_insertar_docente_depto">InsertarDocenteDeptoActivity</string>
+    <string name="msgeditTxtInsertNomDocDepto">Nombre Docente</string>
+    <string name="msgeditTxtInsertApeDocDepto">Apellido Docente</string>
+    <string name="msgeditTxtInsertNomDeptoDocDepto">Nombre Departamento</string>
+    <string name="msgbtnInserAsignarDocDepto">Asiganar</string>
+
+    <!-- Eliminar docente departamento -->
+    <string name="title_activity_eliminar_docente_depto">EliminarDocenteDeptoActivity</string>
+
+    <!-- Consultar docente departamento -->
+    <string name="title_activity_consultar_docente_depto">ConsultarDocenteDeptoActivity</string>
     <!-- fin YO -->
 
 
@@ -332,9 +391,6 @@
     <string name="edtIdLocalDetGpoAsig">Codigo Local</string>
     <string name="edtIdDeptoAreMat">Codigo departamento</string>
     <string name="edtCodMateAreaMat">Codigo Materia</string>
-    <string name="title_activity_actualizar_contrato">ActualizarContratoActivity</string>
-    <string name="title_activity_consultar_contrato">ConsultarContratoActivity</string>
-    <string name="title_activity_eliminar_contrato">EliminarContratoActivity</string>
     <string name="btnAdmonDetGpoAsig">Adminstrar Detalle grupo asignado</string>
     <string name="title_activity_cargo_menu">CargoMenuActivity</string>
     <string name="title_activity_periodo_menu">PeriodoMenuActivity</string>
@@ -449,5 +505,8 @@
     <string name="msgElimPeriodo">Eliminar Periodo</string>
     <string name="Button_Perielim">Eliminar Periodo</string>
     <string name="VerTablasCAtalogos">Ver Tablas</string>
+    <string name="title_activity_insertar_materias_impartir">InsertarMateriasImpartirActivity</string>
+    <string name="title_activity_eliminar_materias_impartir">EliminarMateriasImpartirActivity</string>
+    <string name="title_activity_consultar_materias_impartir">ConsultarMateriasImpartirActivity</string>
 
 </resources>

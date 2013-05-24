@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".InsertarContratoActivity" >
 
-    <TextView
+     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -90,6 +90,16 @@
         android:layout_marginTop="14dp"
         android:drawableRight="@drawable/clear"
         android:onClick="limpiarContrato"
-        android:text="@string/btnInsertLimpiarTipoCont" />
+        android:text="@string/btnInsertLimpiarTipoCont"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/msgactivityinsertarcontrato"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

@@ -39,10 +39,17 @@ public class ControlDB {
 	private static final String[] camposCiclo = new String[] { "ANIO",
 			"NUMERO", "FECHAINI", "FECHAFIN" };
 
+	
 	/* Yo */
 	private static final String[] camposContrato = new String[] { "IDCONTRATO",
 			"TIPO", "HORAS" };
+	private static final String[] camposDocente = new String[] { "IDDOCENTE",
+		"IDCONTRATO", "NOMBRE", "APELLIDO", "GRADO_ACAD", "CORREO", "TELEFONO", "HORAS_ASIG" };
+	private static final String[] CodContDoc = new String[] { "IDCONTRATO"};
+	private static final String[] camposDocDepto = new String[] { "IDDEPARTAMENTO",
+		"IDDOCENTE" };
 	/* Fin YO */
+	
 	private static final String[]camposCARGO = new String [] {"IDCARGO","NOM_CARGO"};
 	private static final String[]camposDOCENTE_CARGO = new String [] {"IDDOCCAR","IDDOCENTE","IDPERIODO","IDCARGO"};
 	private static final String[]camposPERIODO = new String [] {"IDPERIODO","FECHA_INI","FECHA_FIN"};
@@ -656,6 +663,7 @@ public class ControlDB {
 	}
 
 	/** METODOS EMERSON */
+	
 	public String InsertarContrato(TipoContrato tipocontrato) {
 		String regInsertados = "Registro insertado en la fila No.= ";
 		long contador = 0;
@@ -687,7 +695,31 @@ public class ControlDB {
 			return null;
 		}
 	}
+	
+	public String ActualizarContrato(TipoContrato tipocont) {
+		String[] id = { tipocont.getIdContrato() };
+		ContentValues values = new ContentValues();
+		values.put("TIPO", tipocont.getTipo());
+		values.put("HORAS", tipocont.getHoras());
+		db.update("TIPO_CONTRATO", values, "IDCONTRATO = ?", id);
+		return "Registro actualizado correctamente";
+	}
 
+	public String EliminarContrato(TipoContrato tipocont) {
+		String regAfectados = "";
+		int contador = 0;
+		if (verificarIntegridad(tipocont, 13)) {
+			regAfectados += "Tiene registros hijos\nNo se puede borrar,";
+			regAfectados += " DOCENTE tiene registros.";
+			return regAfectados;
+		}
+		regAfectados = "No tiene registros hijos\nFilas afectadas=";
+		contador += db.delete("TIPO_CONTRATO",
+				"IDCONTRATO='" + tipocont.getIdContrato() + "'", null);
+		regAfectados += contador;
+		return regAfectados;
+	}
+	
 	public List<String> getAllIdContratos() {
 		List<String> idContratos = new ArrayList<String>();
 		Cursor cursor = db.rawQuery(
@@ -701,14 +733,56 @@ public class ControlDB {
 		cursor.close();
 		return idContratos;
 	}
-
+	
+	public List<String> getAllIdContratos2(String iddocente) {
+		List<String> idContratos = new ArrayList<String>();
+		String[] id = { iddocente };
+		Cursor cursor = db.query("DOCENTE", CodContDoc,
+				"IDDOCENTE = ?", id, null,  null, null);
+		if (cursor.moveToFirst()) {
+			do {
+				idContratos.add(cursor.getString(0));
+			} while (cursor.moveToNext());
+		}
+		cursor.close();
+		return idContratos;
+	}
+	
+	public List<String> getAllIdDocDocDepto() {
+		List<String> idDoc = new ArrayList<String>();
+		Cursor cursor = db.rawQuery(
+				"select IDDOCENTE from DOCENTE_DPTO group by IDDOCENTE order by IDDOCENTE;",
+				null);
+		if (cursor.moveToFirst()) {
+			do {
+				idDoc.add(cursor.getString(0));
+			} while (cursor.moveToNext());
+		}
+		cursor.close();
+		return idDoc;
+	}
+	
+	public List<String> getAllIdDeptoDocDepto(String iddocente) {
+		List<String> idContratos = new ArrayList<String>();
+		String[] id = { iddocente };
+		Cursor cursor = db.query("DOCENTE_DPTO", camposDocDepto,
+				"IDDOCENTE = ?", id, null,  null, null);
+		if (cursor.moveToFirst()) {
+			do {
+				idContratos.add(cursor.getString(0));
+			} while (cursor.moveToNext());
+		}
+		cursor.close();
+		return idContratos;
+	}
+	
 	public String InsertarDocDepto(DocenteDepto docdepto) {
 		String regInsertados = "Registro insertado en la fila No.= ";
 		long contador = 0;
 		ContentValues relacion = new ContentValues();
 		relacion.put("IDDEPARTAMENTO", docdepto.getIdDepartamento());
 		relacion.put("IDDOCENTE", docdepto.getIdDocente());
-		contador = db.insert("DOCENTE_DEPTO", null, relacion);
+		contador = db.insert("DOCENTE_DPTO", null, relacion);
 		if (contador == -1 || contador == 0) {
 			regInsertados = "Error. Verificar Insercion";
 		} else {
@@ -717,7 +791,21 @@ public class ControlDB {
 
 		return regInsertados;
 	}
-
+	
+	public String EliminarDocenteDepto(DocenteDepto docente) {
+		String regAfectados = "";
+		int contador = 0;
+		/*if (verificarIntegridad(docente, 15)) {
+			regAfectados += "Tiene registros hijos\nNo se puede borrar,";
+			return regAfectados;
+		}*/
+		regAfectados = "No tiene registros hijos\nFilas afectadas=";
+		contador += db.delete("DOCENTE_DPTO",
+				"IDDEPARTAMENTO = '"+ docente.getIdDepartamento() +"' AND IDDOCENTE='" + docente.getIdDocente() + "'", null);
+		regAfectados += contador;
+		return regAfectados;
+	}
+	
 	public String InsertarMatImpart(MateriasImpartir mateimpart) {
 		String regInsertados = "Registro insertado en la fila No.= ";
 		long contador = 0;
@@ -738,15 +826,15 @@ public class ControlDB {
 		String regInsertados = "Registro insertado en la fila No.= ";
 		long contador = 0;
 		ContentValues doc = new ContentValues();
-		doc.put("IDDEPARTAMENTO", docente.getIdDocente());
-		doc.put("IDDOCENTE", docente.getIdContrato());
+		doc.put("IDDOCENTE", docente.getIdDocente());
+		doc.put("IDCONTRATO", docente.getIdContrato());
 		doc.put("NOMBRE", docente.getNombre());
 		doc.put("APELLIDO", docente.getApellido());
 		doc.put("GRADO_ACAD", docente.getGradoAcademico());
 		doc.put("CORREO", docente.getCorreo());
 		doc.put("TELEFONO", docente.getTelefono());
 		doc.put("HORAS_ASIG", docente.getHorasAsignadas());
-		contador = db.insert("DOCENTE_DEPTO", null, doc);
+		contador = db.insert("DOCENTE", null, doc);
 		if (contador == -1 || contador == 0) {
 			regInsertados = "Error. Verificar Insercion";
 		} else {
@@ -755,6 +843,69 @@ public class ControlDB {
 
 		return regInsertados;
 	}
+
+	public Docente ConsultarDocente(String iddocente) {
+		String[] id = { iddocente };
+		Cursor cursor = db.query("DOCENTE", camposDocente,
+				"IDDOCENTE = ? ", id, null,  null, null);
+		if (cursor.moveToFirst()) {
+			Docente docente = new Docente();
+			docente.setIdDocente(cursor.getString(0));
+			docente.setIdContrato(cursor.getString(1));
+			docente.setNombre(cursor.getString(2));
+			docente.setApellido(cursor.getString(3));
+			docente.setGradoAcademico(cursor.getString(4));
+			docente.setCorreo(cursor.getString(5));
+			docente.setTelefono(cursor.getString(6));
+			docente.setHorasAsignadas(cursor.getInt(7));
+			return docente;
+		} else {
+			return null;
+		}
+	}
+	
+	public Docente ConsultarDocente2(String iddocente) {
+		String[] id = { iddocente };
+		Cursor cursor = db.query("DOCENTE", camposDocente,
+				"IDDOCENTE = ?", id, null,  null, null);
+		if (cursor.moveToFirst()) {
+			Docente docente = new Docente();
+			docente.setIdDocente(cursor.getString(0));
+			docente.setIdContrato(cursor.getString(1));
+			docente.setNombre(cursor.getString(2));
+			docente.setApellido(cursor.getString(3));
+			
+			return docente;
+		} else {
+			return null;
+		}
+	}
+	
+	public String EliminarDocente(Docente docente) {
+		String regAfectados = "";
+		int contador = 0;
+		if (verificarIntegridad(docente, 14)) {
+			regAfectados += "Tiene registros hijos\nNo se puede borrar,";
+			return regAfectados;
+		}
+		regAfectados = "No tiene registros hijos\nFilas afectadas=";
+		contador += db.delete("DOCENTE",
+				"IDDOCENTE = '"+ docente.getIdDocente() +"' AND IDCONTRATO='" + docente.getIdContrato() + "'", null);
+		regAfectados += contador;
+		return regAfectados;
+	}
+	public String ActualizarDocente(Docente docente) {
+		String[] id = { docente.getIdDocente(), docente.getIdContrato() };
+		ContentValues values = new ContentValues();
+		values.put("NOMBRE", docente.getNombre());
+		values.put("APELLIDO", docente.getApellido());
+		values.put("GRADO_ACAD", docente.getGradoAcademico());
+		values.put("CORREO", docente.getCorreo());
+		values.put("TELEFONO", docente.getTelefono());
+		db.update("DOCENTE", values, "IDDOCENTE = ? AND IDCONTRATO = ?", id);
+		return "Registro actualizado correctamente";
+	}
+	/*Fin YO*/
 
 	/** METODOS AGUSTIN */
 	public String insertar(Locales local) {
@@ -1414,13 +1565,50 @@ public class ControlDB {
 		case 12: {
 			return true;
 		}
+		/*YO*/
 		case 13: {
-			return true;
+			TipoContrato contrato = (TipoContrato) dato;
+			Cursor cursor = db.query(true, "DOCENTE",
+					new String[] { "IDCONTRATO" }, "IDCONTRATO='"
+							+ contrato.getIdContrato() + "'", null, null,
+					null, null, null);
+			if (cursor.moveToFirst())
+				return true;
+			else
+			return false;
 		}
 		
 		case 14: {
-			return true;
+			Docente docente = (Docente) dato;
+			Cursor cursor = db.query(true, "DOCENTE_CARGO",
+					new String[] { "IDDOCENTE" }, "IDDOCENTE='"
+							+ docente.getIdDocente() + "'", null, null,
+					null, null, null);
+			if (cursor.moveToFirst())
+				return true;
+			else {
+				cursor = db.query(true, "DOCENTE_DPTO",
+						new String[] { "IDDOCENTE" }, "IDDOCENTE='"
+								+ docente.getIdDocente() + "'", null, null,
+						null, null, null);
+				if (cursor.moveToFirst())
+					return true;
+				else{
+					cursor = db.query(true, "MAT_AREA_PUEDE_IMPARTIR",
+							new String[] { "IDDOCENTE" }, "IDDOCENTE='"
+									+ docente.getIdDocente() + "'", null, null,
+							null, null, null);
+					if (cursor.moveToFirst())
+						return true;
+					else
+						return false;
+				}
+			}
+			
 		}
+		
+		
+		/*Fin YO*/
 		
 		case 15: {
 			return true;

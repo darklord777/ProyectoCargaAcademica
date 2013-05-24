@@ -13,8 +13,9 @@
         android:id="@+id/btnEntrarSistema"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_marginBottom="88dp"
         android:background="@drawable/button_custom"
         android:text="@string/btnEntrarSistema"
         android:textAppearance="?android:attr/textAppearanceLarge" />
