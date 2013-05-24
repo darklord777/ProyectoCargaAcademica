@@ -39,6 +39,8 @@ public class ModalidadCursoConsultarActivity extends Activity implements OnItemS
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spnListaModalidadCurso.setAdapter(adapter);
 		spnListaModalidadCurso.setOnItemSelectedListener(this);
+		NombreModCurso.setFocusable(false);
+		DesHrsModCurso.setFocusable(false);
 	}
 
 	@Override

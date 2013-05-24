@@ -36,6 +36,8 @@ public class LocalesEliminarActivity extends Activity implements OnItemSelectedL
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spnEliminarLocal.setAdapter(adapter);
 		spnEliminarLocal.setOnItemSelectedListener(this);
+		
+		CapacidadLocal_Elim.setFocusable(false);
 	}	
 	
 	public void eliminarLocal(View v) {

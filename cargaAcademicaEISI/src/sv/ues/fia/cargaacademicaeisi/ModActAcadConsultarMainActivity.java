@@ -40,6 +40,8 @@ public class ModActAcadConsultarMainActivity extends Activity  implements OnItem
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spnListaModalidadAA.setAdapter(adapter);
 		spnListaModalidadAA.setOnItemSelectedListener(this);
+		NombreModAA.setFocusable(false);
+		DesHrsModAA.setFocusable(false);
 	}
 
 	@Override

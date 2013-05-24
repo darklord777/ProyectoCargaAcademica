@@ -36,6 +36,7 @@ public class ModActAcadEliminarActivity extends Activity  implements OnItemSelec
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spnEliminarModAA.setAdapter(adapter);
 		spnEliminarModAA.setOnItemSelectedListener(this);
+		NombreModAA_Elim.setFocusable(false);
 	}
 	
 	public void eliminarModActA(View v) {

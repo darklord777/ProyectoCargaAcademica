@@ -35,7 +35,8 @@ public class ModalidadCursoEliminarActivity extends Activity implements OnItemSe
 		adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, idMCurso);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spnEliminarModC.setAdapter(adapter);
-		spnEliminarModC.setOnItemSelectedListener(this);		
+		spnEliminarModC.setOnItemSelectedListener(this);	
+		NombreModC_Elim.setFocusable(false);
 	}
 	
 	public void eliminarModC(View v) {
