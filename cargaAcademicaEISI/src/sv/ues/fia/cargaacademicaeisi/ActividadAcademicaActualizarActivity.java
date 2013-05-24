@@ -28,7 +28,7 @@ public class ActividadAcademicaActualizarActivity extends Activity implements
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_actividad_academica_actualizar);
 		
-	/*	helper = new ControlDB(this);
+		helper = new ControlDB(this);
 		spnActIdActAcad = (Spinner) findViewById(R.id.spin_Act_ActAcademica);
 		edtActNomAct = (EditText) findViewById(R.id.SelNombreActAcad);
 		edtActNomAct = (EditText) findViewById(R.id.CargoActAcad);
@@ -39,19 +39,19 @@ public class ActividadAcademicaActualizarActivity extends Activity implements
 		adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, idActAcad);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spnActIdActAcad.setAdapter(adapter);
-		spnActIdActAcad.setOnItemSelectedListener(this);*/
+		spnActIdActAcad.setOnItemSelectedListener(this);
 	}	
 
 	@Override
 	public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
 		// TODO Auto-generated method stub
-/*		String idActA = arg0.getItemAtPosition(arg2).toString();
+		String idActA = arg0.getItemAtPosition(arg2).toString();
 		Actividad_Academica ActA = new Actividad_Academica();
 		helper.abrir();
 		ActA = helper.consultarActAcademica(idActA);
 		helper.cerrar();
 		edtActNomAct.setText(ActA.getNom_act_acad());
-		edtActCargo.setText(ActA.getCargo());	*/
+		edtActCargo.setText(ActA.getCargo());	
 	}
 	
 	public void ActualizarActAcademica(View v) {

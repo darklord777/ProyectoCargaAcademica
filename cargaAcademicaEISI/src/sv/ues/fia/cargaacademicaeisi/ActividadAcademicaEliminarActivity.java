@@ -25,7 +25,7 @@ public class ActividadAcademicaEliminarActivity extends Activity implements OnIt
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_actividad_academica_eliminar);
-	/*	
+		
 		helper = new ControlDB(this);
 		spnEliminarActA = (Spinner) findViewById(R.id.spin_Eliminar_ActAcademica);
 		NombreActA_Elim = (EditText) findViewById(R.id.SelNombreActAcad);
@@ -35,7 +35,8 @@ public class ActividadAcademicaEliminarActivity extends Activity implements OnIt
 		adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, idActA);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spnEliminarActA.setAdapter(adapter);
-		spnEliminarActA.setOnItemSelectedListener(this);		*/
+		spnEliminarActA.setOnItemSelectedListener(this);
+		NombreActA_Elim.setFocusable(false);
 	}
 	public void eliminarActAcad(View v) {
 		String estado;
@@ -58,12 +59,12 @@ public class ActividadAcademicaEliminarActivity extends Activity implements OnIt
 	public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2,
 			long arg3) {
 		// TODO Auto-generated method stub
-/*		String idActAcademica = arg0.getItemAtPosition(arg2).toString();
+		String idActAcademica = arg0.getItemAtPosition(arg2).toString();
 		Actividad_Academica AC = new Actividad_Academica();
 		helper.abrir();
 		AC = helper.consultarActAcademica(idActAcademica);
 		helper.cerrar();
-		NombreActA_Elim.setText(AC.getNom_act_acad());*/
+		NombreActA_Elim.setText(AC.getNom_act_acad());
 	}
 
 	@Override
