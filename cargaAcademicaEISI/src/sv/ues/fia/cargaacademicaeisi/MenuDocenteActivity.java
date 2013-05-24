@@ -61,7 +61,7 @@ public class MenuDocenteActivity extends Activity implements OnClickListener {
 		
 		case R.id.botonCargo:
 			startActivity(new Intent(getApplicationContext(), 
-					CargoMenuActivity.class));
+					DocenteCargoMenuActivity.class));
 		break;
 		
 		case R.id.botonPeriodo:

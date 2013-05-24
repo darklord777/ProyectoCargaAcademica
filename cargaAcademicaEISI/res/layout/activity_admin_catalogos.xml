@@ -10,46 +10,58 @@
     tools:context=".AdminCatalogosActivity" >
 
     <Button
-        android:id="@+id/BtnTipoCont"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnAdmonDepto"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="14dp"
-        android:background="@drawable/button_custom"
-        android:text="@string/msgTipoCont"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <Button
-        android:id="@+id/BtnModalidadCurso"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/BtnTipoCont"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="14dp"
-        android:background="@drawable/button_custom"
-        android:text="@string/btnModCurso"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <Button
         android:id="@+id/btnMostrarTablas"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="22dp"
-        android:text="ver tablas"
+        android:drawableRight="@drawable/search"
+        android:text="@string/VerTablasCAtalogos"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/BtnTipoCont"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/button_custom"
+        android:text="@string/msgTipoCont"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
         android:id="@+id/btnAdmonDepto"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="38dp"
+        android:layout_alignLeft="@+id/BtnTipoCont"
+        android:layout_below="@+id/BtnTipoCont"
+        android:layout_marginTop="22dp"
         android:background="@drawable/button_custom"
         android:text="@string/btnAdmonDepto"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/BtnCargo_Docentes2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnAdmonDepto"
+        android:layout_below="@+id/btnAdmonDepto"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_custom"
+        android:text="@string/btnCrago_Docentes2"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/BtnModalidadCurso"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/BtnCargo_Docentes2"
+        android:layout_below="@+id/BtnCargo_Docentes2"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/button_custom"
+        android:text="@string/btnModCurso"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
@@ -58,7 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/BtnModalidadCurso"
         android:layout_below="@+id/BtnModalidadCurso"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/button_custom"
         android:text="@string/btnLocales"
         android:textAppearance="?android:attr/textAppearanceMedium" />
