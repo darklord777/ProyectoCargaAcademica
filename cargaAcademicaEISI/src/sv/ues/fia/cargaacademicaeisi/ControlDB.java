@@ -1010,10 +1010,11 @@ public class ControlDB {
 	}
 	
 	public String actualizar(Actividad_Academica ActAcad) {
-		String[] id = {ActAcad.getIdmodalidad() };
+		String[] id = {ActAcad.getIdactacad() };
 		ContentValues values = new ContentValues();
+		values.put("IDMODALIDAD", ActAcad.getIdmodalidad());
 		values.put("NOM_ACT_ACAD", ActAcad.getNom_act_acad());
-		values.put("CARGO", ActAcad.getCargo());
+		values.put("CARGO", ActAcad.getCargo());		
 		db.update("ACTIVIDAD_ACADEMICA", values, "IDACTACAD = ?", id);
 		return "Registro actualizado correctamente";
 	}

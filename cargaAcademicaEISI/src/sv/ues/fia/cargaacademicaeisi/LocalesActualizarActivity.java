@@ -63,7 +63,7 @@ public class LocalesActualizarActivity extends Activity implements OnItemSelecte
 		Locales local = helper.consultarLocal(idLocal);
 		helper.cerrar();
 		if (local == null) {
-			Toast.makeText(this,"Identificador de departemento: " + idLocal
+			Toast.makeText(this,"Identificador de Local: " + idLocal
 							+ ". No existe.", Toast.LENGTH_LONG).show();
 		} else {
 			CapLocales.setText(local.getCapacidad());

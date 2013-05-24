@@ -150,6 +150,7 @@
     <string name="title_activity_locales_consultar">Consultar Locales</string>
     <string name="ActNombre_AA">Nombre Actividad</string>
     <string name="ActCargo_ActAcademica">Cargo</string>
+    <string name="ActidModAA_ActAcademica">Codigo Modalidad Actvidad Academica</string>
     <!-- Michael -->
 
     <string name="title_activity_eliminar_depto">EliminarDeptoActivity</string>

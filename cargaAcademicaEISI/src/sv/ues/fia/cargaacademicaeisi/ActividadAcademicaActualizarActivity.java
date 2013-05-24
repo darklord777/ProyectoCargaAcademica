@@ -20,6 +20,7 @@ public class ActividadAcademicaActualizarActivity extends Activity implements
 	private Spinner spnActIdActAcad;
 	private EditText edtActNomAct;
 	private EditText edtActCargo;
+	private EditText edtidModActA;
 	private List<String> idActAcad;
 	private ArrayAdapter<String> adapter;
 
@@ -32,6 +33,7 @@ public class ActividadAcademicaActualizarActivity extends Activity implements
 		spnActIdActAcad = (Spinner) findViewById(R.id.spin_Act_ActAcademica);
 		edtActNomAct = (EditText) findViewById(R.id.SelNombreActAcad);
 		edtActNomAct = (EditText) findViewById(R.id.CargoActAcad);
+		edtidModActA = (EditText) findViewById(R.id.idModActA);
 
 		helper.abrir();
 		idActAcad = helper.getAll_IdActA();
@@ -58,6 +60,7 @@ public class ActividadAcademicaActualizarActivity extends Activity implements
 		if (!edtActNomAct.getText().toString().trim().equals("")) {
 			Actividad_Academica ActA = new Actividad_Academica();
 			ActA.setIdactacad(spnActIdActAcad.getSelectedItem().toString());
+			ActA.setIdmodalidad(edtidModActA.getText().toString());
 			ActA.setNom_act_acad(edtActNomAct.getText().toString());
 			ActA.setCargo(edtActCargo.getText().toString());
 			helper.abrir();
@@ -66,7 +69,9 @@ public class ActividadAcademicaActualizarActivity extends Activity implements
 			Toast.makeText(this, estado, Toast.LENGTH_LONG).show();
 		} else {
 			edtActNomAct.setText("");
-			Toast.makeText(this, "Asignar cargo es obligatorio",
+			edtidModActA.setText("");
+			edtActCargo.setText("");
+			Toast.makeText(this, "Debe llenarse todos los campos",
 					Toast.LENGTH_LONG).show();
 		}
 		

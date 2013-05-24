@@ -39,18 +39,6 @@
         android:inputType="none"
         android:maxLength="30" />
 
-    <Button
-        android:id="@+id/button1ActActividadAcad"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/CargoActAcad"
-        android:layout_below="@+id/CargoActAcad"
-        android:layout_marginTop="79dp"
-        android:drawableRight="@drawable/save2"
-        android:onClick="ActualizarActAcademica"
-        android:text="@string/ButtonActActAcademica"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
     <EditText
         android:id="@+id/CargoActAcad"
         android:layout_width="fill_parent"
@@ -78,5 +66,36 @@
         android:layout_above="@+id/CargoActAcad"
         android:layout_alignLeft="@+id/TextView01"
         android:text="@string/ActCargo_ActAcademica" />
+
+    <Button
+        android:id="@+id/button1ActActividadAcad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CargoActAcad"
+        android:layout_below="@+id/idModActA"
+        android:layout_marginTop="43dp"
+        android:drawableRight="@drawable/save2"
+        android:onClick="ActualizarActAcademica"
+        android:text="@string/ButtonActActAcademica"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_below="@+id/CargoActAcad"
+        android:text="@string/ActidModAA_ActAcademica" />
+
+    <EditText
+        android:id="@+id/idModActA"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CargoActAcad"
+        android:layout_below="@+id/TextView03"
+        android:ems="10"
+        android:hint="@string/msgidSelecActAcad"
+        android:inputType="none"
+        android:maxLength="6" />
 
 </RelativeLayout>
