@@ -68,9 +68,12 @@ public class AdminCatalogosActivity extends Activity implements
 		case R.id.BtnModalidadCurso:
 			startActivity(new Intent(getApplicationContext(),
 					ModalidadCursoMenuActivity.class));
+			break;
+			
 		case R.id.BtnLocal:
 			startActivity(new Intent(getApplicationContext(),
 					LocalesMenuActivity.class));
+			break;
 
 		default:
 			break;
