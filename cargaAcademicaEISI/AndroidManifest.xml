@@ -330,6 +330,42 @@
             android:name="sv.ues.fia.cargaacademicaeisi.CargoActualizarActivity"
             android:label="@string/title_activity_cargo_actualizar" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.PeriodoMenuActivity"
+            android:label="@string/title_activity_periodo_menu" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.PeriodoInsertarActivity"
+            android:label="@string/title_activity_periodo_insertar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.PeriodoEliminarActivity"
+            android:label="@string/title_activity_periodo_eliminar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.PeriodoActualizarActivity"
+            android:label="@string/title_activity_periodo_actualizar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.PeridoConsultarActivity"
+            android:label="@string/title_activity_perido_consultar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.DocenteCargoMenuActivity"
+            android:label="@string/title_activity_docente_cargo_menu" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.DocenteCargoInsertarActivity"
+            android:label="@string/title_activity_docente_cargo_insertar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.DocenteCargoEliminarActivity"
+            android:label="@string/title_activity_docente_cargo_eliminar" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.DocenteCargoConsultarActivity"
+            android:label="@string/title_activity_docente_cargo_consultar" >
+        </activity>
     </application>
 
 </manifest>

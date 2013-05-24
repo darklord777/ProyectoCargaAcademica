@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PeriodoInsertarActivity" >
+
+    <EditText
+        android:id="@+id/idCArgo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1_consult_inicio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="@string/msgidPeriodo"
+        android:inputType="textCapCharacters"
+        android:maxLength="6" />
+
+    <TextView
+        android:id="@+id/textView1_consult_inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/tituloPeriodo"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/fechaIni"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idCArgo"
+        android:layout_below="@+id/idCArgo"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:hint="@string/msgFechaIni"
+        android:inputType="text"
+        android:maxLength="20" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnLimpiaPeriodo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnGuardarPeriodo"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="48dp"
+        android:drawableRight="@drawable/clear"
+        android:onClick="limpiarPeriodo"
+        android:text="@string/btnLimpiarPeriodo"
+        android:textAppearance="?android:attr/textAppearanceMedium"  />
+
+    <EditText
+        android:id="@+id/fechaFin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fechaIni"
+        android:layout_alignRight="@+id/fechaIni"
+        android:layout_below="@+id/fechaIni"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="@string/msgFechaFin"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/btnGuardarPeriodo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnLimpiaPeriodo"
+        android:layout_alignLeft="@+id/fechaFin"
+        android:drawableRight="@drawable/save"
+        android:onClick="insertarPeriodo"
+        android:text="@string/btnGuardarPeriodo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
