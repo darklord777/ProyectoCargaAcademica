@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 import android.widget.AdapterView.OnItemSelectedListener;
 
 public class ActividadAcademicaActualizarActivity extends Activity implements
@@ -42,8 +43,7 @@ public class ActividadAcademicaActualizarActivity extends Activity implements
 	}	
 
 	@Override
-	public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2,
-			long arg3) {
+	public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
 		// TODO Auto-generated method stub
 		String idActA = arg0.getItemAtPosition(arg2).toString();
 		Actividad_Academica ActA = new Actividad_Academica();
@@ -55,6 +55,20 @@ public class ActividadAcademicaActualizarActivity extends Activity implements
 	}
 	
 	public void ActualizarActAcademica(View v) {
+		if (!edtActNomAct.getText().toString().trim().equals("")) {
+			Actividad_Academica ActA = new Actividad_Academica();
+			ActA.setIdactacad(spnActIdActAcad.getSelectedItem().toString());
+			ActA.setNom_act_acad(edtActNomAct.getText().toString());
+			ActA.setCargo(edtActCargo.getText().toString());
+			helper.abrir();
+			String estado = helper.actualizar(ActA);
+			helper.cerrar();
+			Toast.makeText(this, estado, Toast.LENGTH_LONG).show();
+		} else {
+			edtActNomAct.setText("");
+			Toast.makeText(this, "Asignar cargo es obligatorio",
+					Toast.LENGTH_LONG).show();
+		}
 		
 	}
 

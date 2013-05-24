@@ -533,6 +533,10 @@ public final class R {
         public static final int btnAdmonCat=0x7f070005;
         /**  Alexis 
  Alexis 
+ Alexis 
+ Alexis 
+ Alexis 
+ Alexis 
          */
         public static final int btnAdmonDepto=0x7f070017;
         public static final int btnAdmonDetGpoAsig=0x7f07012f;
@@ -547,6 +551,8 @@ public final class R {
         public static final int btnConsultarMatDoc=0x7f0700bb;
         public static final int btnConsultarMateria=0x7f070090;
         /**  sistema 
+ sistema 
+ sistema 
          */
         public static final int btnDocente=0x7f0700c2;
         public static final int btnEliminarAreaMat=0x7f0700a8;
@@ -559,6 +565,8 @@ public final class R {
         public static final int btnEliminarMatDoc=0x7f0700bc;
         public static final int btnEliminarMateria=0x7f070092;
         /**  sistema 
+ sistema 
+ sistema 
          */
         public static final int btnEntrarSistema=0x7f070004;
         public static final int btnGuardarActAcad=0x7f070056;
@@ -664,6 +672,8 @@ public final class R {
         public static final int msgeditTxtNomTipCont=0x7f0700bf;
         public static final int msgidActAcad=0x7f070053;
         /**  Mario 
+ Mario 
+ Mario 
          */
         public static final int msgidDepto=0x7f070009;
         public static final int msgidLocal=0x7f070022;
@@ -704,6 +714,8 @@ public final class R {
         public static final int title_activity_admin_det_gpo_asig=0x7f07011e;
         public static final int title_activity_admin_docente_depto=0x7f0700b5;
         /**  YO 
+ YO 
+ YO 
          */
         public static final int title_activity_admin_docentes=0x7f0700ab;
         public static final int title_activity_admin_materias_impartir=0x7f0700c1;
@@ -721,6 +733,10 @@ public final class R {
         public static final int title_activity_carga_academica_insertar=0x7f0700e2;
         /**  fin YO 
  alexis todavia no ordenado 
+ fin YO 
+ alexis todavia no ordenado 
+ fin YO 
+ alexis todavia no ordenado 
          */
         public static final int title_activity_carga_academica_menu=0x7f0700d9;
         public static final int title_activity_ciclo_actualizar=0x7f070020;
@@ -736,6 +752,8 @@ public final class R {
         public static final int title_activity_det_gpo_asig_consultar=0x7f07011c;
         public static final int title_activity_det_gpo_asig_eliminar=0x7f07011d;
         /**  fin alexis todavia no ordenado 
+ fin alexis todavia no ordenado 
+ fin alexis todavia no ordenado 
          */
         public static final int title_activity_det_gpo_asig_nuevo=0x7f07011a;
         public static final int title_activity_detalle_carga_act_acad_consultar=0x7f0700fc;
@@ -748,6 +766,8 @@ public final class R {
         public static final int title_activity_detalle_carga_materia_menu=0x7f0700ed;
         public static final int title_activity_eliminar_contrato=0x7f07012e;
         /**  Michael 
+ Michael 
+ Michael 
          */
         public static final int title_activity_eliminar_depto=0x7f07008d;
         public static final int title_activity_eliminar_materia=0x7f070097;
@@ -756,9 +776,13 @@ public final class R {
         public static final int title_activity_ingresar_tipo_contrato=0x7f0700bd;
         public static final int title_activity_insertar_actividad_academica=0x7f070051;
         /**  Insertar contrato 
+ Insertar contrato 
+ Insertar contrato 
          */
         public static final int title_activity_insertar_contrato=0x7f0700d0;
         /**  Michael 
+ Michael 
+ Michael 
          */
         public static final int title_activity_insertar_locales=0x7f070021;
         public static final int title_activity_insertar_modalidad_act_acad=0x7f070037;
@@ -772,6 +796,8 @@ public final class R {
         public static final int title_activity_menu_actividad_academica=0x7f0700c8;
         public static final int title_activity_menu_docente=0x7f0700ca;
         /**  menu docente 
+ menu docente 
+ menu docente 
          */
         public static final int title_activity_menu_docentes=0x7f0700c9;
         public static final int title_activity_menu_materia=0x7f0700c7;
