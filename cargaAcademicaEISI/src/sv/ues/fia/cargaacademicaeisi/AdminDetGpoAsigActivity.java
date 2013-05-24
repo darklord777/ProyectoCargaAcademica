@@ -25,8 +25,8 @@ public class AdminDetGpoAsigActivity extends Activity implements
 		btnConsultarDetGpoAsig.setOnClickListener(this);
 		btnEliminarDetGpoAsig = (Button) findViewById(R.id.btnEliminarDetGpoAsig);
 		btnEliminarDetGpoAsig.setOnClickListener(this);
-		btnActualizarDetGpoAsig = (Button) findViewById(R.id.btnActualizarDetGpoAsig);
-		btnActualizarDetGpoAsig.setOnClickListener(this);
+		//btnActualizarDetGpoAsig = (Button) findViewById(R.id.btnActualizarDetGpoAsig);
+		//btnActualizarDetGpoAsig.setOnClickListener(this);
 	}
 
 	@Override
@@ -51,10 +51,10 @@ public class AdminDetGpoAsigActivity extends Activity implements
 			startActivity(new Intent(getApplicationContext(),
 					DetGpoAsigEliminarActivity.class));
 			break;
-		case R.id.btnActualizarDetGpoAsig:
-			startActivity(new Intent(getApplicationContext(),
-					DetGpoAsigActualizarActivity.class));
-			break;
+		//case R.id.btnActualizarDetGpoAsig:
+		//	startActivity(new Intent(getApplicationContext(),
+		//			DetGpoAsigActualizarActivity.class));
+		//	break;
 		default:
 			break;
 		}

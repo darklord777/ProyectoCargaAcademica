@@ -33,21 +33,11 @@
         android:id="@+id/btnEliminarDetGpoAsig"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btnActualizarDetGpoAsig"
+        android:layout_alignLeft="@+id/btnConsultarDetGpoAsig"
         android:layout_below="@+id/btnConsultarDetGpoAsig"
         android:layout_marginTop="19dp"
         android:drawableRight="@drawable/clear"
         android:text="@string/btnEliminarDetGpoAsig" />
-
-    <Button
-        android:id="@+id/btnActualizarDetGpoAsig"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btnConsultarDetGpoAsig"
-        android:layout_below="@+id/btnEliminarDetGpoAsig"
-        android:layout_marginTop="18dp"
-        android:drawableRight="@drawable/update"
-        android:text="@string/btnActualizarDetGpoAsig" />
 
     <Button
         android:id="@+id/btnNuevoDetGopAsig"

@@ -34,7 +34,7 @@ public class CicloActualizarActivity extends Activity {
 	private int year;
 	private int month;
 	private int day;
-	private int year2=0;
+	private int year2;
 	private int month2;
 	private int day2;
 	static final int DATE_DIALOG_ID = 999;
@@ -163,13 +163,9 @@ public class CicloActualizarActivity extends Activity {
 			
 			}
 			else{
-				if(year2==0){
-					String msj2 = "Importante: Debe actualizar las fechas inicio y fin para poder realizar la accion!";
-					Toast.makeText(this, msj2, Toast.LENGTH_SHORT).show();
-				}else{
-					String msj2 = "Importante: La fecha de inicio de Ciclo debe ser Menor que la Fecha Fin!";
-					Toast.makeText(this, msj2, Toast.LENGTH_SHORT).show();
-				}
+				String msj2 = "Importante: La fecha de inicio de Ciclo debe ser Menor que la Fecha Fin!";
+				Toast.makeText(this, msj2, Toast.LENGTH_SHORT).show();
+		
 			}//fin else validacion fecha
 	   }//fin else validacion campos vacios
 		

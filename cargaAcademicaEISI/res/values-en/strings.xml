@@ -49,7 +49,7 @@
     <string name="hello_world">Hello world!</string>
 
     <!-- sistema -->
-    <string name="btnEntrarSistema">Entrarl sistema</string>
+    <string name="btnEntrarSistema">Enter System</string>
     <string name="btnAdmonCat">Administration of Catalogos</string>
     <string name="btnNuevoDepto">New Department</string>
 
