@@ -32,7 +32,7 @@ public class ActividadAcademicaActualizarActivity extends Activity implements
 		helper = new ControlDB(this);
 		spnActIdActAcad = (Spinner) findViewById(R.id.spin_Act_ActAcademica);
 		edtActNomAct = (EditText) findViewById(R.id.SelNombreActAcad);
-		edtActNomAct = (EditText) findViewById(R.id.CargoActAcad);
+		edtActCargo = (EditText) findViewById(R.id.CargoActAcad);
 		edtidModActA = (EditText) findViewById(R.id.idModActA);
 
 		helper.abrir();
@@ -52,6 +52,7 @@ public class ActividadAcademicaActualizarActivity extends Activity implements
 		helper.abrir();
 		ActA = helper.consultarActAcademica(idActA);
 		helper.cerrar();
+		edtidModActA.setText(ActA.getIdmodalidad());
 		edtActNomAct.setText(ActA.getNom_act_acad());
 		edtActCargo.setText(ActA.getCargo());	
 	}
