@@ -48,6 +48,8 @@ public class ControlDB {
 	private static final String[] CodContDoc = new String[] { "IDCONTRATO"};
 	private static final String[] camposDocDepto = new String[] { "IDDEPARTAMENTO",
 		"IDDOCENTE" };
+	private static final String[] camposMatImpartir = new String[] {"IDDOCENTE",
+	"IDAREAMAT"};
 	/* Fin YO */
 	
 	private static final String[]camposCARGO = new String [] {"IDCARGO","NOM_CARGO"};
@@ -734,10 +736,52 @@ public class ControlDB {
 		return idContratos;
 	}
 	
+	public List<String> getAllIdMatArea() {
+		List<String> idContratos = new ArrayList<String>();
+		Cursor cursor = db.rawQuery(
+				"select IDAREAMAT from AREA_MATERIA order by IDAREAMAT;",
+				null);
+		if (cursor.moveToFirst()) {
+			do {
+				idContratos.add(cursor.getString(0));
+			} while (cursor.moveToNext());
+		}
+		cursor.close();
+		return idContratos;
+	}
+	
+	public List<String> getAllIdDocMatImp() {
+		List<String> idContratos = new ArrayList<String>();
+		Cursor cursor = db.rawQuery(
+				"select IDDOCENTE from MAT_AREA_PUEDE_IMPARTIR order by IDDOCENTE;",
+				null);
+		if (cursor.moveToFirst()) {
+			do {
+				idContratos.add(cursor.getString(0));
+			} while (cursor.moveToNext());
+		}
+		cursor.close();
+		return idContratos;
+	}
+	
 	public List<String> getAllIdContratos2(String iddocente) {
 		List<String> idContratos = new ArrayList<String>();
 		String[] id = { iddocente };
 		Cursor cursor = db.query("DOCENTE", CodContDoc,
+				"IDDOCENTE = ?", id, null,  null, null);
+		if (cursor.moveToFirst()) {
+			do {
+				idContratos.add(cursor.getString(0));
+			} while (cursor.moveToNext());
+		}
+		cursor.close();
+		return idContratos;
+	}
+	
+	public List<String> getAllIdMatArea2(String iddocente) {
+		List<String> idContratos = new ArrayList<String>();
+		String[] id = { iddocente };
+		Cursor cursor = db.query("MAT_AREA_PUEDE_IMPARTIR", camposMatImpartir,
 				"IDDOCENTE = ?", id, null,  null, null);
 		if (cursor.moveToFirst()) {
 			do {
@@ -876,6 +920,21 @@ public class ControlDB {
 			docente.setApellido(cursor.getString(3));
 			
 			return docente;
+		} else {
+			return null;
+		}
+	}
+	
+	public AreaMateria ConsultarAreaMat(String idareamat) {
+		String[] id = { idareamat };
+		Cursor cursor = db.query("AREA_MATERIA", camposAreaMat,
+				"IDAREAMAT = ?", id, null,  null, null);
+		if (cursor.moveToFirst()) {
+			AreaMateria areamat = new AreaMateria();
+			areamat.setCodigomateria(cursor.getString(0));
+			areamat.setIdareamat(cursor.getString(1));
+			areamat.setIddepartamento(cursor.getString(2));
+			return areamat;
 		} else {
 			return null;
 		}

@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -9,8 +10,77 @@
     tools:context=".EliminarMateriasImpartirActivity" >
 
     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:text="@string/msgactivityEliminarMatImpartir"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTxtConsulNomMatImp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_below="@+id/spnConsulIdDocMatImp"
+        android:layout_centerHorizontal="true"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/msgeditTxtInsertNomDocDepto" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTxtConsultApellidoMatImp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTxtConsulNomMatImp"
+        android:layout_below="@+id/editTxtConsulNomMatImp"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/msgeditTxtInsertApeDocDepto" />
+    
+    <Button
+        android:id="@+id/btnEliminarDocenteDepto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spnElimIdDepDocDepto"
+        android:layout_alignParentBottom="true"
+        android:drawableRight="@drawable/clear"
+        android:onClick="EliminarDocenteDepto"
+        android:text="@string/msgbtnEliminarMatImpar" />
+
+    <Spinner
+        android:id="@+id/spnConsulIdDepMatImp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnEliminarDocenteDepto"
+        android:layout_below="@+id/editTxtConsultApellidoMatImp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTxtConsulNomDepMatImp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTxtConsultApellidoMatImp"
+        android:layout_below="@+id/spnConsulIdDepMatImp"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/msgeditTxtInsertNomMatMatImp" />
+
+    <Spinner
+        android:id="@+id/spnConsulIdDocMatImp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="24dp" />
 
 </RelativeLayout>
