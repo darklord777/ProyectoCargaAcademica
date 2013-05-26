@@ -10,17 +10,6 @@
     tools:context=".MenuDocenteActivity" >
 
     <Button
-        android:id="@+id/botonDepartamento"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/botonMateriasImpartir"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="42dp"
-        android:background="@drawable/button_custom"
-        android:text="@string/botonDepartamento"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <Button
         android:id="@+id/botonPeriodo"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -46,9 +35,9 @@
         android:id="@+id/botonDocente"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/botonCargo"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="23dp"
         android:background="@drawable/button_custom"
         android:text="@string/botonDocente"
         android:textAppearance="?android:attr/textAppearanceMedium" />
@@ -57,12 +46,22 @@
         android:id="@+id/botonMateriasImpartir"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/botonDepartamento"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="57dp"
+        android:layout_marginBottom="46dp"
         android:background="@drawable/button_custom"
         android:text="@string/botonMateriasImpartir"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
+    <Button
+        android:id="@+id/botonDepartamento"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/botonMateriasImpartir"
+        android:layout_alignLeft="@+id/botonPeriodo"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/button_custom"
+        android:text="@string/botonDepartamento"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

@@ -21,17 +21,6 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
-        android:id="@+id/BtnTipoCont"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="35dp"
-        android:background="@drawable/button_custom"
-        android:text="@string/msgTipoCont"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <Button
         android:id="@+id/btnAdmonDepto"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -73,6 +62,17 @@
         android:layout_marginTop="32dp"
         android:background="@drawable/button_custom"
         android:text="@string/btnLocales"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/BtnTipoCont"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnMostrarTablas"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_custom"
+        android:text="@string/msgTipoCont"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>
