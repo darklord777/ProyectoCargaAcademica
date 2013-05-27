@@ -70,7 +70,7 @@
 
 
     <!-- Alexis -->
-    <string name="btnAdmonDepto">Administracion de Dapartamento</string>
+    <string name="btnAdmonDepto">Administracion de Departamento</string>
     <string name="btnConsultarDepto">Consultar Departamento</string>
     <string name="tvConsultarDepto">Consultar Departamento</string>
     <string name="btnActualizarDepto">Actualizar Departamento</string>
@@ -79,8 +79,8 @@
 
     <!-- Michael -->
 
-    <string name="msgidLocal">Digite codigo del Local</string>
-    <string name="msgCapLocal">Digite capacidad del Local</string>
+    <string name="msgidLocal">Codigo del Local</string>
+    <string name="msgCapLocal">Capacidad del Local</string>
     <string name="btnGuardarLocal">Guardar Local</string>
     <string name="nLocal">Nuevo Local</string>
     <string name="btn_limpiarLocal">Limpiar Entradas</string>
