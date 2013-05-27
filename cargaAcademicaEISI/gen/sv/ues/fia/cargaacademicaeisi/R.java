@@ -45,7 +45,7 @@ public final class R {
         public static final int BtnCargo_Docentes2=0x7f0a002a;
         public static final int BtnLocal=0x7f0a002c;
         public static final int BtnModalidadCurso=0x7f0a002b;
-        public static final int BtnTipoCont=0x7f0a0028;
+        public static final int BtnTipoCont=0x7f0a0029;
         public static final int CapLocal_Act=0x7f0a0135;
         public static final int CapLocal_Elim=0x7f0a0138;
         public static final int CargoActAcad=0x7f0a0003;
@@ -69,11 +69,11 @@ public final class R {
         public static final int TextView03=0x7f0a0008;
         public static final int action_settings=0x7f0a0182;
         public static final int actualizarModCurso=0x7f0a0160;
-        public static final int botonCargo=0x7f0a0145;
-        public static final int botonDepartamento=0x7f0a0142;
-        public static final int botonDocente=0x7f0a0146;
-        public static final int botonMateriasImpartir=0x7f0a0143;
-        public static final int botonPeriodo=0x7f0a0144;
+        public static final int botonCargo=0x7f0a0144;
+        public static final int botonDepartamento=0x7f0a0143;
+        public static final int botonDocente=0x7f0a0145;
+        public static final int botonMateriasImpartir=0x7f0a0146;
+        public static final int botonPeriodo=0x7f0a0142;
         public static final int btn1NuevoCargo_docente=0x7f0a00ef;
         public static final int btn1NuevoPeriodo=0x7f0a017e;
         public static final int btn1TablaCiclo=0x7f0a0102;
@@ -98,7 +98,7 @@ public final class R {
         public static final int btnActualizarTipoCont=0x7f0a0013;
         public static final int btnAdmonAreaMateria=0x7f0a0148;
         public static final int btnAdmonCat=0x7f0a014d;
-        public static final int btnAdmonDepto=0x7f0a0029;
+        public static final int btnAdmonDepto=0x7f0a0028;
         public static final int btnAdmonDetGpoAsig=0x7f0a0149;
         public static final int btnAdmonMateria=0x7f0a0147;
         public static final int btnAsigDocDepto=0x7f0a0031;

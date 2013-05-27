@@ -3,68 +3,68 @@
     <string name="app_name">Load Academic EISI UES</string>
     <!-- Titulosctivitys -->
     <string name="title_activity_menu_principal">Main Menu</string>
-    <string name="title_activity_admon_depto">Administration Departments</string>
+    <string name="title_activity_admon_depto">Departments Administration</string>
     <string name="title_activity_nuevo_depto">New Department</string>
     <string name="title_activity_admin_catalogos">Catalogs Administration</string>
     <string name="title_activity_gestion_carga_acad">Academic Load Management</string>
     <string name="title_activity_ciclo_insertar">Sign Academic Cycle</string>
-    <string name="title_activity_consultar_depto">ConsultarDeptoActivity</string>
-    <string name="title_activity_actualizar_depto">ActualizarDeptoActivity</string>
+    <string name="title_activity_consultar_depto">Consult Department</string>
+    <string name="title_activity_actualizar_depto">Update Department</string>
     <string name="title_activity_ciclo_eliminar">Delete Academic Cycle</string>
-    <string name="title_activity_ciclo_actualizar">Reload Academic Cycle</string>
+    <string name="title_activity_ciclo_actualizar">Update Academic Cycle</string>
     <string name="title_activity_insertar_locales">Insert Local</string>
     <string name="title_activity_gestion_mod_acad">Academica Management Mode</string>
     <string name="title_activity_locales_menu">Local Menu</string>
-    <string name="title_activity_insertar_modalidad_act_acad">Academic Activity Insert mode</string>
-    <string name="title_activity_modalidad_aamenu">Menu mode</string>
-    <string name="title_activity_modalidad_curso_menu">Course Menu mode</string>
+    <string name="title_activity_insertar_modalidad_act_acad">Insert Academic Activity Modality</string>
+    <string name="title_activity_modalidad_aamenu">Modality Menu</string>
+    <string name="title_activity_modalidad_curso_menu">Course Modality Menu</string>
     <string name="title_activity_actividad_academica_menu">Academic Activity Menu</string>
     <string name="title_activity_insertar_actividad_academica">Insert Academic Activity</string>
     <string name="title_activity_actividad_academica_consultar">Consult Academic Activity</string>
-    <string name="title_activity_mod_act_acad_consultar_main">View mode</string>
-    <string name="title_activity_modalidad_curso_consultar">Course moof cosultar</string>
-    <string name="title_activity_modalidad_curso_eliminar">Delete Course Mode</string>
-    <string name="title_activity_modalidad_curso_actualizar">Update Course Mode</string>
-    <string name="title_activity_mod_act_acad_eliminar">Remove moof Academic Activity</string>
-    <string name="title_activity_mod_act_acad_actualizar">Reload mode</string>
-    <string name="title_activity_actividad_academica_eliminar">Delete Activity Academic</string>
-    <string name="title_activity_actividad_academica_actualizar">Reload Academic Activity</string>
+    <string name="title_activity_mod_act_acad_consultar_main">Consult Academic Activity Modality</string>
+    <string name="title_activity_modalidad_curso_consultar">Consult Course Modality</string>
+    <string name="title_activity_modalidad_curso_eliminar">Delete Course Modality</string>
+    <string name="title_activity_modalidad_curso_actualizar">Update Course Modality</string>
+    <string name="title_activity_mod_act_acad_eliminar">Delete Academic Activity Modality</string>
+    <string name="title_activity_mod_act_acad_actualizar">Update Academic Activity Modality</string>
+    <string name="title_activity_actividad_academica_eliminar">Delete Academic Activity </string>
+    <string name="title_activity_actividad_academica_actualizar">Update Academic Activity</string>
     <string name="title_activity_menu_act_academicas">Academic Activities Menu</string>
-    <string name="title_activity_locales_eliminar">remove Local</string>
-    <string name="title_activity_locales_actualizar">Local Update</string>
-    <string name="title_activity_locales_consultar">consult Local</string>
-    <string name="title_activity_eliminar_depto">remove Department</string>
-    <string name="title_activity_admon_materia">Materials Management</string>
-    <string name="title_activity_nueva_materia">new Stuff</string>
-    <string name="title_activity_actualizar_materia">Reload matter</string>
-    <string name="title_activity_consultar_materia">See matter</string>
+    <string name="title_activity_locales_eliminar">Delete Local</string>
+    <string name="title_activity_locales_actualizar">Update Local</string>
+    <string name="title_activity_locales_consultar">Consult Local</string>
+    <string name="title_activity_eliminar_depto">Delete Department</string>
+    <string name="title_activity_admon_materia">Subject Management</string>
+    <string name="title_activity_nueva_materia">New Subject</string>
+    <string name="title_activity_actualizar_materia">Update Subject</string>
+    <string name="title_activity_consultar_materia">Consult Subject</string>
     <string name="title_activity_eliminar_materia">Delete Subject</string>
     <string name="title_activity_area_materia_insertar">Insert Subject Area</string>
     <string name="title_activity_are_materia_consultar">Consult Subject Area</string>
     <string name="title_activity_are_materia_nueva">New Are Subject</string>
     <string name="title_activity_are_materia_eliminar">Delete Subject Area</string>
-    <string name="title_activity_are_materia_actualizar">Reload Are Subject</string>
-    <string name="title_activity_admon_area_mat">Managing Subject Area</string>
-    <string name="action_settings">configurations</string>
+    <string name="title_activity_are_materia_actualizar">Update Subject Area</string>
+    <string name="title_activity_admon_area_mat">Subject Area Management</string>
+    <string name="action_settings">Configurations</string>
     <string name="hello_world">Hello world!</string>
 
     <!-- sistema -->
     <string name="btnEntrarSistema">Enter System</string>
-    <string name="btnAdmonCat">Administration of Catalogos</string>
+    <string name="btnAdmonCat">Catalogs Administration</string>
     <string name="btnNuevoDepto">New Department</string>
 
     <!-- Mario -->
-    <string name="msgidDepto">Coof  deparment</string>
+    <string name="msgidDepto">Department Code</string>
     <string name="tituloDepto">New Department</string>
-    <string name="msgNomDepto">Name  deparment</string>
+    <string name="msgNomDepto">Department Name</string>
     <string name="btnGuardarDepto">Save Department</string>
-    <string name="btnLimpiaDepto">Clear entradas</string>
-    <string name="btn1TablaCiclo">Ciclos</string>
-    <string name="btn2TablaCargaAcademica">Load Academic</string>
-    <string name="btn3DetCargaMateria">Asignation of Curse</string>
-    <string name="btn4DetCargaActAcademica">Asignation of Load Academic</string>
-    <string name="btn5A_CargaAcademica">Gestion Load Academic</string>
-    <string name="msgElimDepto">Remove Department</string>
+    <string name="btnLimpiaDepto">Clear Entrys</string>
+    <string name="btn1TablaCiclo">Cycles</string>
+    <string name="btn2TablaCargaAcademica">Academic Load</string>
+    <string name="btn3DetCargaMateria">Course Asignation</string>
+    <string name="btn4DetCargaActAcademica">Academic Load Asignation</string>
+    <string name="btn5A_CargaAcademica">Academic Load Gestion</string>
+    <string name="msgElimDepto">Delete Department</string>
     <!-- Alexis -->
 
 
@@ -303,7 +303,7 @@
     <!-- fin YO -->
 
 
-    <!--lexis todavia no ordenado -->
+    <!--Alexis todavia no ordenado -->
     <string name="title_activity_carga_academica_menu">Menu management  of Load Academic</string>
     <string name="button1a4_menuTABLACARGAACAD_INSERT">Insert Load Academic</string>
     <string name="button2a4_menuTABLACARGAACAD_DELETE">Remove Load Academic</string>
@@ -388,7 +388,7 @@
     <string name="edtCodMatDetGpoAsig">Coof materia</string>
     <string name="edtIdModDetGpoAsig">Coof modality</string>
     <string name="edtIdLocalDetGpoAsig">Coof Local</string>
-    <string name="edtIdDeptoAreMat">Coof deparment</string>
+    <string name="edtIdDeptoAreMat">Coof department</string>
     <string name="edtCodMateAreaMat">Coof Stuff</string>
     <string name="btnAdmonDetGpoAsig">Adminstrar detail group earmarked</string>
     <string name="title_activity_cargo_menu">CargoMenuActivity</string>
