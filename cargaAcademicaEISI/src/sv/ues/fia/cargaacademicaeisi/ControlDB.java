@@ -1871,16 +1871,21 @@ public class ControlDB {
 		db.execSQL("insert into ACTIVIDAD_ACADEMICA values('A001','MA01','Actividad1','Cargo1');");
 		db.execSQL("insert into ACTIVIDAD_ACADEMICA values('A002','MA02','Actividad2','Cargo2');");
 		db.execSQL("insert into ACTIVIDAD_ACADEMICA values('A003','MA03','Actividad3','Cargo3');");
-
-		//db.execSQL("insert into detalle_carga_academica values('PP02001','2012','2','001');");
-		//db.execSQL("insert into detalle_carga_academica values('PP02001','2012','1','001');");
-		//db.execSQL("insert into detalle_carga_academica values('MM00100','2012','1','002');");
-
-		db.execSQL("insert into detalle_carga_act_acad values('PP02001','2012','1','act001');");
-		db.execSQL("insert into detalle_carga_act_acad values('PP02001','2013','1','act002');");
-		db.execSQL("insert into detalle_carga_act_acad values('AS00001','2013','2','act003');");
-
 		
+		db.execSQL("insert into detalle_grupo_asignado values('G001','PDM115','M001','B11');");
+		db.execSQL("insert into detalle_grupo_asignado values('G002','BAD115','M002','B11');");
+		db.execSQL("insert into detalle_grupo_asignado values('G003','SIG115','M003','D11');");
+		
+		
+		//db.execSQL("insert into detalle_carga_mat values('PP02001','2012','1','G001');");
+		//db.execSQL("insert into detalle_carga_mat values('PP02001','2013','1','G002');");
+		//db.execSQL("insert into detalle_carga_mat values('AS00001','2013','2','G003');");
+		
+		//db.execSQL("insert into detalle_carga_act_acad values('PP02001','2012','1','act001');");
+		//db.execSQL("insert into detalle_carga_act_acad values('PP02001','2013','1','act002');");
+		//db.execSQL("insert into detalle_carga_act_acad values('AS00001','2013','2','act003');");
+		
+	
 					
 		return "Guardo Correctamente";
 	}//fin funcion llenar BD
