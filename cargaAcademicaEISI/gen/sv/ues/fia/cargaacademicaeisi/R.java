@@ -295,6 +295,7 @@ public final class R {
         public static final int limpiarLocal=0x7f0a0107;
         public static final int limpiarModAA=0x7f0a012a;
         public static final int limpiarModCurso=0x7f0a0131;
+        public static final int llenarbd=0x7f0a0183;
         public static final int msgActualizarMateria=0x7f0a0023;
         public static final int nomDepto=0x7f0a016e;
         public static final int spiIdPeriodo_Elimminar=0x7f0a0177;
@@ -879,6 +880,7 @@ public final class R {
         public static final int iDdOc=0x7f07018f;
         public static final int iDpEr=0x7f07018d;
         public static final int llenar_base=0x7f070171;
+        public static final int llenar_bd=0x7f0701b2;
         public static final int msgActivAcad=0x7f07006c;
         public static final int msgActualizarCargo=0x7f070197;
         public static final int msgActualizarDepto=0x7f070041;
@@ -1063,7 +1065,7 @@ public final class R {
         /**  fin YO 
  alexis todavia no ordenado 
  fin YO 
-lexis todavia no ordenado 
+Alexis todavia no ordenado 
  fin YO 
  alexis todavia no ordenado 
          */
@@ -1159,7 +1161,7 @@ lexis todavia no ordenado
         public static final int title_activity_materias_impartir=0x7f0700be;
         public static final int title_activity_menu_act_academicas=0x7f07001c;
         public static final int title_activity_menu_actividad_academica=0x7f0700ce;
-        public static final int title_activity_menu_docente=0x7f0701b2;
+        public static final int title_activity_menu_docente=0x7f0701b3;
         /**  menu docente 
  menu docente 
  menu docente 

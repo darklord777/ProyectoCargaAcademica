@@ -507,4 +507,5 @@
     <string name="title_activity_insertar_materias_impartir">InsertarMateriasImpartirActivity</string>
     <string name="title_activity_eliminar_materias_impartir">EliminarMateriasImpartirActivity</string>
     <string name="title_activity_consultar_materias_impartir">ConsultarMateriasImpartirActivity</string>    
+    <string name="llenar_bd">Fill Database</string>
 </resources>

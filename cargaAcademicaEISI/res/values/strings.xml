@@ -46,7 +46,7 @@
     <string name="title_activity_are_materia_eliminar">Eliminar Area de Materia</string>
     <string name="title_activity_are_materia_actualizar">Actualizar Are de Materia</string>
     <string name="title_activity_admon_area_mat">Administrar Area de Materia</string>
-    <string name="action_settings">COnfiguraciones</string>
+    <string name="action_settings">Configuraciones</string>
     <string name="hello_world">Hola mundo!</string>
 
     <!-- sistema -->
@@ -514,5 +514,6 @@
     <string name="title_activity_insertar_materias_impartir">InsertarMateriasImpartirActivity</string>
     <string name="title_activity_eliminar_materias_impartir">EliminarMateriasImpartirActivity</string>
     <string name="title_activity_consultar_materias_impartir">ConsultarMateriasImpartirActivity</string>
+    <string name="llenar_bd">Llenar Base de Datos</string>
 
 </resources>

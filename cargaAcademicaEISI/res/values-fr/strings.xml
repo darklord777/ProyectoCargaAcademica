@@ -441,5 +441,6 @@
     <string name="msgElimPeriodo">Eliminar Periodo</string>
     <string name="Button_Perielim">Eliminar Periodo</string>
     <string name="VerTablasCAtalogos">Ver Tablas</string>
+    <string name="llenar_bd">Remplissez base de donnees</string>
 
 </resources>

@@ -1792,9 +1792,97 @@ public class ControlDB {
 
 	}
 
-	public String llenarBDCarnet() {
+	public String llenarBD() {
+		db.execSQL("DELETE FROM CARGO");
+		db.execSQL("DELETE FROM PERIODO");
+		db.execSQL("DELETE FROM TIPO_CONTRATO");
+		db.execSQL("DELETE FROM MODALIDAD_ACT_ACAD");
+		db.execSQL("DELETE FROM CICLO");
+		db.execSQL("DELETE FROM departamento");
+		db.execSQL("DELETE FROM materia");
+		db.execSQL("DELETE FROM LOCALES");
+		db.execSQL("DELETE FROM modalidad_curso");
+		
+		db.execSQL("DELETE FROM area_materia");
+		db.execSQL("DELETE FROM carga_academica");
+		db.execSQL("DELETE FROM detalle_grupo_asignado");
+		db.execSQL("DELETE FROM detalle_carga_mat");
+		db.execSQL("DELETE FROM detalle_carga_act_acad");
+		db.execSQL("DELETE FROM ACTIVIDAD_ACADEMICA");
+		db.execSQL("DELETE FROM DOCENTE");
+		
+		db.execSQL("INSERT INTO  CARGO VALUES('JFE04','Jefe de la Unidad');");
+		db.execSQL("INSERT INTO  CARGO VALUES('COR02','Coordinador');");
+		db.execSQL("INSERT INTO  CARGO VALUES('ACR04','Acesor');");
 
+		db.execSQL("INSERT INTO  PERIODO VALUES('AAC01','15/01/2013','15/12/2013');");
+		db.execSQL("INSERT INTO  PERIODO VALUES('CAC02','15/01/2013','15/07/2013');");
+		db.execSQL("INSERT INTO  PERIODO VALUES('PER03','15/01/2010','15/12/2013');");
+
+		db.execSQL("INSERT INTO TIPO_CONTRATO VALUES('0001','Tiempo Completo','8');");
+		db.execSQL("INSERT INTO TIPO_CONTRATO VALUES('0002','Medio Tiempo','4');");
+
+		db.execSQL("insert into MODALIDAD_ACT_ACAD VALUES('MA01', 'Modalidad1', 3);");
+		db.execSQL("insert into MODALIDAD_ACT_ACAD VALUES('MA02', 'Modalidad2', 2);");
+		db.execSQL("insert into MODALIDAD_ACT_ACAD VALUES('MA03', 'Modalidad3', 1);");
+
+		db.execSQL("INSERT INTO CICLO VALUES('2012','1','20/02/2012','25/06/2012');");
+		db.execSQL("INSERT INTO CICLO VALUES('2013','1','25/02/2013','01/07/2013');");
+		db.execSQL("INSERT INTO CICLO VALUES('2013','2','16/07/2013','26/11/2013');");
+
+		db.execSQL("insert into departamento values('001','Administracion');");
+		db.execSQL("insert into departamento values('002','Desarrollo de sistemas');");
+		db.execSQL("insert into departamento values('003','Programacion');");
+		db.execSQL("insert into departamento values('004','Comunicaciones');");
+
+		db.execSQL("insert into materia values('PDM115','Prog moviles');");
+		db.execSQL("insert into materia values('BAD115','Bases de datos');");
+		db.execSQL("insert into materia values('RHU115','Recursos humanos');");
+		db.execSQL("insert into materia values('SIG115','Sistemas gerenciales');");
+
+		db.execSQL("insert into Locales values('A340', 340);");
+		db.execSQL("insert into Locales values('B11', 100);");
+		db.execSQL("insert into Locales values('D11', 100);");
+		db.execSQL("insert into Locales values('B31', 100);");
+
+		db.execSQL("insert into MODALIDAD_CURSO VALUES('M001', 'completa', 5);");
+		db.execSQL("insert into MODALIDAD_CURSO VALUES('M002', 'media', 3);");
+		db.execSQL("insert into MODALIDAD_CURSO VALUES('M003', 'corta', 1);");
+
+		//TABLAS PADRE
+
+		db.execSQL("insert into area_materia values('001','001','RHU115');");
+		db.execSQL("insert into area_materia values('002','003','PDM115');");
+		db.execSQL("insert into area_materia values('003','003','BAD115');");
+
+		db.execSQL("insert into detalle_grupo_asignado values('001','RHU115','M001','B11');");
+		db.execSQL("insert into detalle_grupo_asignado values('002','PDM115','M003','D11');");
+		db.execSQL("insert into detalle_grupo_asignado values('003','BAD115','M002','B31');");
+
+		
+		db.execSQL("insert into DOCENTE values('PP02001','0001','Juan Jose','Perez Perez','Ingeniero','juan.perez@ues.edu.sv','22581010',8);");
+		db.execSQL("insert into DOCENTE values('AS00001','0002','Benito Eliseo','Araujo Sanchez','Ingeniero','benito.araujo@ues.edu.sv','22581015',4);");
+				
+		db.execSQL("insert into carga_academica values('PP02001','2012','1');");
+		db.execSQL("insert into carga_academica values('PP02001','2013','1');");
+		db.execSQL("insert into carga_academica values('AS00001','2013','2');");
+		
+		
+		db.execSQL("insert into ACTIVIDAD_ACADEMICA values('A001','MA01','Actividad1','Cargo1');");
+		db.execSQL("insert into ACTIVIDAD_ACADEMICA values('A002','MA02','Actividad2','Cargo2');");
+		db.execSQL("insert into ACTIVIDAD_ACADEMICA values('A003','MA03','Actividad3','Cargo3');");
+
+		//db.execSQL("insert into detalle_carga_academica values('PP02001','2012','2','001');");
+		//db.execSQL("insert into detalle_carga_academica values('PP02001','2012','1','001');");
+		//db.execSQL("insert into detalle_carga_academica values('MM00100','2012','1','002');");
+
+		db.execSQL("insert into detalle_carga_act_acad values('PP02001','2012','1','act001');");
+		db.execSQL("insert into detalle_carga_act_acad values('PP02001','2013','1','act002');");
+		db.execSQL("insert into detalle_carga_act_acad values('AS00001','2013','2','act003');");
+
+		
+					
 		return "Guardo Correctamente";
-	}
+	}//fin funcion llenar BD
 
 }
