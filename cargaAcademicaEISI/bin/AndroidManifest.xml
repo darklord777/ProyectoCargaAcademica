@@ -406,6 +406,22 @@
             android:name="sv.ues.fia.cargaacademicaeisi.ConsultarMateriasImpartirActivity"
             android:label="@string/title_activity_consultar_materias_impartir" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.ServiciosWebActivity"
+            android:label="@string/title_activity_servicios_web" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.MenuServiciosWebActivity"
+            android:label="@string/title_activity_menu_servicios_web" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.MateriaInsertarWebServiceActivity"
+            android:label="@string/title_activity_materia_insertar_web_service" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.MateriaActualizarWebServiceActivity"
+            android:label="@string/title_activity_materia_actualizar_web_service" >
+        </activity>
     </application>
 
 </manifest>

@@ -79,8 +79,9 @@ public class MenuPrincipalActivity extends Activity implements OnClickListener {
 	public boolean onOptionsItemSelected(MenuItem item) { 
 
 		switch (item.getItemId()) {
-		case R.id.action_settings:
-			Toast.makeText(this, "funciona", Toast.LENGTH_LONG).show();
+		case R.id.WS:
+			startActivity(new Intent(getApplicationContext(),
+					MenuServiciosWebActivity.class));
 			return true;
 		case R.id.llenarbd:
 			helper.abrir();		

@@ -301,7 +301,6 @@
 
     <!-- Consultar docente departamento -->
     <string name="title_activity_consultar_docente_depto">ConsultarDocenteDeptoActivity</string>
-   
     <string name="msgactivityingresarmateriasimpartir">Asignar Area de Materias a Docentes</string>
     <string name="msgactivityconsultarmateriasimpartir">Consultar Materias de Docentes</string>
     <string name="msgeditTxtInsertNomMatMatImp">Nombre de Materia</string>
@@ -515,5 +514,16 @@
     <string name="title_activity_eliminar_materias_impartir">EliminarMateriasImpartirActivity</string>
     <string name="title_activity_consultar_materias_impartir">ConsultarMateriasImpartirActivity</string>
     <string name="llenar_bd">Llenar Base de Datos</string>
+    
+    <string name="WS">Servicios Web</string>
+    <string name="title_activity_servicios_web">ServiciosWebActivity</string>
+    <string name="title_activity_menu_servicios_web">MenuServiciosWebActivity</string>
+    <string name="title_activity_materia_insertar_web_service">MateriaInsertarWebServiceActivity</string>
+    <string name="title_activity_materia_actualizar_web_service">MateriaActualizarWebServiceActivity</string>
+    <string name="ServiciosWeb">Servicios Web</string>
+    <string name="PreguntaFecha">¿Apartir de que fecha desea actualizar?</string>
+    <string name="formato_fecha">dd/mm/aaaa</string>
+    <string name="ServicioLocal">Servicio Local</string>
+    <string name="ServicioExterno">Servicio Externo"</string>
 
 </resources>
