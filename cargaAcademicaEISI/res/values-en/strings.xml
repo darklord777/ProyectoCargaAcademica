@@ -169,27 +169,27 @@
     <string name="ActidModAA_ActAcademica">Academic Activity Modality code</string>
     <!-- Michael -->
 
-    <string name="btnNuevaMateria">New Stuff</string>
-    <string name="btnConsultarMateria">Consult Stuff</string>
-    <string name="btnActMateria">Update Stuff</string>
-    <string name="btnEliminarMateria">Remove Stuff</string>
-    <string name="msgAdmonMateria">Administration of Stuffs</string>
-    <string name="edtNomMateria">Name of Stuff</string>
-    <string name="edtCodMateria">Coof of Stuff</string>
-    <string name="btnGuardarMateria">Save Stuff</string>
-    <string name="msgActualizarMateria">Update Stuff</string>
-    <string name="bntNuevaAreaMat">New Area of Stuff</string>
-    <string name="btnNuevaAreaMateria">New Area Stuff</string>
-    <string name="edtIdAreaMat">Coof Area Stuff</string>
+    <string name="btnNuevaMateria">New Subject</string>
+    <string name="btnConsultarMateria">Consult Subject</string>
+    <string name="btnActMateria">Update Subject</string>
+    <string name="btnEliminarMateria">Remove Subject</string>
+    <string name="msgAdmonMateria">Administration of Subject</string>
+    <string name="edtNomMateria">Name of Subject</string>
+    <string name="edtCodMateria">Coof of Subject</string>
+    <string name="btnGuardarMateria">Save Subject</string>
+    <string name="msgActualizarMateria">Update Subject</string>
+    <string name="bntNuevaAreaMat">New Area of Subject</string>
+    <string name="btnNuevaAreaMateria">New Area Subject</string>
+    <string name="edtIdAreaMat">Area Subject Code</string>
     <string name="btnGuarfarAreaMat">Saverea materia</string>
-    <string name="btnConsultarAreaMat">Consult Area Stuff</string>
-    <string name="tvConsultDeptoAreMat">Coof Department</string>
-    <string name="tvCodMatAreaMat">Coof Stuff</string>
-    <string name="btnEliminarAreaMat">Removerea Stuff</string>
-    <string name="btnAdmonAreaMateria">AdministerArea Stuff</string>
+    <string name="btnConsultarAreaMat">Consult Area Subject</string>
+    <string name="tvConsultDeptoAreMat">Department Code</string>
+    <string name="tvCodMatAreaMat">Subject code</string>
+    <string name="btnEliminarAreaMat">Removerea Subject</string>
+    <string name="btnAdmonAreaMateria">Subject Area Administration</string>
 
     <!-- YO -->
-    <string name="title_activity_admin_docentes">AdminDocentesActivity</string>
+    <string name="title_activity_admin_docentes">Docents Administration</string>
     <string name="msgactivityadmindocente">Administration of Teachings</string>
     <string name="btnNuevoDocente">New Teaching</string>
     <string name="btnActualizarDocente">Update Teaching</string>

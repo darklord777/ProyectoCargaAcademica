@@ -696,8 +696,8 @@ public final class R {
         public static final int PeriodoID=0x7f070191;
         public static final int PreguntaFecha=0x7f0701b9;
         public static final int SelecActAcademica=0x7f070084;
-        public static final int ServicioExterno=0x7f0701bc;
-        public static final int ServicioLocal=0x7f0701bb;
+        public static final int ServicioExterno=0x7f0701bd;
+        public static final int ServicioLocal=0x7f0701bc;
         public static final int ServiciosWeb=0x7f0701b8;
         public static final int TextV_ModAA=0x7f07007b;
         public static final int TextView1_iddocente=0x7f070113;
@@ -884,8 +884,8 @@ public final class R {
         public static final int consult_fechafin_hint=0x7f070145;
         public static final int consult_fechainicio_hint=0x7f070144;
         public static final int docente_cargo_menu=0x7f07016d;
-        public static final int editTextCodigo=0x7f0701bd;
-        public static final int editTextNombre=0x7f0701be;
+        public static final int editTextCodigo=0x7f0701be;
+        public static final int editTextNombre=0x7f0701bf;
         public static final int edtCodMatDetGpoAsig=0x7f070155;
         public static final int edtCodMateAreaMat=0x7f070159;
         public static final int edtCodMateria=0x7f0700a1;
@@ -903,6 +903,7 @@ public final class R {
         public static final int fechafinMsj=0x7f0701a3;
         public static final int fechainiMsj=0x7f0701a4;
         public static final int formato_fecha=0x7f0701ba;
+        public static final int formato_fecha2=0x7f0701bb;
         public static final int hello_world=0x7f07002d;
         public static final int iDCaRg=0x7f07018e;
         public static final int iDdOc=0x7f07018f;
@@ -1191,7 +1192,7 @@ Alexis todavia no ordenado
         public static final int title_activity_materias_impartir=0x7f0700be;
         public static final int title_activity_menu_act_academicas=0x7f07001c;
         public static final int title_activity_menu_actividad_academica=0x7f0700ce;
-        public static final int title_activity_menu_docente=0x7f0701bf;
+        public static final int title_activity_menu_docente=0x7f0701c0;
         /**  menu docente 
  menu docente 
  menu docente 

@@ -523,6 +523,7 @@
     <string name="ServiciosWeb">Servicios Web</string>
     <string name="PreguntaFecha">¿Apartir de que fecha desea actualizar?</string>
     <string name="formato_fecha">dd/mm/aaaa</string>
+    <string name="formato_fecha2">aaaa-mm-dd</string>
     <string name="ServicioLocal">Servicio Local</string>
     <string name="ServicioExterno">Servicio Externo"</string>
     <string name="editTextCodigo">Codigo de materia</string>

@@ -20,15 +20,26 @@
         android:text="@string/btn4_actualizar_Modalidad"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
+    <TextView
+        android:id="@+id/textMenuModalidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/TextViewModalidad"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
     <Button
-        android:id="@+id/btn_MenuModalidad_Elim"
+        android:id="@+id/btn_MenuModalidad_Ins"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_MenuModalidad_Act"
-        android:layout_alignLeft="@+id/btn_MenuModalidad_Cons"
-        android:layout_marginBottom="18dp"
-        android:drawableRight="@drawable/clear"
-        android:text="@string/btn3_eliminar_Modalidad"
+        android:layout_alignLeft="@+id/textMenuModalidad"
+        android:layout_below="@+id/textMenuModalidad"
+        android:layout_marginTop="25dp"
+        android:drawableRight="@drawable/save2"
+        android:text="@string/btn1_insertar_Modalidad"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
@@ -36,30 +47,21 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/btn_MenuModalidad_Ins"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/btn_MenuModalidad_Ins"
+        android:layout_marginTop="24dp"
         android:drawableRight="@drawable/search"
         android:text="@string/btn2_consultar_Modalidad"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
-        android:id="@+id/btn_MenuModalidad_Ins"
+        android:id="@+id/btn_MenuModalidad_Elim"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_MenuModalidad_Cons"
-        android:layout_alignLeft="@+id/textMenuModalidad"
-        android:layout_marginBottom="16dp"
-        android:drawableRight="@drawable/save2"
-        android:text="@string/btn1_insertar_Modalidad"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/textMenuModalidad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_MenuModalidad_Ins"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="62dp"
-        android:text="@string/TextViewModalidad"
+        android:layout_above="@+id/btn_MenuModalidad_Act"
+        android:layout_alignLeft="@+id/btn_MenuModalidad_Cons"
+        android:layout_marginBottom="26dp"
+        android:drawableRight="@drawable/clear"
+        android:text="@string/btn3_eliminar_Modalidad"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>
