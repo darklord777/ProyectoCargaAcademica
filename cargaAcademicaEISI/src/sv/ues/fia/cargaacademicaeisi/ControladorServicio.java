@@ -2,7 +2,6 @@ package sv.ues.fia.cargaacademicaeisi;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.StatusLine;
@@ -18,7 +17,6 @@ import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import android.content.Context;
 import android.util.Log;
 import android.widget.Toast;
@@ -47,8 +45,7 @@ public class ControladorServicio {
 				respuesta = EntityUtils.toString(entidad);
 			}
 		} catch (Exception e) {
-			Toast.makeText(ctx, "Error en la conexion", Toast.LENGTH_LONG)
-					.show();
+			Toast.makeText(ctx, "Error en la conexion", Toast.LENGTH_LONG).show();
 			// Desplegando el error en el LogCat
 			Log.v("Error de Conexion", e.toString());
 		}
@@ -83,7 +80,8 @@ public class ControladorServicio {
 				Log.v("respuesta",Integer.toString(codigoEstado));
 			}
 		} catch (Exception e) {
-			Toast.makeText(ctx, "Error en la conexion", Toast.LENGTH_LONG).show();
+			Toast.makeText(ctx, "Error en la conexion", Toast.LENGTH_LONG)
+					.show();
 			// Desplegando el error en el LogCat
 			Log.v("Error de Conexion", e.toString());
 		}
@@ -109,7 +107,8 @@ public class ControladorServicio {
 			}
 			return listaMaterias;
 		} catch (Exception e) {
-			Toast.makeText(ctx, "Error en parseo de JSON", Toast.LENGTH_LONG).show();
+			Toast.makeText(ctx, "Error en parseo de JSON", Toast.LENGTH_LONG)
+					.show();
 			return null;
 		}
 
@@ -126,8 +125,8 @@ public class ControladorServicio {
 				JSONObject obj = materiasJSON.getJSONObject(i);
 
 				Materia materia = new Materia();
-				materia.setCodigomateria(obj.getString("Codigomateria"));
-				materia.setNom_materia(obj.getString("Nommateria"));
+				materia.setCodigomateria(obj.getString("Codmateria"));
+				materia.setNom_materia(obj.getString("Nommateria"));				
 
 				listaMaterias.add(materia);
 			}

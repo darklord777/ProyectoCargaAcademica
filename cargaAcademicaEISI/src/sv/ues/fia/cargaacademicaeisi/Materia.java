@@ -5,7 +5,11 @@ public class Materia {
 	private String nom_materia;
 
 	public Materia() {
+	}
 
+	public Materia(String codigomateria, String nom_materia) {		
+		this.codigomateria = codigomateria;
+		this.nom_materia = nom_materia;
 	}
 
 	public String getCodigomateria() {
