@@ -499,7 +499,7 @@
 
     <!-- EliminarPeriodo -->
 
-    <string name="Msj_Finper">Fin of Period </string>
+    <string name="Msj_Finper">End of Period </string>
     <string name="Msj_Iniper">Start of Period </string>
     <string name="msgElimPeriodo">Remove Period</string>
     <string name="Button_Perielim">Remove Period</string>
@@ -508,4 +508,18 @@
     <string name="title_activity_eliminar_materias_impartir">EliminarMateriasImpartirActivity</string>
     <string name="title_activity_consultar_materias_impartir">ConsultarMateriasImpartirActivity</string>    
     <string name="llenar_bd">Fill Database</string>
+    
+    <string name="WS">Web Services</string>
+    <string name="title_activity_servicios_web">Web Services</string>
+    <string name="title_activity_menu_servicios_web">Web Services</string>
+    <string name="title_activity_materia_insertar_web_service">Insert Subject Web Service</string>
+    <string name="title_activity_materia_actualizar_web_service">Subject Update Web Service</string>
+    <string name="ServiciosWeb">Web Services</string>
+    <string name="PreguntaFecha">¿update from what date?</string>
+    <string name="formato_fecha">dd/mm/yyyy</string>
+    <string name="formato_fecha2">yyyy-mm-dd</string>
+    <string name="ServicioLocal">Local Service</string>
+    <string name="ServicioExterno">Foreing Service"</string>
+    <string name="editTextCodigo">Subject code</string>
+    <string name="editTextNombre">Subject Name</string>
 </resources>

@@ -175,7 +175,7 @@ public final class R {
         public static final int btn_MenuModalidadCurso_Elim=0x7f0a0172;
         public static final int btn_MenuModalidadCurso_Ins=0x7f0a0170;
         public static final int btn_MenuModalidad_Act=0x7f0a0161;
-        public static final int btn_MenuModalidad_Cons=0x7f0a0163;
+        public static final int btn_MenuModalidad_Cons=0x7f0a0165;
         public static final int btn_MenuModalidad_Elim=0x7f0a0162;
         public static final int btn_MenuModalidad_Ins=0x7f0a0164;
         public static final int btn_ModalActividadAcad_Elim=0x7f0a0160;
@@ -410,7 +410,7 @@ public final class R {
         public static final int spn_Select_ModalidadCurso=0x7f0a016a;
         public static final int spnelimIdDocente=0x7f0a00f8;
         public static final int textLocales=0x7f0a013b;
-        public static final int textMenuModalidad=0x7f0a0165;
+        public static final int textMenuModalidad=0x7f0a0163;
         public static final int textView1=0x7f0a0000;
         public static final int textView1A5_selecionedocente=0x7f0a005a;
         public static final int textView1_cicloconsultar=0x7f0a007a;

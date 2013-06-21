@@ -52,8 +52,7 @@ public class ControladorServicio {
 		return respuesta;
 	}
 
-	public static String obtenerRespuestaPost(String url, JSONObject obj,
-			Context ctx) {
+	public static String obtenerRespuestaPost(String url, JSONObject obj, Context ctx) {
 		String respuesta = " ";
 		try {
 			HttpParams parametros = new BasicHttpParams();
@@ -107,8 +106,7 @@ public class ControladorServicio {
 			}
 			return listaMaterias;
 		} catch (Exception e) {
-			Toast.makeText(ctx, "Error en parseo de JSON", Toast.LENGTH_LONG)
-					.show();
+			Toast.makeText(ctx, "Error en parseo de JSON", Toast.LENGTH_LONG).show();
 			return null;
 		}
 
@@ -132,8 +130,7 @@ public class ControladorServicio {
 			}
 			return listaMaterias;
 		} catch (Exception e) {
-			Toast.makeText(ctx, "Error en parseo de JSON", Toast.LENGTH_LONG)
-					.show();
+			Toast.makeText(ctx, "Error en parseo de JSON", Toast.LENGTH_LONG).show();
 			return null;
 		}
 
