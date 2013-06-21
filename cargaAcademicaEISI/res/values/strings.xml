@@ -525,5 +525,7 @@
     <string name="formato_fecha">dd/mm/aaaa</string>
     <string name="ServicioLocal">Servicio Local</string>
     <string name="ServicioExterno">Servicio Externo"</string>
+    <string name="editTextCodigo">Codigo de materia</string>
+    <string name="editTextNombre">Nombre de la materia</string>
 
 </resources>

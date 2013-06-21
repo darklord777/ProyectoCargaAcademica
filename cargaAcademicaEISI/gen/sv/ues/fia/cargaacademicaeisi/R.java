@@ -884,6 +884,8 @@ public final class R {
         public static final int consult_fechafin_hint=0x7f070145;
         public static final int consult_fechainicio_hint=0x7f070144;
         public static final int docente_cargo_menu=0x7f07016d;
+        public static final int editTextCodigo=0x7f0701bd;
+        public static final int editTextNombre=0x7f0701be;
         public static final int edtCodMatDetGpoAsig=0x7f070155;
         public static final int edtCodMateAreaMat=0x7f070159;
         public static final int edtCodMateria=0x7f0700a1;
@@ -1189,7 +1191,7 @@ Alexis todavia no ordenado
         public static final int title_activity_materias_impartir=0x7f0700be;
         public static final int title_activity_menu_act_academicas=0x7f07001c;
         public static final int title_activity_menu_actividad_academica=0x7f0700ce;
-        public static final int title_activity_menu_docente=0x7f0701bd;
+        public static final int title_activity_menu_docente=0x7f0701bf;
         /**  menu docente 
  menu docente 
  menu docente 

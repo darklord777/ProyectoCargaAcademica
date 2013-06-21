@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
         android:layout_below="@+id/textView1"
+        android:hint="@string/editTextCodigo"
         android:ems="10" >
 
         <requestFocus />
@@ -36,6 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/editTextCodigo"
         android:layout_below="@+id/textView2"
+        android:hint="@string/editTextNombre"
         android:ems="10" />
 
     <TextView
@@ -62,6 +64,7 @@
         android:layout_alignLeft="@+id/textView3"
         android:layout_below="@+id/textView3"
         android:ems="10"
+        android:hint="@string/formato_fecha"
         android:inputType="date" />
 
     <Button
