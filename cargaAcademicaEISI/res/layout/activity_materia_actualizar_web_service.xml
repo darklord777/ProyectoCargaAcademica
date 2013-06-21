@@ -48,6 +48,7 @@
         android:layout_alignBaseline="@+id/btnLocal"
         android:layout_alignBottom="@+id/btnLocal"
         android:layout_alignRight="@+id/listView1"
+        android:onClick="servicioExterno"
         android:background="@drawable/button_custom"
         android:text="@string/ServicioExterno" />
 
@@ -57,6 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/editText1"
         android:layout_below="@+id/editText1"
+        android:onClick="servicioLocal"
         android:background="@drawable/button_custom"
         android:text="@string/ServicioLocal" />
 
@@ -69,7 +71,7 @@
         android:layout_marginTop="17dp"
         android:background="@drawable/button_custom"
         android:drawableRight="@drawable/save"
-        android:onClick="insertMaterias"
+        android:onClick="guardar"
         android:text="@string/msgbtnInsertGuardar"
         android:textAppearance="?android:attr/textAppearanceMedium" />
     

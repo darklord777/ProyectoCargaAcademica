@@ -3,7 +3,7 @@ package sv.ues.fia.cargaacademicaeisi;
 import org.json.JSONObject;
 
 import android.os.Bundle;
-//import android.os.StrictMode;
+import android.os.StrictMode;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.view.Menu;
@@ -27,8 +27,8 @@ public class MateriaInsertarWebServiceActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_materia_insertar_web_service);
 		
-	//	StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-	//	StrictMode.setThreadPolicy(policy);
+		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+		StrictMode.setThreadPolicy(policy);
 		
 		codigomateriaTxt = (EditText) findViewById(R.id.editTextCodigo);
 		nombremateriaTxt = (EditText) findViewById(R.id.editTextNombre);
@@ -42,7 +42,7 @@ public class MateriaInsertarWebServiceActivity extends Activity {
 		return true;
 	}
 
-public void insertarNota(View v) {
+public void insertarMateria(View v) {
 		
 		String codigomat = codigomateriaTxt.getText().toString();
 		String nombremat = nombremateriaTxt.getText().toString();

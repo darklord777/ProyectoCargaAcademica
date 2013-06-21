@@ -83,8 +83,7 @@ public class ControladorServicio {
 				Log.v("respuesta",Integer.toString(codigoEstado));
 			}
 		} catch (Exception e) {
-			Toast.makeText(ctx, "Error en la conexion", Toast.LENGTH_LONG)
-					.show();
+			Toast.makeText(ctx, "Error en la conexion", Toast.LENGTH_LONG).show();
 			// Desplegando el error en el LogCat
 			Log.v("Error de Conexion", e.toString());
 		}
@@ -110,8 +109,7 @@ public class ControladorServicio {
 			}
 			return listaMaterias;
 		} catch (Exception e) {
-			Toast.makeText(ctx, "Error en parseo de JSON", Toast.LENGTH_LONG)
-					.show();
+			Toast.makeText(ctx, "Error en parseo de JSON", Toast.LENGTH_LONG).show();
 			return null;
 		}
 
@@ -170,22 +168,5 @@ public class ControladorServicio {
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
-	}
-
-	public static String obtenerPromedioJSON(String json, Context ctx) {
-		try {
-			JSONArray objs = new JSONArray(json);
-			if (objs.length() != 0)
-				return objs.getJSONObject(0).getString("promedio");
-			else {
-				Toast.makeText(ctx, "Error carnet no existe", Toast.LENGTH_LONG)
-						.show();
-				return " ";
-			}
-		} catch (JSONException e) {
-			Toast.makeText(ctx, "Error con la respuesta JSON",
-					Toast.LENGTH_LONG).show();
-			return " ";
-		}
-	}
+	}	
 }
