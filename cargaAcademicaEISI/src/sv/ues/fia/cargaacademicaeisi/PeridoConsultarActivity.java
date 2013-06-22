@@ -38,6 +38,8 @@ public class PeridoConsultarActivity extends Activity implements OnItemSelectedL
 		adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, idPeriodos);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spnListaPeriodos.setAdapter(adapter);
+		edtFechaIni.setFocusable(false);
+		edtFechaFin.setFocusable(false);
 		
 	}
 

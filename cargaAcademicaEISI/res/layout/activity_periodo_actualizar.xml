@@ -19,48 +19,60 @@
         android:text="@string/msgActualizarPeriodo"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <Spinner
-        android:id="@+id/spin_Act_Per"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_below="@+id/textView1_consult_inicio"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp" />
+     <Button
+         android:id="@+id/buttonPeri_Actl"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/button1_fechainicio3"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="120dp"
+         android:drawableRight="@drawable/update"
+         android:onClick="actualizarPeriodo"
+         android:text="@string/ButtonPERiodoUPDa" />
 
-    <EditText
-        android:id="@+id/edtFechaIniDate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/spin_Act_Per"
-        android:layout_below="@+id/spin_Act_Per"
-        android:layout_marginTop="42dp"
-        android:ems="10"
-        android:hint="@string/fechainiMsj"
-        android:inputType="date" >
+     <Button
+         android:id="@+id/button1_fechainicio3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/button2_fechafin3"
+         android:layout_alignLeft="@+id/spin_Act_Per"
+         android:text="@string/button1_fechainicioinsert" />
 
-        <requestFocus />
-    </EditText>
+     <Button
+         android:id="@+id/button2_fechafin3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/buttonPeri_Actl"
+         android:layout_alignLeft="@+id/buttonPeri_Actl"
+         android:layout_marginBottom="16dp"
+         android:text="@string/button2_fechafininsert" />
 
-    <EditText
-        android:id="@+id/edtfechaFinDate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/edtFechaIniDate"
-        android:layout_below="@+id/edtFechaIniDate"
-        android:layout_marginTop="27dp"
-        android:ems="10"
-        android:hint="@string/fechafinMsj"
-        android:inputType="date" />
+     <Spinner
+         android:id="@+id/spin_Act_Per"
+         android:layout_width="wrap_content"
+         android:layout_height="40dp"
+         android:layout_below="@+id/textView1_consult_inicio"
+         android:layout_marginTop="28dp" />
 
-    <Button
-        android:id="@+id/buttonPeri_Actl"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/edtfechaFinDate"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="33dp"
-        android:drawableRight="@drawable/update"
-        android:onClick="actualizarPeriodo"
-        android:text="@string/ButtonPERiodoUPDa" />
+     <TextView
+         android:id="@+id/textView2_fin3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/button2_fechafin3"
+         android:layout_alignBottom="@+id/button2_fechafin3"
+         android:layout_alignRight="@+id/buttonPeri_Actl"
+         android:layout_marginRight="25dp"
+         android:text="@string/textview2_fin"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <TextView
+         android:id="@+id/textView1_inicio3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/button1_fechainicio3"
+         android:layout_alignBottom="@+id/button1_fechainicio3"
+         android:layout_alignLeft="@+id/textView2_fin3"
+         android:text="@string/textview1_inicio"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>
