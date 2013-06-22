@@ -19,4 +19,26 @@
         android:background="@drawable/button_custom"
         android:text="@string/ServiciosWeb" />
 
+    <ImageButton
+        android:id="@+id/btnWebService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="36dp"
+        android:contentDescription="@string/ServiciosWeb"
+        android:src="@drawable/webservice"
+        android:tag="@string/ServiciosWeb" />
+
+    <ImageButton
+        android:id="@+id/boton_camara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnWebService"
+        android:layout_marginLeft="19dp"
+        android:layout_toRightOf="@+id/btnWebService"
+        android:contentDescription="@string/boton_camara"
+        android:src="@drawable/camara"
+        android:tag="@string/boton_camara" />
+
 </RelativeLayout>

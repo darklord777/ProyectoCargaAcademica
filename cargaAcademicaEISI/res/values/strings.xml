@@ -514,7 +514,9 @@
     <string name="title_activity_eliminar_materias_impartir">EliminarMateriasImpartirActivity</string>
     <string name="title_activity_consultar_materias_impartir">ConsultarMateriasImpartirActivity</string>
     <string name="llenar_bd">Llenar Base de Datos</string>
-    
+
+    <!-- NUEVOS A TRADUCIR -->
+
     <string name="WS">Servicios Web</string>
     <string name="title_activity_servicios_web">ServiciosWebActivity</string>
     <string name="title_activity_menu_servicios_web">MenuServiciosWebActivity</string>
@@ -528,5 +530,9 @@
     <string name="ServicioExterno">Servicio Externo"</string>
     <string name="editTextCodigo">Codigo de materia</string>
     <string name="editTextNombre">Nombre de la materia</string>
+    <string name="boton_camara">Camara</string>
+    <string name="title_activity_camara">CamaraActivity</string>
+    <string name="imagen1">imagen</string>
+    <string name="boton1">tomar foto</string>
 
 </resources>
