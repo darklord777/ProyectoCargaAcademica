@@ -518,10 +518,10 @@
     <!-- NUEVOS A TRADUCIR -->
 
     <string name="WS">Servicios Web</string>
-    <string name="title_activity_servicios_web">ServiciosWebActivity</string>
-    <string name="title_activity_menu_servicios_web">MenuServiciosWebActivity</string>
-    <string name="title_activity_materia_insertar_web_service">MateriaInsertarWebServiceActivity</string>
-    <string name="title_activity_materia_actualizar_web_service">MateriaActualizarWebServiceActivity</string>
+    <string name="title_activity_servicios_web">Servicios Web</string>
+    <string name="title_activity_menu_servicios_web">Menu Servicios Web</string>
+    <string name="title_activity_materia_insertar_web_service">Materia Insertar Web Service</string>
+    <string name="title_activity_materia_actualizar_web_service">Materia Actualizar Web Service</string>
     <string name="ServiciosWeb">Servicios Web</string>
     <string name="PreguntaFecha">¿Apartir de que fecha desea actualizar?</string>
     <string name="formato_fecha">dd/mm/aaaa</string>
@@ -532,7 +532,7 @@
     <string name="editTextNombre">Nombre de la materia</string>
     <string name="boton_camara">Camara</string>
     <string name="title_activity_camara">CamaraActivity</string>
-    <string name="imagen1">imagen</string>
-    <string name="boton1">tomar foto</string>
+    <string name="imagen1">Imagen</string>
+    <string name="boton1">Tomar Foto</string>
 
 </resources>

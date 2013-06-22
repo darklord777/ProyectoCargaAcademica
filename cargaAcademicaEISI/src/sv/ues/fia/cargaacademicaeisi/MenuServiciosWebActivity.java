@@ -9,9 +9,9 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class MenuServiciosWebActivity extends Activity implements OnClickListener {
+public class MenuServiciosWebActivity extends Activity {
 
-	private Button btnServiciosWeb;
+	//private Button btnServiciosWeb;
 	private ImageButton botonwebservice;
 	private ControlDB helper;
 	private ImageButton botoncamara = null;
@@ -20,10 +20,10 @@ public class MenuServiciosWebActivity extends Activity implements OnClickListene
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_menu_servicios_web);
 		helper = new ControlDB(this);
-		btnServiciosWeb = (Button) findViewById(R.id.btnServiciosWeb);
+		//btnServiciosWeb = (Button) findViewById(R.id.btnServiciosWeb);
 		botoncamara = (ImageButton) findViewById(R.id.boton_camara);
 		botonwebservice = (ImageButton) findViewById(R.id.btnWebService);
-		btnServiciosWeb.setOnClickListener(this);
+		//btnServiciosWeb.setOnClickListener(this);
 		
 		
 		botoncamara.setOnClickListener(new OnClickListener() {
@@ -51,7 +51,7 @@ public class MenuServiciosWebActivity extends Activity implements OnClickListene
 		return true;
 	}
 
-	@Override
+	/*@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		switch (v.getId()) {
@@ -60,6 +60,6 @@ public class MenuServiciosWebActivity extends Activity implements OnClickListene
 					ServiciosWebActivity.class));
 			break;
 		}
-	}
+	}*/
 
 }

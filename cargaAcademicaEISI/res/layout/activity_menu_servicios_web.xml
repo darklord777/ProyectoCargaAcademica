@@ -9,27 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MenuServiciosWebActivity" >
 
-    <Button
-        android:id="@+id/btnServiciosWeb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="67dp"
-        android:background="@drawable/button_custom"
-        android:text="@string/ServiciosWeb" />
-
-    <ImageButton
-        android:id="@+id/btnWebService"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="36dp"
-        android:contentDescription="@string/ServiciosWeb"
-        android:src="@drawable/webservice"
-        android:tag="@string/ServiciosWeb" />
-
     <ImageButton
         android:id="@+id/boton_camara"
         android:layout_width="wrap_content"
@@ -40,5 +19,17 @@
         android:contentDescription="@string/boton_camara"
         android:src="@drawable/camara"
         android:tag="@string/boton_camara" />
+
+    <ImageButton
+        android:id="@+id/btnWebService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="92dp"
+        android:contentDescription="@string/ServiciosWeb"
+        android:src="@drawable/webservice"
+        android:tag="@string/ServiciosWeb" />
 
 </RelativeLayout>
