@@ -1802,7 +1802,7 @@ public class ControlDB {
 		db.execSQL("DELETE FROM materia");
 		db.execSQL("DELETE FROM LOCALES");
 		db.execSQL("DELETE FROM modalidad_curso");
-		
+		db.execSQL("DELETE FROM docente_cargo");
 		db.execSQL("DELETE FROM area_materia");
 		db.execSQL("DELETE FROM carga_academica");
 		db.execSQL("DELETE FROM detalle_grupo_asignado");
