@@ -8,16 +8,26 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".DocenteCargoInsertarActivity" >
+    
 
-   <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btnInsertDocCar"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
-        android:text="@string/btnNuevoDocCargo"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:layout_alignLeft="@+id/spnIdPer"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="68dp"
+        android:drawableRight="@drawable/save2"
+        android:onClick="insertarDocenteCargo"
+        android:text="@string/btnNuevoDocentCargo" />
+
+    <Spinner
+        android:id="@+id/spnIdPer"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/btnInsertDocCar"
+        android:layout_alignLeft="@+id/spnIdCar"
+        android:layout_marginBottom="37dp" />
 
     <EditText
         android:id="@+id/edtNvoDocCargo"
@@ -25,12 +35,27 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="29dp"
         android:ems="10"
-        android:hint="@string/edtIdDocCarg" >
+        android:hint="@string/edtIdDocCarg"
+        android:maxLength="6" />
 
-        <requestFocus />
-    </EditText>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="@string/btnNuevoDocCargo"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spnIdCar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/spnIdDoc"
+        android:layout_below="@+id/spnIdDoc"
+        android:layout_marginTop="29dp" />
 
     <Spinner
         android:id="@+id/spnIdDoc"
@@ -38,31 +63,33 @@
         android:layout_height="40dp"
         android:layout_alignLeft="@+id/edtNvoDocCargo"
         android:layout_below="@+id/edtNvoDocCargo"
-        android:layout_marginTop="14dp" />
+        android:layout_marginTop="31dp" />
 
-    <Spinner
-        android:id="@+id/spnIdCar"
-        android:layout_width="fill_parent"
-        android:layout_height="40dp"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/spnIdDoc"
-        android:layout_below="@+id/spnIdDoc" />
+        android:layout_below="@+id/edtNvoDocCargo"
+        android:text="Selecione ID docente"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <Spinner
-        android:id="@+id/spnIdPer"
-        android:layout_width="fill_parent"
-        android:layout_height="40dp"
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/spnIdCar"
-        android:layout_below="@+id/spnIdCar" />
+        android:layout_below="@+id/spnIdDoc"
+        android:text="Selecione ID Periodo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <Button
-        android:id="@+id/btnInsertDocCar"
-        android:layout_width="fill_parent"
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/spnIdPer"
-        android:layout_below="@+id/spnIdPer"
-        android:layout_marginTop="34dp"
-        android:drawableRight="@drawable/save2"
-        android:onClick="insertarDocenteCargo"
-        android:text="@string/btnNuevoDocentCargo" />
+        android:layout_below="@+id/spnIdCar"
+        android:text="Selecione ID Cargo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

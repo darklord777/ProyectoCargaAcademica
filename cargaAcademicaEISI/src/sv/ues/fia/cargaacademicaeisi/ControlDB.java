@@ -1876,6 +1876,7 @@ public class ControlDB {
 		db.execSQL("insert into detalle_grupo_asignado values('G002','BAD115','M002','B11');");
 		db.execSQL("insert into detalle_grupo_asignado values('G003','SIG115','M003','D11');");
 		
+		db.execSQL("insert into docente_cargo values('DC001','AS00001','AAC01','ACR04');");
 		
 		//db.execSQL("insert into detalle_carga_mat values('PP02001','2012','1','G001');");
 		//db.execSQL("insert into detalle_carga_mat values('PP02001','2013','1','G002');");

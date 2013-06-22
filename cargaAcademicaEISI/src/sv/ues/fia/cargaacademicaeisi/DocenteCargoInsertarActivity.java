@@ -27,6 +27,7 @@ public class DocenteCargoInsertarActivity extends Activity implements OnItemSele
 	private ArrayAdapter<String> adtIdPeriodo;
 	private ArrayAdapter<String> adtIdCargo;
 	
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +39,7 @@ public class DocenteCargoInsertarActivity extends Activity implements OnItemSele
 		spnNvoIdDocente = (Spinner) findViewById(R.id.spnIdDoc);
 		spnNvoIdPeriodo= (Spinner) findViewById(R.id.spnIdPer);
 		spnNvoIdCargo= (Spinner) findViewById(R.id.spnIdCar);
-		
+
 		helper.abrir();
 		idCargos = helper.getAllIdCargos();
 		idPeriodos = helper.getAllIdPeriodos();
@@ -60,7 +61,6 @@ public class DocenteCargoInsertarActivity extends Activity implements OnItemSele
 		spnNvoIdPeriodo.setOnItemSelectedListener(this);
 		spnNvoIdCargo.setOnItemSelectedListener(this);
 		spnNvoIdDocente.setOnItemSelectedListener(this);
-
 
 	}
 	public void insertarDocenteCargo(View v) {
@@ -95,6 +95,5 @@ public class DocenteCargoInsertarActivity extends Activity implements OnItemSele
 		// TODO Auto-generated method stub
 
 	}
-	
 
 }

@@ -146,7 +146,7 @@ public final class R {
         public static final int btnGuardarPeriodo=0x7f0a0071;
         public static final int btnGuarfarAreaMat=0x7f0a0051;
         public static final int btnIngresarMateria=0x7f0a0190;
-        public static final int btnInsertDocCar=0x7f0a00ee;
+        public static final int btnInsertDocCar=0x7f0a00ea;
         public static final int btnLimpiaDepto=0x7f0a0175;
         public static final int btnLimpiaPeriodo=0x7f0a0073;
         public static final int btnLocal=0x7f0a0144;
@@ -291,7 +291,7 @@ public final class R {
         public static final int edtNomCargo=0x7f0a006c;
         public static final int edtNomDepto=0x7f0a009c;
         public static final int edtNomMateria=0x7f0a0024;
-        public static final int edtNvoDocCargo=0x7f0a00ea;
+        public static final int edtNvoDocCargo=0x7f0a00ed;
         public static final int edtQueIdCarg=0x7f0a00e3;
         public static final int edtQueIdDocen=0x7f0a00e2;
         public static final int edtQueIdPer=0x7f0a00e4;
@@ -388,10 +388,10 @@ public final class R {
         public static final int spnIdDOC=0x7f0a00e5;
         public static final int spnIdDeptoNuevaAreaMat=0x7f0a0053;
         public static final int spnIdDetGpoAsig=0x7f0a00b0;
-        public static final int spnIdDoc=0x7f0a00eb;
+        public static final int spnIdDoc=0x7f0a00ee;
         public static final int spnIdLocNuevoDetGpoAsig=0x7f0a00b8;
         public static final int spnIdModNuevoDetGpoAsig=0x7f0a00b6;
-        public static final int spnIdPer=0x7f0a00ed;
+        public static final int spnIdPer=0x7f0a00eb;
         public static final int spnInsertCodTipContDocente=0x7f0a010f;
         public static final int spnInsertIdDepDocDepto=0x7f0a011d;
         public static final int spnInsertIdDepMatImp=0x7f0a0122;
