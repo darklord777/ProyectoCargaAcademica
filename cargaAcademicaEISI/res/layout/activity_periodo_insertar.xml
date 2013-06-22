@@ -9,18 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".PeriodoInsertarActivity" >
 
-    <EditText
-        android:id="@+id/idCArgo"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1_consult_inicio"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
-        android:ems="10"
-        android:hint="@string/msgidPeriodo"
-        android:inputType="textCapCharacters"
-        android:maxLength="6" />
-
     <TextView
         android:id="@+id/textView1_consult_inicio"
         android:layout_width="wrap_content"
@@ -29,21 +17,6 @@
         android:layout_marginTop="25dp"
         android:text="@string/tituloPeriodo"
         android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <EditText
-        android:id="@+id/fechaIni"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/idCArgo"
-        android:layout_below="@+id/idCArgo"
-        android:layout_marginTop="41dp"
-        android:ems="10"
-        android:hint="@string/msgFechaIni"
-        android:inputType="text"
-        android:maxLength="20" >
-
-        <requestFocus />
-    </EditText>
 
     <Button
         android:id="@+id/btnLimpiaPeriodo"
@@ -55,29 +28,66 @@
         android:drawableRight="@drawable/clear"
         android:onClick="limpiarPeriodo"
         android:text="@string/btnLimpiarPeriodo"
-        android:textAppearance="?android:attr/textAppearanceMedium"  />
-
-    <EditText
-        android:id="@+id/fechaFin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/fechaIni"
-        android:layout_alignRight="@+id/fechaIni"
-        android:layout_below="@+id/fechaIni"
-        android:layout_marginTop="22dp"
-        android:ems="10"
-        android:hint="@string/msgFechaFin"
-        android:inputType="date" />
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
         android:id="@+id/btnGuardarPeriodo"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/btnLimpiaPeriodo"
-        android:layout_alignLeft="@+id/fechaFin"
+        android:layout_alignLeft="@+id/idCArgo"
         android:drawableRight="@drawable/save"
         android:onClick="insertarPeriodo"
         android:text="@string/btnGuardarPeriodo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/idCArgo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1_consult_inicio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="@string/msgidPeriodo"
+        android:inputType="textCapCharacters"
+        android:maxLength="6" />
+
+    <Button
+        android:id="@+id/button1_fechainicio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idCArgo"
+        android:layout_below="@+id/idCArgo"
+        android:layout_marginTop="45dp"
+        android:text="@string/button1_fechainicioinsert" />
+
+    <Button
+        android:id="@+id/button2_fechafin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1_fechainicio2"
+        android:layout_alignRight="@+id/button1_fechainicio2"
+        android:layout_below="@+id/button1_fechainicio2"
+        android:layout_marginTop="23dp"
+        android:text="@string/button2_fechafininsert" />
+
+    <TextView
+        android:id="@+id/textView1_fechainicio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1_fechainicio2"
+        android:layout_alignBottom="@+id/button1_fechainicio2"
+        android:layout_alignRight="@+id/idCArgo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2_fechafin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2_fechafin2"
+        android:layout_alignBottom="@+id/button2_fechafin2"
+        android:layout_alignRight="@+id/btnGuardarPeriodo"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

@@ -39,6 +39,7 @@ public class CargoConsultarActivity extends Activity implements OnItemSelectedLi
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spnListaCargos.setAdapter(adapter);
 		spnListaCargos.setOnItemSelectedListener(this);
+		edtNomCargo.setFocusable(false);
 		
 	}
 	
