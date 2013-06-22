@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    tools:context=".MenuPrincipalActivity" >
+
+  <Button
+      android:id="@+id/btnDocentes"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/btnAdmonCat"
+      android:layout_alignParentRight="true"
+      android:background="@drawable/button_custom"
+      android:text="@string/btnDocente"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+  <Button
+      android:id="@+id/btnMaterias"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/btnActividadAcademica"
+      android:layout_alignLeft="@+id/btnAdmonCat"
+      android:layout_marginBottom="30dp"
+      android:background="@drawable/button_custom"
+      android:text="@string/btnMaterias"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+  <Button
+      android:id="@+id/btn5A_CargaAcademica"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/btnMaterias"
+      android:layout_alignBottom="@+id/btnMaterias"
+      android:layout_alignLeft="@+id/btnDocentes"
+      android:layout_alignRight="@+id/btnDocentes"
+      android:background="@drawable/button_custom"
+      android:text="@string/btn5A_CargaAcademica"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+  <Button
+      android:id="@+id/btnActividadAcademica"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignRight="@+id/btn5A_CargaAcademica"
+      android:layout_marginBottom="24dp"
+      android:layout_marginRight="51dp"
+      android:background="@drawable/button_custom"
+      android:text="@string/btnActividadAcademica"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+  <Button
+      android:id="@+id/btnAdmonCat"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/btnMaterias"
+      android:layout_marginBottom="33dp"
+      android:layout_toLeftOf="@+id/btnDocentes"
+      android:background="@drawable/button_custom"
+      android:text="@string/btnAdmonCat"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
