@@ -132,7 +132,6 @@ public final class R {
         public static final int btnEliminarMateria=0x7f0a0045;
         public static final int btnEliminarNvoDocente_Cargo=0x7f0a0079;
         public static final int btnEliminarTipoCont=0x7f0a00f5;
-        public static final int btnEntrarSistema=0x7f0a0056;
         public static final int btnExterno=0x7f0a0143;
         public static final int btnGLocal=0x7f0a0122;
         public static final int btnGModAA=0x7f0a012b;
@@ -316,6 +315,7 @@ public final class R {
         public static final int mainimage=0x7f0a0054;
         public static final int msgActualizarMateria=0x7f0a0023;
         public static final int nomDepto=0x7f0a017a;
+        public static final int progressBar1=0x7f0a0056;
         public static final int spiIdPeriodo_Elimminar=0x7f0a0185;
         public static final int spin_Act_ActAcademica=0x7f0a0001;
         public static final int spin_Act_Per=0x7f0a0182;

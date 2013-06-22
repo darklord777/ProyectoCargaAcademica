@@ -9,15 +9,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".CargaAcademicaActivity" >
 
-    <Button
-        android:id="@+id/btnEntrarSistema"
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="204dp"
-        android:background="@drawable/button_custom"
-        android:text="@string/btnEntrarSistema"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:layout_marginBottom="146dp" />
 
 </RelativeLayout>
