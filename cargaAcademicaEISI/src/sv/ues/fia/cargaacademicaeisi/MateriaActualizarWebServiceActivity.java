@@ -57,6 +57,7 @@ public class MateriaActualizarWebServiceActivity extends Activity {
 	
 	public void servicioLocal(View v) {
 		try {
+			listaMaterias.removeAll(listaMaterias);
 			String[] fecha = fechaTxt.getText().toString().split("/");
 			String url = urlLocal+"?fecha="+fecha[2]+"-"+fecha[1]+"-"+fecha[0];
 
@@ -68,7 +69,7 @@ public class MateriaActualizarWebServiceActivity extends Activity {
 	}
 
 	public void servicioExterno(View v) {
-
+		listaMaterias.removeAll(listaMaterias);
 		String[] fecha = fechaTxt.getText().toString().split("/");
 		String url = urlHostingGratuito + "?day=" + fecha[0] + "&month="+ fecha[1] + "&year=" + fecha[2];
 		//Toast.makeText(this, url, Toast.LENGTH_LONG).show();
