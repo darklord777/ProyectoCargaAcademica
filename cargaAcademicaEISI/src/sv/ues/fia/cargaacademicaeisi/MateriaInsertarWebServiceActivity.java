@@ -19,7 +19,7 @@ public class MateriaInsertarWebServiceActivity extends Activity {
 	EditText fechaTxt;
 	
 	private String urlExterno = "http://etapa2pdm115.netai.net/ws_db_tarea_materia_insert.php";
-	private String urlLocal = "http://127.0.0.1:8080/MateriaWebApplication/webresources/sv.ues.fia.tablamateria.entidad.materia/";
+	private String urlLocal = "http://192.168.56.1:8080/MateriaWebApplication/webresources/sv.ues.fia.tablamateria.entidad.materia/";
 
 	@SuppressLint("NewApi")
 	@Override
@@ -59,7 +59,7 @@ public void insertarMateria(View v) {
 				datosMateria.put("nommateria", nombremat);
 				datosMateria.put("fecha", fecha);
 				
-				ControladorServicio.insertarMateriaLocal(urlLocal, materia, this);
+				ControladorServicio.insertarMateriaLocal(urlLocal, datosMateria, this);
 			} catch (Exception e) {
 				Toast.makeText(this, "Error en los datos", Toast.LENGTH_LONG).show();
 			}
