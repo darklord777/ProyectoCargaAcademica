@@ -18,7 +18,7 @@ public class MateriaInsertarWebServiceActivity extends Activity {
 	EditText nombremateriaTxt;
 	EditText fechaTxt;
 	
-	private String urlExterno = "http://michaelagustin.netii.net/ws_db_tarea_materia_insert.php";
+	private String urlExterno = "http://etapa2pdm115.netai.net/ws_db_tarea_materia_insert.php";
 	private String urlLocal = "http://127.0.0.1:8080/MateriaWebApplication/webresources/sv.ues.fia.tablamateria.entidad.materia/";
 
 	@SuppressLint("NewApi")
@@ -55,9 +55,9 @@ public void insertarMateria(View v) {
 			JSONObject datosMateria = new JSONObject();
 			JSONObject materia = new JSONObject(); 
 			try {
-				datosMateria.put("CODIGOMATERIA", codigomat);
-				datosMateria.put("NOMMATERIA", nombremat);
-				datosMateria.put("FECHA", fecha);
+				datosMateria.put("codigomateria", codigomat);
+				datosMateria.put("nommateria", nombremat);
+				datosMateria.put("fecha", fecha);
 				
 				ControladorServicio.insertarMateriaLocal(urlLocal, materia, this);
 			} catch (Exception e) {
