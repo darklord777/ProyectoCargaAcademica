@@ -123,14 +123,14 @@ public class ControladorServicio {
 				JSONObject obj = materiasJSON.getJSONObject(i);
 
 				Materia materia = new Materia();
-				materia.setCodigomateria(obj.getString("Codmateria"));
-				materia.setNom_materia(obj.getString("Nommateria"));				
+				materia.setCodigomateria(obj.getString("CODIGOMATERIA"));
+				materia.setNom_materia(obj.getString("NOMMATERIA"));				
 
 				listaMaterias.add(materia);
 			}
 			return listaMaterias;
 		} catch (Exception e) {
-			Toast.makeText(ctx, "Error en parseo de JSON", Toast.LENGTH_LONG).show();
+			Toast.makeText(ctx, "Error en parseo de JSON2", Toast.LENGTH_LONG).show();
 			return null;
 		}
 

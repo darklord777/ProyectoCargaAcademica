@@ -26,7 +26,7 @@ public class MateriaActualizarWebServiceActivity extends Activity {
 	EditText fechaTxt;
 	ListView listViewMaterias;
 	
-	private final String urlHostingGratuito = "http://michaelagustin.netti.net/ws_db_tarea_materia_fecha.php";
+	private final String urlHostingGratuito = "http://etapa2pdm115.netai.net/ws_db_tarea_materia_fecha.php";
 	private final String urlLocal = "http://192.168.56.1:8080/MateriaWebApplication/webresources/sv.ues.fia.tablamateria.entidad.materia/by";
 	
 	@SuppressLint("NewApi")
@@ -70,8 +70,8 @@ public class MateriaActualizarWebServiceActivity extends Activity {
 	public void servicioExterno(View v) {
 
 		String[] fecha = fechaTxt.getText().toString().split("/");
-		String url = urlHostingGratuito + "?day=" + fecha[0] + "&moth="+ fecha[1] + "&year=" + fecha[2];
-
+		String url = urlHostingGratuito + "?day=" + fecha[0] + "&month="+ fecha[1] + "&year=" + fecha[2];
+		//Toast.makeText(this, url, Toast.LENGTH_LONG).show();
 		String materiasExternas = ControladorServicio.obtenerRespuestaPeticion(url, this);
 		try {
 			listaMaterias.addAll(ControladorServicio.obtenerMateriasExterno(materiasExternas, this));
