@@ -1360,7 +1360,7 @@ public class ControlDB {
 
 		}
 	public String actualizar(PERIODO periodo) {
-		if(verificarIntegridad(periodo, 27)){
+		if(verificarIntegridad(periodo, 3)){
 		String[] id = { periodo.getIdPeriodo() };
 		ContentValues values = new ContentValues();
 		values.put("FECHA_INI", periodo.getFechaIni());
