@@ -165,4 +165,21 @@ public class ControladorServicio {
 			e.printStackTrace();
 		}
 	}	
-}
+	
+	public static void eliminarMateriaExterno(String peticion, Context ctx) {
+		String json = obtenerRespuestaPeticion(peticion, ctx);
+		try {
+			JSONObject resultado = new JSONObject(json);
+			int respuesta = resultado.getInt("resultado");
+			if (respuesta == 1)
+				Toast.makeText(ctx, "Registro Eliminado", Toast.LENGTH_LONG)
+						.show();
+			else
+				Toast.makeText(ctx, "Error no se pudo eliminar",
+						Toast.LENGTH_LONG).show();
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+	}
+	
+}//fin clase principal

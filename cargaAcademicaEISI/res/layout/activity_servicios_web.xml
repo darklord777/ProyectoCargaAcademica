@@ -11,7 +11,7 @@
 
     <Button
         android:id="@+id/btnActualizarMateria"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -21,12 +21,22 @@
 
     <Button
         android:id="@+id/btnIngresarMateria"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnActualizarMateria"
         android:layout_below="@+id/btnActualizarMateria"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="74dp"
+        android:layout_marginTop="36dp"
         android:background="@drawable/button_custom"
         android:text="IngresarMateria" />
+
+    <Button
+        android:id="@+id/btnEliminarMateria"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnIngresarMateria"
+        android:layout_below="@+id/btnIngresarMateria"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/button_custom"
+        android:text="EliminarMateria" />
 
 </RelativeLayout>

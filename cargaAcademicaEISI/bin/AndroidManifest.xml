@@ -428,6 +428,10 @@
             android:name="sv.ues.fia.cargaacademicaeisi.CamaraActivity"
             android:label="@string/title_activity_camara" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.cargaacademicaeisi.MateriaEliminarWebServiceActivity"
+            android:label="@string/title_activity_materia_eliminar_web_service" >
+        </activity>
     </application>
 
 </manifest>

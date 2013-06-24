@@ -12,6 +12,7 @@ public class ServiciosWebActivity extends Activity implements OnClickListener {
 
 	private Button btnIngresarMateria;
 	private Button btnActualizarMateria;
+	private Button btnEliminarMateria;
 	private ControlDB helper;
 	
 	@Override
@@ -23,6 +24,8 @@ public class ServiciosWebActivity extends Activity implements OnClickListener {
 		btnIngresarMateria.setOnClickListener(this);
 		btnActualizarMateria = (Button) findViewById(R.id.btnActualizarMateria);
 		btnActualizarMateria.setOnClickListener(this);
+		btnEliminarMateria = (Button) findViewById(R.id.btnEliminarMateria);
+		btnEliminarMateria.setOnClickListener(this);
 	}
 
 	@Override
@@ -43,6 +46,10 @@ public class ServiciosWebActivity extends Activity implements OnClickListener {
 		case R.id.btnActualizarMateria:
 			startActivity(new Intent(getApplicationContext(),
 					MateriaActualizarWebServiceActivity.class));
+			break;
+		case R.id.btnEliminarMateria:
+			startActivity(new Intent(getApplicationContext(),
+					MateriaEliminarWebServiceActivity.class));
 			break;
 		}
 	}

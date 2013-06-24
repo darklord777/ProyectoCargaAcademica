@@ -534,5 +534,7 @@
     <string name="title_activity_camara">CamaraActivity</string>
     <string name="imagen1">Imagen</string>
     <string name="boton1">Tomar Foto</string>
-
+    <string name="title_activity_materia_eliminar_web_service">MateriaEliminarWebServiceActivity</string>
+    <string name="Preguntacodigo2">¿Que codigo de materia desea eliminar?</string>
+	<string name="Preguntacodigotext">Codigo Materia</string>
 </resources>
