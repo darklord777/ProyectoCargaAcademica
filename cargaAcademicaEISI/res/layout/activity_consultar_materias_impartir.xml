@@ -19,19 +19,6 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
-        android:id="@+id/editTxtConsulNomDepMatImp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="52dp"
-        android:editable="false"
-        android:ems="10"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:hint="@string/msgeditTxtInsertNomMatMatImp" />
-
-    <EditText
         android:id="@+id/editTxtConsulNomMatImp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,17 +36,10 @@
     <Spinner
         android:id="@+id/spnConsulIdDocMatImp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="37dp" />
-
-    <Spinner
-        android:id="@+id/spnConsulIdDepMatImp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/editTxtConsulNomDepMatImp"
-        android:layout_alignLeft="@+id/spnConsulIdDocMatImp" />
 
     <EditText
         android:id="@+id/editTxtConsultApellidoMatImp"
@@ -72,5 +52,25 @@
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:hint="@string/msgeditTxtInsertApeDocDepto" />
+
+    <Spinner
+        android:id="@+id/spnConsulIdDepMatImp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/spnConsulIdDocMatImp"
+        android:layout_below="@+id/editTxtConsultApellidoMatImp"
+        android:layout_marginTop="17dp" />
+
+    <EditText
+        android:id="@+id/editTxtConsulNomDepMatImp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTxtConsultApellidoMatImp"
+        android:layout_below="@+id/spnConsulIdDepMatImp"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/msgeditTxtInsertNomMatMatImp" />
 
 </RelativeLayout>

@@ -753,7 +753,7 @@ public class ControlDB {
 	public List<String> getAllIdDocMatImp() {
 		List<String> idContratos = new ArrayList<String>();
 		Cursor cursor = db.rawQuery(
-				"select IDDOCENTE from MAT_AREA_PUEDE_IMPARTIR order by IDDOCENTE;",
+				"select IDDOCENTE from MAT_AREA_PUEDE_IMPARTIR group by IDDOCENTE;",
 				null);
 		if (cursor.moveToFirst()) {
 			do {
@@ -820,6 +820,20 @@ public class ControlDB {
 		return idContratos;
 	}
 	
+	public List<String> getAllIdAreaMatImp4(String iddocente) {
+		List<String> idContratos = new ArrayList<String>();
+		String[] id = { iddocente };
+		Cursor cursor = db.query("MAT_AREA_PUEDE_IMPARTIR", camposMatImpartir,
+				 "IDDOCENTE = ?", id, null,  null, null);
+		if (cursor.moveToFirst()) {
+			do {
+				idContratos.add(cursor.getString(1));
+			} while (cursor.moveToNext());
+		}
+		cursor.close();
+		return idContratos;
+	}
+	
 	public String InsertarDocDepto(DocenteDepto docdepto) {
 		String regInsertados = "Registro insertado en la fila No.= ";
 		long contador = 0;
@@ -846,6 +860,20 @@ public class ControlDB {
 		regAfectados = "No tiene registros hijos\nFilas afectadas=";
 		contador += db.delete("DOCENTE_DPTO",
 				"IDDEPARTAMENTO = '"+ docente.getIdDepartamento() +"' AND IDDOCENTE='" + docente.getIdDocente() + "'", null);
+		regAfectados += contador;
+		return regAfectados;
+	}
+	
+	public String EliminarMateriaImpartir(MateriasImpartir docente) {
+		String regAfectados = "";
+		int contador = 0;
+		/*if (verificarIntegridad(docente, 15)) {
+			regAfectados += "Tiene registros hijos\nNo se puede borrar,";
+			return regAfectados;
+		}*/
+		regAfectados = "No tiene registros hijos\nFilas afectadas=";
+		contador += db.delete("MAT_AREA_PUEDE_IMPARTIR",
+				"IDAREAMAT = '"+ docente.getIdAreaMat() +"' AND IDDOCENTE='" + docente.getIdDocente() + "'", null);
 		regAfectados += contador;
 		return regAfectados;
 	}

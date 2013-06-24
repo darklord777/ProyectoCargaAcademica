@@ -10,18 +10,19 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 import android.widget.AdapterView.OnItemSelectedListener;
 
 public class ConsultarMateriasImpartirActivity extends Activity {
 	private ControlDB helper;
 	private Spinner spnConsultarDocente;
-	private Spinner spnConsultarMatArea;
+	private Spinner spnConsultarArea;
 	private EditText nombre;
 	private EditText apellido;
-	private EditText MatArea;
+	private EditText Area;
 	private String docente;
-	private String idmatarea;
-	private List<String> idareamateria;
+	private String idarea;
+	private List<String> idareamat;
 	private ArrayAdapter<String> adapter;
 	private List<String> iddocente;
 	
@@ -32,12 +33,12 @@ public class ConsultarMateriasImpartirActivity extends Activity {
 		helper = new ControlDB(this);
 		nombre = (EditText) findViewById(R.id.editTxtConsulNomMatImp);
 		apellido = (EditText) findViewById(R.id.editTxtConsultApellidoMatImp);
-		MatArea = (EditText) findViewById(R.id.editTxtConsulNomDepMatImp);
-		spnConsultarMatArea = (Spinner) findViewById(R.id.spnConsulIdDepMatImp);
+		Area = (EditText) findViewById(R.id.editTxtConsulNomDepMatImp);
+		spnConsultarArea = (Spinner) findViewById(R.id.spnConsulIdDepMatImp);
 		spnConsultarDocente = (Spinner) findViewById(R.id.spnConsulIdDocMatImp);
 		carga1();
 	}
-
+	
 	private void carga1() {
 		// TODO Auto-generated method stub
 		helper.abrir();
@@ -55,37 +56,35 @@ public class ConsultarMateriasImpartirActivity extends Activity {
 				docente = parentView.getItemAtPosition(position).toString();
 				carga2();
 			}
-
 			public void onNothingSelected(AdapterView<?> parentView) {
 
 			}
 		});
 	}
-
+	
 	protected void carga2() {
 		// TODO Auto-generated method stub
 		helper.abrir();
-		idareamateria = helper.getAllIdMatArea2(docente);
+		idareamat = helper.getAllIdAreaMatImp4(docente);
 		helper.cerrar();
 		adapter = new ArrayAdapter<String>(this,
-				android.R.layout.simple_spinner_item, idareamateria);
+				android.R.layout.simple_spinner_item, idareamat);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		spnConsultarMatArea.setAdapter(adapter);
+		spnConsultarArea.setAdapter(adapter);
 		
-		spnConsultarMatArea.setOnItemSelectedListener(new OnItemSelectedListener() {
+		spnConsultarArea.setOnItemSelectedListener(new OnItemSelectedListener() {
 			public void onItemSelected(AdapterView<?> parentView,
 					View selectedItemView, int position, long id) {
-				idmatarea = parentView.getItemAtPosition(position).toString();
+				idarea = parentView.getItemAtPosition(position).toString();
+				AreaMateria matarea = new AreaMateria();
 				Docente Docente = new Docente();
-				AreaMateria depto = new AreaMateria();
 				helper.abrir();
+				matarea = helper.ConsultarAreaMat(idarea);
 				Docente = helper.ConsultarDocente2(docente);
-				depto = helper.ConsultarAreaMat(idmatarea);
 				helper.cerrar();
-				
 				nombre.setText(Docente.getNombre());
 				apellido.setText(Docente.getApellido());
-				MatArea.setText(depto.getIdareamat());
+				Area.setText(matarea.getIdareamat());
 			}
 
 			public void onNothingSelected(AdapterView<?> parentView) {
@@ -93,19 +92,19 @@ public class ConsultarMateriasImpartirActivity extends Activity {
 			}
 		});
 	}
-
+	
 	protected void consulta() {
 		// TODO Auto-generated method stub
 		Docente Docente = new Docente();
-		AreaMateria depto = new AreaMateria();
+		AreaMateria area = new AreaMateria();
 		helper.abrir();
 		Docente = helper.ConsultarDocente2(docente);
-		depto = helper.ConsultarAreaMat(idmatarea);
+		area = helper.consultarAreaMateria(idarea);
 		helper.cerrar();
 		
 		nombre.setText(Docente.getNombre());
 		apellido.setText(Docente.getApellido());
-		MatArea.setText(depto.getIdareamat());
+		Area.setText(area.getCodigomateria());
 	}
 	
 	@Override
@@ -114,5 +113,4 @@ public class ConsultarMateriasImpartirActivity extends Activity {
 		getMenuInflater().inflate(R.menu.consultar_materias_impartir, menu);
 		return true;
 	}
-
-}
+	}

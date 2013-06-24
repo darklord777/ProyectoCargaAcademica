@@ -18,57 +18,47 @@
          android:text="@string/msgactivityEliminarMatImpartir"
          android:textAppearance="?android:attr/textAppearanceMedium" />
 
+    <Spinner
+        android:id="@+id/spnEliminarDoceMatImp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="24dp" />
+
     <EditText
-        android:id="@+id/editTxtConsulNomMatImp"
+        android:id="@+id/editTxtEliminarNomMatImp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/spnConsulIdDocMatImp"
+        android:layout_below="@+id/spnEliminarDoceMatImp"
         android:layout_centerHorizontal="true"
         android:editable="false"
         android:ems="10"
         android:focusable="false"
         android:focusableInTouchMode="false"
-        android:hint="@string/msgeditTxtInsertNomDocDepto" >
+        android:hint="@string/msgeditTxtInsertNomDocDepto" />
+
+    <EditText
+        android:id="@+id/editTxtEliminarApellidoMatImp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTxtEliminarNomMatImp"
+        android:layout_below="@+id/editTxtEliminarNomMatImp"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/msgeditTxtInsertApeDocDepto" >
 
         <requestFocus />
     </EditText>
 
     <EditText
-        android:id="@+id/editTxtConsultApellidoMatImp"
+        android:id="@+id/editTxtEliminarAreaMatImp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editTxtConsulNomMatImp"
-        android:layout_below="@+id/editTxtConsulNomMatImp"
-        android:editable="false"
-        android:ems="10"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:hint="@string/msgeditTxtInsertApeDocDepto" />
-    
-    <Button
-        android:id="@+id/btnEliminarDocenteDepto"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/spnElimIdDepDocDepto"
-        android:layout_alignParentBottom="true"
-        android:drawableRight="@drawable/clear"
-        android:onClick="EliminarDocenteDepto"
-        android:text="@string/msgbtnEliminarMatImpar" />
-
-    <Spinner
-        android:id="@+id/spnConsulIdDepMatImp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btnEliminarDocenteDepto"
-        android:layout_below="@+id/editTxtConsultApellidoMatImp"
-        android:layout_marginTop="16dp" />
-
-    <EditText
-        android:id="@+id/editTxtConsulNomDepMatImp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editTxtConsultApellidoMatImp"
-        android:layout_below="@+id/spnConsulIdDepMatImp"
+        android:layout_alignLeft="@+id/editTxtEliminarApellidoMatImp"
+        android:layout_below="@+id/spnEliminarAreaMatImp"
         android:editable="false"
         android:ems="10"
         android:focusable="false"
@@ -76,11 +66,21 @@
         android:hint="@string/msgeditTxtInsertNomMatMatImp" />
 
     <Spinner
-        android:id="@+id/spnConsulIdDocMatImp"
+        android:id="@+id/spnEliminarAreaMatImp"
         android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editTxtEliminarApellidoMatImp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnEliminarDocenteAreaMatImp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="24dp" />
+        android:layout_alignLeft="@+id/spnEliminarAreaMatImp"
+        android:layout_below="@+id/editTxtEliminarAreaMatImp"
+        android:layout_marginTop="42dp"
+        android:drawableRight="@drawable/clear"
+        android:onClick="EliminarMatImpar"
+        android:text="@string/msgbtnEliminarMatImpar" />
 
 </RelativeLayout>
