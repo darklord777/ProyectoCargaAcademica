@@ -50,10 +50,15 @@ public void insertarMateria(View v) {
 		
 		String url = null;
 		
+		if(codigomat.equalsIgnoreCase("") || nombremat.equalsIgnoreCase("") || fecha.equalsIgnoreCase("")){
+
+			String msj = "Importante: Todos los campos son obligatorios!";
+			Toast.makeText(this, msj, Toast.LENGTH_SHORT).show();
+		 }else{
 		switch (v.getId()) {
 		case R.id.btnLocal:
 			JSONObject datosMateria = new JSONObject();
-			JSONObject materia = new JSONObject(); 
+			//JSONObject materia = new JSONObject(); 
 			try {
 				datosMateria.put("codigomateria", codigomat);
 				datosMateria.put("nommateria", nombremat);
@@ -69,5 +74,7 @@ public void insertarMateria(View v) {
 			ControladorServicio.insertarMateriaExterno(url, this); 
 			break;
 		}
+	  }
+		
 	}
-}
+}//fin clase principal

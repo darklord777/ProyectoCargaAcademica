@@ -67,7 +67,8 @@
         android:layout_below="@+id/textView3"
         android:ems="10"
         android:hint="@string/formato_fecha2"
-        android:inputType="date" />
+        android:inputType="date"
+        android:maxLength="10" />
 
     <Button
         android:id="@+id/btnLocal"

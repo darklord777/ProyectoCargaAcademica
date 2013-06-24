@@ -27,6 +27,7 @@
         android:layout_below="@+id/textView1"
         android:ems="10"
         android:hint="@string/formato_fecha"
+        android:maxLength="10"
         android:inputType="date" >
 
         <requestFocus />

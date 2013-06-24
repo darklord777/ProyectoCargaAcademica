@@ -57,6 +57,12 @@ public class MateriaActualizarWebServiceActivity extends Activity {
 	
 	public void servicioLocal(View v) {
 		try {
+			String fechaprueba = fechaTxt.getText().toString();
+			if(fechaprueba.equalsIgnoreCase("") ){
+				String msj = "Importante: Debe ingresar fecha valida!";
+				Toast.makeText(this, msj, Toast.LENGTH_SHORT).show();
+			}else{
+				
 			listaMaterias.removeAll(listaMaterias);
 			String[] fecha = fechaTxt.getText().toString().split("/");
 			String url = urlLocal+"?fecha="+fecha[2]+"-"+fecha[1]+"-"+fecha[0];
@@ -64,11 +70,20 @@ public class MateriaActualizarWebServiceActivity extends Activity {
 			String materiasLocales = ControladorServicio.obtenerRespuestaPeticion(url, this);
 			listaMaterias.addAll(ControladorServicio.obtenerMateriasLocal(materiasLocales, this));
 			actualizarListView();
+			}
+			
 		} catch (Exception e) {
 		}
 	}
 
 	public void servicioExterno(View v) {
+		
+		String fechaprueba = fechaTxt.getText().toString();
+		if(fechaprueba.equalsIgnoreCase("") ){
+			String msj = "Importante: Debe ingresar fecha valida!";
+			Toast.makeText(this, msj, Toast.LENGTH_SHORT).show();
+		}else{
+		
 		listaMaterias.removeAll(listaMaterias);
 		String[] fecha = fechaTxt.getText().toString().split("/");
 		String url = urlHostingGratuito + "?day=" + fecha[0] + "&month="+ fecha[1] + "&year=" + fecha[2];
@@ -80,9 +95,17 @@ public class MateriaActualizarWebServiceActivity extends Activity {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
+	  }
 	}
 
 	public void guardar(View v) {
+		String fechaprueba = fechaTxt.getText().toString();
+		if(fechaprueba.equalsIgnoreCase("") ){
+			String msj = "Importante: Debe ingresar fecha valida y consultar antes de guardar!";
+			Toast.makeText(this, msj, Toast.LENGTH_SHORT).show();
+			}else{
+		
 		db.abrir();
 		for(int i=0; i < listaMaterias.size();i++){
 			Log.v("guardar",db.insertar(listaMaterias.get(i)));
@@ -91,6 +114,7 @@ public class MateriaActualizarWebServiceActivity extends Activity {
 		Toast.makeText(this, "Guardado con exito", Toast.LENGTH_LONG).show();
 		listaMaterias.removeAll(listaMaterias);
 		actualizarListView();
+	 }
 	}
 
 	private void actualizarListView() {
