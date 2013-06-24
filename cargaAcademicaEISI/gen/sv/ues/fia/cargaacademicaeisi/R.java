@@ -932,6 +932,9 @@ public final class R {
         public static final int iDdOc=0x7f07018f;
         public static final int iDpEr=0x7f07018d;
         public static final int imagen1=0x7f0701c2;
+        public static final int inicio2=0x7f0701c7;
+        public static final int inicio3=0x7f0701c8;
+        public static final int inicio4=0x7f0701c9;
         public static final int llenar_base=0x7f070171;
         public static final int llenar_bd=0x7f0701b2;
         public static final int msgActivAcad=0x7f07006c;
@@ -1218,7 +1221,7 @@ Alexis todavia no ordenado
         public static final int title_activity_materias_impartir=0x7f0700be;
         public static final int title_activity_menu_act_academicas=0x7f07001c;
         public static final int title_activity_menu_actividad_academica=0x7f0700ce;
-        public static final int title_activity_menu_docente=0x7f0701c7;
+        public static final int title_activity_menu_docente=0x7f0701ca;
         /**  menu docente 
  menu docente 
  menu docente 

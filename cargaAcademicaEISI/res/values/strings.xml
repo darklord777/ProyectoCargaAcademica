@@ -537,4 +537,7 @@
     <string name="title_activity_materia_eliminar_web_service">MateriaEliminarWebServiceActivity</string>
     <string name="Preguntacodigo2">¿Que codigo de materia desea eliminar?</string>
 	<string name="Preguntacodigotext">Codigo Materia</string>
+	<string name="inicio2">Sistema de Asignacion de</string>
+	<string name="inicio3">Carga Academica de la</string>
+	<string name="inicio4">EISI</string>
 </resources>
