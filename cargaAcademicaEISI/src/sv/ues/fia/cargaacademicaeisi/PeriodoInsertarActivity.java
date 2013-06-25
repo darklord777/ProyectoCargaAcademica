@@ -90,27 +90,12 @@ public class PeriodoInsertarActivity extends Activity {
 			}//fin else validacion fecha
 	   }//fin else validacion campos vacios
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
-			
-			
-			
-			
-			
-			
+	
 	}
 	public void limpiarPeriodo(View v) {
-		editIdPeriodo.setText("");
-		editFechaIni.setText("");
-		editFechaFin.setText("");
+		//editIdPeriodo.setText("");
+		//editFechaIni.setText("");
+		//editFechaFin.setText("");
 	}
 
 	@Override
